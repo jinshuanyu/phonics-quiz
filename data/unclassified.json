@@ -1,0 +1,9592 @@
+[
+  {
+    "word": "admit",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "a",
+      "d",
+      "m",
+      "i",
+      "t"
+    ],
+    "_file": "1A-1.json"
+  },
+  {
+    "word": "affect",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "a",
+      "ff",
+      "e",
+      "c",
+      "t"
+    ],
+    "_file": "1A-1.json"
+  },
+  {
+    "word": "collect",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "ll",
+      "e",
+      "c",
+      "t"
+    ],
+    "_file": "1A-1.json"
+  },
+  {
+    "word": "correct",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "rr",
+      "e",
+      "c",
+      "t"
+    ],
+    "_file": "1A-1.json"
+  },
+  {
+    "word": "detect",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "d",
+      "e",
+      "t",
+      "e",
+      "c",
+      "t"
+    ],
+    "_file": "1A-1.json"
+  },
+  {
+    "word": "direct",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "d",
+      "i",
+      "r",
+      "e",
+      "c",
+      "t"
+    ],
+    "_file": "1A-1.json"
+  },
+  {
+    "word": "elect",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "e",
+      "l",
+      "e",
+      "c",
+      "t"
+    ],
+    "_file": "1A-1.json"
+  },
+  {
+    "word": "expect",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "e",
+      "x",
+      "p",
+      "e",
+      "c",
+      "t"
+    ],
+    "_file": "1A-1.json"
+  },
+  {
+    "word": "guide",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "g",
+      "ui",
+      "d",
+      "e"
+    ],
+    "_file": "1A-1.json"
+  },
+  {
+    "word": "limit",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "l",
+      "i",
+      "m",
+      "i",
+      "t"
+    ],
+    "_file": "1A-1.json"
+  },
+  {
+    "word": "omit",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "o",
+      "m",
+      "i",
+      "t"
+    ],
+    "_file": "1A-2.json"
+  },
+  {
+    "word": "pollute",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "p",
+      "o",
+      "ll",
+      "u",
+      "t",
+      "e"
+    ],
+    "_file": "1A-2.json"
+  },
+  {
+    "word": "reject",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "r",
+      "e",
+      "j",
+      "e",
+      "c",
+      "t"
+    ],
+    "_file": "1A-2.json"
+  },
+  {
+    "word": "select",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "s",
+      "e",
+      "l",
+      "e",
+      "c",
+      "t"
+    ],
+    "_file": "1A-2.json"
+  },
+  {
+    "word": "visit",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "v",
+      "i",
+      "s",
+      "i",
+      "t"
+    ],
+    "_file": "1A-2.json"
+  },
+  {
+    "word": "develop",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "d",
+      "e",
+      "v",
+      "e",
+      "l",
+      "o",
+      "p"
+    ],
+    "_file": "1B-1.json"
+  },
+  {
+    "word": "embarrass",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "m",
+      "b",
+      "a",
+      "rr",
+      "a",
+      "ss"
+    ],
+    "_file": "1B-1.json"
+  },
+  {
+    "word": "focus",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "f",
+      "o",
+      "c",
+      "u",
+      "s"
+    ],
+    "_file": "1B-1.json"
+  },
+  {
+    "word": "pause",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "p",
+      "au",
+      "s",
+      "e"
+    ],
+    "_file": "1B-2.json"
+  },
+  {
+    "word": "suppose",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "s",
+      "u",
+      "pp",
+      "o",
+      "s",
+      "e"
+    ],
+    "_file": "1B-2.json"
+  },
+  {
+    "word": "watch",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "w",
+      "a",
+      "tch"
+    ],
+    "_file": "1B-2.json"
+  },
+  {
+    "word": "work",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "or",
+      "k"
+    ],
+    "_file": "1B-2.json"
+  },
+  {
+    "word": "assume",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "a",
+      "ss",
+      "u",
+      "m",
+      "e"
+    ],
+    "_file": "1C-1.json"
+  },
+  {
+    "word": "believe",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "b",
+      "e",
+      "l",
+      "ie",
+      "v",
+      "e"
+    ],
+    "_file": "1C-1.json"
+  },
+  {
+    "word": "belong",
+    "tags": [
+      "digraph",
+      "open"
+    ],
+    "graphemes": [
+      "b",
+      "e",
+      "l",
+      "o",
+      "ng"
+    ],
+    "_file": "1C-1.json"
+  },
+  {
+    "word": "care",
+    "tags": [
+      "rcontrolled"
+    ],
+    "graphemes": [
+      "c",
+      "a",
+      "r",
+      "e"
+    ],
+    "_file": "1C-1.json"
+  },
+  {
+    "word": "carry",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "a",
+      "rr",
+      "y"
+    ],
+    "_file": "1C-1.json"
+  },
+  {
+    "word": "compare",
+    "tags": [
+      "rcontrolled"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "m",
+      "p",
+      "a",
+      "r",
+      "e"
+    ],
+    "_file": "1C-1.json"
+  },
+  {
+    "word": "copy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "p",
+      "y"
+    ],
+    "_file": "1C-1.json"
+  },
+  {
+    "word": "confuse",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "n",
+      "f",
+      "u",
+      "s",
+      "e"
+    ],
+    "_file": "1C-2.json"
+  },
+  {
+    "word": "consider",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "n",
+      "s",
+      "i",
+      "d",
+      "er"
+    ],
+    "_file": "1C-2.json"
+  },
+  {
+    "word": "continue",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "n",
+      "t",
+      "i",
+      "n",
+      "ue"
+    ],
+    "_file": "1C-2.json"
+  },
+  {
+    "word": "cover",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "v",
+      "er"
+    ],
+    "_file": "1C-2.json"
+  },
+  {
+    "word": "deliver",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "d",
+      "e",
+      "l",
+      "i",
+      "v",
+      "er"
+    ],
+    "_file": "1C-2.json"
+  },
+  {
+    "word": "die",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "d",
+      "ie"
+    ],
+    "_file": "1C-2.json"
+  },
+  {
+    "word": "disappear",
+    "tags": [
+      "rcontrolled"
+    ],
+    "graphemes": [
+      "d",
+      "i",
+      "s",
+      "a",
+      "pp",
+      "ea",
+      "r"
+    ],
+    "_file": "1C-2.json"
+  },
+  {
+    "word": "enter",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "e",
+      "n",
+      "t",
+      "er"
+    ],
+    "_file": "1C-2.json"
+  },
+  {
+    "word": "envy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "n",
+      "v",
+      "y"
+    ],
+    "_file": "1C-2.json"
+  },
+  {
+    "word": "follow",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "o",
+      "ll",
+      "ow"
+    ],
+    "_file": "1C-2.json"
+  },
+  {
+    "word": "happen",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "a",
+      "pp",
+      "e",
+      "n"
+    ],
+    "_file": "1C-3.json"
+  },
+  {
+    "word": "hurry",
+    "tags": [
+      "rcontrolled"
+    ],
+    "graphemes": [
+      "h",
+      "u",
+      "rr",
+      "y"
+    ],
+    "_file": "1C-3.json"
+  },
+  {
+    "word": "ignore",
+    "tags": [
+      "rcontrolled"
+    ],
+    "graphemes": [
+      "i",
+      "g",
+      "n",
+      "o",
+      "r",
+      "e"
+    ],
+    "_file": "1C-3.json"
+  },
+  {
+    "word": "interrupt",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "i",
+      "n",
+      "t",
+      "e",
+      "rr",
+      "u",
+      "p",
+      "t"
+    ],
+    "_file": "1C-3.json"
+  },
+  {
+    "word": "live",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "l",
+      "i",
+      "v",
+      "e"
+    ],
+    "_file": "1C-3.json"
+  },
+  {
+    "word": "love",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "l",
+      "o",
+      "v",
+      "e"
+    ],
+    "_file": "1C-3.json"
+  },
+  {
+    "word": "move",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "v",
+      "e"
+    ],
+    "_file": "1C-3.json"
+  },
+  {
+    "word": "offer",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "o",
+      "ff",
+      "er"
+    ],
+    "_file": "1C-4.json"
+  },
+  {
+    "word": "open",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "o",
+      "p",
+      "e",
+      "n"
+    ],
+    "_file": "1C-4.json"
+  },
+  {
+    "word": "refuse",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "r",
+      "e",
+      "f",
+      "u",
+      "s",
+      "e"
+    ],
+    "_file": "1C-4.json"
+  },
+  {
+    "word": "remember",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "r",
+      "e",
+      "m",
+      "e",
+      "m",
+      "b",
+      "er"
+    ],
+    "_file": "1C-4.json"
+  },
+  {
+    "word": "ruin",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "r",
+      "u",
+      "i",
+      "n"
+    ],
+    "_file": "1C-4.json"
+  },
+  {
+    "word": "satisfy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "a",
+      "t",
+      "i",
+      "s",
+      "f",
+      "y"
+    ],
+    "_file": "1C-5.json"
+  },
+  {
+    "word": "solve",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "l",
+      "v",
+      "e"
+    ],
+    "_file": "1C-5.json"
+  },
+  {
+    "word": "welcome",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "w",
+      "e",
+      "l",
+      "c",
+      "o",
+      "m",
+      "e"
+    ],
+    "_file": "1C-5.json"
+  },
+  {
+    "word": "worry",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "o",
+      "rr",
+      "y"
+    ],
+    "_file": "1C-5.json"
+  },
+  {
+    "word": "put",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "p",
+      "u",
+      "t"
+    ],
+    "_file": "AAA.json"
+  },
+  {
+    "word": "become",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "b",
+      "e",
+      "c",
+      "o",
+      "m",
+      "e"
+    ],
+    "_file": "ABA.json"
+  },
+  {
+    "word": "come",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "m",
+      "e"
+    ],
+    "_file": "ABA.json"
+  },
+  {
+    "word": "overcome",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "o",
+      "v",
+      "er",
+      "c",
+      "o",
+      "m",
+      "e"
+    ],
+    "_file": "ABA.json"
+  },
+  {
+    "word": "build",
+    "tags": [
+      "irregular",
+      "cluster"
+    ],
+    "graphemes": [
+      "b",
+      "ui",
+      "l",
+      "d"
+    ],
+    "_file": "ABB-1.json"
+  },
+  {
+    "word": "built",
+    "tags": [
+      "irregular",
+      "cluster"
+    ],
+    "graphemes": [
+      "b",
+      "ui",
+      "l",
+      "t"
+    ],
+    "_file": "ABB-1.json"
+  },
+  {
+    "word": "buy",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "b",
+      "uy"
+    ],
+    "_file": "ABB-1.json"
+  },
+  {
+    "word": "bought",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "b",
+      "ough",
+      "t"
+    ],
+    "_file": "ABB-1.json"
+  },
+  {
+    "word": "caught",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "c",
+      "augh",
+      "t"
+    ],
+    "_file": "ABB-1.json"
+  },
+  {
+    "word": "dealt",
+    "tags": [
+      "irregular",
+      "cluster"
+    ],
+    "graphemes": [
+      "d",
+      "ea",
+      "l",
+      "t"
+    ],
+    "_file": "ABB-1.json"
+  },
+  {
+    "word": "fight",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "f",
+      "igh",
+      "t"
+    ],
+    "_file": "ABB-1.json"
+  },
+  {
+    "word": "fought",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "f",
+      "ough",
+      "t"
+    ],
+    "_file": "ABB-1.json"
+  },
+  {
+    "word": "have",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "h",
+      "a",
+      "v",
+      "e"
+    ],
+    "_file": "ABB-1.json"
+  },
+  {
+    "word": "heard",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "h",
+      "ear",
+      "d"
+    ],
+    "_file": "ABB-1.json"
+  },
+  {
+    "word": "hold",
+    "tags": [
+      "irregular",
+      "cluster"
+    ],
+    "graphemes": [
+      "h",
+      "o",
+      "l",
+      "d"
+    ],
+    "_file": "ABB-2.json"
+  },
+  {
+    "word": "lose",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "l",
+      "o",
+      "s",
+      "e"
+    ],
+    "_file": "ABB-2.json"
+  },
+  {
+    "word": "said",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "s",
+      "ai",
+      "d"
+    ],
+    "_file": "ABB-2.json"
+  },
+  {
+    "word": "sold",
+    "tags": [
+      "irregular",
+      "cluster"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "l",
+      "d"
+    ],
+    "_file": "ABB-2.json"
+  },
+  {
+    "word": "taught",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "t",
+      "augh",
+      "t"
+    ],
+    "_file": "ABB-3.json"
+  },
+  {
+    "word": "told",
+    "tags": [
+      "open",
+      "cluster"
+    ],
+    "graphemes": [
+      "t",
+      "o",
+      "l",
+      "d"
+    ],
+    "_file": "ABB-3.json"
+  },
+  {
+    "word": "won",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "o",
+      "n"
+    ],
+    "_file": "ABB-3.json"
+  },
+  {
+    "word": "given",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "g",
+      "i",
+      "v",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-ave.json"
+  },
+  {
+    "word": "forgive",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "or",
+      "g",
+      "i",
+      "v",
+      "e"
+    ],
+    "_file": "ABC-ave.json"
+  },
+  {
+    "word": "forgiven",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "or",
+      "g",
+      "i",
+      "v",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-ave.json"
+  },
+  {
+    "word": "forbid",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "or",
+      "b",
+      "i",
+      "d"
+    ],
+    "_file": "ABC-ave.json"
+  },
+  {
+    "word": "forbidden",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "or",
+      "b",
+      "i",
+      "dd",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-ave.json"
+  },
+  {
+    "word": "begin",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "e",
+      "g",
+      "i",
+      "n"
+    ],
+    "_file": "ABC-iau.json"
+  },
+  {
+    "word": "began",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "e",
+      "g",
+      "a",
+      "n"
+    ],
+    "_file": "ABC-iau.json"
+  },
+  {
+    "word": "begun",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "e",
+      "g",
+      "u",
+      "n"
+    ],
+    "_file": "ABC-iau.json"
+  },
+  {
+    "word": "ridden",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "r",
+      "i",
+      "dd",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-ioi.json"
+  },
+  {
+    "word": "risen",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "r",
+      "i",
+      "s",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-ioi.json"
+  },
+  {
+    "word": "bitten",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "i",
+      "tt",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-misc.json"
+  },
+  {
+    "word": "hidden",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "i",
+      "dd",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-misc.json"
+  },
+  {
+    "word": "forget",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "or",
+      "g",
+      "e",
+      "t"
+    ],
+    "_file": "ABC-misc.json"
+  },
+  {
+    "word": "forgot",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "or",
+      "g",
+      "o",
+      "t"
+    ],
+    "_file": "ABC-misc.json"
+  },
+  {
+    "word": "forgotten",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "or",
+      "g",
+      "o",
+      "tt",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-misc.json"
+  },
+  {
+    "word": "gotten",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "g",
+      "o",
+      "tt",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-misc.json"
+  },
+  {
+    "word": "do",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "d",
+      "o"
+    ],
+    "_file": "ABC-misc.json"
+  },
+  {
+    "word": "done",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "d",
+      "o",
+      "n",
+      "e"
+    ],
+    "_file": "ABC-misc.json"
+  },
+  {
+    "word": "fallen",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "f",
+      "a",
+      "ll",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-misc.json"
+  },
+  {
+    "word": "go",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "g",
+      "o"
+    ],
+    "_file": "ABC-misc.json"
+  },
+  {
+    "word": "gone",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "g",
+      "o",
+      "n",
+      "e"
+    ],
+    "_file": "ABC-misc.json"
+  },
+  {
+    "word": "lie",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "l",
+      "ie"
+    ],
+    "_file": "ABC-misc.json"
+  },
+  {
+    "word": "saw",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "s",
+      "aw"
+    ],
+    "_file": "ABC-misc.json"
+  },
+  {
+    "word": "woken",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "w",
+      "o",
+      "k",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-oken.json"
+  },
+  {
+    "word": "woven",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "w",
+      "o",
+      "v",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-oken.json"
+  },
+  {
+    "word": "taken",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "t",
+      "a",
+      "k",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-ook.json"
+  },
+  {
+    "word": "mistaken",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "s",
+      "t",
+      "a",
+      "k",
+      "e",
+      "n"
+    ],
+    "_file": "ABC-ook.json"
+  },
+  {
+    "word": "bear",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "b",
+      "ea",
+      "r"
+    ],
+    "_file": "ABC-orn.json"
+  },
+  {
+    "word": "tear",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "t",
+      "ea",
+      "r"
+    ],
+    "_file": "ABC-orn.json"
+  },
+  {
+    "word": "wear",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "ea",
+      "r"
+    ],
+    "_file": "ABC-orn.json"
+  },
+  {
+    "word": "dead",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "d",
+      "ea",
+      "d"
+    ],
+    "_file": "adjs-1.json"
+  },
+  {
+    "word": "equal",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "e",
+      "qu",
+      "a",
+      "l"
+    ],
+    "_file": "adjs-1.json"
+  },
+  {
+    "word": "false",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "f",
+      "a",
+      "l",
+      "se"
+    ],
+    "_file": "adjs-1.json"
+  },
+  {
+    "word": "ready",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "r",
+      "ea",
+      "d",
+      "y"
+    ],
+    "_file": "adjs-1.json"
+  },
+  {
+    "word": "right",
+    "tags": [],
+    "graphemes": [
+      "r",
+      "igh",
+      "t"
+    ],
+    "_file": "adjs-1.json"
+  },
+  {
+    "word": "basic",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "b",
+      "a",
+      "s",
+      "i",
+      "c"
+    ],
+    "_file": "adjs-2.json"
+  },
+  {
+    "word": "common",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "mm",
+      "o",
+      "n"
+    ],
+    "_file": "adjs-2.json"
+  },
+  {
+    "word": "enough",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "e",
+      "n",
+      "ou",
+      "gh"
+    ],
+    "_file": "adjs-2.json"
+  },
+  {
+    "word": "major",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "j",
+      "or"
+    ],
+    "_file": "adjs-2.json"
+  },
+  {
+    "word": "maximum",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "x",
+      "i",
+      "m",
+      "u",
+      "m"
+    ],
+    "_file": "adjs-2.json"
+  },
+  {
+    "word": "minor",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "n",
+      "or"
+    ],
+    "_file": "adjs-2.json"
+  },
+  {
+    "word": "secondary",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "s",
+      "e",
+      "c",
+      "o",
+      "n",
+      "d",
+      "a",
+      "r",
+      "y"
+    ],
+    "_file": "adjs-2.json"
+  },
+  {
+    "word": "usual",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "u",
+      "s",
+      "u",
+      "a",
+      "l"
+    ],
+    "_file": "adjs-2.json"
+  },
+  {
+    "word": "fantastic",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "a",
+      "n",
+      "t",
+      "a",
+      "s",
+      "t",
+      "i",
+      "c"
+    ],
+    "_file": "adjs-3.json"
+  },
+  {
+    "word": "favorite",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "f",
+      "a",
+      "v",
+      "o",
+      "r",
+      "i",
+      "t",
+      "e"
+    ],
+    "_file": "adjs-3.json"
+  },
+  {
+    "word": "helpful",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "h",
+      "e",
+      "l",
+      "p",
+      "f",
+      "u",
+      "l"
+    ],
+    "_file": "adjs-3.json"
+  },
+  {
+    "word": "sorry",
+    "tags": [
+      "rcontrolled"
+    ],
+    "graphemes": [
+      "s",
+      "orr",
+      "y"
+    ],
+    "_file": "adjs-3.json"
+  },
+  {
+    "word": "super",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "s",
+      "u",
+      "p",
+      "er"
+    ],
+    "_file": "adjs-3.json"
+  },
+  {
+    "word": "terrific",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "t",
+      "e",
+      "rr",
+      "i",
+      "f",
+      "i",
+      "c"
+    ],
+    "_file": "adjs-3.json"
+  },
+  {
+    "word": "wonderful",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "w",
+      "o",
+      "n",
+      "d",
+      "er",
+      "f",
+      "u",
+      "l"
+    ],
+    "_file": "adjs-3.json"
+  },
+  {
+    "word": "colorful",
+    "tags": [
+      "irregular",
+      "suffix"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "l",
+      "or",
+      "f",
+      "u",
+      "l"
+    ],
+    "_file": "adjs-4.json"
+  },
+  {
+    "word": "local",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "l",
+      "o",
+      "c",
+      "a",
+      "l"
+    ],
+    "_file": "adjs-4.json"
+  },
+  {
+    "word": "narrow",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "n",
+      "a",
+      "rr",
+      "ow"
+    ],
+    "_file": "adjs-4.json"
+  },
+  {
+    "word": "natural",
+    "tags": [
+      "closed",
+      "digraph"
+    ],
+    "graphemes": [
+      "n",
+      "a",
+      "t",
+      "ur",
+      "a",
+      "l"
+    ],
+    "_file": "adjs-4.json"
+  },
+  {
+    "word": "tidy",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "t",
+      "i",
+      "d",
+      "y"
+    ],
+    "_file": "adjs-4.json"
+  },
+  {
+    "word": "wild",
+    "tags": [
+      "open",
+      "cluster"
+    ],
+    "graphemes": [
+      "w",
+      "i",
+      "l",
+      "d"
+    ],
+    "_file": "adjs-4.json"
+  },
+  {
+    "word": "international",
+    "tags": [
+      "irregular",
+      "suffix"
+    ],
+    "graphemes": [
+      "i",
+      "n",
+      "t",
+      "er",
+      "n",
+      "a",
+      "tion",
+      "a",
+      "l"
+    ],
+    "_file": "adjs-5.json"
+  },
+  {
+    "word": "latter",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "l",
+      "a",
+      "tt",
+      "er"
+    ],
+    "_file": "adjs-5.json"
+  },
+  {
+    "word": "likely",
+    "tags": [
+      "magic_e",
+      "suffix"
+    ],
+    "graphemes": [
+      "l",
+      "i",
+      "k",
+      "e",
+      "l",
+      "y"
+    ],
+    "_file": "adjs-5.json"
+  },
+  {
+    "word": "modern",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "d",
+      "er",
+      "n"
+    ],
+    "_file": "adjs-5.json"
+  },
+  {
+    "word": "overseas",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "o",
+      "v",
+      "er",
+      "s",
+      "ea",
+      "s"
+    ],
+    "_file": "adjs-5.json"
+  },
+  {
+    "word": "regular",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "r",
+      "e",
+      "g",
+      "u",
+      "l",
+      "ar"
+    ],
+    "_file": "adjs-5.json"
+  },
+  {
+    "word": "sudden",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "u",
+      "dd",
+      "e",
+      "n"
+    ],
+    "_file": "adjs-5.json"
+  },
+  {
+    "word": "temporary",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "t",
+      "e",
+      "m",
+      "p",
+      "o",
+      "r",
+      "a",
+      "r",
+      "y"
+    ],
+    "_file": "adjs-5.json"
+  },
+  {
+    "word": "unique",
+    "tags": [
+      "open",
+      "digraph"
+    ],
+    "graphemes": [
+      "u",
+      "n",
+      "i",
+      "que"
+    ],
+    "_file": "adjs-5.json"
+  },
+  {
+    "word": "negative",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "n",
+      "e",
+      "g",
+      "a",
+      "t",
+      "i",
+      "v",
+      "e"
+    ],
+    "_file": "adjs-6.json"
+  },
+  {
+    "word": "positive",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "p",
+      "o",
+      "s",
+      "i",
+      "t",
+      "i",
+      "v",
+      "e"
+    ],
+    "_file": "adjs-6.json"
+  },
+  {
+    "word": "quiet",
+    "tags": [
+      "digraph",
+      "open"
+    ],
+    "graphemes": [
+      "qu",
+      "i",
+      "e",
+      "t"
+    ],
+    "_file": "adjs-6.json"
+  },
+  {
+    "word": "serious",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "s",
+      "e",
+      "r",
+      "i",
+      "ou",
+      "s"
+    ],
+    "_file": "adjs-6.json"
+  },
+  {
+    "word": "similar",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "s",
+      "i",
+      "m",
+      "i",
+      "l",
+      "ar"
+    ],
+    "_file": "adjs-6.json"
+  },
+  {
+    "word": "ever",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "e",
+      "v",
+      "er"
+    ],
+    "_file": "adv-1.json"
+  },
+  {
+    "word": "never",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "n",
+      "e",
+      "v",
+      "er"
+    ],
+    "_file": "adv-1.json"
+  },
+  {
+    "word": "seldom",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "e",
+      "l",
+      "d",
+      "o",
+      "m"
+    ],
+    "_file": "adv-1.json"
+  },
+  {
+    "word": "sometimes",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "m",
+      "e",
+      "t",
+      "i",
+      "m",
+      "e",
+      "s"
+    ],
+    "_file": "adv-1.json"
+  },
+  {
+    "word": "usually",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "u",
+      "s",
+      "u",
+      "a",
+      "ll",
+      "y"
+    ],
+    "_file": "adv-1.json"
+  },
+  {
+    "word": "even",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "e",
+      "v",
+      "e",
+      "n"
+    ],
+    "_file": "adv-1.json"
+  },
+  {
+    "word": "only",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "o",
+      "n",
+      "l",
+      "y"
+    ],
+    "_file": "adv-1.json"
+  },
+  {
+    "word": "so",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "s",
+      "o"
+    ],
+    "_file": "adv-1.json"
+  },
+  {
+    "word": "very",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "v",
+      "e",
+      "r",
+      "y"
+    ],
+    "_file": "adv-1.json"
+  },
+  {
+    "word": "actually",
+    "tags": [
+      "closed",
+      "digraph"
+    ],
+    "graphemes": [
+      "a",
+      "c",
+      "t",
+      "u",
+      "a",
+      "ll",
+      "y"
+    ],
+    "_file": "adv-2.json"
+  },
+  {
+    "word": "again",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "a",
+      "g",
+      "ai",
+      "n"
+    ],
+    "_file": "adv-2.json"
+  },
+  {
+    "word": "also",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "a",
+      "l",
+      "s",
+      "o"
+    ],
+    "_file": "adv-2.json"
+  },
+  {
+    "word": "finally",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "f",
+      "i",
+      "n",
+      "a",
+      "ll",
+      "y"
+    ],
+    "_file": "adv-2.json"
+  },
+  {
+    "word": "ahead",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "a",
+      "h",
+      "ea",
+      "d"
+    ],
+    "_file": "adv-2.json"
+  },
+  {
+    "word": "perhaps",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "p",
+      "er",
+      "h",
+      "a",
+      "p",
+      "s"
+    ],
+    "_file": "adv-3.json"
+  },
+  {
+    "word": "no",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "n",
+      "o"
+    ],
+    "_file": "adv-4.json"
+  },
+  {
+    "word": "OK",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "O",
+      "K"
+    ],
+    "_file": "adv-4.json"
+  },
+  {
+    "word": "animal",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "a",
+      "n",
+      "i",
+      "m",
+      "a",
+      "l"
+    ],
+    "_file": "animals-1.json"
+  },
+  {
+    "word": "bee",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "b",
+      "ee"
+    ],
+    "_file": "animals-1.json"
+  },
+  {
+    "word": "donkey",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "d",
+      "o",
+      "n",
+      "k",
+      "ey"
+    ],
+    "_file": "animals-1.json"
+  },
+  {
+    "word": "hippo",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "i",
+      "pp",
+      "o"
+    ],
+    "_file": "animals-1.json"
+  },
+  {
+    "word": "lizard",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "l",
+      "i",
+      "z",
+      "ar",
+      "d"
+    ],
+    "_file": "animals-1.json"
+  },
+  {
+    "word": "monkey",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "n",
+      "k",
+      "ey"
+    ],
+    "_file": "animals-1.json"
+  },
+  {
+    "word": "polar bear",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "p",
+      "o",
+      "l",
+      "ar",
+      " ",
+      "b",
+      "ea",
+      "r"
+    ],
+    "_file": "animals-1.json"
+  },
+  {
+    "word": "tiger",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "t",
+      "i",
+      "g",
+      "er"
+    ],
+    "_file": "animals-1.json"
+  },
+  {
+    "word": "camel",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "a",
+      "m",
+      "e",
+      "l"
+    ],
+    "_file": "animals-2.json"
+  },
+  {
+    "word": "dinosaur",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "d",
+      "i",
+      "n",
+      "o",
+      "s",
+      "aur"
+    ],
+    "_file": "animals-2.json"
+  },
+  {
+    "word": "extinct",
+    "tags": [
+      "cluster",
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "x",
+      "t",
+      "i",
+      "n",
+      "c",
+      "t"
+    ],
+    "_file": "animals-2.json"
+  },
+  {
+    "word": "insect",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "i",
+      "n",
+      "s",
+      "e",
+      "c",
+      "t"
+    ],
+    "_file": "animals-2.json"
+  },
+  {
+    "word": "kitten",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "k",
+      "i",
+      "tt",
+      "e",
+      "n"
+    ],
+    "_file": "animals-2.json"
+  },
+  {
+    "word": "lion",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "l",
+      "i",
+      "o",
+      "n"
+    ],
+    "_file": "animals-2.json"
+  },
+  {
+    "word": "octopus",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "o",
+      "c",
+      "t",
+      "o",
+      "p",
+      "u",
+      "s"
+    ],
+    "_file": "animals-2.json"
+  },
+  {
+    "word": "panda",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "p",
+      "a",
+      "n",
+      "d",
+      "a"
+    ],
+    "_file": "animals-2.json"
+  },
+  {
+    "word": "parrot",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "p",
+      "a",
+      "rr",
+      "o",
+      "t"
+    ],
+    "_file": "animals-2.json"
+  },
+  {
+    "word": "penguin",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "p",
+      "e",
+      "n",
+      "g",
+      "u",
+      "i",
+      "n"
+    ],
+    "_file": "animals-2.json"
+  },
+  {
+    "word": "puppy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "p",
+      "u",
+      "pp",
+      "y"
+    ],
+    "_file": "animals-2.json"
+  },
+  {
+    "word": "rabbit",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "r",
+      "a",
+      "bb",
+      "i",
+      "t"
+    ],
+    "_file": "animals-2.json"
+  },
+  {
+    "word": "koala",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "k",
+      "o",
+      "a",
+      "l",
+      "a"
+    ],
+    "_file": "animals-3.json"
+  },
+  {
+    "word": "monster",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "n",
+      "s",
+      "t",
+      "er"
+    ],
+    "_file": "animals-3.json"
+  },
+  {
+    "word": "mosquito",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "s",
+      "qu",
+      "i",
+      "t",
+      "o"
+    ],
+    "_file": "animals-3.json"
+  },
+  {
+    "word": "squirrel",
+    "tags": [
+      "cluster",
+      "rcontrolled"
+    ],
+    "graphemes": [
+      "s",
+      "qu",
+      "irr",
+      "e",
+      "l"
+    ],
+    "_file": "animals-3.json"
+  },
+  {
+    "word": "wolf",
+    "tags": [
+      "irregular",
+      "cluster"
+    ],
+    "graphemes": [
+      "w",
+      "o",
+      "l",
+      "f"
+    ],
+    "_file": "animals-3.json"
+  },
+  {
+    "word": "worm",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "or",
+      "m"
+    ],
+    "_file": "animals-3.json"
+  },
+  {
+    "word": "does",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "d",
+      "oe",
+      "s"
+    ],
+    "_file": "auxi.json"
+  },
+  {
+    "word": "has",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "h",
+      "a",
+      "s"
+    ],
+    "_file": "auxi.json"
+  },
+  {
+    "word": "may",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "m",
+      "ay"
+    ],
+    "_file": "auxi.json"
+  },
+  {
+    "word": "might",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "m",
+      "igh",
+      "t"
+    ],
+    "_file": "auxi.json"
+  },
+  {
+    "word": "be",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "b",
+      "e"
+    ],
+    "_file": "be.json"
+  },
+  {
+    "word": "are",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "ar",
+      "e"
+    ],
+    "_file": "be.json"
+  },
+  {
+    "word": "is",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "i",
+      "s"
+    ],
+    "_file": "be.json"
+  },
+  {
+    "word": "was",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "a",
+      "s"
+    ],
+    "_file": "be.json"
+  },
+  {
+    "word": "were",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "ere"
+    ],
+    "_file": "be.json"
+  },
+  {
+    "word": "been",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "b",
+      "ee",
+      "n"
+    ],
+    "_file": "be.json"
+  },
+  {
+    "word": "body",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "o",
+      "d",
+      "y"
+    ],
+    "_file": "body-and-face-1.json"
+  },
+  {
+    "word": "eye",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "eye"
+    ],
+    "_file": "body-and-face-1.json"
+  },
+  {
+    "word": "head",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "h",
+      "ea",
+      "d"
+    ],
+    "_file": "body-and-face-1.json"
+  },
+  {
+    "word": "elbow",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "l",
+      "b",
+      "ow"
+    ],
+    "_file": "body-and-face-2.json"
+  },
+  {
+    "word": "finger",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "f",
+      "i",
+      "n",
+      "g",
+      "er"
+    ],
+    "_file": "body-and-face-2.json"
+  },
+  {
+    "word": "toe",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "t",
+      "oe"
+    ],
+    "_file": "body-and-face-2.json"
+  },
+  {
+    "word": "heart",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "h",
+      "ear",
+      "t"
+    ],
+    "_file": "body-and-face-3.json"
+  },
+  {
+    "word": "kidney",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "k",
+      "i",
+      "d",
+      "n",
+      "ey"
+    ],
+    "_file": "body-and-face-3.json"
+  },
+  {
+    "word": "tongue",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "t",
+      "o",
+      "ng",
+      "ue"
+    ],
+    "_file": "body-and-face-3.json"
+  },
+  {
+    "word": "handbag",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "h",
+      "a",
+      "n",
+      "d",
+      "b",
+      "a",
+      "g"
+    ],
+    "_file": "clothes-1.json"
+  },
+  {
+    "word": "helmet",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "e",
+      "l",
+      "m",
+      "e",
+      "t"
+    ],
+    "_file": "clothes-1.json"
+  },
+  {
+    "word": "costume",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "s",
+      "t",
+      "u",
+      "m",
+      "e"
+    ],
+    "_file": "clothes-2.json"
+  },
+  {
+    "word": "pajamas",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "p",
+      "a",
+      "j",
+      "a",
+      "m",
+      "a",
+      "s"
+    ],
+    "_file": "clothes-2.json"
+  },
+  {
+    "word": "umbrella",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "u",
+      "m",
+      "b",
+      "r",
+      "e",
+      "ll",
+      "a"
+    ],
+    "_file": "clothes-2.json"
+  },
+  {
+    "word": "uniform",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "u",
+      "n",
+      "i",
+      "f",
+      "or",
+      "m"
+    ],
+    "_file": "clothes-2.json"
+  },
+  {
+    "word": "button",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "u",
+      "tt",
+      "o",
+      "n"
+    ],
+    "_file": "clothes-3.json"
+  },
+  {
+    "word": "contact lens",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "n",
+      "t",
+      "a",
+      "c",
+      "t",
+      " ",
+      "l",
+      "e",
+      "n",
+      "s"
+    ],
+    "_file": "clothes-3.json"
+  },
+  {
+    "word": "cotton",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "tt",
+      "o",
+      "n"
+    ],
+    "_file": "clothes-3.json"
+  },
+  {
+    "word": "iron",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "i",
+      "ro",
+      "n"
+    ],
+    "_file": "clothes-3.json"
+  },
+  {
+    "word": "tie",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "t",
+      "ie"
+    ],
+    "_file": "clothes-3.json"
+  },
+  {
+    "word": "underwear",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "u",
+      "n",
+      "d",
+      "er",
+      "w",
+      "ea",
+      "r"
+    ],
+    "_file": "clothes-3.json"
+  },
+  {
+    "word": "wallet",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "a",
+      "ll",
+      "e",
+      "t"
+    ],
+    "_file": "clothes-3.json"
+  },
+  {
+    "word": "color",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "l",
+      "or"
+    ],
+    "_file": "colors.json"
+  },
+  {
+    "word": "gold",
+    "tags": [
+      "irregular",
+      "cluster"
+    ],
+    "graphemes": [
+      "g",
+      "o",
+      "l",
+      "d"
+    ],
+    "_file": "colors.json"
+  },
+  {
+    "word": "golden",
+    "tags": [
+      "irregular",
+      "cluster"
+    ],
+    "graphemes": [
+      "g",
+      "o",
+      "l",
+      "d",
+      "e",
+      "n"
+    ],
+    "_file": "colors.json"
+  },
+  {
+    "word": "silver",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "i",
+      "l",
+      "v",
+      "er"
+    ],
+    "_file": "colors.json"
+  },
+  {
+    "word": "yellow",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "y",
+      "e",
+      "ll",
+      "ow"
+    ],
+    "_file": "colors.json"
+  },
+  {
+    "word": "i_e, igh, ie, y",
+    "tags": [
+      "magic_e",
+      "vowel_team"
+    ],
+    "graphemes": [
+      "i_e",
+      "igh",
+      "ie",
+      "y"
+    ],
+    "_file": "combo.json"
+  },
+  {
+    "word": "au, aw",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "au",
+      "aw"
+    ],
+    "_file": "combo.json"
+  },
+  {
+    "word": "oo",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "oo【長】",
+      "oo【短】"
+    ],
+    "_file": "combo.json"
+  },
+  {
+    "word": "si, s, ge (/zh/)",
+    "tags": [
+      "digraph"
+    ],
+    "graphemes": [
+      "si",
+      "s",
+      "ge"
+    ],
+    "_file": "combo.json"
+  },
+  {
+    "word": "ng",
+    "tags": [
+      "digraph"
+    ],
+    "graphemes": [
+      "ng"
+    ],
+    "_file": "combo.json"
+  },
+  {
+    "word": "because",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "b",
+      "e",
+      "c",
+      "au",
+      "s",
+      "e"
+    ],
+    "_file": "conj.json"
+  },
+  {
+    "word": "besides",
+    "tags": [
+      "magic_e"
+    ],
+    "graphemes": [
+      "b",
+      "e",
+      "s",
+      "i",
+      "des"
+    ],
+    "_file": "conj.json"
+  },
+  {
+    "word": "however",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "ow",
+      "e",
+      "v",
+      "er"
+    ],
+    "_file": "conj.json"
+  },
+  {
+    "word": "baby",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "b",
+      "a",
+      "b",
+      "y"
+    ],
+    "_file": "family-friends-1.json"
+  },
+  {
+    "word": "cousin",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "c",
+      "ou",
+      "s",
+      "i",
+      "n"
+    ],
+    "_file": "family-friends-1.json"
+  },
+  {
+    "word": "daddy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "d",
+      "a",
+      "dd",
+      "y"
+    ],
+    "_file": "family-friends-1.json"
+  },
+  {
+    "word": "family",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "a",
+      "m",
+      "i",
+      "l",
+      "y"
+    ],
+    "_file": "family-friends-1.json"
+  },
+  {
+    "word": "mommy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "mm",
+      "y"
+    ],
+    "_file": "family-friends-1.json"
+  },
+  {
+    "word": "sister",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "i",
+      "s",
+      "t",
+      "er"
+    ],
+    "_file": "family-friends-1.json"
+  },
+  {
+    "word": "woman",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "o",
+      "m",
+      "a",
+      "n"
+    ],
+    "_file": "family-friends-1.json"
+  },
+  {
+    "word": "women",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "o",
+      "m",
+      "e",
+      "n"
+    ],
+    "_file": "family-friends-1.json"
+  },
+  {
+    "word": "daughter",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "d",
+      "augh",
+      "t",
+      "er"
+    ],
+    "_file": "family-friends-2.json"
+  },
+  {
+    "word": "elder",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "l",
+      "d",
+      "er"
+    ],
+    "_file": "family-friends-2.json"
+  },
+  {
+    "word": "marry",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "rr",
+      "y"
+    ],
+    "_file": "family-friends-2.json"
+  },
+  {
+    "word": "married",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "rr",
+      "ie",
+      "d"
+    ],
+    "_file": "family-friends-2.json"
+  },
+  {
+    "word": "relative",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "r",
+      "e",
+      "l",
+      "a",
+      "t",
+      "i",
+      "v",
+      "e"
+    ],
+    "_file": "family-friends-2.json"
+  },
+  {
+    "word": "son",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "n"
+    ],
+    "_file": "family-friends-2.json"
+  },
+  {
+    "word": "a",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "a"
+    ],
+    "_file": "first-words-1.json"
+  },
+  {
+    "word": "an",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "a",
+      "n"
+    ],
+    "_file": "first-words-1.json"
+  },
+  {
+    "word": "every",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "v",
+      "e",
+      "r",
+      "y"
+    ],
+    "_file": "first-words-1.json"
+  },
+  {
+    "word": "banana",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "a",
+      "n",
+      "a",
+      "n",
+      "a"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "carrot",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "c",
+      "a",
+      "rr",
+      "o",
+      "t"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "coconut",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "c",
+      "o",
+      "n",
+      "u",
+      "t"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "guava",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "g",
+      "u",
+      "a",
+      "v",
+      "a"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "kiwi",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "k",
+      "i",
+      "w",
+      "i"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "lemon",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "l",
+      "e",
+      "m",
+      "o",
+      "n"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "mango",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "n",
+      "g",
+      "o"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "olive",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "o",
+      "l",
+      "i",
+      "v",
+      "e"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "onion",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "o",
+      "n",
+      "i",
+      "o",
+      "n"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "papaya",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "p",
+      "a",
+      "p",
+      "ay",
+      "a"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "pea",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "p",
+      "ea"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "pear",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "p",
+      "ea",
+      "r"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "potato",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "p",
+      "o",
+      "t",
+      "a",
+      "t",
+      "o"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "pumpkin",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "p",
+      "u",
+      "m",
+      "p",
+      "k",
+      "i",
+      "n"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "tomato",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "t",
+      "o",
+      "m",
+      "a",
+      "t",
+      "o"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "watermelon",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "a",
+      "t",
+      "er",
+      "m",
+      "e",
+      "l",
+      "o",
+      "n"
+    ],
+    "_file": "food-1.json"
+  },
+  {
+    "word": "dumpling",
+    "tags": [
+      "closed",
+      "digraph"
+    ],
+    "graphemes": [
+      "d",
+      "u",
+      "m",
+      "p",
+      "l",
+      "i",
+      "ng"
+    ],
+    "_file": "food-2.json"
+  },
+  {
+    "word": "egg",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "e",
+      "gg"
+    ],
+    "_file": "food-2.json"
+  },
+  {
+    "word": "fast food",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "a",
+      "s",
+      "t",
+      " ",
+      "f",
+      "oo",
+      "d"
+    ],
+    "_file": "food-2.json"
+  },
+  {
+    "word": "hamburger",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "a",
+      "m",
+      "b",
+      "ur",
+      "g",
+      "er"
+    ],
+    "_file": "food-2.json"
+  },
+  {
+    "word": "hot dog",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "o",
+      "t",
+      " ",
+      "d",
+      "o",
+      "g"
+    ],
+    "_file": "food-2.json"
+  },
+  {
+    "word": "instant noodles",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "i",
+      "n",
+      "s",
+      "t",
+      "a",
+      "n",
+      "t",
+      " ",
+      "n",
+      "oo",
+      "d",
+      "le",
+      "s"
+    ],
+    "_file": "food-2.json"
+  },
+  {
+    "word": "pasta",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "p",
+      "a",
+      "s",
+      "t",
+      "a"
+    ],
+    "_file": "food-2.json"
+  },
+  {
+    "word": "pizza",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "p",
+      "i",
+      "zz",
+      "a"
+    ],
+    "_file": "food-2.json"
+  },
+  {
+    "word": "salad",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "a",
+      "l",
+      "a",
+      "d"
+    ],
+    "_file": "food-2.json"
+  },
+  {
+    "word": "soup",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "s",
+      "ou",
+      "p"
+    ],
+    "_file": "food-2.json"
+  },
+  {
+    "word": "tofu",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "t",
+      "o",
+      "f",
+      "u"
+    ],
+    "_file": "food-2.json"
+  },
+  {
+    "word": "butter",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "u",
+      "tt",
+      "er"
+    ],
+    "_file": "food-3.json"
+  },
+  {
+    "word": "candy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "a",
+      "n",
+      "d",
+      "y"
+    ],
+    "_file": "food-3.json"
+  },
+  {
+    "word": "dessert",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "d",
+      "e",
+      "ss",
+      "er",
+      "t"
+    ],
+    "_file": "food-3.json"
+  },
+  {
+    "word": "doughnut",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "d",
+      "ough",
+      "n",
+      "u",
+      "t"
+    ],
+    "_file": "food-3.json"
+  },
+  {
+    "word": "honey",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "h",
+      "o",
+      "n",
+      "ey"
+    ],
+    "_file": "food-3.json"
+  },
+  {
+    "word": "pancake",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "p",
+      "a",
+      "n",
+      "c",
+      "a",
+      "k",
+      "e"
+    ],
+    "_file": "food-3.json"
+  },
+  {
+    "word": "pie",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "p",
+      "ie"
+    ],
+    "_file": "food-3.json"
+  },
+  {
+    "word": "popcorn",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "p",
+      "o",
+      "p",
+      "c",
+      "or",
+      "n"
+    ],
+    "_file": "food-3.json"
+  },
+  {
+    "word": "yogurt",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "y",
+      "o",
+      "g",
+      "ur",
+      "t"
+    ],
+    "_file": "food-3.json"
+  },
+  {
+    "word": "coffee",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "ff",
+      "ee"
+    ],
+    "_file": "food-4.json"
+  },
+  {
+    "word": "cola",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "l",
+      "a"
+    ],
+    "_file": "food-4.json"
+  },
+  {
+    "word": "dinner",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "d",
+      "i",
+      "nn",
+      "er"
+    ],
+    "_file": "food-4.json"
+  },
+  {
+    "word": "ketchup",
+    "tags": [
+      "closed",
+      "digraph"
+    ],
+    "graphemes": [
+      "k",
+      "e",
+      "tch",
+      "u",
+      "p"
+    ],
+    "_file": "food-4.json"
+  },
+  {
+    "word": "liquid",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "l",
+      "i",
+      "qu",
+      "i",
+      "d"
+    ],
+    "_file": "food-4.json"
+  },
+  {
+    "word": "pepper",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "p",
+      "e",
+      "pp",
+      "er"
+    ],
+    "_file": "food-4.json"
+  },
+  {
+    "word": "picnic",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "p",
+      "i",
+      "c",
+      "n",
+      "i",
+      "c"
+    ],
+    "_file": "food-4.json"
+  },
+  {
+    "word": "salt",
+    "tags": [
+      "irregular",
+      "cluster"
+    ],
+    "graphemes": [
+      "s",
+      "a",
+      "l",
+      "t"
+    ],
+    "_file": "food-4.json"
+  },
+  {
+    "word": "soda",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "d",
+      "a"
+    ],
+    "_file": "food-4.json"
+  },
+  {
+    "word": "sugar",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "s",
+      "u",
+      "g",
+      "ar"
+    ],
+    "_file": "food-4.json"
+  },
+  {
+    "word": "supper",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "u",
+      "pp",
+      "er"
+    ],
+    "_file": "food-4.json"
+  },
+  {
+    "word": "vinegar",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "v",
+      "i",
+      "n",
+      "e",
+      "g",
+      "ar"
+    ],
+    "_file": "food-4.json"
+  },
+  {
+    "word": "water",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "a",
+      "t",
+      "er"
+    ],
+    "_file": "food-4.json"
+  },
+  {
+    "word": "bitter",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "i",
+      "tt",
+      "er"
+    ],
+    "_file": "food-5.json"
+  },
+  {
+    "word": "delicious",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "d",
+      "e",
+      "l",
+      "i",
+      "c",
+      "iou",
+      "s"
+    ],
+    "_file": "food-5.json"
+  },
+  {
+    "word": "diet",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "d",
+      "i",
+      "e",
+      "t"
+    ],
+    "_file": "food-5.json"
+  },
+  {
+    "word": "menu",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "e",
+      "n",
+      "u"
+    ],
+    "_file": "food-5.json"
+  },
+  {
+    "word": "napkin",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "n",
+      "a",
+      "p",
+      "k",
+      "i",
+      "n"
+    ],
+    "_file": "food-5.json"
+  },
+  {
+    "word": "yummy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "y",
+      "u",
+      "mm",
+      "y"
+    ],
+    "_file": "food-5.json"
+  },
+  {
+    "word": "cold",
+    "tags": [
+      "irregular",
+      "cluster"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "l",
+      "d"
+    ],
+    "_file": "health-1.json"
+  },
+  {
+    "word": "cough",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "c",
+      "ou",
+      "gh"
+    ],
+    "_file": "health-1.json"
+  },
+  {
+    "word": "doctor",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "d",
+      "o",
+      "c",
+      "t",
+      "or"
+    ],
+    "_file": "health-1.json"
+  },
+  {
+    "word": "fever",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "f",
+      "e",
+      "v",
+      "er"
+    ],
+    "_file": "health-1.json"
+  },
+  {
+    "word": "temperature",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "t",
+      "e",
+      "m",
+      "p",
+      "er",
+      "a",
+      "t",
+      "ure"
+    ],
+    "_file": "health-1.json"
+  },
+  {
+    "word": "tired",
+    "tags": [
+      "magic_e",
+      "suffix"
+    ],
+    "graphemes": [
+      "t",
+      "i",
+      "r",
+      "e",
+      "d"
+    ],
+    "_file": "health-1.json"
+  },
+  {
+    "word": "dizzy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "d",
+      "i",
+      "zz",
+      "y"
+    ],
+    "_file": "health-2.json"
+  },
+  {
+    "word": "hospital",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "o",
+      "s",
+      "p",
+      "i",
+      "t",
+      "a",
+      "l"
+    ],
+    "_file": "health-2.json"
+  },
+  {
+    "word": "matter",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "tt",
+      "er"
+    ],
+    "_file": "health-2.json"
+  },
+  {
+    "word": "recover",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "r",
+      "e",
+      "c",
+      "o",
+      "v",
+      "er"
+    ],
+    "_file": "health-2.json"
+  },
+  {
+    "word": "x-ray",
+    "tags": [],
+    "graphemes": [
+      "x",
+      "-",
+      "r",
+      "ay"
+    ],
+    "_file": "health-2.json"
+  },
+  {
+    "word": "culture",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "u",
+      "l",
+      "t",
+      "ure"
+    ],
+    "_file": "holidays.json"
+  },
+  {
+    "word": "custom",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "u",
+      "s",
+      "t",
+      "o",
+      "m"
+    ],
+    "_file": "holidays.json"
+  },
+  {
+    "word": "festival",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "e",
+      "s",
+      "t",
+      "i",
+      "v",
+      "a",
+      "l"
+    ],
+    "_file": "holidays.json"
+  },
+  {
+    "word": "Halloween",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "H",
+      "a",
+      "ll",
+      "o",
+      "w",
+      "ee",
+      "n"
+    ],
+    "_file": "holidays.json"
+  },
+  {
+    "word": "holiday",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "o",
+      "l",
+      "i",
+      "d",
+      "ay"
+    ],
+    "_file": "holidays.json"
+  },
+  {
+    "word": "lantern",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "l",
+      "a",
+      "n",
+      "t",
+      "er",
+      "n"
+    ],
+    "_file": "holidays.json"
+  },
+  {
+    "word": "Lantern Festival",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "L",
+      "a",
+      "n",
+      "t",
+      "er",
+      "n",
+      " ",
+      "F",
+      "e",
+      "s",
+      "t",
+      "i",
+      "v",
+      "a",
+      "l"
+    ],
+    "_file": "holidays.json"
+  },
+  {
+    "word": "memory",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "m",
+      "e",
+      "m",
+      "o",
+      "r",
+      "y"
+    ],
+    "_file": "holidays.json"
+  },
+  {
+    "word": "Moon Festival",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "M",
+      "oo",
+      "n",
+      " ",
+      "F",
+      "e",
+      "s",
+      "t",
+      "i",
+      "v",
+      "a",
+      "l"
+    ],
+    "_file": "holidays.json"
+  },
+  {
+    "word": "vacation",
+    "tags": [
+      "open",
+      "suffix"
+    ],
+    "graphemes": [
+      "v",
+      "a",
+      "c",
+      "a",
+      "tion"
+    ],
+    "_file": "holidays.json"
+  },
+  {
+    "word": "Valentine's Day",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "V",
+      "a",
+      "l",
+      "e",
+      "n",
+      "t",
+      "i",
+      "n",
+      "e",
+      "'s",
+      " ",
+      "D",
+      "ay"
+    ],
+    "_file": "holidays.json"
+  },
+  {
+    "word": "balcony",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "a",
+      "l",
+      "c",
+      "o",
+      "n",
+      "y"
+    ],
+    "_file": "house-1.json"
+  },
+  {
+    "word": "bedroom",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "e",
+      "d",
+      "r",
+      "oo",
+      "m"
+    ],
+    "_file": "house-1.json"
+  },
+  {
+    "word": "building",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "b",
+      "ui",
+      "l",
+      "d",
+      "i",
+      "ng"
+    ],
+    "_file": "house-1.json"
+  },
+  {
+    "word": "dining room",
+    "tags": [
+      "open",
+      "digraph"
+    ],
+    "graphemes": [
+      "d",
+      "i",
+      "n",
+      "i",
+      "ng",
+      " ",
+      "r",
+      "oo",
+      "m"
+    ],
+    "_file": "house-1.json"
+  },
+  {
+    "word": "door",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "d",
+      "oor"
+    ],
+    "_file": "house-1.json"
+  },
+  {
+    "word": "downstairs",
+    "tags": [
+      "rcontrolled"
+    ],
+    "graphemes": [
+      "d",
+      "ow",
+      "n",
+      "s",
+      "t",
+      "ai",
+      "r",
+      "s"
+    ],
+    "_file": "house-1.json"
+  },
+  {
+    "word": "kitchen",
+    "tags": [
+      "closed",
+      "digraph"
+    ],
+    "graphemes": [
+      "k",
+      "i",
+      "tch",
+      "e",
+      "n"
+    ],
+    "_file": "house-1.json"
+  },
+  {
+    "word": "living room",
+    "tags": [
+      "closed",
+      "digraph"
+    ],
+    "graphemes": [
+      "l",
+      "i",
+      "v",
+      "i",
+      "ng",
+      " ",
+      "r",
+      "oo",
+      "m"
+    ],
+    "_file": "house-1.json"
+  },
+  {
+    "word": "upstairs",
+    "tags": [
+      "rcontrolled"
+    ],
+    "graphemes": [
+      "u",
+      "p",
+      "s",
+      "t",
+      "ai",
+      "r",
+      "s"
+    ],
+    "_file": "house-1.json"
+  },
+  {
+    "word": "window",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "w",
+      "i",
+      "n",
+      "d",
+      "ow"
+    ],
+    "_file": "house-1.json"
+  },
+  {
+    "word": "camera",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "a",
+      "m",
+      "er",
+      "a"
+    ],
+    "_file": "house-2.json"
+  },
+  {
+    "word": "computer",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "m",
+      "p",
+      "u",
+      "t",
+      "er"
+    ],
+    "_file": "house-2.json"
+  },
+  {
+    "word": "light",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "l",
+      "igh",
+      "t"
+    ],
+    "_file": "house-2.json"
+  },
+  {
+    "word": "microwave",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "c",
+      "r",
+      "o",
+      "w",
+      "a",
+      "v",
+      "e"
+    ],
+    "_file": "house-2.json"
+  },
+  {
+    "word": "mirror",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "rr",
+      "or"
+    ],
+    "_file": "house-2.json"
+  },
+  {
+    "word": "oven",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "o",
+      "v",
+      "e",
+      "n"
+    ],
+    "_file": "house-2.json"
+  },
+  {
+    "word": "radio",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "r",
+      "a",
+      "d",
+      "i",
+      "o"
+    ],
+    "_file": "house-2.json"
+  },
+  {
+    "word": "sofa",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "f",
+      "a"
+    ],
+    "_file": "house-2.json"
+  },
+  {
+    "word": "television",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "t",
+      "e",
+      "l",
+      "e",
+      "v",
+      "i",
+      "si",
+      "o",
+      "n"
+    ],
+    "_file": "house-2.json"
+  },
+  {
+    "word": "video",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "v",
+      "i",
+      "d",
+      "e",
+      "o"
+    ],
+    "_file": "house-2.json"
+  },
+  {
+    "word": "basket",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "a",
+      "s",
+      "k",
+      "e",
+      "t"
+    ],
+    "_file": "house-3.json"
+  },
+  {
+    "word": "decorate",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "d",
+      "e",
+      "c",
+      "o",
+      "r",
+      "a",
+      "t",
+      "e"
+    ],
+    "_file": "house-3.json"
+  },
+  {
+    "word": "hammer",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "a",
+      "mm",
+      "er"
+    ],
+    "_file": "house-3.json"
+  },
+  {
+    "word": "hanger",
+    "tags": [
+      "closed",
+      "digraph"
+    ],
+    "graphemes": [
+      "h",
+      "a",
+      "ng",
+      "er"
+    ],
+    "_file": "house-3.json"
+  },
+  {
+    "word": "pillow",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "p",
+      "i",
+      "ll",
+      "ow"
+    ],
+    "_file": "house-3.json"
+  },
+  {
+    "word": "repair",
+    "tags": [
+      "rcontrolled"
+    ],
+    "graphemes": [
+      "r",
+      "e",
+      "p",
+      "ai",
+      "r"
+    ],
+    "_file": "house-3.json"
+  },
+  {
+    "word": "any",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "a",
+      "n",
+      "y"
+    ],
+    "_file": "indef-pron.json"
+  },
+  {
+    "word": "anyone",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "a",
+      "n",
+      "y",
+      "o",
+      "n",
+      "e"
+    ],
+    "_file": "indef-pron.json"
+  },
+  {
+    "word": "anybody",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "a",
+      "n",
+      "y",
+      "b",
+      "o",
+      "d",
+      "y"
+    ],
+    "_file": "indef-pron.json"
+  },
+  {
+    "word": "everyone",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "v",
+      "e",
+      "r",
+      "y",
+      "o",
+      "n",
+      "e"
+    ],
+    "_file": "indef-pron.json"
+  },
+  {
+    "word": "everybody",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "v",
+      "e",
+      "r",
+      "y",
+      "b",
+      "o",
+      "d",
+      "y"
+    ],
+    "_file": "indef-pron.json"
+  },
+  {
+    "word": "many",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "n",
+      "y"
+    ],
+    "_file": "indef-pron.json"
+  },
+  {
+    "word": "nobody",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "n",
+      "o",
+      "b",
+      "o",
+      "d",
+      "y"
+    ],
+    "_file": "indef-pron.json"
+  },
+  {
+    "word": "none",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "n",
+      "o",
+      "n",
+      "e"
+    ],
+    "_file": "indef-pron.json"
+  },
+  {
+    "word": "some",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "m",
+      "e"
+    ],
+    "_file": "indef-pron.json"
+  },
+  {
+    "word": "someone",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "m",
+      "e",
+      "o",
+      "n",
+      "e"
+    ],
+    "_file": "indef-pron.json"
+  },
+  {
+    "word": "somebody",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "m",
+      "e",
+      "b",
+      "o",
+      "d",
+      "y"
+    ],
+    "_file": "indef-pron.json"
+  },
+  {
+    "word": "aha",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "a",
+      "h",
+      "a"
+    ],
+    "_file": "interj.json"
+  },
+  {
+    "word": "hello",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "h",
+      "e",
+      "ll",
+      "o"
+    ],
+    "_file": "interj.json"
+  },
+  {
+    "word": "hi",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "h",
+      "i"
+    ],
+    "_file": "interj.json"
+  },
+  {
+    "word": "bye",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "b",
+      "y",
+      "e"
+    ],
+    "_file": "interj.json"
+  },
+  {
+    "word": "A a",
+    "tags": [
+      "vowel"
+    ],
+    "graphemes": [
+      "長母音【名】",
+      "短母音【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "B b",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "C c",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "D d",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "E e",
+    "tags": [
+      "vowel"
+    ],
+    "graphemes": [
+      "長母音-【名】",
+      "短母音-【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "F f",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "G g",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "H h",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "I i",
+    "tags": [
+      "vowel"
+    ],
+    "graphemes": [
+      "長母音【名】",
+      "短母音【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "J j",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "K k",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "L l",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "M m",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "N n",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "O o",
+    "tags": [
+      "vowel"
+    ],
+    "graphemes": [
+      "長母音【名】",
+      "短母音【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "P p",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "Q q",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "qu- 字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "R r",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "S s",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "T t",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "U u",
+    "tags": [
+      "vowel"
+    ],
+    "graphemes": [
+      "長母音【名】",
+      "短母音【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "V v",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "W w",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "X x",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "Y y",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "Z z",
+    "tags": [
+      "consonant"
+    ],
+    "graphemes": [
+      "字母【名】",
+      "字母【音】"
+    ],
+    "_file": "letters.json"
+  },
+  {
+    "word": "borrow",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "o",
+      "rr",
+      "ow"
+    ],
+    "_file": "money.json"
+  },
+  {
+    "word": "dollar",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "d",
+      "o",
+      "ll",
+      "ar"
+    ],
+    "_file": "money.json"
+  },
+  {
+    "word": "earn",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "ear",
+      "n"
+    ],
+    "_file": "money.json"
+  },
+  {
+    "word": "expensive",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "x",
+      "p",
+      "e",
+      "n",
+      "s",
+      "i",
+      "v",
+      "e"
+    ],
+    "_file": "money.json"
+  },
+  {
+    "word": "money",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "n",
+      "ey"
+    ],
+    "_file": "money.json"
+  },
+  {
+    "word": "action",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "a",
+      "c",
+      "tion"
+    ],
+    "_file": "nouns-1.json"
+  },
+  {
+    "word": "activity",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "a",
+      "c",
+      "t",
+      "i",
+      "v",
+      "i",
+      "t",
+      "y"
+    ],
+    "_file": "nouns-1.json"
+  },
+  {
+    "word": "attention",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "a",
+      "tt",
+      "e",
+      "n",
+      "tion"
+    ],
+    "_file": "nouns-1.json"
+  },
+  {
+    "word": "beginning",
+    "tags": [
+      "closed",
+      "digraph"
+    ],
+    "graphemes": [
+      "b",
+      "e",
+      "g",
+      "i",
+      "nn",
+      "i",
+      "ng"
+    ],
+    "_file": "nouns-1.json"
+  },
+  {
+    "word": "duty",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "d",
+      "u",
+      "t",
+      "y"
+    ],
+    "_file": "nouns-1.json"
+  },
+  {
+    "word": "effort",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "ff",
+      "or",
+      "t"
+    ],
+    "_file": "nouns-1.json"
+  },
+  {
+    "word": "exit",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "x",
+      "i",
+      "t"
+    ],
+    "_file": "nouns-1.json"
+  },
+  {
+    "word": "habit",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "a",
+      "b",
+      "i",
+      "t"
+    ],
+    "_file": "nouns-1.json"
+  },
+  {
+    "word": "invitation",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "i",
+      "n",
+      "v",
+      "i",
+      "t",
+      "a",
+      "tion"
+    ],
+    "_file": "nouns-1.json"
+  },
+  {
+    "word": "motion",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "tion"
+    ],
+    "_file": "nouns-1.json"
+  },
+  {
+    "word": "operation",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "o",
+      "p",
+      "e",
+      "r",
+      "a",
+      "tion"
+    ],
+    "_file": "nouns-1.json"
+  },
+  {
+    "word": "beauty",
+    "tags": [
+      "vowel_team",
+      "cluster"
+    ],
+    "graphemes": [
+      "b",
+      "eau",
+      "t",
+      "y"
+    ],
+    "_file": "nouns-2.json"
+  },
+  {
+    "word": "emotion",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "e",
+      "m",
+      "o",
+      "tion"
+    ],
+    "_file": "nouns-2.json"
+  },
+  {
+    "word": "enemy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "n",
+      "e",
+      "m",
+      "y"
+    ],
+    "_file": "nouns-2.json"
+  },
+  {
+    "word": "honesty",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "o",
+      "n",
+      "e",
+      "s",
+      "t",
+      "y"
+    ],
+    "_file": "nouns-2.json"
+  },
+  {
+    "word": "humor",
+    "tags": [
+      "open",
+      "suffix"
+    ],
+    "graphemes": [
+      "h",
+      "u",
+      "m",
+      "or"
+    ],
+    "_file": "nouns-2.json"
+  },
+  {
+    "word": "hunger",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "h",
+      "u",
+      "n",
+      "g",
+      "er"
+    ],
+    "_file": "nouns-2.json"
+  },
+  {
+    "word": "difficulty",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "d",
+      "i",
+      "ff",
+      "i",
+      "c",
+      "u",
+      "l",
+      "t",
+      "y"
+    ],
+    "_file": "nouns-3.json"
+  },
+  {
+    "word": "information",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "i",
+      "n",
+      "f",
+      "or",
+      "m",
+      "a",
+      "tion"
+    ],
+    "_file": "nouns-3.json"
+  },
+  {
+    "word": "manner",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "nn",
+      "er"
+    ],
+    "_file": "nouns-3.json"
+  },
+  {
+    "word": "opinion",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "o",
+      "p",
+      "i",
+      "n",
+      "i",
+      "o",
+      "n"
+    ],
+    "_file": "nouns-3.json"
+  },
+  {
+    "word": "pattern",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "p",
+      "a",
+      "tt",
+      "er",
+      "n"
+    ],
+    "_file": "nouns-3.json"
+  },
+  {
+    "word": "Asian",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "A",
+      "si",
+      "a",
+      "n"
+    ],
+    "_file": "nouns-4.json"
+  },
+  {
+    "word": "court",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "c",
+      "our",
+      "t"
+    ],
+    "_file": "nouns-4.json"
+  },
+  {
+    "word": "Japanese",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "J",
+      "a",
+      "p",
+      "a",
+      "n",
+      "e",
+      "se"
+    ],
+    "_file": "nouns-4.json"
+  },
+  {
+    "word": "kingdom",
+    "tags": [
+      "closed",
+      "digraph"
+    ],
+    "graphemes": [
+      "k",
+      "i",
+      "ng",
+      "d",
+      "o",
+      "m"
+    ],
+    "_file": "nouns-4.json"
+  },
+  {
+    "word": "Korean",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "K",
+      "o",
+      "r",
+      "e",
+      "a",
+      "n"
+    ],
+    "_file": "nouns-4.json"
+  },
+  {
+    "word": "population",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "p",
+      "o",
+      "p",
+      "u",
+      "l",
+      "a",
+      "tion"
+    ],
+    "_file": "nouns-4.json"
+  },
+  {
+    "word": "system",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "y",
+      "s",
+      "t",
+      "e",
+      "m"
+    ],
+    "_file": "nouns-4.json"
+  },
+  {
+    "word": "Taiwanese",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "T",
+      "ai",
+      "w",
+      "a",
+      "n",
+      "e",
+      "se"
+    ],
+    "_file": "nouns-4.json"
+  },
+  {
+    "word": "war",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "ar"
+    ],
+    "_file": "nouns-4.json"
+  },
+  {
+    "word": "album",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "a",
+      "l",
+      "b",
+      "u",
+      "m"
+    ],
+    "_file": "nouns-5.json"
+  },
+  {
+    "word": "cause",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "c",
+      "au",
+      "s",
+      "e"
+    ],
+    "_file": "nouns-5.json"
+  },
+  {
+    "word": "object",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "o",
+      "b",
+      "j",
+      "e",
+      "c",
+      "t"
+    ],
+    "_file": "nouns-5.json"
+  },
+  {
+    "word": "section",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "s",
+      "e",
+      "c",
+      "tion"
+    ],
+    "_file": "nouns-5.json"
+  },
+  {
+    "word": "zero",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "z",
+      "e",
+      "r",
+      "o"
+    ],
+    "_file": "numbers-1.json"
+  },
+  {
+    "word": "one",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "o",
+      "n",
+      "e"
+    ],
+    "_file": "numbers-1.json"
+  },
+  {
+    "word": "four",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "f",
+      "our"
+    ],
+    "_file": "numbers-1.json"
+  },
+  {
+    "word": "seven",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "e",
+      "v",
+      "e",
+      "n"
+    ],
+    "_file": "numbers-1.json"
+  },
+  {
+    "word": "eight",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "eigh",
+      "t"
+    ],
+    "_file": "numbers-1.json"
+  },
+  {
+    "word": "eleven",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "l",
+      "e",
+      "v",
+      "e",
+      "n"
+    ],
+    "_file": "numbers-2.json"
+  },
+  {
+    "word": "twenty",
+    "tags": [
+      "cluster",
+      "closed"
+    ],
+    "graphemes": [
+      "t",
+      "w",
+      "e",
+      "n",
+      "t",
+      "y"
+    ],
+    "_file": "numbers-3.json"
+  },
+  {
+    "word": "fifty",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "i",
+      "f",
+      "t",
+      "y"
+    ],
+    "_file": "numbers-3.json"
+  },
+  {
+    "word": "sixty",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "s",
+      "i",
+      "x",
+      "t",
+      "y"
+    ],
+    "_file": "numbers-3.json"
+  },
+  {
+    "word": "seventy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "e",
+      "v",
+      "e",
+      "n",
+      "t",
+      "y"
+    ],
+    "_file": "numbers-3.json"
+  },
+  {
+    "word": "eighty",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "eigh",
+      "t",
+      "y"
+    ],
+    "_file": "numbers-3.json"
+  },
+  {
+    "word": "ninety",
+    "tags": [
+      "magic_e"
+    ],
+    "graphemes": [
+      "n",
+      "i",
+      "n",
+      "e",
+      "t",
+      "y"
+    ],
+    "_file": "numbers-3.json"
+  },
+  {
+    "word": "million",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "ll",
+      "i",
+      "o",
+      "n"
+    ],
+    "_file": "numbers-3.json"
+  },
+  {
+    "word": "billion",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "i",
+      "ll",
+      "i",
+      "o",
+      "n"
+    ],
+    "_file": "numbers-3.json"
+  },
+  {
+    "word": "a lot",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "a",
+      " ",
+      "l",
+      "o",
+      "t"
+    ],
+    "_file": "numbers-4.json"
+  },
+  {
+    "word": "number",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "n",
+      "u",
+      "m",
+      "b",
+      "er"
+    ],
+    "_file": "numbers-4.json"
+  },
+  {
+    "word": "several",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "e",
+      "v",
+      "er",
+      "a",
+      "l"
+    ],
+    "_file": "numbers-4.json"
+  },
+  {
+    "word": "total",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "t",
+      "o",
+      "t",
+      "a",
+      "l"
+    ],
+    "_file": "numbers-4.json"
+  },
+  {
+    "word": "actor",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "a",
+      "c",
+      "t",
+      "or"
+    ],
+    "_file": "occupations-1.json"
+  },
+  {
+    "word": "actress",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "a",
+      "c",
+      "t",
+      "r",
+      "e",
+      "ss"
+    ],
+    "_file": "occupations-1.json"
+  },
+  {
+    "word": "model",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "d",
+      "e",
+      "l"
+    ],
+    "_file": "occupations-1.json"
+  },
+  {
+    "word": "singer",
+    "tags": [
+      "closed",
+      "digraph"
+    ],
+    "graphemes": [
+      "s",
+      "i",
+      "ng",
+      "er"
+    ],
+    "_file": "occupations-1.json"
+  },
+  {
+    "word": "pop star",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "p",
+      "o",
+      "p",
+      " ",
+      "s",
+      "t",
+      "ar"
+    ],
+    "_file": "occupations-1.json"
+  },
+  {
+    "word": "movie star",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "v",
+      "ie",
+      " ",
+      "s",
+      "t",
+      "ar"
+    ],
+    "_file": "occupations-1.json"
+  },
+  {
+    "word": "baby sitter",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "b",
+      "a",
+      "b",
+      "y",
+      " ",
+      "s",
+      "i",
+      "tt",
+      "er"
+    ],
+    "_file": "occupations-2.json"
+  },
+  {
+    "word": "businessman",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "b",
+      "u",
+      "si",
+      "n",
+      "e",
+      "ss",
+      "m",
+      "a",
+      "n"
+    ],
+    "_file": "occupations-3.json"
+  },
+  {
+    "word": "businesswoman",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "b",
+      "u",
+      "si",
+      "n",
+      "e",
+      "ss",
+      "w",
+      "o",
+      "m",
+      "a",
+      "n"
+    ],
+    "_file": "occupations-3.json"
+  },
+  {
+    "word": "salesman",
+    "tags": [
+      "magic_e"
+    ],
+    "graphemes": [
+      "s",
+      "a",
+      "l",
+      "e",
+      "s",
+      "m",
+      "a",
+      "n"
+    ],
+    "_file": "occupations-3.json"
+  },
+  {
+    "word": "company",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "m",
+      "p",
+      "a",
+      "n",
+      "y"
+    ],
+    "_file": "occupations-3.json"
+  },
+  {
+    "word": "office",
+    "tags": [],
+    "graphemes": [
+      "o",
+      "ff",
+      "i",
+      "ce"
+    ],
+    "_file": "occupations-3.json"
+  },
+  {
+    "word": "factory",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "a",
+      "c",
+      "t",
+      "or",
+      "y"
+    ],
+    "_file": "occupations-3.json"
+  },
+  {
+    "word": "worker",
+    "tags": [
+      "irregular",
+      "suffix"
+    ],
+    "graphemes": [
+      "w",
+      "or",
+      "k",
+      "er"
+    ],
+    "_file": "occupations-3.json"
+  },
+  {
+    "word": "firefighter",
+    "tags": [
+      "magic_e",
+      "suffix"
+    ],
+    "graphemes": [
+      "f",
+      "i",
+      "r",
+      "e",
+      "f",
+      "igh",
+      "t",
+      "er"
+    ],
+    "_file": "occupations-4.json"
+  },
+  {
+    "word": "lawyer",
+    "tags": [
+      "vowel_team",
+      "suffix"
+    ],
+    "graphemes": [
+      "l",
+      "aw",
+      "y",
+      "er"
+    ],
+    "_file": "occupations-4.json"
+  },
+  {
+    "word": "soldier",
+    "tags": [
+      "irregular",
+      "suffix"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "l",
+      "di",
+      "er"
+    ],
+    "_file": "occupations-4.json"
+  },
+  {
+    "word": "pilot",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "p",
+      "i",
+      "l",
+      "o",
+      "t"
+    ],
+    "_file": "occupations-5.json"
+  },
+  {
+    "word": "taxi",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "t",
+      "a",
+      "x",
+      "i"
+    ],
+    "_file": "occupations-5.json"
+  },
+  {
+    "word": "pirate",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "p",
+      "i",
+      "r",
+      "a",
+      "t",
+      "e"
+    ],
+    "_file": "occupations-5.json"
+  },
+  {
+    "word": "hunter",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "h",
+      "u",
+      "n",
+      "t",
+      "er"
+    ],
+    "_file": "occupations-5.json"
+  },
+  {
+    "word": "adult",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "a",
+      "d",
+      "u",
+      "l",
+      "t"
+    ],
+    "_file": "people-1.json"
+  },
+  {
+    "word": "customer",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "u",
+      "s",
+      "t",
+      "o",
+      "m",
+      "er"
+    ],
+    "_file": "people-1.json"
+  },
+  {
+    "word": "guy",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "g",
+      "uy"
+    ],
+    "_file": "people-1.json"
+  },
+  {
+    "word": "hero",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "e",
+      "r",
+      "o"
+    ],
+    "_file": "people-1.json"
+  },
+  {
+    "word": "lady",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "l",
+      "a",
+      "d",
+      "y"
+    ],
+    "_file": "people-1.json"
+  },
+  {
+    "word": "master",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "s",
+      "t",
+      "er"
+    ],
+    "_file": "people-1.json"
+  },
+  {
+    "word": "neighbor",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "n",
+      "eigh",
+      "b",
+      "or"
+    ],
+    "_file": "people-1.json"
+  },
+  {
+    "word": "visitor",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "v",
+      "i",
+      "s",
+      "i",
+      "t",
+      "or"
+    ],
+    "_file": "people-1.json"
+  },
+  {
+    "word": "beautiful",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "b",
+      "eau",
+      "t",
+      "i",
+      "f",
+      "u",
+      "l"
+    ],
+    "_file": "people-2.json"
+  },
+  {
+    "word": "heavy",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "h",
+      "ea",
+      "v",
+      "y"
+    ],
+    "_file": "people-2.json"
+  },
+  {
+    "word": "old",
+    "tags": [
+      "irregular",
+      "cluster"
+    ],
+    "graphemes": [
+      "o",
+      "l",
+      "d"
+    ],
+    "_file": "people-2.json"
+  },
+  {
+    "word": "overweight",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "o",
+      "v",
+      "er",
+      "w",
+      "eigh",
+      "t"
+    ],
+    "_file": "people-2.json"
+  },
+  {
+    "word": "ugly",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "u",
+      "g",
+      "l",
+      "y"
+    ],
+    "_file": "people-2.json"
+  },
+  {
+    "word": "underweight",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "u",
+      "n",
+      "d",
+      "er",
+      "w",
+      "eigh",
+      "t"
+    ],
+    "_file": "people-2.json"
+  },
+  {
+    "word": "young",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "y",
+      "ou",
+      "ng"
+    ],
+    "_file": "people-2.json"
+  },
+  {
+    "word": "happy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "a",
+      "pp",
+      "y"
+    ],
+    "_file": "people-3.json"
+  },
+  {
+    "word": "interested",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "i",
+      "n",
+      "t",
+      "er",
+      "e",
+      "s",
+      "t",
+      "ed"
+    ],
+    "_file": "people-3.json"
+  },
+  {
+    "word": "jealous",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "j",
+      "ea",
+      "l",
+      "ou",
+      "s"
+    ],
+    "_file": "people-3.json"
+  },
+  {
+    "word": "lonely",
+    "tags": [
+      "magic_e"
+    ],
+    "graphemes": [
+      "l",
+      "o",
+      "n",
+      "e",
+      "l",
+      "y"
+    ],
+    "_file": "people-3.json"
+  },
+  {
+    "word": "unhappy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "u",
+      "n",
+      "h",
+      "a",
+      "pp",
+      "y"
+    ],
+    "_file": "people-3.json"
+  },
+  {
+    "word": "careful",
+    "tags": [
+      "rcontrolled"
+    ],
+    "graphemes": [
+      "c",
+      "a",
+      "r",
+      "e",
+      "f",
+      "u",
+      "l"
+    ],
+    "_file": "people-4.json"
+  },
+  {
+    "word": "considerate",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "n",
+      "s",
+      "i",
+      "d",
+      "er",
+      "a",
+      "t",
+      "e"
+    ],
+    "_file": "people-4.json"
+  },
+  {
+    "word": "lazy",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "l",
+      "a",
+      "z",
+      "y"
+    ],
+    "_file": "people-4.json"
+  },
+  {
+    "word": "naughty",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "n",
+      "augh",
+      "t",
+      "y"
+    ],
+    "_file": "people-4.json"
+  },
+  {
+    "word": "active",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "a",
+      "c",
+      "t",
+      "i",
+      "v",
+      "e"
+    ],
+    "_file": "people-5.json"
+  },
+  {
+    "word": "busy",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "b",
+      "u",
+      "s",
+      "y"
+    ],
+    "_file": "people-5.json"
+  },
+  {
+    "word": "curious",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "c",
+      "u",
+      "r",
+      "i",
+      "ou",
+      "s"
+    ],
+    "_file": "people-5.json"
+  },
+  {
+    "word": "deaf",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "d",
+      "ea",
+      "f"
+    ],
+    "_file": "people-5.json"
+  },
+  {
+    "word": "evil",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "e",
+      "v",
+      "i",
+      "l"
+    ],
+    "_file": "people-5.json"
+  },
+  {
+    "word": "famous",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "f",
+      "a",
+      "m",
+      "ou",
+      "s"
+    ],
+    "_file": "people-5.json"
+  },
+  {
+    "word": "funny",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "f",
+      "u",
+      "nn",
+      "y"
+    ],
+    "_file": "people-5.json"
+  },
+  {
+    "word": "humorous",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "h",
+      "u",
+      "m",
+      "or",
+      "ou",
+      "s"
+    ],
+    "_file": "people-5.json"
+  },
+  {
+    "word": "lovely",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "l",
+      "o",
+      "v",
+      "e",
+      "l",
+      "y"
+    ],
+    "_file": "people-5.json"
+  },
+  {
+    "word": "silly",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "i",
+      "ll",
+      "y"
+    ],
+    "_file": "people-5.json"
+  },
+  {
+    "word": "ma'am",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "'am"
+    ],
+    "_file": "people-6.json"
+  },
+  {
+    "word": "Mr.",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "M",
+      "i",
+      "s",
+      "t",
+      "er"
+    ],
+    "_file": "people-6.json"
+  },
+  {
+    "word": "Mrs.",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "M",
+      "i",
+      "ss",
+      "u",
+      "s"
+    ],
+    "_file": "people-6.json"
+  },
+  {
+    "word": "Ms.",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "M",
+      "s."
+    ],
+    "_file": "people-6.json"
+  },
+  {
+    "word": "position",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "p",
+      "o",
+      "s",
+      "i",
+      "tion"
+    ],
+    "_file": "places-1.json"
+  },
+  {
+    "word": "bakery",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "b",
+      "a",
+      "k",
+      "er",
+      "y"
+    ],
+    "_file": "places-2.json"
+  },
+  {
+    "word": "buffet",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "b",
+      "u",
+      "ff",
+      "et"
+    ],
+    "_file": "places-2.json"
+  },
+  {
+    "word": "cafeteria",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "c",
+      "a",
+      "f",
+      "e",
+      "t",
+      "e",
+      "r",
+      "i",
+      "a"
+    ],
+    "_file": "places-2.json"
+  },
+  {
+    "word": "fire station",
+    "tags": [
+      "magic_e"
+    ],
+    "graphemes": [
+      "f",
+      "i",
+      "r",
+      "e",
+      " ",
+      "s",
+      "t",
+      "a",
+      "tion"
+    ],
+    "_file": "places-2.json"
+  },
+  {
+    "word": "hotel",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "o",
+      "t",
+      "e",
+      "l"
+    ],
+    "_file": "places-2.json"
+  },
+  {
+    "word": "men's room",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "m",
+      "e",
+      "n",
+      "'s",
+      " ",
+      "r",
+      "oo",
+      "m"
+    ],
+    "_file": "places-3.json"
+  },
+  {
+    "word": "women's room",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "o",
+      "m",
+      "e",
+      "n",
+      "'s",
+      " ",
+      "r",
+      "oo",
+      "m"
+    ],
+    "_file": "places-3.json"
+  },
+  {
+    "word": "museum",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "u",
+      "s",
+      "e",
+      "u",
+      "m"
+    ],
+    "_file": "places-3.json"
+  },
+  {
+    "word": "supermarket",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "s",
+      "u",
+      "p",
+      "er",
+      "m",
+      "ar",
+      "k",
+      "e",
+      "t"
+    ],
+    "_file": "places-3.json"
+  },
+  {
+    "word": "above",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "a",
+      "b",
+      "o",
+      "v",
+      "e"
+    ],
+    "_file": "prep-1.json"
+  },
+  {
+    "word": "after",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "a",
+      "f",
+      "t",
+      "er"
+    ],
+    "_file": "prep-1.json"
+  },
+  {
+    "word": "along",
+    "tags": [
+      "digraph"
+    ],
+    "graphemes": [
+      "a",
+      "l",
+      "o",
+      "ng"
+    ],
+    "_file": "prep-1.json"
+  },
+  {
+    "word": "among",
+    "tags": [
+      "irregular",
+      "digraph"
+    ],
+    "graphemes": [
+      "a",
+      "m",
+      "o",
+      "ng"
+    ],
+    "_file": "prep-1.json"
+  },
+  {
+    "word": "by",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "b",
+      "y"
+    ],
+    "_file": "prep-1.json"
+  },
+  {
+    "word": "during",
+    "tags": [
+      "rcontrolled",
+      "digraph"
+    ],
+    "graphemes": [
+      "d",
+      "u",
+      "r",
+      "i",
+      "ng"
+    ],
+    "_file": "prep-1.json"
+  },
+  {
+    "word": "into",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "i",
+      "n",
+      "t",
+      "o"
+    ],
+    "_file": "prep-2.json"
+  },
+  {
+    "word": "of",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "o",
+      "f"
+    ],
+    "_file": "prep-2.json"
+  },
+  {
+    "word": "over",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "o",
+      "v",
+      "er"
+    ],
+    "_file": "prep-2.json"
+  },
+  {
+    "word": "next to",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "n",
+      "e",
+      "x",
+      "t",
+      " ",
+      "t",
+      "o"
+    ],
+    "_file": "prep-2.json"
+  },
+  {
+    "word": "to",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "t",
+      "o"
+    ],
+    "_file": "prep-3.json"
+  },
+  {
+    "word": "toward",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "t",
+      "o",
+      "w",
+      "ar",
+      "d"
+    ],
+    "_file": "prep-3.json"
+  },
+  {
+    "word": "under",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "u",
+      "n",
+      "d",
+      "er"
+    ],
+    "_file": "prep-3.json"
+  },
+  {
+    "word": "until",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "u",
+      "n",
+      "t",
+      "i",
+      "l"
+    ],
+    "_file": "prep-3.json"
+  },
+  {
+    "word": "upon",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "u",
+      "p",
+      "o",
+      "n"
+    ],
+    "_file": "prep-3.json"
+  },
+  {
+    "word": "upper",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "u",
+      "pp",
+      "er"
+    ],
+    "_file": "prep-3.json"
+  },
+  {
+    "word": "because of",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "b",
+      "e",
+      "c",
+      "au",
+      "s",
+      "e",
+      " ",
+      "o",
+      "f"
+    ],
+    "_file": "prep-3.json"
+  },
+  {
+    "word": "I",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "I"
+    ],
+    "_file": "pron-1.json"
+  },
+  {
+    "word": "my",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "m",
+      "y"
+    ],
+    "_file": "pron-1.json"
+  },
+  {
+    "word": "me",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "m",
+      "e"
+    ],
+    "_file": "pron-1.json"
+  },
+  {
+    "word": "we",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "w",
+      "e"
+    ],
+    "_file": "pron-1.json"
+  },
+  {
+    "word": "you",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "y",
+      "ou"
+    ],
+    "_file": "pron-1.json"
+  },
+  {
+    "word": "your",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "y",
+      "ou",
+      "r"
+    ],
+    "_file": "pron-1.json"
+  },
+  {
+    "word": "yours",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "y",
+      "ou",
+      "r",
+      "s"
+    ],
+    "_file": "pron-1.json"
+  },
+  {
+    "word": "he",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "h",
+      "e"
+    ],
+    "_file": "pron-2.json"
+  },
+  {
+    "word": "his",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "h",
+      "i",
+      "s"
+    ],
+    "_file": "pron-2.json"
+  },
+  {
+    "word": "myself",
+    "tags": [
+      "closed",
+      "suffix",
+      "cluster"
+    ],
+    "graphemes": [
+      "m",
+      "y",
+      "s",
+      "e",
+      "l",
+      "f"
+    ],
+    "_file": "refl.json"
+  },
+  {
+    "word": "yourself",
+    "tags": [
+      "closed",
+      "suffix",
+      "cluster"
+    ],
+    "graphemes": [
+      "y",
+      "ou",
+      "r",
+      "s",
+      "e",
+      "l",
+      "f"
+    ],
+    "_file": "refl.json"
+  },
+  {
+    "word": "himself",
+    "tags": [
+      "closed",
+      "suffix",
+      "cluster"
+    ],
+    "graphemes": [
+      "h",
+      "i",
+      "m",
+      "s",
+      "e",
+      "l",
+      "f"
+    ],
+    "_file": "refl.json"
+  },
+  {
+    "word": "herself",
+    "tags": [
+      "closed",
+      "suffix",
+      "cluster"
+    ],
+    "graphemes": [
+      "h",
+      "er",
+      "s",
+      "e",
+      "l",
+      "f"
+    ],
+    "_file": "refl.json"
+  },
+  {
+    "word": "itself",
+    "tags": [
+      "closed",
+      "suffix",
+      "cluster"
+    ],
+    "graphemes": [
+      "i",
+      "t",
+      "s",
+      "e",
+      "l",
+      "f"
+    ],
+    "_file": "refl.json"
+  },
+  {
+    "word": "ourselves",
+    "tags": [
+      "irregular",
+      "suffix"
+    ],
+    "graphemes": [
+      "ou",
+      "r",
+      "s",
+      "e",
+      "l",
+      "v",
+      "e",
+      "s"
+    ],
+    "_file": "refl.json"
+  },
+  {
+    "word": "yourselves",
+    "tags": [
+      "irregular",
+      "suffix"
+    ],
+    "graphemes": [
+      "y",
+      "ou",
+      "r",
+      "s",
+      "e",
+      "l",
+      "v",
+      "e",
+      "s"
+    ],
+    "_file": "refl.json"
+  },
+  {
+    "word": "campus",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "c",
+      "a",
+      "m",
+      "p",
+      "u",
+      "s"
+    ],
+    "_file": "school-1.json"
+  },
+  {
+    "word": "board",
+    "tags": [
+      "rcontrolled"
+    ],
+    "graphemes": [
+      "b",
+      "oar",
+      "d"
+    ],
+    "_file": "school-2.json"
+  },
+  {
+    "word": "diary",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "d",
+      "i",
+      "a",
+      "r",
+      "y"
+    ],
+    "_file": "school-2.json"
+  },
+  {
+    "word": "dictionary",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "d",
+      "i",
+      "c",
+      "tion",
+      "a",
+      "r",
+      "y"
+    ],
+    "_file": "school-2.json"
+  },
+  {
+    "word": "envelope",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "n",
+      "v",
+      "e",
+      "l",
+      "o",
+      "p",
+      "e"
+    ],
+    "_file": "school-2.json"
+  },
+  {
+    "word": "eraser",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "e",
+      "r",
+      "a",
+      "s",
+      "er"
+    ],
+    "_file": "school-2.json"
+  },
+  {
+    "word": "letter",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "l",
+      "e",
+      "tt",
+      "er"
+    ],
+    "_file": "school-2.json"
+  },
+  {
+    "word": "magazine",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "a",
+      "g",
+      "a",
+      "z",
+      "i",
+      "n",
+      "e"
+    ],
+    "_file": "school-2.json"
+  },
+  {
+    "word": "notebook",
+    "tags": [
+      "magic_e"
+    ],
+    "graphemes": [
+      "n",
+      "o",
+      "t",
+      "e",
+      "b",
+      "oo",
+      "k"
+    ],
+    "_file": "school-2.json"
+  },
+  {
+    "word": "paper",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "p",
+      "a",
+      "p",
+      "er"
+    ],
+    "_file": "school-2.json"
+  },
+  {
+    "word": "picture",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "p",
+      "i",
+      "c",
+      "t",
+      "ure"
+    ],
+    "_file": "school-2.json"
+  },
+  {
+    "word": "ruler",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "r",
+      "u",
+      "l",
+      "er"
+    ],
+    "_file": "school-2.json"
+  },
+  {
+    "word": "textbook",
+    "tags": [
+      "closed",
+      "cluster"
+    ],
+    "graphemes": [
+      "t",
+      "e",
+      "x",
+      "t",
+      "b",
+      "oo",
+      "k"
+    ],
+    "_file": "school-2.json"
+  },
+  {
+    "word": "course",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "c",
+      "our",
+      "s",
+      "e"
+    ],
+    "_file": "school-3.json"
+  },
+  {
+    "word": "history",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "i",
+      "s",
+      "t",
+      "o",
+      "r",
+      "y"
+    ],
+    "_file": "school-3.json"
+  },
+  {
+    "word": "law",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "l",
+      "aw"
+    ],
+    "_file": "school-3.json"
+  },
+  {
+    "word": "music",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "m",
+      "u",
+      "s",
+      "i",
+      "c"
+    ],
+    "_file": "school-3.json"
+  },
+  {
+    "word": "PE",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "P",
+      "E"
+    ],
+    "_file": "school-3.json"
+  },
+  {
+    "word": "conversation",
+    "tags": [
+      "open",
+      "suffix"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "n",
+      "v",
+      "er",
+      "s",
+      "a",
+      "tion"
+    ],
+    "_file": "school-4.json"
+  },
+  {
+    "word": "exam",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "e",
+      "x",
+      "a",
+      "m"
+    ],
+    "_file": "school-4.json"
+  },
+  {
+    "word": "final",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "f",
+      "i",
+      "n",
+      "a",
+      "l"
+    ],
+    "_file": "school-4.json"
+  },
+  {
+    "word": "homework",
+    "tags": [
+      "magic_e"
+    ],
+    "graphemes": [
+      "h",
+      "o",
+      "m",
+      "e",
+      "w",
+      "or",
+      "k"
+    ],
+    "_file": "school-4.json"
+  },
+  {
+    "word": "poem",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "p",
+      "o",
+      "e",
+      "m"
+    ],
+    "_file": "school-4.json"
+  },
+  {
+    "word": "kilogram",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "k",
+      "i",
+      "l",
+      "o",
+      "g",
+      "r",
+      "a",
+      "m"
+    ],
+    "_file": "size-1.json"
+  },
+  {
+    "word": "kilometer",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "k",
+      "i",
+      "l",
+      "o",
+      "m",
+      "e",
+      "t",
+      "er"
+    ],
+    "_file": "size-1.json"
+  },
+  {
+    "word": "liter",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "l",
+      "i",
+      "t",
+      "er"
+    ],
+    "_file": "size-1.json"
+  },
+  {
+    "word": "meter",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "m",
+      "e",
+      "t",
+      "er"
+    ],
+    "_file": "size-1.json"
+  },
+  {
+    "word": "height",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "h",
+      "eigh",
+      "t"
+    ],
+    "_file": "size-1.json"
+  },
+  {
+    "word": "weight",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "w",
+      "eigh",
+      "t"
+    ],
+    "_file": "size-1.json"
+  },
+  {
+    "word": "measure",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "ea",
+      "s",
+      "ure"
+    ],
+    "_file": "size-1.json"
+  },
+  {
+    "word": "high",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "h",
+      "igh"
+    ],
+    "_file": "size-3.json"
+  },
+  {
+    "word": "long",
+    "tags": [
+      "digraph"
+    ],
+    "graphemes": [
+      "l",
+      "o",
+      "ng"
+    ],
+    "_file": "size-3.json"
+  },
+  {
+    "word": "medium",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "m",
+      "e",
+      "d",
+      "i",
+      "u",
+      "m"
+    ],
+    "_file": "size-3.json"
+  },
+  {
+    "word": "minus",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "n",
+      "u",
+      "s"
+    ],
+    "_file": "size-3.json"
+  },
+  {
+    "word": "tiny",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "t",
+      "i",
+      "n",
+      "y"
+    ],
+    "_file": "size-3.json"
+  },
+  {
+    "word": "dozen",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "d",
+      "o",
+      "z",
+      "e",
+      "n"
+    ],
+    "_file": "size-3.json"
+  },
+  {
+    "word": "Venus",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "V",
+      "e",
+      "n",
+      "u",
+      "s"
+    ],
+    "_file": "space.json"
+  },
+  {
+    "word": "Jupiter",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "J",
+      "u",
+      "p",
+      "i",
+      "t",
+      "er"
+    ],
+    "_file": "space.json"
+  },
+  {
+    "word": "Saturn",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "S",
+      "a",
+      "t",
+      "ur",
+      "n"
+    ],
+    "_file": "space.json"
+  },
+  {
+    "word": "Uranus",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "U",
+      "r",
+      "a",
+      "n",
+      "u",
+      "s"
+    ],
+    "_file": "space.json"
+  },
+  {
+    "word": "Neptune",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "N",
+      "e",
+      "p",
+      "t",
+      "u",
+      "n",
+      "e"
+    ],
+    "_file": "space.json"
+  },
+  {
+    "word": "Milky Way",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "M",
+      "i",
+      "l",
+      "k",
+      "y",
+      " ",
+      "W",
+      "ay"
+    ],
+    "_file": "space.json"
+  },
+  {
+    "word": "meteor",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "m",
+      "e",
+      "t",
+      "e",
+      "or"
+    ],
+    "_file": "space.json"
+  },
+  {
+    "word": "comet",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "m",
+      "e",
+      "t"
+    ],
+    "_file": "space.json"
+  },
+  {
+    "word": "galaxy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "g",
+      "a",
+      "l",
+      "a",
+      "x",
+      "y"
+    ],
+    "_file": "space.json"
+  },
+  {
+    "word": "universe",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "u",
+      "n",
+      "i",
+      "v",
+      "er",
+      "s",
+      "e"
+    ],
+    "_file": "space.json"
+  },
+  {
+    "word": "satellite",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "a",
+      "t",
+      "e",
+      "ll",
+      "i",
+      "t",
+      "e"
+    ],
+    "_file": "space.json"
+  },
+  {
+    "word": "badminton",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "a",
+      "d",
+      "m",
+      "i",
+      "n",
+      "t",
+      "o",
+      "n"
+    ],
+    "_file": "sports-1.json"
+  },
+  {
+    "word": "soccer",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "o",
+      "cc",
+      "er"
+    ],
+    "_file": "sports-1.json"
+  },
+  {
+    "word": "tennis",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "t",
+      "e",
+      "nn",
+      "i",
+      "s"
+    ],
+    "_file": "sports-1.json"
+  },
+  {
+    "word": "winner",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "w",
+      "i",
+      "nn",
+      "er"
+    ],
+    "_file": "sports-1.json"
+  },
+  {
+    "word": "loser",
+    "tags": [
+      "irregular",
+      "suffix"
+    ],
+    "graphemes": [
+      "l",
+      "o",
+      "s",
+      "er"
+    ],
+    "_file": "sports-1.json"
+  },
+  {
+    "word": "comic",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "m",
+      "i",
+      "c"
+    ],
+    "_file": "sports-3.json"
+  },
+  {
+    "word": "computer game",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "c",
+      "o",
+      "m",
+      "p",
+      "u",
+      "t",
+      "er",
+      " ",
+      "g",
+      "a",
+      "m",
+      "e"
+    ],
+    "_file": "sports-3.json"
+  },
+  {
+    "word": "guitar",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "g",
+      "ui",
+      "t",
+      "ar"
+    ],
+    "_file": "sports-3.json"
+  },
+  {
+    "word": "movie",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "o",
+      "v",
+      "ie"
+    ],
+    "_file": "sports-3.json"
+  },
+  {
+    "word": "novel",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "n",
+      "o",
+      "v",
+      "e",
+      "l"
+    ],
+    "_file": "sports-3.json"
+  },
+  {
+    "word": "piano",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "p",
+      "i",
+      "a",
+      "n",
+      "o"
+    ],
+    "_file": "sports-3.json"
+  },
+  {
+    "word": "robot",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "r",
+      "o",
+      "b",
+      "o",
+      "t"
+    ],
+    "_file": "sports-3.json"
+  },
+  {
+    "word": "violin",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "v",
+      "i",
+      "o",
+      "l",
+      "i",
+      "n"
+    ],
+    "_file": "sports-3.json"
+  },
+  {
+    "word": "calendar",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "c",
+      "a",
+      "l",
+      "e",
+      "n",
+      "d",
+      "ar"
+    ],
+    "_file": "time-1.json"
+  },
+  {
+    "word": "minute",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "n",
+      "u",
+      "t",
+      "e"
+    ],
+    "_file": "time-1.json"
+  },
+  {
+    "word": "quarter",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "qu",
+      "ar",
+      "t",
+      "er"
+    ],
+    "_file": "time-1.json"
+  },
+  {
+    "word": "dawn",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "d",
+      "aw",
+      "n"
+    ],
+    "_file": "time-2.json"
+  },
+  {
+    "word": "evening",
+    "tags": [
+      "magic_e",
+      "digraph"
+    ],
+    "graphemes": [
+      "e",
+      "v",
+      "e",
+      "n",
+      "i",
+      "ng"
+    ],
+    "_file": "time-2.json"
+  },
+  {
+    "word": "night",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "n",
+      "igh",
+      "t"
+    ],
+    "_file": "time-2.json"
+  },
+  {
+    "word": "midnight",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "m",
+      "i",
+      "d",
+      "n",
+      "igh",
+      "t"
+    ],
+    "_file": "time-2.json"
+  },
+  {
+    "word": "tonight",
+    "tags": [
+      "vowel_team"
+    ],
+    "graphemes": [
+      "t",
+      "o",
+      "n",
+      "igh",
+      "t"
+    ],
+    "_file": "time-2.json"
+  },
+  {
+    "word": "tomorrow",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "t",
+      "o",
+      "m",
+      "o",
+      "rr",
+      "ow"
+    ],
+    "_file": "time-2.json"
+  },
+  {
+    "word": "yesterday",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "y",
+      "e",
+      "s",
+      "t",
+      "er",
+      "d",
+      "ay"
+    ],
+    "_file": "time-2.json"
+  },
+  {
+    "word": "Monday",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "M",
+      "o",
+      "n",
+      "d",
+      "ay"
+    ],
+    "_file": "time-3.json"
+  },
+  {
+    "word": "Saturday",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "S",
+      "a",
+      "t",
+      "ur",
+      "d",
+      "ay"
+    ],
+    "_file": "time-3.json"
+  },
+  {
+    "word": "Sunday",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "S",
+      "u",
+      "n",
+      "d",
+      "ay"
+    ],
+    "_file": "time-3.json"
+  },
+  {
+    "word": "January",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "J",
+      "a",
+      "n",
+      "u",
+      "a",
+      "r",
+      "y"
+    ],
+    "_file": "time-4.json"
+  },
+  {
+    "word": "February",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "F",
+      "e",
+      "b",
+      "r",
+      "u",
+      "a",
+      "r",
+      "y"
+    ],
+    "_file": "time-4.json"
+  },
+  {
+    "word": "April",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "A",
+      "p",
+      "r",
+      "i",
+      "l"
+    ],
+    "_file": "time-4.json"
+  },
+  {
+    "word": "July",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "J",
+      "u",
+      "l",
+      "y"
+    ],
+    "_file": "time-4.json"
+  },
+  {
+    "word": "September",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "S",
+      "e",
+      "p",
+      "t",
+      "e",
+      "m",
+      "b",
+      "er"
+    ],
+    "_file": "time-4.json"
+  },
+  {
+    "word": "October",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "O",
+      "c",
+      "t",
+      "o",
+      "b",
+      "er"
+    ],
+    "_file": "time-4.json"
+  },
+  {
+    "word": "November",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "N",
+      "o",
+      "v",
+      "e",
+      "m",
+      "b",
+      "er"
+    ],
+    "_file": "time-4.json"
+  },
+  {
+    "word": "ago",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "a",
+      "g",
+      "o"
+    ],
+    "_file": "time-5.json"
+  },
+  {
+    "word": "already",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "a",
+      "l",
+      "r",
+      "ea",
+      "d",
+      "y"
+    ],
+    "_file": "time-5.json"
+  },
+  {
+    "word": "future",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "f",
+      "u",
+      "t",
+      "ure"
+    ],
+    "_file": "time-5.json"
+  },
+  {
+    "word": "later",
+    "tags": [
+      "open",
+      "suffix"
+    ],
+    "graphemes": [
+      "l",
+      "a",
+      "t",
+      "er"
+    ],
+    "_file": "time-5.json"
+  },
+  {
+    "word": "summer",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "s",
+      "u",
+      "mm",
+      "er"
+    ],
+    "_file": "time-5.json"
+  },
+  {
+    "word": "winter",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "w",
+      "i",
+      "n",
+      "t",
+      "er"
+    ],
+    "_file": "time-5.json"
+  },
+  {
+    "word": "airlines",
+    "tags": [
+      "rcontrolled",
+      "suffix"
+    ],
+    "graphemes": [
+      "ai",
+      "r",
+      "l",
+      "i",
+      "n",
+      "e",
+      "s"
+    ],
+    "_file": "transportation-1.json"
+  },
+  {
+    "word": "bus stop",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "b",
+      "u",
+      "s",
+      " ",
+      "s",
+      "t",
+      "o",
+      "p"
+    ],
+    "_file": "transportation-1.json"
+  },
+  {
+    "word": "overpass",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "o",
+      "v",
+      "er",
+      "p",
+      "a",
+      "ss"
+    ],
+    "_file": "transportation-1.json"
+  },
+  {
+    "word": "helicopter",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "h",
+      "e",
+      "l",
+      "i",
+      "c",
+      "o",
+      "p",
+      "t",
+      "er"
+    ],
+    "_file": "transportation-2.json"
+  },
+  {
+    "word": "humid",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "h",
+      "u",
+      "m",
+      "i",
+      "d"
+    ],
+    "_file": "weather-1.json"
+  },
+  {
+    "word": "windy",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "w",
+      "i",
+      "n",
+      "d",
+      "y"
+    ],
+    "_file": "weather-1.json"
+  },
+  {
+    "word": "warm",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "w",
+      "ar",
+      "m"
+    ],
+    "_file": "weather-1.json"
+  },
+  {
+    "word": "sunny",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "s",
+      "u",
+      "nn",
+      "y"
+    ],
+    "_file": "weather-1.json"
+  },
+  {
+    "word": "foggy",
+    "tags": [
+      "closed",
+      "suffix"
+    ],
+    "graphemes": [
+      "f",
+      "o",
+      "gg",
+      "y"
+    ],
+    "_file": "weather-2.json"
+  },
+  {
+    "word": "lightning",
+    "tags": [
+      "digraph"
+    ],
+    "graphemes": [
+      "l",
+      "igh",
+      "t",
+      "n",
+      "i",
+      "ng"
+    ],
+    "_file": "weather-2.json"
+  },
+  {
+    "word": "nature",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "n",
+      "a",
+      "t",
+      "ure"
+    ],
+    "_file": "weather-3.json"
+  },
+  {
+    "word": "world",
+    "tags": [
+      "irregular",
+      "cluster"
+    ],
+    "graphemes": [
+      "w",
+      "or",
+      "l",
+      "d"
+    ],
+    "_file": "world-1.json"
+  },
+  {
+    "word": "nation",
+    "tags": [
+      "open",
+      "suffix"
+    ],
+    "graphemes": [
+      "n",
+      "a",
+      "tion"
+    ],
+    "_file": "world-1.json"
+  },
+  {
+    "word": "nationality",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "n",
+      "a",
+      "tion",
+      "a",
+      "l",
+      "i",
+      "t",
+      "y"
+    ],
+    "_file": "world-1.json"
+  },
+  {
+    "word": "equator",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "e",
+      "qu",
+      "a",
+      "t",
+      "or"
+    ],
+    "_file": "world-1.json"
+  },
+  {
+    "word": "Atlantic",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "A",
+      "t",
+      "l",
+      "a",
+      "n",
+      "t",
+      "i",
+      "c"
+    ],
+    "_file": "world-1.json"
+  },
+  {
+    "word": "Indian",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "I",
+      "n",
+      "d",
+      "i",
+      "a",
+      "n"
+    ],
+    "_file": "world-1.json"
+  },
+  {
+    "word": "Asia",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "A",
+      "s",
+      "ia"
+    ],
+    "_file": "world-2.json"
+  },
+  {
+    "word": "Oceania",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "O",
+      "c",
+      "e",
+      "a",
+      "n",
+      "i",
+      "a"
+    ],
+    "_file": "world-2.json"
+  },
+  {
+    "word": "Taiwan",
+    "tags": [
+      "irregular"
+    ],
+    "graphemes": [
+      "T",
+      "ai",
+      "w",
+      "a",
+      "n"
+    ],
+    "_file": "world-2.json"
+  },
+  {
+    "word": "Mandarin",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "M",
+      "a",
+      "n",
+      "d",
+      "a",
+      "r",
+      "i",
+      "n"
+    ],
+    "_file": "world-2.json"
+  },
+  {
+    "word": "Japan",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "J",
+      "a",
+      "p",
+      "a",
+      "n"
+    ],
+    "_file": "world-2.json"
+  },
+  {
+    "word": "India",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "I",
+      "n",
+      "d",
+      "i",
+      "a"
+    ],
+    "_file": "world-2.json"
+  },
+  {
+    "word": "Europe",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "Eu",
+      "r",
+      "o",
+      "p",
+      "e"
+    ],
+    "_file": "world-3.json"
+  },
+  {
+    "word": "UK",
+    "tags": [],
+    "graphemes": [
+      "U",
+      "K"
+    ],
+    "_file": "world-3.json"
+  },
+  {
+    "word": "Italy",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "I",
+      "t",
+      "a",
+      "l",
+      "y"
+    ],
+    "_file": "world-3.json"
+  },
+  {
+    "word": "Portuguese",
+    "tags": [
+      "suffix"
+    ],
+    "graphemes": [
+      "P",
+      "or",
+      "t",
+      "u",
+      "g",
+      "e",
+      "s",
+      "e"
+    ],
+    "_file": "world-3.json"
+  },
+  {
+    "word": "Kenya",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "K",
+      "e",
+      "n",
+      "y",
+      "a"
+    ],
+    "_file": "world-3.json"
+  },
+  {
+    "word": "America",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "A",
+      "m",
+      "e",
+      "r",
+      "i",
+      "c",
+      "a"
+    ],
+    "_file": "world-4.json"
+  },
+  {
+    "word": "American",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "A",
+      "m",
+      "e",
+      "r",
+      "i",
+      "c",
+      "a",
+      "n"
+    ],
+    "_file": "world-4.json"
+  },
+  {
+    "word": "USA",
+    "tags": [],
+    "graphemes": [
+      "U",
+      "S",
+      "A"
+    ],
+    "_file": "world-4.json"
+  },
+  {
+    "word": "Canada",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "C",
+      "a",
+      "n",
+      "a",
+      "d",
+      "a"
+    ],
+    "_file": "world-4.json"
+  },
+  {
+    "word": "Canadian",
+    "tags": [
+      "open"
+    ],
+    "graphemes": [
+      "C",
+      "a",
+      "n",
+      "a",
+      "d",
+      "i",
+      "a",
+      "n"
+    ],
+    "_file": "world-4.json"
+  },
+  {
+    "word": "Mexico",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "M",
+      "e",
+      "x",
+      "i",
+      "c",
+      "o"
+    ],
+    "_file": "world-4.json"
+  },
+  {
+    "word": "Mexican",
+    "tags": [
+      "closed"
+    ],
+    "graphemes": [
+      "M",
+      "e",
+      "x",
+      "i",
+      "c",
+      "a",
+      "n"
+    ],
+    "_file": "world-4.json"
+  }
+]

@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Phonics Quiz 英文拼讀測驗</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+/* ── Reset & Base ─────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; -webkit-tap-highlight-color: transparent; }
+body {
+  font-family: 'Nunito', 'Noto Sans TC', sans-serif;
+  background: #FFF8F0;
+  color: #333;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── CSS Variables ────────────────────────────────────── */
+:root {
+  --primary: #FF6B35;
+  --primary-dark: #E55A2B;
+  --secondary: #4ECDC4;
+  --correct: #00B894;
+  --wrong: #FF7675;
+  --star: #F9CA24;
+  --phoneme-bg: #F0EEFF;
+  --phoneme-border: #A29BFE;
+  --vowel-bg: #FFF0F0;
+  --vowel-border: #FF7675;
+  --bg: #FFF8F0;
+  --card: #FFFFFF;
+  --shadow: 0 2px 12px rgba(0,0,0,0.08);
+  --radius: 16px;
+}
+
+/* ── Layout ───────────────────────────────────────────── */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ───────────────────────────────────────────── */
+.app-header {
+  text-align: center;
+  padding: 20px 0 12px;
+}
+.app-header h1 {
+  font-size: clamp(1.4rem, 5vw, 2rem);
+  font-weight: 800;
+  color: var(--primary);
+}
+.app-header .subtitle {
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  color: #888;
+  margin-top: 4px;
+}
+
+/* ── Breadcrumb / Back ────────────────────────────────── */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--card);
+  border: 2px solid #eee;
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.btn-back:hover { border-color: var(--primary); color: var(--primary); }
+.btn-back:active { transform: scale(0.96); }
+
+/* ── Cards ────────────────────────────────────────────── */
+.card-grid {
+  display: grid;
+  gap: 12px;
+}
+.stage-cards { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.unit-cards { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+.mode-cards { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; width: 100%; }
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0,0,0,0.12); border-color: var(--primary); }
+.card:active { transform: scale(0.97); }
+
+.card-emoji { font-size: 2rem; margin-bottom: 8px; }
+.card-title { font-size: 1.1rem; font-weight: 700; color: #333; }
+.card-desc { font-size: 0.85rem; color: #888; margin-top: 4px; }
+.card-badge {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-top: 8px;
+}
+
+.mode-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+}
+.mode-icon { font-size: 2.2rem; }
+.mode-info { flex: 1; }
+.mode-info .card-title { font-size: 1.15rem; }
+
+/* ── Quiz Screen ──────────────────────────────────────── */
+.quiz-screen { flex: 1; display: flex; flex-direction: column; }
+
+/* Progress bar */
+.progress-bar-wrap {
+  background: #f0e6dd;
+  border-radius: 20px;
+  height: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--secondary), var(--primary));
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+.quiz-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  color: #888;
+  font-weight: 600;
+}
+.quiz-stars { color: var(--star); font-size: 1.1rem; }
+
+/* Question area */
+.question-area {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.question-prompt { font-size: clamp(1rem, 4vw, 1.3rem); font-weight: 700; color: #555; margin-bottom: 16px; }
+.question-emoji { font-size: 3rem; margin-bottom: 8px; }
+.question-zh { font-size: 1.1rem; color: #888; margin-bottom: 12px; }
+
+/* Speaker button */
+.btn-speak {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--secondary);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  min-width: 48px;
+  min-height: 48px;
+}
+.btn-speak:hover { background: #3dbdb4; }
+.btn-speak:active { transform: scale(0.95); }
+.btn-speak.pulse {
+  animation: pulse 0.6s ease-in-out;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+/* Options grid */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+.option-btn {
+  background: var(--card);
+  border: 3px solid #e8e4f0;
+  border-radius: 14px;
+  padding: 16px 12px;
+  font-size: clamp(1rem, 4vw, 1.25rem);
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  transition: all 0.15s;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.option-btn:hover { border-color: var(--primary); background: #fff5f0; }
+.option-btn:active { transform: scale(0.96); }
+.option-btn.correct {
+  border-color: var(--correct);
+  background: #e6fff8;
+  color: var(--correct);
+}
+.option-btn.wrong {
+  border-color: var(--wrong);
+  background: #fff0f0;
+  color: var(--wrong);
+}
+.option-btn.disabled { pointer-events: none; opacity: 0.6; }
+.option-btn.show-correct {
+  border-color: var(--correct);
+  background: #e6fff8;
+}
+
+/* ── Spelling Mode ────────────────────────────────────── */
+.spelling-area { margin-top: 8px; }
+
+.answer-slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  min-height: 64px;
+  padding: 12px;
+  background: #faf6f2;
+  border-radius: 14px;
+  border: 2px dashed #e0d8d0;
+}
+.answer-slot {
+  width: clamp(48px, 12vw, 72px);
+  height: clamp(48px, 12vw, 72px);
+  border: 3px dashed #ccc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1rem, 4vw, 1.4rem);
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  background: #fff;
+  transition: all 0.2s;
+  position: relative;
+}
+.answer-slot .slot-num {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.65rem;
+  color: #aaa;
+  background: #faf6f2;
+  padding: 0 4px;
+  font-weight: 600;
+}
+.answer-slot.highlight {
+  border-color: var(--primary);
+  border-style: solid;
+  background: #fff5f0;
+  transform: scale(1.05);
+}
+.answer-slot.filled {
+  border-style: solid;
+  border-color: var(--phoneme-border);
+  background: var(--phoneme-bg);
+}
+.answer-slot.correct-slot {
+  border-color: var(--correct);
+  background: #e6fff8;
+}
+.answer-slot.wrong-slot {
+  border-color: var(--wrong);
+  background: #fff0f0;
+}
+
+.tile-pool {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  min-height: 64px;
+}
+.grapheme-tile {
+  width: clamp(48px, 12vw, 72px);
+  height: clamp(48px, 12vw, 72px);
+  background: var(--phoneme-bg);
+  border: 3px solid var(--phoneme-border);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1rem, 4vw, 1.4rem);
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  cursor: grab;
+  transition: all 0.15s;
+  user-select: none;
+  touch-action: none;
+  -webkit-user-select: none;
+  position: relative;
+}
+.grapheme-tile::after {
+  content: '🔈';
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  font-size: 0.55rem;
+  opacity: 0.4;
+  pointer-events: none;
+}
+.grapheme-tile:active { cursor: grabbing; }
+.grapheme-tile.dragging {
+  opacity: 0.5;
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+.grapheme-tile.used { display: none; }
+
+/* Floating drag clone */
+.drag-clone {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.85;
+  transform: scale(1.15);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+}
+
+/* Spelling buttons */
+.spelling-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+.btn-hint, .btn-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  min-height: 48px;
+  transition: all 0.2s;
+}
+.btn-hint { background: #f0e6dd; color: #b08a6a; }
+.btn-hint:hover { background: #e8d8cc; }
+.btn-check { background: var(--primary); color: #fff; }
+.btn-check:hover { background: var(--primary-dark); }
+
+/* ── Grapheme-Phoneme Mapping ─────────────────────────── */
+.gp-mapping {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 16px;
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.gp-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.gp-grapheme {
+  background: var(--phoneme-bg);
+  border: 2px solid var(--phoneme-border);
+  border-radius: 10px;
+  padding: 6px 12px;
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  min-width: 36px;
+  text-align: center;
+}
+.gp-grapheme.vowel {
+  background: var(--vowel-bg);
+  border-color: var(--vowel-border);
+}
+.gp-grapheme .heart {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  font-size: 0.7rem;
+}
+.gp-phoneme {
+  font-size: 0.8rem;
+  color: #888;
+  font-weight: 600;
+}
+
+/* ── Result Screen ────────────────────────────────────── */
+.result-screen {
+  text-align: center;
+  padding: 24px 0;
+}
+.result-emoji { font-size: 4rem; margin-bottom: 8px; }
+.result-msg {
+  font-size: clamp(1.2rem, 5vw, 1.6rem);
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.result-score {
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 4px;
+}
+.result-stars {
+  font-size: 2rem;
+  color: var(--star);
+  margin: 12px 0;
+}
+@keyframes starPop {
+  0% { transform: scale(0) rotate(-30deg); opacity: 0; }
+  60% { transform: scale(1.3) rotate(10deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+.result-stars .star {
+  display: inline-block;
+  animation: starPop 0.4s ease forwards;
+  opacity: 0;
+}
+
+.result-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+.btn-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  min-height: 48px;
+  transition: all 0.2s;
+}
+.btn-action:active { transform: scale(0.96); }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: var(--primary-dark); }
+.btn-secondary { background: #f0e6dd; color: #b08a6a; }
+.btn-secondary:hover { background: #e8d8cc; }
+
+/* Wrong review section */
+.wrong-review {
+  text-align: left;
+  margin-top: 24px;
+}
+.wrong-review h3 {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.wrong-item {
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 16px;
+  margin-bottom: 12px;
+}
+.wrong-word {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--wrong);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.wrong-word .btn-speak {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  min-height: 36px;
+}
+
+/* ── Footer ───────────────────────────────────────────── */
+.app-footer {
+  margin-top: auto;
+  padding: 32px 16px 20px;
+  text-align: center;
+  border-top: 1px solid #f0e6dd;
+}
+.footer-tools {
+  margin-bottom: 16px;
+}
+.footer-tools a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--card);
+  border: 2px solid #eee;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+.footer-tools a:hover { border-color: var(--primary); color: var(--primary); }
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 16px 0;
+}
+.footer-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #f8f0e8;
+  color: var(--primary);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.footer-icons a:hover { background: var(--primary); color: #fff; }
+
+.footer-cta {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 12px 0;
+}
+.footer-copy {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 8px;
+}
+.footer-copy a {
+  color: #aaa;
+  text-decoration: none;
+}
+.footer-copy a:hover { color: var(--primary); }
+
+/* ── Quest Map ────────────────────────────────────────── */
+.quest-map {
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -16px;
+  scrollbar-width: none;
+  touch-action: pan-x;
+}
+.quest-map::-webkit-scrollbar { display: none; }
+
+.map-inner {
+  position: relative;
+  width: 1500px;
+  height: 380px;
+  background:
+    radial-gradient(circle at 15% 85%, rgba(139,195,74,0.5) 0%, transparent 30%),
+    radial-gradient(circle at 40% 15%, rgba(156,204,101,0.4) 0%, transparent 25%),
+    radial-gradient(circle at 65% 80%, rgba(139,195,74,0.35) 0%, transparent 30%),
+    radial-gradient(circle at 85% 25%, rgba(165,214,167,0.4) 0%, transparent 25%),
+    linear-gradient(180deg, #7CB342 0%, #689F38 50%, #558B2F 100%);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.map-path {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+}
+.map-deco {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  line-height: 1;
+}
+.map-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.map-node:hover { transform: translate(-50%, -50%) scale(1.08); }
+.map-node:active { transform: translate(-50%, -50%) scale(0.93); }
+
+.node-circle {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #fff;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.2), 0 8px 20px rgba(0,0,0,0.15);
+  border: 3px solid rgba(255,255,255,0.5);
+  position: relative;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.node-emoji {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  font-size: 1.3rem;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
+}
+.node-label {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  white-space: nowrap;
+}
+.node-stars {
+  display: flex;
+  gap: 1px;
+  margin-top: 2px;
+}
+.node-stars .star-on {
+  color: #FFD700;
+  font-size: 0.9rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+.node-stars .star-off {
+  color: rgba(255,255,255,0.35);
+  font-size: 0.9rem;
+}
+
+/* Right-edge fade overlay to hint at more content */
+.quest-map::after {
+  content: '';
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  width: 40px;
+  background: linear-gradient(to right, transparent, rgba(85,139,47,0.35));
+  pointer-events: none;
+  z-index: 4;
+  border-radius: 0 20px 20px 0;
+  transition: opacity 0.3s;
+}
+.quest-map.scrolled-end::after { opacity: 0; }
+
+.map-scroll-hint {
+  text-align: center;
+  color: #999;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px 0 2px;
+  animation: hintFade 5s ease forwards;
+}
+@keyframes hintFade {
+  0%, 70% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 420px) {
+  .container { padding: 10px; }
+  .question-area { padding: 16px; }
+  .options-grid { gap: 8px; }
+  .option-btn { padding: 12px 8px; font-size: 1rem; min-height: 48px; }
+  .answer-slot, .grapheme-tile {
+    width: 48px;
+    height: 48px;
+    font-size: 1rem;
+  }
+  .stage-cards { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 421px) and (max-width: 680px) {
+  .stage-cards { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 681px) {
+  .answer-slot, .grapheme-tile {
+    width: 72px;
+    height: 72px;
+    font-size: 1.4rem;
+  }
+  .option-btn { font-size: 1.25rem; padding: 18px 16px; }
+}
+
+/* Landscape phone */
+@media (max-height: 500px) and (orientation: landscape) {
+  .app-header { padding: 8px 0; }
+  .app-header h1 { font-size: 1.2rem; }
+  .question-area { padding: 12px; }
+  .question-emoji { font-size: 2rem; }
+}
+
+/* ── Utility ──────────────────────────────────────────── */
+.hidden { display: none !important; }
+.text-center { text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="container" id="app">
+  <!-- Header -->
+  <header class="app-header" id="header">
+    <h1>Phonics Quiz</h1>
+    <div class="subtitle">英文拼讀測驗</div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav-bar hidden" id="nav">
+    <button class="btn-back" id="btnBack" aria-label="返回上一頁">← 返回</button>
+    <span id="navTitle" style="font-weight:600;color:#888;font-size:0.9rem;"></span>
+  </nav>
+
+  <!-- Main content area -->
+  <main id="content"></main>
+
+  <!-- Footer (only on home) -->
+  <footer class="app-footer" id="footer">
+    <div class="footer-tools">
+      <a href="https://jinshuanyu.github.io/word-mapper/" target="_blank" rel="noopener">📖 Word Mapper 英文拼字 × 聲音對照</a>
+    </div>
+    <div class="footer-icons">
+      <a href="mailto:mamahowma@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.facebook.com/mamahowma" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://portaly.cc/mamahowma/support" target="_blank" rel="noopener" aria-label="贊助"><i class="fa-solid fa-mug-hot"></i></a>
+    </div>
+    <div class="footer-cta">免費工具好用嗎？☕ 請我喝杯咖啡支持創作</div>
+    <div class="footer-copy">
+      &copy; 2025 Christina Yu. All rights reserved.<br>
+      <a href="https://github.com/jinshuanyu/phonics-quiz" target="_blank" rel="noopener">GitHub 原始碼</a>
+    </div>
+  </footer>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════
+   Phonics Quiz — Main Application
+   ═══════════════════════════════════════════════════════════ */
+
+// ── Config ─────────────────────────────────────────────
+const AUDIO_BASE = 'https://jinshuanyu.github.io/word-mapper/';
+const QUESTIONS_PER_ROUND = 8;
+
+// ── IPA Phoneme → Audio Map (from phoneme-audio.json) ──
+// Maps IPA symbols to their SOUND audio files (not letter names)
+const IPA_AUDIO = {
+  'p': 'audio/phonemes/c1.mp3', 'b': 'audio/phonemes/c2.mp3',
+  't': 'audio/phonemes/c3.mp3', 'd': 'audio/phonemes/c4.mp3',
+  'k': 'audio/phonemes/c5.mp3', 'ɡ': 'audio/phonemes/c6.mp3',
+  'f': 'audio/phonemes/c7.mp3', 'v': 'audio/phonemes/c8.mp3',
+  'θ': 'audio/phonemes/c9.mp3', 'ð': 'audio/phonemes/c10.mp3',
+  's': 'audio/phonemes/c11.mp3', 'z': 'audio/phonemes/c12.mp3',
+  'ʃ': 'audio/phonemes/c13.mp3', 'ʒ': 'audio/phonemes/c14.mp3',
+  'tʃ': 'audio/phonemes/c15.mp3', 'dʒ': 'audio/phonemes/c16.mp3',
+  'h': 'audio/phonemes/c17.mp3', 'm': 'audio/phonemes/c18.mp3',
+  'n': 'audio/phonemes/c19.mp3', 'ŋ': 'audio/phonemes/c20.mp3',
+  'l': 'audio/phonemes/c21.mp3', 'r': 'audio/phonemes/c22.mp3',
+  'w': 'audio/phonemes/c23.mp3', 'j': 'audio/phonemes/c24.mp3',
+  'ks': 'audio/phonemes/ks.mp3', 'kw': 'audio/phonemes/kw.mp3',
+  'ts': 'audio/phonemes/ts.mp3', 'ds': 'audio/phonemes/dz.mp3',
+  'ɡz': 'audio/phonemes/gz.mp3',
+  // Vowels — short
+  'æ': 'audio/phonemes/a_short.mp3', 'ɛ': 'audio/phonemes/e_short.mp3',
+  'ɪ': 'audio/phonemes/i_short.mp3', 'ɑ': 'audio/phonemes/o_short.mp3',
+  'ʌ': 'audio/phonemes/u_short.mp3', 'ʊ': 'audio/phonemes/oo.mp3',
+  'ɔ': 'audio/phonemes/aw.mp3',
+  // Vowels — long / diphthongs
+  'eɪ': 'audio/phonemes/a_long.mp3', 'i': 'audio/phonemes/e_long.mp3',
+  'aɪ': 'audio/phonemes/i_long.mp3', 'oʊ': 'audio/phonemes/o_long.mp3',
+  'u': 'audio/phonemes/u_long.mp3', 'ju': 'audio/phonemes/yu.mp3',
+  'ɔɪ': 'audio/phonemes/oi.mp3', 'aʊ': 'audio/phonemes/ow.mp3',
+  // R-controlled
+  'ɑr': 'audio/phonemes/ar.mp3', 'ɔr': 'audio/phonemes/or.mp3',
+  'ɝ': 'audio/phonemes/er_stressed.mp3', 'ɚ': 'audio/phonemes/er_unstressed.mp3',
+  // Schwa & combos
+  'ə': 'audio/phonemes/schwa.mp3', 'əl': 'audio/phonemes/le.mp3',
+  'ən': 'audio/phonemes/en.mp3', 'ɪd': 'audio/phonemes/ed.mp3',
+  'ɪz': 'audio/phonemes/es.mp3', 'ʃən': 'audio/phonemes/tion.mp3',
+  // Phonics notation aliases
+  'ă': 'audio/phonemes/a_short.mp3', 'ĕ': 'audio/phonemes/e_short.mp3',
+  'ĭ': 'audio/phonemes/i_short.mp3', 'ŏ': 'audio/phonemes/o_short.mp3',
+  'ŭ': 'audio/phonemes/u_short.mp3',
+  'ā': 'audio/phonemes/a_long.mp3', 'ē': 'audio/phonemes/e_long.mp3',
+  'ī': 'audio/phonemes/i_long.mp3', 'ō': 'audio/phonemes/o_long.mp3',
+  'ū': 'audio/phonemes/u_long.mp3',
+  "'s": 'audio/phonemes/c11.mp3', "'z": 'audio/phonemes/c12.mp3',
+  "'dʒ": 'audio/phonemes/c16.mp3', "'tʃ": 'audio/phonemes/c15.mp3',
+  "-": null, // silent
+};
+
+// Grapheme → default IPA phoneme (for distractor tiles without word context)
+const GRAPHEME_DEFAULT_IPA = {
+  'b':'b','c':'k','d':'d','f':'f','g':'ɡ','h':'h','j':'dʒ','k':'k',
+  'l':'l','m':'m','n':'n','p':'p','q':'kw','r':'r','s':'s','t':'t',
+  'v':'v','w':'w','x':'ks','y':'j','z':'z',
+  'a':'æ','e':'ɛ','i':'ɪ','o':'ɑ','u':'ʌ',
+  'sh':'ʃ','ch':'tʃ','tch':'tʃ','th':'θ','wh':'w','ph':'f','ck':'k',
+  'ng':'ŋ','dge':'dʒ','ge':'dʒ','qu':'kw',
+  'ai':'eɪ','ay':'eɪ','ee':'i','ea':'i','oa':'oʊ','ow':'aʊ',
+  'oo':'u','oi':'ɔɪ','oy':'ɔɪ','ou':'aʊ','ew':'ju','ue':'ju','ui':'ju',
+  'au':'ɔ','aw':'ɔ','ey':'i',
+  'ar':'ɑr','or':'ɔr','ore':'ɔr','er':'ɝ','ir':'ɝ','ur':'ɝ','ear':'ɝ',
+  'ff':'f','ll':'l','ss':'s','zz':'z','dd':'d','bb':'b','gg':'ɡ',
+  'mm':'m','nn':'n','pp':'p','rr':'r','tt':'t','cc':'k',
+  'le':'əl',
+};
+
+// ── State ──────────────────────────────────────────────
+let DATA = null;
+let currentStage = null;
+let currentUnit = null;
+let currentMode = null; // 'listen' | 'picture' | 'spell'
+let quizWords = [];
+let currentQ = 0;
+let score = 0;
+let wrongItems = [];
+let usedHint = false;
+let spellingState = null;
+let currentLevelIdx = null;
+let currentUnitIdx = null;
+
+// ── DOM refs ───────────────────────────────────────────
+const $content = document.getElementById('content');
+const $nav = document.getElementById('nav');
+const $navTitle = document.getElementById('navTitle');
+const $btnBack = document.getElementById('btnBack');
+const $footer = document.getElementById('footer');
+const $header = document.getElementById('header');
+
+// ── Init ───────────────────────────────────────────────
+async function init() {
+  try {
+    const res = await fetch('data/units.json');
+    DATA = await res.json();
+    showHome();
+  } catch (e) {
+    $content.innerHTML = '<p style="text-align:center;color:var(--wrong);padding:40px;">載入資料失敗，請重新整理頁面。</p>';
+  }
+}
+
+// ── Navigation ─────────────────────────────────────────
+const history_stack = [];
+
+function pushView(name, renderFn) {
+  history_stack.push({ name, renderFn });
+  renderFn();
+}
+
+function goBack() {
+  if (history_stack.length > 1) {
+    history_stack.pop();
+    const prev = history_stack[history_stack.length - 1];
+    prev.renderFn();
+  }
+}
+
+$btnBack.addEventListener('click', goBack);
+
+function showNav(title) {
+  $nav.classList.remove('hidden');
+  $navTitle.textContent = title || '';
+}
+function hideNav() { $nav.classList.add('hidden'); }
+
+// ── Home: Level list ───────────────────────────────────
+function showHome() {
+  history_stack.length = 0;
+  pushView('home', renderHome);
+}
+
+function renderHome() {
+  hideNav();
+  $footer.classList.remove('hidden');
+  $header.classList.remove('hidden');
+
+  const progress = loadProgress();
+
+  const LEVEL_COLORS = [
+    'linear-gradient(135deg, #5B9BD5, #3A7BD5)',
+    'linear-gradient(135deg, #43A047, #2E7D32)',
+    'linear-gradient(135deg, #FFA726, #EF6C00)',
+    'linear-gradient(135deg, #AB47BC, #7B1FA2)',
+    'linear-gradient(135deg, #EC407A, #C2185B)',
+    'linear-gradient(135deg, #FFC107, #F9A825)',
+    'linear-gradient(135deg, #EF5350, #C62828)',
+  ];
+  const SHORT_NAMES = ['字母', '短母音', 'R母音', '子音組', '雙母音', '長母音', '進階'];
+
+  const nodes = [
+    { x: 120, y: 270 }, { x: 310, y: 120 }, { x: 500, y: 270 },
+    { x: 690, y: 120 }, { x: 880, y: 270 }, { x: 1070, y: 120 },
+    { x: 1260, y: 270 },
+  ];
+
+  // SVG winding path
+  const pathD = 'M 120,270 C 215,270 215,120 310,120 S 405,270 500,270 S 595,120 690,120 S 785,270 880,270 S 975,120 1070,120 S 1165,270 1260,270';
+
+  const decos = [
+    { e:'🌳', x:40,  y:155, s:'2.2rem' },
+    { e:'🌲', x:195, y:45,  s:'1.8rem' },
+    { e:'🌸', x:410, y:175, s:'1.3rem' },
+    { e:'🌳', x:585, y:45,  s:'2rem' },
+    { e:'🌻', x:785, y:190, s:'1.2rem' },
+    { e:'🌲', x:965, y:50,  s:'1.8rem' },
+    { e:'🦋', x:1175,y:190, s:'1.1rem' },
+    { e:'🌺', x:55,  y:340, s:'1.1rem' },
+    { e:'🏠', x:600, y:310, s:'1.5rem' },
+    { e:'🏰', x:1400,y:110, s:'2.2rem' },
+    { e:'☁️', x:300, y:25,  s:'2rem',   o:0.5 },
+    { e:'☁️', x:750, y:30,  s:'1.6rem', o:0.45 },
+    { e:'☁️', x:1100,y:20,  s:'1.8rem', o:0.5 },
+    { e:'🐦', x:830, y:75,  s:'1rem' },
+    { e:'🌳', x:1370,y:280, s:'1.8rem' },
+  ];
+
+  let html = '<div class="quest-map"><div class="map-inner">';
+
+  // SVG road
+  html += `<svg class="map-path" viewBox="0 0 1500 380">
+    <path d="${pathD}" stroke="rgba(0,0,0,0.1)" stroke-width="36" fill="none" stroke-linecap="round"/>
+    <path d="${pathD}" stroke="#D7B899" stroke-width="30" fill="none" stroke-linecap="round"/>
+    <path d="${pathD}" stroke="#E8CDB0" stroke-width="22" fill="none" stroke-linecap="round"/>
+  </svg>`;
+
+  // Decorations
+  decos.forEach(d => {
+    html += `<div class="map-deco" style="left:${d.x}px;top:${d.y}px;font-size:${d.s};${d.o ? 'opacity:'+d.o : ''}">${d.e}</div>`;
+  });
+
+  // Level nodes
+  DATA.levels.forEach((level, idx) => {
+    const pos = nodes[idx];
+    const color = LEVEL_COLORS[idx] || LEVEL_COLORS[0];
+    const name = SHORT_NAMES[idx] || level.name;
+    const emoji = level.emoji || '📚';
+    const stars = getLevelStars(progress, idx);
+
+    html += `
+      <div class="map-node" style="left:${pos.x}px;top:${pos.y}px;" onclick="selectLevel(${idx})" role="button" tabindex="0" aria-label="${level.name}">
+        <div class="node-circle" style="background:${color};">
+          ${idx + 1}
+          <span class="node-emoji">${emoji}</span>
+        </div>
+        <div class="node-label">${name}</div>
+        <div class="node-stars">
+          ${[0,1,2].map(i => `<span class="${i < stars ? 'star-on' : 'star-off'}">★</span>`).join('')}
+        </div>
+      </div>`;
+  });
+
+  html += '</div></div>'; // close map-inner, quest-map
+  // Scroll hint sits OUTSIDE the scrolling container
+  html += '<div class="map-scroll-hint">👆 左右滑動探索更多關卡</div>';
+  $content.innerHTML = html;
+
+  // Hide right-edge gradient when scrolled to end
+  const mapEl = document.querySelector('.quest-map');
+  if (mapEl) {
+    mapEl.addEventListener('scroll', () => {
+      const atEnd = mapEl.scrollLeft + mapEl.clientWidth >= mapEl.scrollWidth - 10;
+      mapEl.classList.toggle('scrolled-end', atEnd);
+    });
+  }
+}
+
+// ── Level: Unit list ──────────────────────────────────
+function selectLevel(idx) {
+  currentLevelIdx = idx;
+  currentStage = DATA.levels[idx];
+  pushView('units', () => renderUnits(idx));
+}
+
+function renderUnits(levelIdx) {
+  showNav(currentStage.name);
+  $footer.classList.add('hidden');
+
+  let html = '<div class="card-grid unit-cards">';
+  currentStage.units.forEach((unit, i) => {
+    const isSpecial = unit.isSpecial;
+    const isEmpty = unit.words.length === 0 && !isSpecial;
+    const badge = isSpecial ? '🔤' : `${unit.words.length} 字`;
+    html += `
+      <div class="card ${isEmpty ? 'disabled-mode' : ''}" onclick="${isEmpty ? '' : `selectUnit(${levelIdx}, ${i})`}"
+           role="button" tabindex="0" style="${isEmpty ? 'opacity:0.5;cursor:default;' : ''}">
+        <div class="card-title">${unit.name}</div>
+        <div class="card-desc">${unit.pattern}</div>
+        <div class="card-badge">${badge}</div>
+      </div>`;
+  });
+  html += '</div>';
+  $content.innerHTML = html;
+}
+
+// ── Unit: Mode select ──────────────────────────────────
+function selectUnit(levelIdx, unitIdx) {
+  currentLevelIdx = levelIdx;
+  currentUnitIdx = unitIdx;
+  currentStage = DATA.levels[levelIdx];
+  currentUnit = currentStage.units[unitIdx];
+  pushView('modes', () => renderModes(levelIdx, unitIdx));
+}
+
+function renderModes(levelIdx, unitIdx) {
+  showNav(`${currentUnit.name}`);
+
+  // Check if picture mode is available
+  const picWords = currentUnit.words.filter(w => w.zh && w.img);
+  const picAvailable = picWords.length >= 4;
+
+  let html = '<div class="card-grid mode-cards">';
+  html += `
+    <div class="card mode-card" onclick="startQuiz('listen')" role="button" tabindex="0">
+      <div class="mode-icon">🎧</div>
+      <div class="mode-info">
+        <div class="card-title">聽音選字</div>
+        <div class="card-desc">聽發音，選出正確的單字</div>
+      </div>
+    </div>`;
+  html += `
+    <div class="card mode-card ${picAvailable ? '' : 'disabled-mode'}" onclick="${picAvailable ? "startQuiz('picture')" : ''}" role="button" tabindex="0"
+         style="${picAvailable ? '' : 'opacity:0.5;cursor:default;'}">
+      <div class="mode-icon">🖼️</div>
+      <div class="mode-info">
+        <div class="card-title">看圖選字</div>
+        <div class="card-desc">${picAvailable ? '看 emoji 和中文，選出正確單字' : '此單元資料不足，暫不可用'}</div>
+      </div>
+    </div>`;
+  html += `
+    <div class="card mode-card" onclick="startQuiz('spell')" role="button" tabindex="0">
+      <div class="mode-icon">✏️</div>
+      <div class="mode-info">
+        <div class="card-title">拼字挑戰</div>
+        <div class="card-desc">拖拉 grapheme 拼出正確單字</div>
+      </div>
+    </div>`;
+  html += '</div>';
+  $content.innerHTML = html;
+}
+
+// ── Start Quiz ─────────────────────────────────────────
+function startQuiz(mode) {
+  currentMode = mode;
+  score = 0;
+  currentQ = 0;
+  wrongItems = [];
+
+  // Pick words for this round
+  let pool = currentUnit.words;
+  if (mode === 'picture') {
+    pool = pool.filter(w => w.zh && w.img);
+  }
+  pool = shuffle([...pool]);
+  quizWords = pool.slice(0, QUESTIONS_PER_ROUND);
+
+  pushView('quiz', () => renderQuestion());
+}
+
+function renderQuestion() {
+  if (currentQ >= quizWords.length) {
+    renderResult();
+    return;
+  }
+
+  showNav(`${currentQ + 1} / ${quizWords.length}`);
+  $footer.classList.add('hidden');
+
+  const word = quizWords[currentQ];
+
+  let html = '<div class="quiz-screen">';
+  // Progress bar
+  html += `
+    <div class="progress-bar-wrap">
+      <div class="progress-bar-fill" style="width:${(currentQ / quizWords.length) * 100}%"></div>
+    </div>
+    <div class="quiz-status">
+      <span>第 ${currentQ + 1} / ${quizWords.length} 題</span>
+      <span class="quiz-stars">${'⭐'.repeat(score)}</span>
+    </div>`;
+
+  if (currentMode === 'listen') {
+    html += renderListenQuestion(word);
+  } else if (currentMode === 'picture') {
+    html += renderPictureQuestion(word);
+  } else {
+    html += renderSpellQuestion(word);
+  }
+
+  html += '</div>';
+  $content.innerHTML = html;
+
+  // Auto-play for picture mode
+  if (currentMode === 'picture') {
+    setTimeout(() => speakWord(word), 300);
+  }
+
+  // Init spelling drag if needed
+  if (currentMode === 'spell') {
+    initSpelling(word);
+  }
+}
+
+// ── Listen Mode ────────────────────────────────────────
+function renderListenQuestion(word) {
+  const options = getOptions(word, 4);
+  let html = `
+    <div class="question-area">
+      <div class="question-prompt">聽發音，選出正確的單字</div>
+      <button class="btn-speak" onclick="speakWord(quizWords[${currentQ}])" aria-label="播放發音">
+        🔊 播放發音
+      </button>
+    </div>
+    <div class="options-grid" id="optionsGrid">`;
+  options.forEach((opt, i) => {
+    html += `<button class="option-btn" data-word="${opt.word}" onclick="checkAnswer(this, '${escHtml(opt.word)}', '${escHtml(word.word)}')">${escHtml(opt.word)}</button>`;
+  });
+  html += '</div>';
+  return html;
+}
+
+// ── Picture Mode ───────────────────────────────────────
+function renderPictureQuestion(word) {
+  const options = getOptions(word, 4, true);
+  let html = `
+    <div class="question-area">
+      <div class="question-prompt">看圖片和提示，選出正確的單字</div>
+      <div class="question-emoji">${word.img || ''}</div>
+      <div class="question-zh">${escHtml(word.zh || '')}</div>
+      <button class="btn-speak" onclick="speakWord(quizWords[${currentQ}])" aria-label="再聽一次" style="background:#e8e4f0;color:#666;">
+        🔈 再聽一次
+      </button>
+    </div>
+    <div class="options-grid" id="optionsGrid">`;
+  options.forEach((opt, i) => {
+    html += `<button class="option-btn" data-word="${opt.word}" onclick="checkAnswer(this, '${escHtml(opt.word)}', '${escHtml(word.word)}')">${escHtml(opt.word)}</button>`;
+  });
+  html += '</div>';
+  return html;
+}
+
+// ── Spell Mode ─────────────────────────────────────────
+function renderSpellQuestion(word) {
+  const graphemes = word.graphemes;
+  // Distractors: 2-3 graphemes from same unit
+  const distractors = getDistractorGraphemes(word, 3);
+  // Tag each tile with its original grapheme index (-1 for distractors)
+  const taggedTiles = [
+    ...graphemes.map((g, i) => ({ g, gidx: i })),
+    ...distractors.map(g => ({ g, gidx: -1 })),
+  ];
+  const allTiles = shuffle(taggedTiles);
+
+  let html = `
+    <div class="question-area">
+      <div class="question-prompt">拖拉拼寫單位，拼出正確的字</div>
+      <div style="font-size:0.8rem;color:#aaa;margin-bottom:8px;">點方塊聽發音 · 拖拉到格子拼字</div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;">
+        <button class="btn-speak" onclick="speakWord(quizWords[${currentQ}])" aria-label="播放發音">
+          🔊 播放
+        </button>
+        ${word.img ? `<span style="font-size:2rem;">${word.img}</span>` : ''}
+        ${word.zh ? `<span style="color:#888;">${escHtml(word.zh)}</span>` : ''}
+      </div>
+    </div>
+    <div class="spelling-area">
+      <div class="answer-slots" id="answerSlots">`;
+  graphemes.forEach((g, i) => {
+    html += `<div class="answer-slot" data-idx="${i}" id="slot-${i}"><span class="slot-num">${i + 1}</span></div>`;
+  });
+  html += `</div>
+      <div class="tile-pool" id="tilePool">`;
+  allTiles.forEach((t, i) => {
+    html += `<div class="grapheme-tile" data-grapheme="${escHtml(t.g)}" data-gidx="${t.gidx}" id="tile-${i}">${escHtml(t.g)}</div>`;
+  });
+  html += `</div>
+      <div class="spelling-actions">
+        <button class="btn-hint" onclick="useHint()" aria-label="提示">💡 提示</button>
+        <button class="btn-check" onclick="checkSpelling()" aria-label="確認" id="btnCheck">✅ 確認</button>
+      </div>
+    </div>`;
+  return html;
+}
+
+// ── Spelling Drag & Drop ───────────────────────────────
+function initSpelling(word) {
+  spellingState = {
+    word,
+    slots: new Array(word.graphemes.length).fill(null), // tileId in each slot
+    hintCount: 0,
+  };
+  usedHint = false;
+
+  const pool = document.getElementById('tilePool');
+  const slotsEl = document.getElementById('answerSlots');
+  if (!pool || !slotsEl) return;
+
+  // Setup drag for each tile
+  pool.querySelectorAll('.grapheme-tile').forEach(tile => {
+    setupDrag(tile);
+  });
+}
+
+let dragState = null;
+let dragClone = null;
+
+function setupDrag(tile) {
+  // Mouse events
+  tile.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    startDrag(tile, e.clientX, e.clientY);
+  });
+
+  // Touch events
+  tile.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    const t = e.touches[0];
+    startDrag(tile, t.clientX, t.clientY);
+  }, { passive: false });
+}
+
+const DRAG_THRESHOLD = 8; // px — below this is a tap, not a drag
+
+function startDrag(tile, x, y) {
+  if (tile.classList.contains('used')) return;
+
+  const grapheme = tile.dataset.grapheme;
+  const gidx = parseInt(tile.dataset.gidx || '-1');
+
+  dragState = {
+    tile,
+    tileId: tile.id,
+    grapheme,
+    gidx,
+    fromSlot: tile.closest('.answer-slot') ? parseInt(tile.closest('.answer-slot').dataset.idx) : -1,
+    startX: x,
+    startY: y,
+    moved: false,
+  };
+
+  // Play phoneme sound immediately on press (for both tap and drag)
+  const word = spellingState ? spellingState.word : null;
+  speakGrapheme(grapheme, word, gidx);
+
+  // Don't create clone yet — wait for movement
+  tile.classList.add('dragging');
+
+  document.addEventListener('mousemove', onDragMove);
+  document.addEventListener('mouseup', onDragEnd);
+  document.addEventListener('touchmove', onDragMoveTouch, { passive: false });
+  document.addEventListener('touchend', onDragEndTouch);
+}
+
+function ensureDragClone(tile, x, y) {
+  if (dragClone) return;
+  dragClone = tile.cloneNode(true);
+  dragClone.className = 'grapheme-tile drag-clone';
+  dragClone.style.width = tile.offsetWidth + 'px';
+  dragClone.style.height = tile.offsetHeight + 'px';
+  dragClone.style.left = (x - tile.offsetWidth / 2) + 'px';
+  dragClone.style.top = (y - tile.offsetHeight / 2) + 'px';
+  document.body.appendChild(dragClone);
+}
+
+function onDragMove(e) { moveDrag(e.clientX, e.clientY); }
+function onDragMoveTouch(e) {
+  e.preventDefault();
+  const t = e.touches[0];
+  moveDrag(t.clientX, t.clientY);
+}
+
+function moveDrag(x, y) {
+  if (!dragState) return;
+
+  // Check if we've moved past the tap threshold
+  const dx = x - dragState.startX;
+  const dy = y - dragState.startY;
+  if (!dragState.moved && (dx * dx + dy * dy) > DRAG_THRESHOLD * DRAG_THRESHOLD) {
+    dragState.moved = true;
+    ensureDragClone(dragState.tile, x, y);
+  }
+
+  if (!dragClone) return;
+  dragClone.style.left = (x - dragClone.offsetWidth / 2) + 'px';
+  dragClone.style.top = (y - dragClone.offsetHeight / 2) + 'px';
+
+  // Highlight nearby slots
+  const slots = document.querySelectorAll('.answer-slot');
+  slots.forEach(slot => {
+    const rect = slot.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top + rect.height / 2;
+    const dist = Math.sqrt((x - cx) ** 2 + (y - cy) ** 2);
+    const threshold = Math.max(60, rect.width);
+    if (dist < threshold && !slot.classList.contains('filled')) {
+      slot.classList.add('highlight');
+    } else {
+      slot.classList.remove('highlight');
+    }
+  });
+}
+
+function onDragEnd(e) { endDrag(e.clientX, e.clientY); }
+function onDragEndTouch(e) {
+  const t = e.changedTouches[0];
+  endDrag(t.clientX, t.clientY);
+}
+
+function endDrag(x, y) {
+  document.removeEventListener('mousemove', onDragMove);
+  document.removeEventListener('mouseup', onDragEnd);
+  document.removeEventListener('touchmove', onDragMoveTouch);
+  document.removeEventListener('touchend', onDragEndTouch);
+
+  if (!dragState) return;
+  const { tile, tileId, grapheme, gidx, fromSlot, moved } = dragState;
+
+  tile.classList.remove('dragging');
+  if (dragClone) { dragClone.remove(); dragClone = null; }
+
+  // If it was a tap (no drag movement), just visual feedback (sound already played on press)
+  if (!moved) {
+    tile.style.transform = 'scale(1.1)';
+    tile.style.boxShadow = '0 0 12px rgba(162, 155, 254, 0.6)';
+    setTimeout(() => { tile.style.transform = ''; tile.style.boxShadow = ''; }, 300);
+    dragState = null;
+    return;
+  }
+
+  // Find target slot
+  const slots = document.querySelectorAll('.answer-slot');
+  let targetSlot = null;
+  let minDist = Infinity;
+  slots.forEach(slot => {
+    slot.classList.remove('highlight');
+    const rect = slot.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top + rect.height / 2;
+    const dist = Math.sqrt((x - cx) ** 2 + (y - cy) ** 2);
+    const threshold = Math.max(60, rect.width);
+    if (dist < threshold && dist < minDist) {
+      minDist = dist;
+      targetSlot = slot;
+    }
+  });
+
+  // Check if dropped back on pool
+  const poolEl = document.getElementById('tilePool');
+  if (poolEl) {
+    const poolRect = poolEl.getBoundingClientRect();
+    if (x >= poolRect.left && x <= poolRect.right && y >= poolRect.top && y <= poolRect.bottom) {
+      // Return to pool
+      if (fromSlot >= 0) {
+        removeFromSlot(fromSlot);
+      }
+      dragState = null;
+      return;
+    }
+  }
+
+  if (targetSlot && !targetSlot.classList.contains('filled')) {
+    const slotIdx = parseInt(targetSlot.dataset.idx);
+
+    // If coming from another slot, clear old slot
+    if (fromSlot >= 0) {
+      spellingState.slots[fromSlot] = null;
+      const oldSlot = document.getElementById('slot-' + fromSlot);
+      if (oldSlot) {
+        oldSlot.classList.remove('filled');
+        // Remove tile from old slot
+        const oldTile = oldSlot.querySelector('.grapheme-tile');
+        if (oldTile) oldSlot.removeChild(oldTile);
+        // Restore slot number
+        if (!oldSlot.querySelector('.slot-num')) {
+          const num = document.createElement('span');
+          num.className = 'slot-num';
+          num.textContent = fromSlot + 1;
+          oldSlot.appendChild(num);
+        }
+      }
+    }
+
+    // Place in slot
+    placeInSlot(slotIdx, tile, grapheme);
+  } else if (targetSlot && targetSlot.classList.contains('filled')) {
+    // Swap: remove existing tile from slot, put it back in pool
+    const slotIdx = parseInt(targetSlot.dataset.idx);
+    removeFromSlot(slotIdx);
+    if (fromSlot >= 0) {
+      removeFromSlot(fromSlot);
+    }
+    placeInSlot(slotIdx, tile, grapheme);
+  }
+
+  dragState = null;
+}
+
+function placeInSlot(slotIdx, tile, grapheme) {
+  spellingState.slots[slotIdx] = { tileId: tile.id, grapheme };
+  const slot = document.getElementById('slot-' + slotIdx);
+  if (!slot) return;
+
+  // Hide the slot number
+  const numEl = slot.querySelector('.slot-num');
+  if (numEl) numEl.style.display = 'none';
+
+  // Move tile into slot (visually)
+  slot.classList.add('filled');
+  const newTile = tile.cloneNode(true);
+  newTile.id = tile.id + '-in-slot';
+  newTile.classList.remove('dragging');
+  newTile.style.position = '';
+  newTile.style.width = '100%';
+  newTile.style.height = '100%';
+  newTile.style.border = 'none';
+  newTile.style.borderRadius = '8px';
+  setupDrag(newTile); // re-enable drag from slot
+  slot.appendChild(newTile);
+
+  // Hide original tile
+  tile.classList.add('used');
+}
+
+function removeFromSlot(slotIdx) {
+  if (!spellingState) return;
+  const slotData = spellingState.slots[slotIdx];
+  if (!slotData) return;
+
+  spellingState.slots[slotIdx] = null;
+  const slot = document.getElementById('slot-' + slotIdx);
+  if (slot) {
+    slot.classList.remove('filled');
+    const tileInSlot = slot.querySelector('.grapheme-tile');
+    if (tileInSlot) slot.removeChild(tileInSlot);
+    const numEl = slot.querySelector('.slot-num');
+    if (numEl) numEl.style.display = '';
+  }
+
+  // Show original tile back in pool
+  const origId = slotData.tileId;
+  const origTile = document.getElementById(origId);
+  if (origTile) origTile.classList.remove('used');
+}
+
+// ── Hint ───────────────────────────────────────────────
+function useHint() {
+  if (!spellingState) return;
+  usedHint = true;
+  const word = spellingState.word;
+
+  // Find next empty slot
+  for (let i = 0; i < word.graphemes.length; i++) {
+    if (!spellingState.slots[i]) {
+      // Find the correct grapheme tile in the pool
+      const targetG = word.graphemes[i];
+      const pool = document.getElementById('tilePool');
+      const tiles = pool.querySelectorAll('.grapheme-tile:not(.used)');
+      for (const tile of tiles) {
+        if (tile.dataset.grapheme === targetG) {
+          placeInSlot(i, tile, targetG);
+          break;
+        }
+      }
+      break;
+    }
+  }
+}
+
+// ── Check Spelling ─────────────────────────────────────
+function checkSpelling() {
+  if (!spellingState) return;
+  const word = spellingState.word;
+
+  // Check if all slots filled
+  const allFilled = spellingState.slots.every(s => s !== null);
+  if (!allFilled) return;
+
+  // Check answer
+  const userAnswer = spellingState.slots.map(s => s.grapheme);
+  const correct = word.graphemes.every((g, i) => userAnswer[i] === g);
+
+  // Show result on slots
+  word.graphemes.forEach((g, i) => {
+    const slot = document.getElementById('slot-' + i);
+    if (!slot) return;
+    if (userAnswer[i] === g) {
+      slot.classList.add('correct-slot');
+    } else {
+      slot.classList.add('wrong-slot');
+    }
+  });
+
+  // Disable further interaction
+  document.querySelectorAll('.grapheme-tile').forEach(t => t.style.pointerEvents = 'none');
+  document.querySelector('.btn-hint').style.display = 'none';
+  document.getElementById('btnCheck').style.display = 'none';
+
+  if (correct && !usedHint) {
+    score++;
+    playCorrectSfx();
+  } else if (!correct) {
+    playWrongSfx();
+  } else {
+    // correct but used hint — still play a mild correct sound
+    playCorrectSfx();
+  }
+  if (!correct) {
+    wrongItems.push(word);
+  }
+
+  setTimeout(() => speakWord(word), 350);
+
+  // Show mapping
+  const mappingEl = document.createElement('div');
+  mappingEl.innerHTML = renderGPMapping(word);
+  document.querySelector('.spelling-area').appendChild(mappingEl);
+
+  setTimeout(() => { currentQ++; renderQuestion(); }, 2000);
+}
+
+// ── Check Answer (Listen/Picture) ──────────────────────
+function checkAnswer(btn, selected, correct) {
+  const grid = document.getElementById('optionsGrid');
+  const buttons = grid.querySelectorAll('.option-btn');
+  buttons.forEach(b => b.classList.add('disabled'));
+
+  const isCorrect = selected === correct;
+
+  if (isCorrect) {
+    btn.classList.add('correct');
+    score++;
+    playCorrectSfx();
+  } else {
+    btn.classList.add('wrong');
+    playWrongSfx();
+    // Show correct
+    buttons.forEach(b => {
+      if (b.dataset.word === correct) b.classList.add('show-correct');
+    });
+    wrongItems.push(quizWords[currentQ]);
+  }
+
+  const word = quizWords[currentQ];
+  setTimeout(() => speakWord(word), 350);
+
+  // Show GP mapping below options
+  const mappingDiv = document.createElement('div');
+  mappingDiv.innerHTML = renderGPMapping(word);
+  grid.parentNode.appendChild(mappingDiv);
+
+  setTimeout(() => { currentQ++; renderQuestion(); }, 1800);
+}
+
+// ── GP Mapping Component ───────────────────────────────
+function renderGPMapping(word) {
+  const vowelPhonemes = new Set(['æ','ɛ','ɪ','ɒ','ʌ','ɑ','eɪ','i','aɪ','oʊ','əʊ','u','ju','ɔɪ','aʊ','ɔ','ʊ','ə','ɝ','ɜ','ɚ','ɑr','ɔr','ɪr','ɛr','ʊr']);
+
+  let html = '<div class="gp-mapping">';
+  word.graphemes.forEach((g, i) => {
+    const phoneme = word.phonemes[i] || '';
+    const cleanPhoneme = phoneme.replace(/^[/']+/, '').replace(/[/']+$/, '');
+    const isVowel = vowelPhonemes.has(cleanPhoneme) || /^[aeiou]$/i.test(g);
+    const heartVal = Array.isArray(word.hearts) && word.hearts[i] ? 1 : 0;
+    html += `
+      <div class="gp-item">
+        <div class="gp-grapheme ${isVowel ? 'vowel' : ''}">
+          ${escHtml(g)}
+          ${heartVal ? '<span class="heart">❤️</span>' : ''}
+        </div>
+        <div class="gp-phoneme">/${cleanPhoneme}/</div>
+      </div>`;
+  });
+  html += '</div>';
+  return html;
+}
+
+// ── Result Screen ──────────────────────────────────────
+function renderResult() {
+  hideNav();
+  const total = quizWords.length;
+  const pct = Math.round((score / total) * 100);
+
+  // Save progress
+  if (currentLevelIdx !== null && currentUnitIdx !== null) {
+    saveQuizProgress(currentLevelIdx, currentUnitIdx, currentMode, score, total);
+  }
+
+  let emoji, msg;
+  if (pct === 100) { emoji = '👑'; msg = '滿分！你是 Phonics 大師！'; }
+  else if (pct >= 90) { emoji = '🏆'; msg = '太厲害了！幾乎完美！'; }
+  else if (pct >= 70) { emoji = '🎉'; msg = '很棒喔！繼續加油！'; }
+  else if (pct >= 50) { emoji = '👍'; msg = '不錯不錯，再練一次會更好！'; }
+  else { emoji = '💪'; msg = '再接再厲！'; }
+
+  let starsHtml = '';
+  for (let i = 0; i < score; i++) {
+    starsHtml += `<span class="star" style="animation-delay:${i * 0.15}s">⭐</span>`;
+  }
+
+  let html = `
+    <div class="result-screen">
+      <div class="result-emoji">${emoji}</div>
+      <div class="result-msg">${msg}</div>
+      <div class="result-score">答對 ${score} / ${total} 題（${pct}%）</div>
+      <div class="result-stars">${starsHtml}</div>
+      <div class="result-actions">
+        <button class="btn-action btn-primary" onclick="startQuiz('${currentMode}')">🔄 再玩一次</button>
+        <button class="btn-action btn-secondary" onclick="showHome()">🏠 回首頁</button>
+      </div>`;
+
+  if (wrongItems.length > 0) {
+    html += `
+      <div class="wrong-review">
+        <h3>📝 錯題回顧</h3>`;
+    wrongItems.forEach(w => {
+      html += `
+        <div class="wrong-item">
+          <div class="wrong-word">
+            ${escHtml(w.word)}
+            <button class="btn-speak" onclick="speakWord(findWord('${escHtml(w.word)}'))" aria-label="再聽一次">🔊</button>
+          </div>
+          ${renderGPMapping(w)}
+        </div>`;
+    });
+    html += '</div>';
+  }
+  html += '</div>';
+  $content.innerHTML = html;
+}
+
+// ── Answer Sound Effects ────────────────────────────────
+function playCorrectSfx() {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.type = 'sine';
+    gain.gain.value = 0.18;
+    // Two-note ascending chime
+    osc.frequency.setValueAtTime(523, ctx.currentTime);       // C5
+    osc.frequency.setValueAtTime(784, ctx.currentTime + 0.12); // G5
+    gain.gain.setValueAtTime(0.18, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.35);
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.35);
+  } catch(e) {}
+}
+
+function playWrongSfx() {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.type = 'sine';
+    gain.gain.value = 0.15;
+    // Low descending buzz
+    osc.frequency.setValueAtTime(330, ctx.currentTime);       // E4
+    osc.frequency.setValueAtTime(262, ctx.currentTime + 0.15); // C4
+    gain.gain.setValueAtTime(0.15, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3);
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.3);
+  } catch(e) {}
+}
+
+// ── TTS / Audio ────────────────────────────────────────
+function speakWord(wordObj) {
+  if (!wordObj) return;
+  const word = wordObj.word || wordObj;
+
+  // Try MP3 first
+  if (wordObj.audio) {
+    const audioUrl = AUDIO_BASE + wordObj.audio;
+    const audio = new Audio(audioUrl);
+    audio.play().catch(() => {
+      // Fallback to Web Speech API
+      speakTTS(typeof word === 'string' ? word : word);
+    });
+
+    // Pulse effect
+    const btn = document.querySelector('.btn-speak');
+    if (btn) { btn.classList.remove('pulse'); void btn.offsetWidth; btn.classList.add('pulse'); }
+    return;
+  }
+
+  speakTTS(typeof word === 'string' ? word : wordObj.word);
+}
+
+function speakTTS(text) {
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US';
+  u.rate = 0.8;
+  speechSynthesis.speak(u);
+
+  const btn = document.querySelector('.btn-speak');
+  if (btn) { btn.classList.remove('pulse'); void btn.offsetWidth; btn.classList.add('pulse'); }
+}
+
+// ── Speak Grapheme Phoneme ──────────────────────────────
+function playPhonemeAudio(ipa) {
+  // Clean IPA: strip slashes, quotes, leading/trailing marks
+  const clean = ipa.replace(/^[/']+/, '').replace(/[/']+$/, '').replace(/^'+/, '');
+  const audioPath = IPA_AUDIO[clean];
+  if (audioPath) {
+    const audio = new Audio(AUDIO_BASE + audioPath);
+    return audio.play().catch(() => {});
+  }
+  return Promise.reject();
+}
+
+function speakGrapheme(grapheme, wordObj, graphemeIdx) {
+  // 1. If this grapheme belongs to the current word → use word's actual phoneme
+  if (wordObj && graphemeIdx >= 0 && graphemeIdx < (wordObj.graphemes || []).length) {
+    if (wordObj.graphemes[graphemeIdx] === grapheme) {
+      const phoneme = (wordObj.phonemes || [])[graphemeIdx] || '';
+      playPhonemeAudio(phoneme).catch(() => {
+        // Fallback: try phonics array
+        const phonics = (wordObj.phonics || [])[graphemeIdx] || '';
+        playPhonemeAudio(phonics).catch(() => speakTTS(grapheme));
+      });
+      return;
+    }
+  }
+
+  // 2. Distractor tile: look up default IPA for this grapheme
+  const key = grapheme.toLowerCase();
+  const defaultIpa = GRAPHEME_DEFAULT_IPA[key];
+  if (defaultIpa) {
+    playPhonemeAudio(defaultIpa).catch(() => speakTTS(grapheme));
+    return;
+  }
+
+  // 3. Last resort: TTS
+  speakTTS(grapheme);
+}
+
+// ── Progress Tracking ──────────────────────────────────
+function loadProgress() {
+  try { return JSON.parse(localStorage.getItem('pq_progress') || '{}'); }
+  catch(e) { return {}; }
+}
+
+function saveQuizProgress(levelIdx, unitIdx, mode, score, total) {
+  const progress = loadProgress();
+  const key = `${levelIdx}_${unitIdx}_${mode}`;
+  const prev = progress[key];
+  if (!prev || (score / total) > (prev.score / prev.total)) {
+    progress[key] = { score, total };
+    localStorage.setItem('pq_progress', JSON.stringify(progress));
+  }
+}
+
+function getLevelStars(progress, levelIdx) {
+  const entries = Object.keys(progress)
+    .filter(k => k.startsWith(levelIdx + '_'))
+    .map(k => progress[k]);
+  if (entries.length === 0) return 0;
+  const avgPct = entries.reduce((s, e) => s + e.score / e.total, 0) / entries.length;
+  if (avgPct >= 0.9) return 3;
+  if (avgPct >= 0.7) return 2;
+  if (avgPct >= 0.4) return 1;
+  return 0;
+}
+
+// ── Helpers ────────────────────────────────────────────
+
+// Normalize IPA for comparison (strip slashes, spaces, stress marks)
+function normalizeIpa(ipa) {
+  if (!ipa) return '';
+  return ipa.replace(/[\/'\sˈˌ]/g, '').toLowerCase();
+}
+
+// Score how confusable a candidate is with the correct word
+// Higher = more confusable = better distractor
+function scoreConfusable(correct, candidate, isListenMode) {
+  const cIpa = normalizeIpa(correct.ipa);
+  const dIpa = normalizeIpa(candidate.ipa);
+
+  // EXCLUDE homophones in listen mode (same sound = can't distinguish)
+  if (isListenMode && cIpa && dIpa && cIpa === dIpa) return -1;
+
+  let score = 0;
+  const cw = correct.word.toLowerCase();
+  const dw = candidate.word.toLowerCase();
+
+  // Same first letter/sound → can't rely on just hearing the start
+  if (cw[0] === dw[0]) score += 4;
+
+  // Same ending (last 2 chars) → rhyme-like confusion
+  if (cw.length >= 2 && dw.length >= 2 && cw.slice(-2) === dw.slice(-2)) score += 3;
+
+  // Same ending (last 1 char)
+  if (cw[cw.length - 1] === dw[dw.length - 1]) score += 1;
+
+  // Similar length → looks/sounds comparable
+  if (cw.length === dw.length) score += 2;
+  else if (Math.abs(cw.length - dw.length) === 1) score += 1;
+
+  // Shared graphemes
+  if (correct.graphemes && candidate.graphemes) {
+    const cSet = new Set(correct.graphemes);
+    const shared = candidate.graphemes.filter(g => cSet.has(g)).length;
+    score += shared;
+  }
+
+  // Shared phonemes
+  if (correct.phonemes && candidate.phonemes) {
+    const cSet = new Set(correct.phonemes);
+    const shared = candidate.phonemes.filter(p => cSet.has(p)).length;
+    score += Math.min(shared, 3); // cap at 3
+  }
+
+  return score;
+}
+
+function getOptions(correctWord, count, pictureMode) {
+  const isListenMode = currentMode === 'listen';
+
+  // Build pool: same unit → same stage → all levels
+  let pool = currentUnit.words.filter(w => w.word !== correctWord.word);
+  if (pictureMode) pool = pool.filter(w => w.zh && w.img);
+
+  if (pool.length < count * 3) {
+    const stageWords = currentStage.units.flatMap(u => u.words)
+      .filter(w => w.word !== correctWord.word);
+    pool = pictureMode ? stageWords.filter(w => w.zh && w.img) : stageWords;
+  }
+
+  // If still too few, pull from all levels
+  if (pool.length < count * 2) {
+    const allWords = DATA.levels.flatMap(l => l.units.flatMap(u => u.words))
+      .filter(w => w.word !== correctWord.word);
+    pool = pictureMode ? allWords.filter(w => w.zh && w.img) : allWords;
+  }
+
+  // Score every candidate
+  const scored = pool
+    .map(w => ({ word: w, score: scoreConfusable(correctWord, w, isListenMode) }))
+    .filter(s => s.score >= 0); // remove homophones
+
+  // Sort by score descending
+  scored.sort((a, b) => b.score - a.score);
+
+  // Pick from top candidates with some randomization
+  // Take top ~2x needed, shuffle within that group, then pick
+  const topN = Math.min(scored.length, (count - 1) * 3);
+  const candidates = shuffle(scored.slice(0, topN))
+    .slice(0, count - 1)
+    .map(s => s.word);
+
+  // Fallback: if not enough, fill with random
+  if (candidates.length < count - 1) {
+    const remaining = pool.filter(w =>
+      w.word !== correctWord.word && !candidates.some(c => c.word === w.word)
+    );
+    candidates.push(...shuffle(remaining).slice(0, count - 1 - candidates.length));
+  }
+
+  return shuffle([correctWord, ...candidates]);
+}
+
+function getDistractorGraphemes(word, count) {
+  const correctSet = new Set(word.graphemes);
+  const unitGraphemes = currentUnit.words
+    .filter(w => w.word !== word.word)
+    .flatMap(w => w.graphemes)
+    .filter(g => !correctSet.has(g));
+
+  const unique = [...new Set(unitGraphemes)];
+  return shuffle(unique).slice(0, count);
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function escHtml(str) {
+  if (!str) return '';
+  return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function findWord(wordStr) {
+  for (const stage of DATA.levels) {
+    for (const unit of stage.units) {
+      const found = unit.words.find(w => w.word === wordStr);
+      if (found) return found;
+    }
+  }
+  return { word: wordStr };
+}
+
+// ── Start ──────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>
