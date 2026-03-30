@@ -1235,12 +1235,10 @@ function generateSpellingOptions(wordObj) {
     }
   }
 
-  // ── 6. Double consonant toggle ──
+  // ── 6. Double consonant: only REMOVE existing doubles ──
   const dblMatch = wLow.match(/(.)\1$/);
   if (dblMatch) {
-    variants.add(wLow.slice(0, -1)); // miss → mis
-  } else if (/[bcdfglmnprst]$/.test(wLow) && wLow.length >= 3) {
-    variants.add(wLow + wLow[wLow.length - 1]); // cap → capp
+    variants.add(wLow.slice(0, -1)); // miss → mis, ball → bal
   }
 
   // ── 7. wr/w swap, kn/n swap ──
