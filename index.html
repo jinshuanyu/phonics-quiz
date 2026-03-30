@@ -1159,20 +1159,123 @@ function renderQuestion() {
 
 // ── Listen Mode ────────────────────────────────────────
 function renderListenQuestion(word) {
-  const options = getOptions(word, 4);
+  const spellingOptions = generateSpellingOptions(word);
   let html = `
     <div class="question-area">
-      <div class="question-prompt">聽發音，選出正確的單字</div>
+      <div class="question-prompt">聽發音，選出正確的拼法</div>
       <button class="btn-speak" onclick="speakWord(quizWords[${currentQ}])" aria-label="播放發音">
         🔊 播放發音
       </button>
     </div>
     <div class="options-grid" id="optionsGrid">`;
-  options.forEach((opt, i) => {
-    html += `<button class="option-btn" data-word="${opt.word}" onclick="checkAnswer(this, '${escHtml(opt.word)}', '${escHtml(word.word)}')">${escHtml(opt.word)}</button>`;
+  spellingOptions.forEach(sp => {
+    html += `<button class="option-btn" data-word="${escHtml(sp)}" onclick="checkAnswer(this, '${escHtml(sp)}', '${escHtml(word.word)}')">${escHtml(sp)}</button>`;
   });
   html += '</div>';
   return html;
+}
+
+// Generate plausible misspellings for listen mode
+function generateSpellingOptions(wordObj) {
+  const w = wordObj.word;
+  const wLow = w.toLowerCase();
+  const variants = new Set();
+
+  // ── 1. Magic e toggle ──
+  if (/[bcdfgklmnprstvz]$/.test(wLow) && wLow.length >= 3) {
+    variants.add(wLow + 'e'); // cap → cape
+  }
+  if (/[bcdfgklmnprstvz]e$/.test(wLow) && wLow.length >= 4) {
+    variants.add(wLow.slice(0, -1)); // cape → cap
+  }
+
+  // ── 2. c/k swap for /k/ sound ──
+  if (wLow.startsWith('c') && !/^c[eiy]/.test(wLow)) {
+    variants.add('k' + wLow.slice(1)); // cap → kap
+    if (/[bcdfgklmnprstvz]$/.test(wLow)) {
+      variants.add('k' + wLow.slice(1) + 'e'); // cap → kape
+    }
+  }
+  if (wLow.startsWith('k')) {
+    variants.add('c' + wLow.slice(1)); // kit → cit
+  }
+  if (wLow.endsWith('ck')) {
+    variants.add(wLow.slice(0, -2) + 'k'); // back → bak
+    variants.add(wLow.slice(0, -2) + 'c'); // back → bac
+  }
+  if (/[aeiou]k$/.test(wLow) && !wLow.endsWith('ck')) {
+    variants.add(wLow.slice(0, -1) + 'ck'); // bak → back
+  }
+
+  // ── 3. Vowel swap (single vowel in CVC-like words) ──
+  const vowelMatch = wLow.match(/^([^aeiou]*)([aeiou])([^aeiou]+)$/);
+  if (vowelMatch) {
+    const [, onset, vowel, coda] = vowelMatch;
+    const otherVowels = 'aeiou'.split('').filter(v => v !== vowel);
+    for (const v of otherVowels) {
+      variants.add(onset + v + coda); // cap → cep, cip, cop, cup
+    }
+  }
+
+  // ── 4. ph/f swap ──
+  if (wLow.includes('ph')) {
+    variants.add(wLow.replace('ph', 'f')); // phone → fone
+  }
+  if (wLow.startsWith('f')) {
+    variants.add('ph' + wLow.slice(1)); // fish → phish
+  }
+
+  // ── 5. Digraph swap (sh/ch/th) ──
+  const digraphSwaps = { 'sh': ['ch', 'th'], 'ch': ['sh', 'th'], 'th': ['sh', 'ch'] };
+  for (const [from, tos] of Object.entries(digraphSwaps)) {
+    if (wLow.includes(from)) {
+      for (const to of tos) {
+        variants.add(wLow.replace(from, to)); // ship → chip, thip
+      }
+    }
+  }
+
+  // ── 6. Double consonant toggle ──
+  const dblMatch = wLow.match(/(.)\1$/);
+  if (dblMatch) {
+    variants.add(wLow.slice(0, -1)); // miss → mis
+  } else if (/[bcdfglmnprst]$/.test(wLow) && wLow.length >= 3) {
+    variants.add(wLow + wLow[wLow.length - 1]); // cap → capp
+  }
+
+  // ── 7. wr/w swap, kn/n swap ──
+  if (wLow.startsWith('wr')) variants.add(wLow.slice(1)); // write → rite
+  if (wLow.startsWith('kn')) variants.add(wLow.slice(1)); // knee → nee
+  if (wLow.startsWith('w') && !wLow.startsWith('wr') && !wLow.startsWith('wh')) {
+    variants.add('wr' + wLow.slice(1)); // win → wrin
+  }
+
+  // Remove the correct answer and any empty/identical variants
+  variants.delete(wLow);
+  variants.delete('');
+
+  // Convert to array, shuffle, pick 3
+  let picks = shuffle([...variants]).slice(0, 3);
+
+  // If not enough variants, fill with vowel-swapped versions
+  if (picks.length < 3) {
+    const vowels = 'aeiou'.split('');
+    for (let i = 0; i < wLow.length && picks.length < 3; i++) {
+      if (vowels.includes(wLow[i])) {
+        for (const v of vowels) {
+          if (v !== wLow[i]) {
+            const variant = wLow.slice(0, i) + v + wLow.slice(i + 1);
+            if (variant !== wLow && !picks.includes(variant)) {
+              picks.push(variant);
+              if (picks.length >= 3) break;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  return shuffle([w, ...picks.slice(0, 3)]);
 }
 
 // ── Picture Mode ───────────────────────────────────────
