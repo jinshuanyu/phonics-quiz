@@ -1083,12 +1083,14 @@ function renderModes(levelIdx, unitIdx) {
         <div class="card-desc">${picAvailable ? '看 emoji 和中文，選出正確單字' : '此單元資料不足，暫不可用'}</div>
       </div>
     </div>`;
+  const spellAvailable = !currentUnit.isSpecial;
   html += `
-    <div class="card mode-card" onclick="startQuiz('spell')" role="button" tabindex="0">
+    <div class="card mode-card ${spellAvailable ? '' : 'disabled-mode'}" onclick="${spellAvailable ? "startQuiz('spell')" : ''}" role="button" tabindex="0"
+         style="${spellAvailable ? '' : 'opacity:0.5;cursor:default;'}">
       <div class="mode-icon">✏️</div>
       <div class="mode-info">
         <div class="card-title">拼字挑戰</div>
-        <div class="card-desc">拖拉 grapheme 拼出正確單字</div>
+        <div class="card-desc">${spellAvailable ? '拖拉 grapheme 拼出正確單字' : '此單元不適用拼字模式'}</div>
       </div>
     </div>`;
   html += '</div>';
@@ -1159,10 +1161,12 @@ function renderQuestion() {
 
 // ── Listen Mode ────────────────────────────────────────
 function renderListenQuestion(word) {
-  const spellingOptions = generateSpellingOptions(word);
+  const isLetter = word.isLetter;
+  const spellingOptions = isLetter ? getLetterOptions(word, 4) : generateSpellingOptions(word);
+  const promptText = isLetter ? '聽字母音，選出正確的字母' : '聽發音，選出正確的拼法';
   let html = `
     <div class="question-area">
-      <div class="question-prompt">聽發音，選出正確的拼法</div>
+      <div class="question-prompt">${promptText}</div>
       <button class="btn-speak" onclick="speakWord(quizWords[${currentQ}])" aria-label="播放發音">
         🔊 播放發音
       </button>
@@ -1176,104 +1180,154 @@ function renderListenQuestion(word) {
 }
 
 // Generate plausible misspellings for listen mode
+// Strategy: prioritize "same vowel" variants so students can't just match the vowel letter
 function generateSpellingOptions(wordObj) {
   const w = wordObj.word;
   const wLow = w.toLowerCase();
-  const variants = new Set();
 
-  // ── 1. Magic e toggle ──
+  // Two tiers: hard variants (same vowel letter) vs easy variants (different vowel)
+  const hardVariants = new Set(); // same vowel — student must really know the spelling
+  const easyVariants = new Set(); // different vowel — can be guessed by vowel alone
+
+  // ── 1. Magic e toggle (HARD: same vowel letter) ──
   if (/[bcdfgklmnprstvz]$/.test(wLow) && wLow.length >= 3) {
-    variants.add(wLow + 'e'); // cap → cape
+    hardVariants.add(wLow + 'e'); // cap → cape
   }
   if (/[bcdfgklmnprstvz]e$/.test(wLow) && wLow.length >= 4) {
-    variants.add(wLow.slice(0, -1)); // cape → cap
+    hardVariants.add(wLow.slice(0, -1)); // cape → cap
   }
 
-  // ── 2. c/k swap for /k/ sound ──
+  // ── 2. c/k swap (HARD: same vowel) ──
   if (wLow.startsWith('c') && !/^c[eiy]/.test(wLow)) {
-    variants.add('k' + wLow.slice(1)); // cap → kap
+    hardVariants.add('k' + wLow.slice(1)); // cap → kap
     if (/[bcdfgklmnprstvz]$/.test(wLow)) {
-      variants.add('k' + wLow.slice(1) + 'e'); // cap → kape
+      hardVariants.add('k' + wLow.slice(1) + 'e'); // cap → kape
     }
   }
   if (wLow.startsWith('k')) {
-    variants.add('c' + wLow.slice(1)); // kit → cit
+    hardVariants.add('c' + wLow.slice(1)); // kit → cit
   }
   if (wLow.endsWith('ck')) {
-    variants.add(wLow.slice(0, -2) + 'k'); // back → bak
-    variants.add(wLow.slice(0, -2) + 'c'); // back → bac
+    hardVariants.add(wLow.slice(0, -2) + 'k'); // back → bak
+    hardVariants.add(wLow.slice(0, -2) + 'c'); // back → bac
   }
   if (/[aeiou]k$/.test(wLow) && !wLow.endsWith('ck')) {
-    variants.add(wLow.slice(0, -1) + 'ck'); // bak → back
+    hardVariants.add(wLow.slice(0, -1) + 'ck'); // bak → back
   }
 
-  // ── 3. Vowel swap (single vowel in CVC-like words) ──
-  const vowelMatch = wLow.match(/^([^aeiou]*)([aeiou])([^aeiou]+)$/);
-  if (vowelMatch) {
-    const [, onset, vowel, coda] = vowelMatch;
-    const otherVowels = 'aeiou'.split('').filter(v => v !== vowel);
-    for (const v of otherVowels) {
-      variants.add(onset + v + coda); // cap → cep, cip, cop, cup
-    }
-  }
-
-  // ── 4. ph/f swap ──
+  // ── 3. ph/f swap (HARD: same vowel) ──
   if (wLow.includes('ph')) {
-    variants.add(wLow.replace('ph', 'f')); // phone → fone
+    hardVariants.add(wLow.replace('ph', 'f')); // phone → fone
   }
   if (wLow.startsWith('f')) {
-    variants.add('ph' + wLow.slice(1)); // fish → phish
+    hardVariants.add('ph' + wLow.slice(1)); // fish → phish
   }
 
-  // ── 5. Digraph swap (sh/ch/th) ──
+  // ── 4. Digraph swap (HARD: same vowel) ──
   const digraphSwaps = { 'sh': ['ch', 'th'], 'ch': ['sh', 'th'], 'th': ['sh', 'ch'] };
   for (const [from, tos] of Object.entries(digraphSwaps)) {
     if (wLow.includes(from)) {
       for (const to of tos) {
-        variants.add(wLow.replace(from, to)); // ship → chip, thip
+        hardVariants.add(wLow.replace(from, to));
       }
     }
   }
 
-  // ── 6. Double consonant: only REMOVE existing doubles ──
+  // ── 5. Double consonant: only REMOVE existing doubles (HARD) ──
   const dblMatch = wLow.match(/(.)\1$/);
   if (dblMatch) {
-    variants.add(wLow.slice(0, -1)); // miss → mis, ball → bal
+    hardVariants.add(wLow.slice(0, -1)); // miss → mis
   }
 
-  // ── 7. wr/w swap, kn/n swap ──
-  if (wLow.startsWith('wr')) variants.add(wLow.slice(1)); // write → rite
-  if (wLow.startsWith('kn')) variants.add(wLow.slice(1)); // knee → nee
-  if (wLow.startsWith('w') && !wLow.startsWith('wr') && !wLow.startsWith('wh')) {
-    variants.add('wr' + wLow.slice(1)); // win → wrin
-  }
+  // ── 6. wr/w swap, kn/n swap (HARD) ──
+  if (wLow.startsWith('wr')) hardVariants.add(wLow.slice(1));
+  if (wLow.startsWith('kn')) hardVariants.add(wLow.slice(1));
 
-  // Remove the correct answer and any empty/identical variants
-  variants.delete(wLow);
-  variants.delete('');
-
-  // Convert to array, shuffle, pick 3
-  let picks = shuffle([...variants]).slice(0, 3);
-
-  // If not enough variants, fill with vowel-swapped versions
-  if (picks.length < 3) {
-    const vowels = 'aeiou'.split('');
-    for (let i = 0; i < wLow.length && picks.length < 3; i++) {
-      if (vowels.includes(wLow[i])) {
-        for (const v of vowels) {
-          if (v !== wLow[i]) {
-            const variant = wLow.slice(0, i) + v + wLow.slice(i + 1);
-            if (variant !== wLow && !picks.includes(variant)) {
-              picks.push(variant);
-              if (picks.length >= 3) break;
-            }
-          }
-        }
-      }
+  // ── 7. Consonant swap at end: similar-sounding endings (HARD) ──
+  const endSwaps = { 'd': ['t'], 't': ['d'], 'b': ['p'], 'p': ['b'], 'g': ['k'], 'v': ['f'], 'f': ['v'], 's': ['z'], 'z': ['s'] };
+  const lastChar = wLow[wLow.length - 1];
+  if (endSwaps[lastChar]) {
+    for (const swap of endSwaps[lastChar]) {
+      hardVariants.add(wLow.slice(0, -1) + swap); // bad → bat, cap → cab
     }
+  }
+
+  // ── 8. Vowel swap (EASY: different vowel — limit to max 1) ──
+  const vowelMatch = wLow.match(/^([^aeiou]*)([aeiou])([^aeiou]+)$/);
+  if (vowelMatch) {
+    const [, onset, vowel, coda] = vowelMatch;
+    for (const v of 'aeiou') {
+      if (v !== vowel) easyVariants.add(onset + v + coda);
+    }
+  }
+
+  // Clean up
+  hardVariants.delete(wLow);
+  hardVariants.delete('');
+  easyVariants.delete(wLow);
+  easyVariants.delete('');
+  // Remove easy variants that duplicate hard ones
+  for (const h of hardVariants) easyVariants.delete(h);
+
+  // Pick: fill from hard first, then max 1 easy
+  let picks = shuffle([...hardVariants]);
+  if (picks.length >= 3) {
+    picks = picks.slice(0, 3);
+  } else {
+    const easyPicks = shuffle([...easyVariants]).slice(0, 1); // max 1 vowel swap
+    picks = [...picks, ...easyPicks].slice(0, 3);
+  }
+
+  // Still not enough? fill with more vowel swaps
+  if (picks.length < 3) {
+    const remaining = shuffle([...easyVariants]).filter(v => !picks.includes(v));
+    picks.push(...remaining.slice(0, 3 - picks.length));
   }
 
   return shuffle([w, ...picks.slice(0, 3)]);
+}
+
+// Generate letter options for letter recognition quiz
+function getLetterOptions(wordObj, count) {
+  const letter = wordObj.word[0].toLowerCase(); // e.g. "b" from "Bb"
+  const confusableGroups = [
+    ['b', 'd', 'p', 'q'],
+    ['m', 'n'],
+    ['f', 'v'],
+    ['s', 'z'],
+    ['k', 'c', 'g'],
+    ['t', 'd'],
+    ['i', 'e'],
+    ['a', 'o', 'u'],
+    ['w', 'y'],
+    ['l', 'r'],
+    ['j', 'g']
+  ];
+
+  // Find all confusable letters for this letter
+  const confusables = new Set();
+  for (const group of confusableGroups) {
+    if (group.includes(letter)) {
+      for (const l of group) {
+        if (l !== letter) confusables.add(l);
+      }
+    }
+  }
+
+  // Pick distractors: from confusables first, then random
+  const needed = count - 1;
+  let distractors = shuffle([...confusables]).slice(0, needed);
+
+  if (distractors.length < needed) {
+    const allLetters = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    const remaining = allLetters.filter(l => l !== letter && !distractors.includes(l));
+    distractors.push(...shuffle(remaining).slice(0, needed - distractors.length));
+  }
+
+  // Format as "Aa", "Bb" etc.
+  const format = (l) => l.toUpperCase() + l.toLowerCase();
+  const options = [format(letter), ...distractors.slice(0, needed).map(format)];
+  return shuffle(options);
 }
 
 // ── Picture Mode ───────────────────────────────────────
