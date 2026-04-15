@@ -1163,7 +1163,9 @@ function renderQuestion() {
 function renderListenQuestion(word) {
   const isLetter = word.isLetter;
   const spellingOptions = isLetter ? getLetterOptions(word, 4) : generateSpellingOptions(word);
-  const promptText = isLetter ? '聽字母音，選出正確的字母' : '聽發音，選出正確的拼法';
+  const promptText = isLetter
+    ? (word.isSound ? '聽字母音，選出正確的字母' : '聽字母名，選出正確的字母')
+    : '聽發音，選出正確的拼法';
   let html = `
     <div class="question-area">
       <div class="question-prompt">${promptText}</div>
@@ -1289,6 +1291,19 @@ function generateSpellingOptions(wordObj) {
 
 // Generate letter options for letter recognition quiz
 function getLetterOptions(wordObj, count) {
+  const needed = count - 1;
+
+  // ── Sound unit: pick from current unit's pool, filter homophones by letterSound ──
+  if (wordObj.isSound && currentUnit && currentUnit.words) {
+    const targetSound = wordObj.letterSound;
+    const pool = currentUnit.words.filter(w =>
+      w.word !== wordObj.word && w.letterSound !== targetSound
+    );
+    const distractors = shuffle(pool).slice(0, needed).map(w => w.word);
+    return shuffle([wordObj.word, ...distractors]);
+  }
+
+  // ── Name unit: visual-confusability groups among 26 letters ──
   const letter = wordObj.word[0].toLowerCase(); // e.g. "b" from "Bb"
   const confusableGroups = [
     ['b', 'd', 'p', 'q'],
@@ -1304,7 +1319,6 @@ function getLetterOptions(wordObj, count) {
     ['j', 'g']
   ];
 
-  // Find all confusable letters for this letter
   const confusables = new Set();
   for (const group of confusableGroups) {
     if (group.includes(letter)) {
@@ -1314,8 +1328,6 @@ function getLetterOptions(wordObj, count) {
     }
   }
 
-  // Pick distractors: from confusables first, then random
-  const needed = count - 1;
   let distractors = shuffle([...confusables]).slice(0, needed);
 
   if (distractors.length < needed) {

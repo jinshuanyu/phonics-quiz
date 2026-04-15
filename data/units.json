@@ -7,8 +7,8 @@
       "units": [
         {
           "id": 1,
-          "name": "Letter Names & Sounds",
-          "pattern": "26 letters: names and sounds",
+          "name": "字母名 Letter Names",
+          "pattern": "26 letters: names (A-Z)",
           "words": [
             {
               "word": "Aa",
@@ -374,6 +374,48 @@
               "letterSound": "/z/",
               "isLetter": true
             }
+          ],
+          "isSpecial": true
+        },
+        {
+          "id": 2,
+          "name": "字母音 Letter Sounds",
+          "pattern": "26 letters + digraphs (sh, ch, th, ph, ck, qu, wh, ng)",
+          "words": [
+            { "word": "Aa", "ipa": "/æ/", "graphemes": ["a"], "phonemes": ["/æ/"], "phonics": ["/æ/"], "tags": ["vowel"], "hearts": [0], "zh": "字母 A 的音", "img": "🍎", "audio": "audio/phonemes/a_short.mp3", "letterSound": "/æ/", "isLetter": true, "isSound": true },
+            { "word": "Bb", "ipa": "/b/", "graphemes": ["b"], "phonemes": ["/b/"], "phonics": ["/b/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 B 的音", "img": "🅱️", "audio": "audio/phonemes/c2.mp3", "letterSound": "/b/", "isLetter": true, "isSound": true },
+            { "word": "Cc", "ipa": "/k/", "graphemes": ["c"], "phonemes": ["/k/"], "phonics": ["/k/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 C 的音", "img": "©️", "audio": "audio/phonemes/c5.mp3", "letterSound": "/k/", "isLetter": true, "isSound": true },
+            { "word": "Dd", "ipa": "/d/", "graphemes": ["d"], "phonemes": ["/d/"], "phonics": ["/d/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 D 的音", "img": "🇩", "audio": "audio/phonemes/c4.mp3", "letterSound": "/d/", "isLetter": true, "isSound": true },
+            { "word": "Ee", "ipa": "/ɛ/", "graphemes": ["e"], "phonemes": ["/ɛ/"], "phonics": ["/ɛ/"], "tags": ["vowel"], "hearts": [0], "zh": "字母 E 的音", "img": "📧", "audio": "audio/phonemes/e_short.mp3", "letterSound": "/ɛ/", "isLetter": true, "isSound": true },
+            { "word": "Ff", "ipa": "/f/", "graphemes": ["f"], "phonemes": ["/f/"], "phonics": ["/f/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 F 的音", "img": "🎏", "audio": "audio/phonemes/c7.mp3", "letterSound": "/f/", "isLetter": true, "isSound": true },
+            { "word": "Gg", "ipa": "/ɡ/", "graphemes": ["g"], "phonemes": ["/ɡ/"], "phonics": ["/ɡ/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 G 的音", "img": "🎸", "audio": "audio/phonemes/c6.mp3", "letterSound": "/ɡ/", "isLetter": true, "isSound": true },
+            { "word": "Hh", "ipa": "/h/", "graphemes": ["h"], "phonemes": ["/h/"], "phonics": ["/h/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 H 的音", "img": "🏨", "audio": "audio/phonemes/c17.mp3", "letterSound": "/h/", "isLetter": true, "isSound": true },
+            { "word": "Ii", "ipa": "/ɪ/", "graphemes": ["i"], "phonemes": ["/ɪ/"], "phonics": ["/ɪ/"], "tags": ["vowel"], "hearts": [0], "zh": "字母 I 的音", "img": "ℹ️", "audio": "audio/phonemes/i_short.mp3", "letterSound": "/ɪ/", "isLetter": true, "isSound": true },
+            { "word": "Jj", "ipa": "/dʒ/", "graphemes": ["j"], "phonemes": ["/dʒ/"], "phonics": ["/dʒ/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 J 的音", "img": "🎷", "audio": "audio/phonemes/c16.mp3", "letterSound": "/dʒ/", "isLetter": true, "isSound": true },
+            { "word": "Kk", "ipa": "/k/", "graphemes": ["k"], "phonemes": ["/k/"], "phonics": ["/k/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 K 的音", "img": "🔑", "audio": "audio/phonemes/c5.mp3", "letterSound": "/k/", "isLetter": true, "isSound": true },
+            { "word": "Ll", "ipa": "/l/", "graphemes": ["l"], "phonemes": ["/l/"], "phonics": ["/l/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 L 的音", "img": "🦁", "audio": "audio/phonemes/c21.mp3", "letterSound": "/l/", "isLetter": true, "isSound": true },
+            { "word": "Mm", "ipa": "/m/", "graphemes": ["m"], "phonemes": ["/m/"], "phonics": ["/m/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 M 的音", "img": "Ⓜ️", "audio": "audio/phonemes/c18.mp3", "letterSound": "/m/", "isLetter": true, "isSound": true },
+            { "word": "Nn", "ipa": "/n/", "graphemes": ["n"], "phonemes": ["/n/"], "phonics": ["/n/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 N 的音", "img": "📰", "audio": "audio/phonemes/c19.mp3", "letterSound": "/n/", "isLetter": true, "isSound": true },
+            { "word": "Oo", "ipa": "/ɑ/", "graphemes": ["o"], "phonemes": ["/ɑ/"], "phonics": ["/ɑ/"], "tags": ["vowel"], "hearts": [0], "zh": "字母 O 的音", "img": "⭕", "audio": "audio/phonemes/o_short.mp3", "letterSound": "/ɑ/", "isLetter": true, "isSound": true },
+            { "word": "Pp", "ipa": "/p/", "graphemes": ["p"], "phonemes": ["/p/"], "phonics": ["/p/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 P 的音", "img": "🅿️", "audio": "audio/phonemes/c1.mp3", "letterSound": "/p/", "isLetter": true, "isSound": true },
+            { "word": "Qq", "ipa": "/kw/", "graphemes": ["q"], "phonemes": ["/kw/"], "phonics": ["/kw/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 Q 的音", "img": "👸", "audio": "audio/phonemes/kw.mp3", "letterSound": "/kw/", "isLetter": true, "isSound": true },
+            { "word": "Rr", "ipa": "/r/", "graphemes": ["r"], "phonemes": ["/r/"], "phonics": ["/r/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 R 的音", "img": "®️", "audio": "audio/phonemes/c22.mp3", "letterSound": "/r/", "isLetter": true, "isSound": true },
+            { "word": "Ss", "ipa": "/s/", "graphemes": ["s"], "phonemes": ["/s/"], "phonics": ["/s/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 S 的音", "img": "💲", "audio": "audio/phonemes/c11.mp3", "letterSound": "/s/", "isLetter": true, "isSound": true },
+            { "word": "Tt", "ipa": "/t/", "graphemes": ["t"], "phonemes": ["/t/"], "phonics": ["/t/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 T 的音", "img": "🍵", "audio": "audio/phonemes/c3.mp3", "letterSound": "/t/", "isLetter": true, "isSound": true },
+            { "word": "Uu", "ipa": "/ʌ/", "graphemes": ["u"], "phonemes": ["/ʌ/"], "phonics": ["/ʌ/"], "tags": ["vowel"], "hearts": [0], "zh": "字母 U 的音", "img": "⛱️", "audio": "audio/phonemes/u_short.mp3", "letterSound": "/ʌ/", "isLetter": true, "isSound": true },
+            { "word": "Vv", "ipa": "/v/", "graphemes": ["v"], "phonemes": ["/v/"], "phonics": ["/v/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 V 的音", "img": "✌️", "audio": "audio/phonemes/c8.mp3", "letterSound": "/v/", "isLetter": true, "isSound": true },
+            { "word": "Ww", "ipa": "/w/", "graphemes": ["w"], "phonemes": ["/w/"], "phonics": ["/w/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 W 的音", "img": "🌊", "audio": "audio/phonemes/c23.mp3", "letterSound": "/w/", "isLetter": true, "isSound": true },
+            { "word": "Xx", "ipa": "/ks/", "graphemes": ["x"], "phonemes": ["/ks/"], "phonics": ["/ks/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 X 的音", "img": "❌", "audio": "audio/phonemes/ks.mp3", "letterSound": "/ks/", "isLetter": true, "isSound": true },
+            { "word": "Yy", "ipa": "/j/", "graphemes": ["y"], "phonemes": ["/j/"], "phonics": ["/j/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 Y 的音", "img": "💛", "audio": "audio/phonemes/c24.mp3", "letterSound": "/j/", "isLetter": true, "isSound": true },
+            { "word": "Zz", "ipa": "/z/", "graphemes": ["z"], "phonemes": ["/z/"], "phonics": ["/z/"], "tags": ["consonant"], "hearts": [0], "zh": "字母 Z 的音", "img": "⚡", "audio": "audio/phonemes/c12.mp3", "letterSound": "/z/", "isLetter": true, "isSound": true },
+            { "word": "sh", "ipa": "/ʃ/", "graphemes": ["sh"], "phonemes": ["/ʃ/"], "phonics": ["/ʃ/"], "tags": ["digraph"], "hearts": [0], "zh": "雙字母 sh 的音", "img": "🤫", "audio": "audio/phonemes/c13.mp3", "letterSound": "/ʃ/", "isLetter": true, "isSound": true, "isDigraph": true },
+            { "word": "ch", "ipa": "/tʃ/", "graphemes": ["ch"], "phonemes": ["/tʃ/"], "phonics": ["/tʃ/"], "tags": ["digraph"], "hearts": [0], "zh": "雙字母 ch 的音", "img": "🚂", "audio": "audio/phonemes/c15.mp3", "letterSound": "/tʃ/", "isLetter": true, "isSound": true, "isDigraph": true },
+            { "word": "th", "ipa": "/θ/", "graphemes": ["th"], "phonemes": ["/θ/"], "phonics": ["/θ/"], "tags": ["digraph"], "hearts": [0], "zh": "雙字母 th 的音", "img": "👅", "audio": "audio/phonemes/c9.mp3", "letterSound": "/θ/", "isLetter": true, "isSound": true, "isDigraph": true },
+            { "word": "ph", "ipa": "/f/", "graphemes": ["ph"], "phonemes": ["/f/"], "phonics": ["/f/"], "tags": ["digraph"], "hearts": [0], "zh": "雙字母 ph 的音", "img": "📱", "audio": "audio/phonemes/c7.mp3", "letterSound": "/f/", "isLetter": true, "isSound": true, "isDigraph": true },
+            { "word": "ck", "ipa": "/k/", "graphemes": ["ck"], "phonemes": ["/k/"], "phonics": ["/k/"], "tags": ["digraph"], "hearts": [0], "zh": "雙字母 ck 的音", "img": "🦆", "audio": "audio/phonemes/c5.mp3", "letterSound": "/k/", "isLetter": true, "isSound": true, "isDigraph": true },
+            { "word": "qu", "ipa": "/kw/", "graphemes": ["qu"], "phonemes": ["/kw/"], "phonics": ["/kw/"], "tags": ["digraph"], "hearts": [0], "zh": "雙字母 qu 的音", "img": "👑", "audio": "audio/phonemes/kw.mp3", "letterSound": "/kw/", "isLetter": true, "isSound": true, "isDigraph": true },
+            { "word": "wh", "ipa": "/w/", "graphemes": ["wh"], "phonemes": ["/w/"], "phonics": ["/w/"], "tags": ["digraph"], "hearts": [0], "zh": "雙字母 wh 的音", "img": "🐋", "audio": "audio/phonemes/c23.mp3", "letterSound": "/w/", "isLetter": true, "isSound": true, "isDigraph": true },
+            { "word": "ng", "ipa": "/ŋ/", "graphemes": ["ng"], "phonemes": ["/ŋ/"], "phonics": ["/ŋ/"], "tags": ["digraph"], "hearts": [0], "zh": "雙字母 ng 的音", "img": "🔔", "audio": "audio/phonemes/c20.mp3", "letterSound": "/ŋ/", "isLetter": true, "isSound": true, "isDigraph": true }
           ],
           "isSpecial": true
         }
