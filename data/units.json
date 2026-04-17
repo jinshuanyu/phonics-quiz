@@ -4932,6 +4932,15 @@
               "audio": "audio/pron-1/us.mp3"
             }
           ]
+        },
+        {
+          "id": 99,
+          "name": "🎯 綜合測驗 Mixed Vowels",
+          "pattern": "5 short vowels mixed — true ear test",
+          "words": [],
+          "isMixed": true,
+          "mixSourceUnitIds": [2, 3, 4, 5, 6],
+          "learnIntro": "把短 a / e / i / o / u 五個母音的字混在一起測。要靠耳朵真的分辨喔！"
         }
       ]
     },

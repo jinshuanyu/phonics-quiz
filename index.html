@@ -436,6 +436,99 @@ body {
   font-weight: 600;
 }
 
+/* ── Learn Mode ───────────────────────────────────────── */
+.learn-intro {
+  background: #fff7ed;
+  border: 2px solid #fed7aa;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  font-size: 0.92rem;
+  color: #7c2d12;
+  line-height: 1.5;
+}
+.learn-intro b { color: #c2410c; }
+
+.learn-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.learn-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  background: var(--card);
+  border: 2px solid #e8e4f0;
+  border-radius: 14px;
+  padding: 10px 12px;
+}
+.learn-emoji {
+  font-size: 2rem;
+  width: 48px;
+  text-align: center;
+}
+.learn-mid {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.learn-graphemes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+.learn-g {
+  background: var(--phoneme-bg, #f0f9ff);
+  border: 2px solid var(--phoneme-border, #bae6fd);
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  color: #0f172a;
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+  min-width: 32px;
+  text-align: center;
+}
+.learn-g.vowel {
+  background: var(--vowel-bg, #fef3c7);
+  border-color: var(--vowel-border, #fbbf24);
+  color: #92400e;
+}
+.learn-g:hover { transform: translateY(-1px); }
+.learn-g:active, .learn-g.playing {
+  background: #fed7aa;
+  border-color: var(--primary);
+  transform: scale(0.95);
+}
+.learn-zh {
+  font-size: 0.85rem;
+  color: #666;
+}
+.learn-play {
+  background: var(--accent, #45c4b8);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+.learn-play:hover { background: #3dbdb4; }
+.learn-play:active { transform: scale(0.92); }
+
 /* ── Result Screen ────────────────────────────────────── */
 .result-screen {
   text-align: center;
@@ -1035,8 +1128,9 @@ function renderUnits(levelIdx) {
   let html = '<div class="card-grid unit-cards">';
   currentStage.units.forEach((unit, i) => {
     const isSpecial = unit.isSpecial;
-    const isEmpty = unit.words.length === 0 && !isSpecial;
-    const badge = isSpecial ? '🔤' : `${unit.words.length} 字`;
+    const isMixed = unit.isMixed;
+    const isEmpty = unit.words.length === 0 && !isSpecial && !isMixed;
+    const badge = isSpecial ? '🔤' : (isMixed ? '🎯 Mix' : `${unit.words.length} 字`);
     html += `
       <div class="card ${isEmpty ? 'disabled-mode' : ''}" onclick="${isEmpty ? '' : `selectUnit(${levelIdx}, ${i})`}"
            role="button" tabindex="0" style="${isEmpty ? 'opacity:0.5;cursor:default;' : ''}">
@@ -1055,6 +1149,24 @@ function selectUnit(levelIdx, unitIdx) {
   currentUnitIdx = unitIdx;
   currentStage = DATA.levels[levelIdx];
   currentUnit = currentStage.units[unitIdx];
+
+  // Mixed unit: dynamically aggregate words from source units
+  if (currentUnit.isMixed && (!currentUnit.words || currentUnit.words.length === 0)) {
+    const sourceIds = currentUnit.mixSourceUnitIds || [];
+    const aggregated = [];
+    DATA.levels.forEach(lv => {
+      lv.units.forEach(u => {
+        if (sourceIds.includes(u.id)) {
+          u.words.forEach(w => {
+            // Only include "real" teaching words: must have zh + img to be quiz-worthy
+            if (w.zh && w.img) aggregated.push(w);
+          });
+        }
+      });
+    });
+    currentUnit.words = aggregated;
+  }
+
   pushView('modes', () => renderModes(levelIdx, unitIdx));
 }
 
@@ -1066,6 +1178,17 @@ function renderModes(levelIdx, unitIdx) {
   const picAvailable = picWords.length >= 4;
 
   let html = '<div class="card-grid mode-cards">';
+  // Learn mode: hide for mixed-test units (teaching belongs in individual vowel units)
+  if (!currentUnit.isMixed) {
+    html += `
+      <div class="card mode-card" onclick="startLearn()" role="button" tabindex="0" style="border-color:#fb923c;">
+        <div class="mode-icon">📖</div>
+        <div class="mode-info">
+          <div class="card-title">教學說明</div>
+          <div class="card-desc">點每個字母聽發音，先學再測</div>
+        </div>
+      </div>`;
+  }
   html += `
     <div class="card mode-card" onclick="startQuiz('listen')" role="button" tabindex="0">
       <div class="mode-icon">🎧</div>
@@ -1095,6 +1218,71 @@ function renderModes(levelIdx, unitIdx) {
     </div>`;
   html += '</div>';
   $content.innerHTML = html;
+}
+
+// ── Learn Mode (no scoring, exploration only) ──────────
+function startLearn() {
+  pushView('learn', () => renderLearn());
+}
+
+function renderLearn() {
+  showNav(`📖 ${currentUnit.name}`);
+  $footer.classList.add('hidden');
+
+  const words = currentUnit.words.filter(w => w.word);
+  const introText = currentUnit.learnIntro
+    || '👆 點任一字母聽單音，按 🔊 聽完整單字。熟悉這個母音的拼法後，再去做測驗 💪';
+
+  let html = `<div class="learn-screen">
+    <div class="learn-intro">${introText}</div>
+    <div class="learn-list">`;
+
+  words.forEach((w, idx) => {
+    const graphemes = w.graphemes || [w.word];
+    const phonemes = w.phonemes || [];
+    const grHtml = graphemes.map((g, i) => {
+      const ph = (phonemes[i] || '').replace(/[\/']/g, '');
+      const isVowel = isVowelGrapheme(g, ph);
+      return `<span class="learn-g ${isVowel ? 'vowel' : ''}" data-widx="${idx}" data-gidx="${i}" onclick="onLearnGraphemeClick(this)">${escHtml(g)}</span>`;
+    }).join('');
+
+    html += `
+      <div class="learn-card">
+        <div class="learn-emoji">${w.img || '📝'}</div>
+        <div class="learn-mid">
+          <div class="learn-graphemes">${grHtml}</div>
+          ${w.zh ? `<div class="learn-zh">${escHtml(w.zh)}</div>` : ''}
+        </div>
+        <button class="learn-play" onclick="onLearnWordClick(${idx})" aria-label="播放整個單字">🔊</button>
+      </div>`;
+  });
+
+  html += '</div></div>';
+  $content.innerHTML = html;
+}
+
+function isVowelGrapheme(g, ph) {
+  const vowelLetters = /^[aeiouAEIOU]+$/;
+  if (vowelLetters.test(g)) return true;
+  if (['ai','ay','ee','ea','oa','oi','oy','ou','ow','oo','ew','ue','ui','au','aw','ey','ar','or','ore','er','ir','ur','ear','ie','igh'].includes(g.toLowerCase())) return true;
+  // Vowel IPA hint
+  if (ph && /[æɛɪɑʌʊɔəeiouaɝɚ]/.test(ph)) return true;
+  return false;
+}
+
+function onLearnGraphemeClick(el) {
+  const widx = parseInt(el.dataset.widx, 10);
+  const gidx = parseInt(el.dataset.gidx, 10);
+  const w = currentUnit.words[widx];
+  if (!w) return;
+  el.classList.add('playing');
+  setTimeout(() => el.classList.remove('playing'), 350);
+  speakGrapheme(w.graphemes[gidx], w, gidx);
+}
+
+function onLearnWordClick(widx) {
+  const w = currentUnit.words[widx];
+  if (w) speakWord(w);
 }
 
 // ── Start Quiz ─────────────────────────────────────────
@@ -1162,7 +1350,14 @@ function renderQuestion() {
 // ── Listen Mode ────────────────────────────────────────
 function renderListenQuestion(word) {
   const isLetter = word.isLetter;
-  const spellingOptions = isLetter ? getLetterOptions(word, 4) : generateSpellingOptions(word);
+  let spellingOptions;
+  if (isLetter) {
+    spellingOptions = getLetterOptions(word, 4);
+  } else if (currentUnit && currentUnit.isMixed) {
+    spellingOptions = generateMixedOptions(word);
+  } else {
+    spellingOptions = generateSpellingOptions(word);
+  }
   const promptText = isLetter
     ? (word.isSound ? '聽字母音，選出正確的字母' : '聽字母名，選出正確的字母')
     : '聽發音，選出正確的拼法';
@@ -1287,6 +1482,50 @@ function generateSpellingOptions(wordObj) {
   }
 
   return shuffle([w, ...picks.slice(0, 3)]);
+}
+
+// Mixed-unit listen options: prefer REAL words from pool that differ ONLY in vowel
+// (e.g. cat → cot, cup, kit) so students must actually hear the vowel.
+function generateMixedOptions(wordObj) {
+  const w = wordObj.word.toLowerCase();
+  const correctIpa = normalizeIpa(wordObj.ipa);
+
+  // Strip vowel(s) to get a "shape" pattern: cat → c_t, ship → sh_p
+  const vowelPattern = /[aeiou]+/g;
+  const shape = w.replace(vowelPattern, '_');
+
+  // 1. Real words from pool with same shape (different vowel) — IDEAL distractors
+  const pool = (currentUnit.words || []).filter(x => x.word && x.word.toLowerCase() !== w);
+  const sameShape = pool.filter(x => {
+    const xw = x.word.toLowerCase();
+    return xw.replace(vowelPattern, '_') === shape
+        && normalizeIpa(x.ipa) !== correctIpa; // exclude homophones
+  });
+
+  let picks = shuffle(sameShape).slice(0, 3).map(x => x.word.toLowerCase());
+
+  // 2. If not enough real minimal pairs, generate fake vowel-swap spellings
+  if (picks.length < 3) {
+    const vMatch = w.match(/^([^aeiou]*)([aeiou])([^aeiou]+)$/);
+    if (vMatch) {
+      const [, onset, vowel, coda] = vMatch;
+      const fakeVariants = [];
+      for (const v of 'aeiou') {
+        if (v !== vowel) fakeVariants.push(onset + v + coda);
+      }
+      // Avoid duplicates with real picks
+      const fresh = shuffle(fakeVariants).filter(f => !picks.includes(f));
+      picks.push(...fresh.slice(0, 3 - picks.length));
+    }
+  }
+
+  // 3. Last fallback: use spelling variants from the standard generator
+  if (picks.length < 3) {
+    const fallback = generateSpellingOptions(wordObj).filter(x => x !== wordObj.word && !picks.includes(x.toLowerCase()));
+    picks.push(...fallback.slice(0, 3 - picks.length));
+  }
+
+  return shuffle([wordObj.word, ...picks.slice(0, 3)]);
 }
 
 // Generate letter options for letter recognition quiz
