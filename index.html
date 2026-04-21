@@ -1173,49 +1173,61 @@ function selectUnit(levelIdx, unitIdx) {
 function renderModes(levelIdx, unitIdx) {
   showNav(`${currentUnit.name}`);
 
-  // Check if picture mode is available
+  // If this level has a Mixed-test unit, the other units are teaching-only.
+  // (Teach each vowel separately → only test after mixing all vowels.)
+  const hasMixedSibling = currentStage.units.some(u => u.isMixed);
+  const isMixedUnit = currentUnit.isMixed;
+  const teachingOnly = hasMixedSibling && !isMixedUnit;
+
+  // Picture-mode availability
   const picWords = currentUnit.words.filter(w => w.zh && w.img);
   const picAvailable = picWords.length >= 4;
 
   let html = '<div class="card-grid mode-cards">';
-  // Learn mode: hide for mixed-test units (teaching belongs in individual vowel units)
-  if (!currentUnit.isMixed) {
+
+  // 📖 Learn mode — shown for everything except the Mixed test unit
+  if (!isMixedUnit) {
     html += `
       <div class="card mode-card" onclick="startLearn()" role="button" tabindex="0" style="border-color:#fb923c;">
         <div class="mode-icon">📖</div>
         <div class="mode-info">
           <div class="card-title">教學說明</div>
-          <div class="card-desc">點每個字母聽發音，先學再測</div>
+          <div class="card-desc">${teachingOnly ? '點每個字母聽發音，熟悉了再去綜合測驗' : '點每個字母聽發音，先學再測'}</div>
         </div>
       </div>`;
   }
-  html += `
-    <div class="card mode-card" onclick="startQuiz('listen')" role="button" tabindex="0">
-      <div class="mode-icon">🎧</div>
-      <div class="mode-info">
-        <div class="card-title">聽音選字</div>
-        <div class="card-desc">聽發音，選出正確的單字</div>
-      </div>
-    </div>`;
-  html += `
-    <div class="card mode-card ${picAvailable ? '' : 'disabled-mode'}" onclick="${picAvailable ? "startQuiz('picture')" : ''}" role="button" tabindex="0"
-         style="${picAvailable ? '' : 'opacity:0.5;cursor:default;'}">
-      <div class="mode-icon">🖼️</div>
-      <div class="mode-info">
-        <div class="card-title">看圖選字</div>
-        <div class="card-desc">${picAvailable ? '看 emoji 和中文，選出正確單字' : '此單元資料不足，暫不可用'}</div>
-      </div>
-    </div>`;
-  const spellAvailable = !currentUnit.isSpecial;
-  html += `
-    <div class="card mode-card ${spellAvailable ? '' : 'disabled-mode'}" onclick="${spellAvailable ? "startQuiz('spell')" : ''}" role="button" tabindex="0"
-         style="${spellAvailable ? '' : 'opacity:0.5;cursor:default;'}">
-      <div class="mode-icon">✏️</div>
-      <div class="mode-info">
-        <div class="card-title">拼字挑戰</div>
-        <div class="card-desc">${spellAvailable ? '拖拉 grapheme 拼出正確單字' : '此單元不適用拼字模式'}</div>
-      </div>
-    </div>`;
+
+  // Quiz modes — hidden in teaching-only units
+  if (!teachingOnly) {
+    html += `
+      <div class="card mode-card" onclick="startQuiz('listen')" role="button" tabindex="0">
+        <div class="mode-icon">🎧</div>
+        <div class="mode-info">
+          <div class="card-title">聽音選字</div>
+          <div class="card-desc">聽發音，選出正確的單字</div>
+        </div>
+      </div>`;
+    html += `
+      <div class="card mode-card ${picAvailable ? '' : 'disabled-mode'}" onclick="${picAvailable ? "startQuiz('picture')" : ''}" role="button" tabindex="0"
+           style="${picAvailable ? '' : 'opacity:0.5;cursor:default;'}">
+        <div class="mode-icon">🖼️</div>
+        <div class="mode-info">
+          <div class="card-title">看圖選字</div>
+          <div class="card-desc">${picAvailable ? '看 emoji 和中文，選出正確單字' : '此單元資料不足，暫不可用'}</div>
+        </div>
+      </div>`;
+    const spellAvailable = !currentUnit.isSpecial;
+    html += `
+      <div class="card mode-card ${spellAvailable ? '' : 'disabled-mode'}" onclick="${spellAvailable ? "startQuiz('spell')" : ''}" role="button" tabindex="0"
+           style="${spellAvailable ? '' : 'opacity:0.5;cursor:default;'}">
+        <div class="mode-icon">✏️</div>
+        <div class="mode-info">
+          <div class="card-title">拼字挑戰</div>
+          <div class="card-desc">${spellAvailable ? '拖拉 grapheme 拼出正確單字' : '此單元不適用拼字模式'}</div>
+        </div>
+      </div>`;
+  }
+
   html += '</div>';
   $content.innerHTML = html;
 }
