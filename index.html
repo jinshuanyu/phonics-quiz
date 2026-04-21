@@ -436,6 +436,16 @@ body {
   font-weight: 600;
 }
 
+/* ── Section Label (Learn / Practice grouping) ────────── */
+.section-label {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text, #333);
+  margin: 18px 4px 10px;
+  letter-spacing: 0.5px;
+}
+.section-label:first-child { margin-top: 4px; }
+
 /* ── Learn Mode ───────────────────────────────────────── */
 .learn-intro {
   background: #fff7ed;
@@ -1125,21 +1135,48 @@ function renderUnits(levelIdx) {
   showNav(currentStage.name);
   $footer.classList.add('hidden');
 
-  let html = '<div class="card-grid unit-cards">';
-  currentStage.units.forEach((unit, i) => {
+  // If this level has a Mixed unit, group cards into 教學 / 練習 sections
+  const hasMixedSibling = currentStage.units.some(u => u.isMixed);
+
+  const cardHtml = (unit, i) => {
     const isSpecial = unit.isSpecial;
     const isMixed = unit.isMixed;
     const isEmpty = unit.words.length === 0 && !isSpecial && !isMixed;
     const badge = isSpecial ? '🔤' : (isMixed ? '🎯 Mix' : `${unit.words.length} 字`);
-    html += `
+    return `
       <div class="card ${isEmpty ? 'disabled-mode' : ''}" onclick="${isEmpty ? '' : `selectUnit(${levelIdx}, ${i})`}"
            role="button" tabindex="0" style="${isEmpty ? 'opacity:0.5;cursor:default;' : ''}">
         <div class="card-title">${unit.name}</div>
         <div class="card-desc">${unit.pattern}</div>
         <div class="card-badge">${badge}</div>
       </div>`;
-  });
-  html += '</div>';
+  };
+
+  let html = '';
+
+  if (hasMixedSibling) {
+    const teachUnits = currentStage.units
+      .map((u, i) => ({ u, i }))
+      .filter(x => !x.u.isMixed);
+    const practiceUnits = currentStage.units
+      .map((u, i) => ({ u, i }))
+      .filter(x => x.u.isMixed);
+
+    html += `<div class="section-label">📖 教學 · Learn</div>`;
+    html += '<div class="card-grid unit-cards">';
+    teachUnits.forEach(({ u, i }) => { html += cardHtml(u, i); });
+    html += '</div>';
+
+    html += `<div class="section-label">🎯 練習 · Practice</div>`;
+    html += '<div class="card-grid unit-cards">';
+    practiceUnits.forEach(({ u, i }) => { html += cardHtml(u, i); });
+    html += '</div>';
+  } else {
+    html += '<div class="card-grid unit-cards">';
+    currentStage.units.forEach((unit, i) => { html += cardHtml(unit, i); });
+    html += '</div>';
+  }
+
   $content.innerHTML = html;
 }
 
