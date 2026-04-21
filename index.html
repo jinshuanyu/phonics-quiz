@@ -1187,21 +1187,31 @@ function selectUnit(levelIdx, unitIdx) {
   currentStage = DATA.levels[levelIdx];
   currentUnit = currentStage.units[unitIdx];
 
-  // Mixed unit: dynamically aggregate words from source units
+  // Mixed unit: dynamically aggregate words from source units IN THE SAME LEVEL.
+  // (Don't cross levels — unit IDs aren't globally unique, so a level-1 unit
+  //  with the same id would leak in, e.g. 字母音 words showing up in short-vowel mix.)
   if (currentUnit.isMixed && (!currentUnit.words || currentUnit.words.length === 0)) {
     const sourceIds = currentUnit.mixSourceUnitIds || [];
     const aggregated = [];
-    DATA.levels.forEach(lv => {
-      lv.units.forEach(u => {
-        if (sourceIds.includes(u.id)) {
-          u.words.forEach(w => {
-            // Only include "real" teaching words: must have zh + img to be quiz-worthy
-            if (w.zh && w.img) aggregated.push(w);
-          });
-        }
-      });
+    currentStage.units.forEach(u => {
+      if (sourceIds.includes(u.id)) {
+        u.words.forEach(w => {
+          // Only include "real" teaching words: must have zh + img, and skip
+          // any letter-name/letter-sound entries if they somehow sneak in.
+          if (w.zh && w.img && !w.isLetter) aggregated.push(w);
+        });
+      }
     });
     currentUnit.words = aggregated;
+  }
+
+  // Teaching-only units (e.g. Short a when a Mixed sibling exists) go
+  // straight to the Learn view — no need for the single-card mode picker.
+  const hasMixedSibling = currentStage.units.some(u => u.isMixed);
+  const teachingOnly = hasMixedSibling && !currentUnit.isMixed;
+  if (teachingOnly) {
+    pushView('learn', () => renderLearn());
+    return;
   }
 
   pushView('modes', () => renderModes(levelIdx, unitIdx));
