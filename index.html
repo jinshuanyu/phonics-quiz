@@ -968,6 +968,9 @@ const GRAPHEME_DEFAULT_IPA = {
 
 // ── State ──────────────────────────────────────────────
 let DATA = null;
+let CONTRASTS = null;      // data/vowel-contrasts.json
+let quizOptions = [];      // per-question option list for contrast quizzes (parallel to quizWords)
+const CONTRAST_QUESTIONS = 10;
 let currentStage = null;
 let currentUnit = null;
 let currentMode = null; // 'listen' | 'picture' | 'spell'
@@ -993,6 +996,11 @@ async function init() {
   try {
     const res = await fetch('data/units.json');
     DATA = await res.json();
+    // Vowel-contrast sets for the cumulative short-vowel tests (optional file)
+    try {
+      const cRes = await fetch('data/vowel-contrasts.json');
+      if (cRes.ok) CONTRASTS = await cRes.json();
+    } catch (e) { CONTRASTS = null; }
     showHome();
   } catch (e) {
     $content.innerHTML = '<p style="text-align:center;color:var(--wrong);padding:40px;">載入資料失敗，請重新整理頁面。</p>';
@@ -1031,8 +1039,8 @@ function showHome() {
 
 function renderHome() {
   hideNav();
-  $footer.classList.remove('hidden');
   $header.classList.remove('hidden');
+  $footer.classList.remove('hidden');
 
   const progress = loadProgress();
 
@@ -1133,6 +1141,7 @@ function selectLevel(idx) {
 
 function renderUnits(levelIdx) {
   showNav(currentStage.name);
+  $header.classList.remove('hidden');
   $footer.classList.add('hidden');
 
   // If this level has a Mixed unit, group cards into 教學 / 練習 sections
@@ -1160,7 +1169,9 @@ function renderUnits(levelIdx) {
       .filter(x => !x.u.isMixed);
     const practiceUnits = currentStage.units
       .map((u, i) => ({ u, i }))
-      .filter(x => x.u.isMixed);
+      .filter(x => x.u.isMixed)
+      // cumulative tests in learning order: a/e → a/e/i → … → all five
+      .sort((x, y) => (x.u.mixSourceUnitIds || []).length - (y.u.mixSourceUnitIds || []).length);
 
     html += `<div class="section-label">📖 教學 · Learn</div>`;
     html += '<div class="card-grid unit-cards">';
@@ -1218,6 +1229,7 @@ function selectUnit(levelIdx, unitIdx) {
 }
 
 function renderModes(levelIdx, unitIdx) {
+  $header.classList.remove('hidden');
   showNav(`${currentUnit.name}`);
 
   // If this level has a Mixed-test unit, the other units are teaching-only.
@@ -1226,9 +1238,10 @@ function renderModes(levelIdx, unitIdx) {
   const isMixedUnit = currentUnit.isMixed;
   const teachingOnly = hasMixedSibling && !isMixedUnit;
 
-  // Picture-mode availability
+  // Picture-mode availability (not for letter units)
+  const hasLetterWords = currentUnit.words.some(w => w.isLetter);
   const picWords = currentUnit.words.filter(w => w.zh && w.img);
-  const picAvailable = picWords.length >= 4;
+  const picAvailable = picWords.length >= 4 && !hasLetterWords;
 
   let html = '<div class="card-grid mode-cards">';
 
@@ -1285,6 +1298,7 @@ function startLearn() {
 }
 
 function renderLearn() {
+  $header.classList.remove('hidden');
   showNav(`📖 ${currentUnit.name}`);
   $footer.classList.add('hidden');
 
@@ -1305,9 +1319,16 @@ function renderLearn() {
       return `<span class="learn-g ${isVowel ? 'vowel' : ''}" data-widx="${idx}" data-gidx="${i}" onclick="onLearnGraphemeClick(this)">${escHtml(g)}</span>`;
     }).join('');
 
+    const letterIpa = w.isSound ? w.letterSound : w.ipa;
+    const letterDisplay = w.isLetter
+      ? `<div class="learn-emoji" style="font-family:'Nunito',sans-serif;font-weight:800;font-size:1.6rem;line-height:1.2;color:#333;">
+           ${escHtml(w.word)}
+           <div style="font-size:0.75rem;font-weight:600;color:#888;">${escHtml(letterIpa || '')}</div>
+         </div>`
+      : (w.img ? `<div class="learn-emoji">${w.img}</div>` : '<div class="learn-emoji"></div>');
     html += `
       <div class="learn-card">
-        <div class="learn-emoji">${w.img || '📝'}</div>
+        ${letterDisplay}
         <div class="learn-mid">
           <div class="learn-graphemes">${grHtml}</div>
           ${w.zh ? `<div class="learn-zh">${escHtml(w.zh)}</div>` : ''}
@@ -1316,11 +1337,52 @@ function renderLearn() {
       </div>`;
   });
 
-  html += '</div></div>';
+  // First vowel of a contrast level: nothing to compare with yet, so no test
+  const learnFooter = isFirstContrastUnit(currentUnit)
+    ? `<div style="font-size:0.95rem;color:#888;line-height:1.6;">👍 學完下一個母音之後，就可以來測驗分辨這兩個音囉！</div>`
+    : `<button class="btn-action btn-primary" onclick="goToQuizFromLearn()" style="font-size:1rem;padding:10px 28px;">💪 我準備好了，去測驗！</button>`;
+  html += `</div>
+    <div style="text-align:center;margin:18px 0 24px;">
+      ${learnFooter}
+    </div>
+  </div>`;
   $content.innerHTML = html;
 }
 
+function goToQuizFromLearn() {
+  const hasMixedSibling = currentStage.units.some(u => u.isMixed);
+  const teachingOnly = hasMixedSibling && !currentUnit.isMixed;
+  if (teachingOnly) {
+    const idx = contrastTestIndexFor(currentUnit);
+    if (idx >= 0) {
+      // Go to the cumulative test that follows this unit (e.g. Short e → a / e 聽辨)
+      selectUnit(currentLevelIdx, idx);
+    } else {
+      startQuiz('listen');
+    }
+  } else {
+    goBack();
+  }
+}
+
+// Index of the cumulative contrast test whose newest vowel is this teaching unit (-1 if none)
+function contrastTestIndexFor(unit) {
+  if (!currentStage || !CONTRASTS) return -1;
+  return currentStage.units.findIndex(u => {
+    const ids = u.mixSourceUnitIds || [];
+    return u.isMixed && u.contrastVowels && ids.length > 1 && ids[ids.length - 1] === unit.id;
+  });
+}
+
+// True when a level uses contrast tests but this teaching unit has none yet (the first vowel)
+function isFirstContrastUnit(unit) {
+  if (!currentStage || !CONTRASTS) return false;
+  const hasContrastTests = currentStage.units.some(u => u.isMixed && u.contrastVowels);
+  return hasContrastTests && !unit.isMixed && contrastTestIndexFor(unit) < 0;
+}
+
 function isVowelGrapheme(g, ph) {
+  if (ph === '-' || ph === '') return false;
   const vowelLetters = /^[aeiouAEIOU]+$/;
   if (vowelLetters.test(g)) return true;
   if (['ai','ay','ee','ea','oa','oi','oy','ou','ow','oo','ew','ue','ui','au','aw','ey','ar','or','ore','er','ir','ur','ear','ie','igh'].includes(g.toLowerCase())) return true;
@@ -1350,6 +1412,18 @@ function startQuiz(mode) {
   score = 0;
   currentQ = 0;
   wrongItems = [];
+  quizOptions = [];
+
+  // Cumulative short-vowel test: every option differs from the answer ONLY in the vowel
+  if (mode === 'listen' && isContrastUnit(currentUnit)) {
+    const built = buildContrastQuiz(currentUnit.contrastVowels, CONTRAST_QUESTIONS);
+    if (built.length > 0) {
+      quizWords = built.map(q => q.word);
+      quizOptions = built.map(q => q.options);
+      pushView('quiz', () => renderQuestion());
+      return;
+    }
+  }
 
   // Pick words for this round
   let pool = currentUnit.words;
@@ -1362,13 +1436,89 @@ function startQuiz(mode) {
   pushView('quiz', () => renderQuestion());
 }
 
+// ── Vowel-contrast quiz (cumulative short-vowel tests) ──
+function isContrastUnit(unit) {
+  return !!(unit && unit.contrastVowels && CONTRASTS && Array.isArray(CONTRASTS.sets));
+}
+
+// Teaching words of the current level, keyed by lowercase spelling
+function stageWordMap() {
+  const map = {};
+  currentStage.units.forEach(u => {
+    if (u.isMixed) return;
+    (u.words || []).forEach(w => { if (w.word && !w.isLetter) map[w.word.toLowerCase()] = w; });
+  });
+  return map;
+}
+
+// Build n questions. Answers are taught words (they have audio + mapping data);
+// options are the other real words in the same contrast set, limited to vowels learned so far.
+function buildContrastQuiz(vowels, n) {
+  const pool = stageWordMap();
+  const vs = vowels.split('');
+  const wantSize = Math.min(3, vs.length); // prefer sets with 3+ choices once 3 vowels are learned
+
+  const cands = [];
+  CONTRASTS.sets.forEach((set, setIdx) => {
+    const members = vs.filter(v => set[v]);
+    if (members.length < 2) return;
+    members.forEach(v => {
+      const wordObj = pool[set[v]];
+      if (!wordObj || !wordObj.audio) return;
+      cands.push({ v, setIdx, wordObj, words: members.map(m => set[m]), rich: members.length >= wantSize });
+    });
+  });
+
+  const usedWords = new Set();
+  const usedSets = new Set();
+  const order = shuffle(vs);
+  const picked = [];
+  let misses = 0;
+  for (let i = 0; picked.length < n && misses < order.length; i++) {
+    const v = order[i % order.length];
+    const avail = shuffle(cands.filter(c => c.v === v && !usedWords.has(c.wordObj.word)));
+    if (avail.length === 0) { misses++; continue; }
+    misses = 0;
+    const rank = c => (usedSets.has(c.setIdx) ? 0 : 2) + (c.rich ? 1 : 0);
+    avail.sort((a, b) => rank(b) - rank(a));
+    const c = avail[0];
+    usedWords.add(c.wordObj.word);
+    usedSets.add(c.setIdx);
+    let others = shuffle(c.words.filter(w => w !== c.wordObj.word.toLowerCase()));
+    others = others.slice(0, 3); // at most 4 choices
+    picked.push({ word: c.wordObj, options: shuffle([c.wordObj.word, ...others]) });
+  }
+  return shuffle(picked);
+}
+
+// Audio for any word in a contrast set (taught word, or an extra word recorded just for contrast)
+function contrastAudioUrl(word) {
+  const w = String(word).toLowerCase();
+  const obj = stageWordMap()[w];
+  if (obj && obj.audio) return AUDIO_BASE + obj.audio;
+  if (CONTRASTS && CONTRASTS.remoteAudio && CONTRASTS.remoteAudio[w]) return AUDIO_BASE + CONTRASTS.remoteAudio[w];
+  return 'audio/contrast/' + w + '.mp3';
+}
+
+function playContrastWord(btn) {
+  const word = btn.dataset.word;
+  const audio = new Audio(contrastAudioUrl(word));
+  audio.play().catch(() => speakTTS(word));
+}
+
+function nextQuestion() {
+  currentQ++;
+  renderQuestion();
+}
+
 function renderQuestion() {
   if (currentQ >= quizWords.length) {
     renderResult();
     return;
   }
 
-  showNav(`${currentQ + 1} / ${quizWords.length}`);
+  showNav('');
+  $header.classList.add('hidden');
   $footer.classList.add('hidden');
 
   const word = quizWords[currentQ];
@@ -1410,7 +1560,9 @@ function renderQuestion() {
 function renderListenQuestion(word) {
   const isLetter = word.isLetter;
   let spellingOptions;
-  if (isLetter) {
+  if (quizOptions[currentQ]) {
+    spellingOptions = quizOptions[currentQ]; // vowel-contrast question
+  } else if (isLetter) {
     spellingOptions = getLetterOptions(word, 4);
   } else if (currentUnit && currentUnit.isMixed) {
     spellingOptions = generateMixedOptions(word);
@@ -2064,10 +2216,27 @@ function checkAnswer(btn, selected, correct) {
   const word = quizWords[currentQ];
   setTimeout(() => speakWord(word), 350);
 
-  // Show GP mapping below options
-  const mappingDiv = document.createElement('div');
-  mappingDiv.innerHTML = renderGPMapping(word);
-  grid.parentNode.appendChild(mappingDiv);
+  if (!word.isLetter) {
+    const mappingDiv = document.createElement('div');
+    mappingDiv.innerHTML = renderGPMapping(word);
+    grid.parentNode.appendChild(mappingDiv);
+  }
+
+  // Vowel-contrast question: let the student tap every option to hear the difference,
+  // and move on only when they press 下一題 (no auto-advance).
+  if (quizOptions[currentQ]) {
+    buttons.forEach(b => {
+      b.classList.remove('disabled');
+      b.onclick = () => playContrastWord(b);
+    });
+    const nextDiv = document.createElement('div');
+    nextDiv.style.cssText = 'text-align:center;margin-top:14px;';
+    nextDiv.innerHTML = `
+      <div style="font-size:0.9rem;color:#888;margin-bottom:10px;">👆 點每個選項，聽聽看母音哪裡不一樣</div>
+      <button class="btn-action btn-primary" onclick="nextQuestion()" style="font-size:1rem;padding:10px 28px;">下一題 →</button>`;
+    grid.parentNode.appendChild(nextDiv);
+    return;
+  }
 
   setTimeout(() => { currentQ++; renderQuestion(); }, 1800);
 }
@@ -2095,8 +2264,18 @@ function renderGPMapping(word) {
   return html;
 }
 
+// Pass line for vowel-contrast tests. Two-choice tests (a / e) need 90%, because guessing gets 50%.
+function contrastPassHtml(score, total) {
+  if (currentMode !== 'listen' || quizOptions.length === 0 || !isContrastUnit(currentUnit)) return '';
+  const need = Math.ceil(total * (currentUnit.contrastVowels.length === 2 ? 0.9 : 0.8));
+  return score >= need
+    ? `<div style="font-weight:800;color:var(--correct);margin:6px 0;">✅ 過關！這幾個母音你分得出來了</div>`
+    : `<div style="font-weight:700;color:#888;margin:6px 0;">還沒過關（要答對 ${need} 題），回去聽一聽再試一次</div>`;
+}
+
 // ── Result Screen ──────────────────────────────────────
 function renderResult() {
+  $header.classList.add('hidden');
   hideNav();
   const total = quizWords.length;
   const pct = Math.round((score / total) * 100);
@@ -2123,6 +2302,7 @@ function renderResult() {
       <div class="result-emoji">${emoji}</div>
       <div class="result-msg">${msg}</div>
       <div class="result-score">答對 ${score} / ${total} 題（${pct}%）</div>
+      ${contrastPassHtml(score, total)}
       <div class="result-stars">${starsHtml}</div>
       <div class="result-actions">
         <button class="btn-action btn-primary" onclick="startQuiz('${currentMode}')">🔄 再玩一次</button>

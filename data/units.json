@@ -563,7 +563,7 @@
                 0
               ],
               "zh": "在…；到…",
-              "img": "",
+              "img": "@",
               "audio": "audio/prep-1/at.mp3"
             },
             {
@@ -713,7 +713,7 @@
                 0
               ],
               "zh": "可以；能；罐頭",
-              "img": "",
+              "img": "🥫",
               "audio": "audio/auxi/can.mp3"
             },
             {
@@ -804,7 +804,7 @@
                 1
               ],
               "zh": "抓住(原形)",
-              "img": "",
+              "img": "🤲",
               "audio": "audio/ABB-1/catch.mp3"
             },
             {
@@ -928,7 +928,7 @@
                 0
               ],
               "zh": "肥胖的",
-              "img": "",
+              "img": "🐷",
               "audio": "audio/body-and-face-2/fat.mp3"
             },
             {
@@ -1019,7 +1019,7 @@
                 0
               ],
               "zh": "懸掛(原形)",
-              "img": "",
+              "img": "🪝",
               "audio": "audio/ABB-1/hang.mp3"
             },
             {
@@ -1326,7 +1326,7 @@
                 0
               ],
               "zh": "跑(過去式)",
-              "img": "",
+              "img": "🏃",
               "audio": "audio/ABA/ran.mp3"
             },
             {
@@ -1357,7 +1357,7 @@
                 0
               ],
               "zh": "響鈴(過去式)",
-              "img": "",
+              "img": "🔔",
               "audio": "audio/ABC-iau/rang.mp3"
             },
             {
@@ -1448,7 +1448,7 @@
                 0
               ],
               "zh": "唱歌(過去式)",
-              "img": "",
+              "img": "🎤",
               "audio": "audio/ABC-iau/sang.mp3"
             },
             {
@@ -1478,7 +1478,7 @@
                 0
               ],
               "zh": "坐(過去式/過去分詞)",
-              "img": "",
+              "img": "🪑",
               "audio": "audio/ABB-3/sat.mp3"
             },
             {
@@ -1580,7 +1580,7 @@
                 0
               ],
               "zh": "皮帶",
-              "img": "",
+              "img": "👔",
               "audio": "audio/clothes-2/belt.mp3"
             },
             {
@@ -1667,7 +1667,7 @@
                 0
               ],
               "zh": "餵養(過去式/過去分詞)",
-              "img": "",
+              "img": "🍼",
               "audio": "audio/ABB-1/fed.mp3"
             },
             {
@@ -1767,7 +1767,7 @@
                 0
               ],
               "zh": "握住（過去式/過去分詞）",
-              "img": "",
+              "img": "🤝",
               "audio": "audio/ABB-2/held.mp3"
             },
             {
@@ -1932,7 +1932,7 @@
                 0
               ],
               "zh": "離開（過去式/過去分詞）",
-              "img": "",
+              "img": "⬅️",
               "audio": "audio/ABB-2/left.mp3"
             },
             {
@@ -2052,7 +2052,7 @@
                 0
               ],
               "zh": "遇見（過去式/過去分詞）",
-              "img": "",
+              "img": "🤝",
               "audio": "audio/ABB-2/met.mp3"
             },
             {
@@ -2301,7 +2301,7 @@
                 0
               ],
               "zh": "",
-              "img": "",
+              "img": "🔟",
               "audio": "audio/numbers-1/ten.mp3"
             },
             {
@@ -2344,7 +2344,7 @@
                 1
               ],
               "zh": "",
-              "img": "",
+              "img": "12",
               "audio": "audio/numbers-2/twelve.mp3"
             },
             {
@@ -2591,7 +2591,7 @@
                 0
               ],
               "zh": "挖(原形)",
-              "img": "",
+              "img": "⛏️",
               "audio": "audio/ABB-1/dig.mp3"
             },
             {
@@ -2755,7 +2755,7 @@
                 1
               ],
               "zh": "給(原形)",
-              "img": "",
+              "img": "🎁",
               "audio": "audio/ABC-ave/give.mp3"
             },
             {
@@ -2815,7 +2815,7 @@
                 0
               ],
               "zh": "隱藏(過去式)",
-              "img": "",
+              "img": "🫣",
               "audio": "audio/ABC-misc/hid.mp3"
             },
             {
@@ -2845,7 +2845,7 @@
                 0
               ],
               "zh": "他（受格）",
-              "img": "",
+              "img": "👦",
               "audio": "audio/pron-2/him.mp3"
             },
             {
@@ -2905,7 +2905,7 @@
                 0
               ],
               "zh": "打(三態相同)",
-              "img": "",
+              "img": "👊",
               "audio": "audio/AAA/hit.mp3"
             },
             {
@@ -3292,7 +3292,7 @@
                 0
               ],
               "zh": "退出(三態相同)",
-              "img": "",
+              "img": "🚪",
               "audio": "audio/AAA/quit.mp3"
             },
             {
@@ -3353,7 +3353,7 @@
                 0
               ],
               "zh": "響鈴(原形)",
-              "img": "",
+              "img": "💍",
               "audio": "audio/ABC-iau/ring.mp3"
             },
             {
@@ -3418,7 +3418,7 @@
                 0
               ],
               "zh": "唱歌(原形)",
-              "img": "",
+              "img": "🎤",
               "audio": "audio/ABC-iau/sing.mp3"
             },
             {
@@ -3448,7 +3448,7 @@
                 0
               ],
               "zh": "坐(原形)",
-              "img": "",
+              "img": "🪑",
               "audio": "audio/ABB-3/sit.mp3"
             },
             {
@@ -3478,7 +3478,7 @@
                 0
               ],
               "zh": "",
-              "img": "",
+              "img": "6️⃣",
               "audio": "audio/numbers-1/six.mp3"
             },
             {
@@ -3508,7 +3508,7 @@
                 0
               ],
               "zh": "假髮",
-              "img": "",
+              "img": "💇",
               "audio": "audio/clothes-3/wig.mp3"
             },
             {
@@ -3538,7 +3538,7 @@
                 0
               ],
               "zh": "贏(原形)",
-              "img": "",
+              "img": "🏆",
               "audio": "audio/ABB-3/win.mp3"
             },
             {
@@ -3599,7 +3599,7 @@
                 0
               ],
               "zh": "拉拉鍊",
-              "img": "",
+              "img": "🤐",
               "audio": "audio/clothes-3/zip.mp3"
             }
           ]
@@ -3696,7 +3696,7 @@
                 0
               ],
               "zh": "· 點",
-              "img": "",
+              "img": "⚫",
               "audio": "audio/size-2/dot.mp3"
             },
             {
@@ -4451,7 +4451,7 @@
                 0
               ],
               "zh": "切(三態相同)",
-              "img": "",
+              "img": "✂️",
               "audio": "audio/AAA/cut.mp3"
             },
             {
@@ -4481,7 +4481,7 @@
                 0
               ],
               "zh": "挖(過去式/過去分詞)",
-              "img": "",
+              "img": "⛏️",
               "audio": "audio/ABB-1/dug.mp3"
             },
             {
@@ -4572,7 +4572,7 @@
                 0
               ],
               "zh": "懸掛(過去式/過去分詞)",
-              "img": "",
+              "img": "🪝",
               "audio": "audio/ABB-1/hung.mp3"
             },
             {
@@ -4754,7 +4754,7 @@
                 0
               ],
               "zh": "跑(原形/過去分詞)",
-              "img": "",
+              "img": "🏃",
               "audio": "audio/ABA/run.mp3"
             },
             {
@@ -4785,7 +4785,7 @@
                 0
               ],
               "zh": "響鈴(過去分詞)",
-              "img": "",
+              "img": "🔔",
               "audio": "audio/ABC-iau/rung.mp3"
             },
             {
@@ -4815,7 +4815,7 @@
                 0
               ],
               "zh": "☉ 太陽",
-              "img": "",
+              "img": "☀️",
               "audio": "audio/space/sun.mp3"
             },
             {
@@ -4846,7 +4846,7 @@
                 0
               ],
               "zh": "唱歌(過去分詞)",
-              "img": "",
+              "img": "🎤",
               "audio": "audio/ABC-iau/sung.mp3"
             },
             {
@@ -4902,7 +4902,7 @@
                 0
               ],
               "zh": "向上；在上面",
-              "img": "",
+              "img": "⬆️",
               "audio": "audio/prep-3/up.mp3"
             },
             {
@@ -4940,7 +4940,35 @@
           "words": [],
           "isMixed": true,
           "mixSourceUnitIds": [2, 3, 4, 5, 6],
+          "contrastVowels": "aeiou",
           "learnIntro": "把短 a / e / i / o / u 五個母音的字混在一起測。要靠耳朵真的分辨喔！"
+        },
+        {
+          "id": 91,
+          "name": "🎯 a / e 聽辨",
+          "pattern": "學完 Short e 之後測：分辨短母音 a 和 e",
+          "words": [],
+          "isMixed": true,
+          "mixSourceUnitIds": [2, 3],
+          "contrastVowels": "ae"
+        },
+        {
+          "id": 92,
+          "name": "🎯 a / e / i 聽辨",
+          "pattern": "學完 Short i 之後測：分辨 a、e、i",
+          "words": [],
+          "isMixed": true,
+          "mixSourceUnitIds": [2, 3, 4],
+          "contrastVowels": "aei"
+        },
+        {
+          "id": 93,
+          "name": "🎯 a / e / i / o 聽辨",
+          "pattern": "學完 Short o 之後測：分辨 a、e、i、o",
+          "words": [],
+          "isMixed": true,
+          "mixSourceUnitIds": [2, 3, 4, 5],
+          "contrastVowels": "aeio"
         }
       ]
     },
