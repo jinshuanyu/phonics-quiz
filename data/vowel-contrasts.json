@@ -1,56 +1,2829 @@
 {
-  "note": "短母音最小對立組：同一組的字子音發音相同，只有母音不同。鍵 a/e/i/o/u = 短母音 /æ ɛ ɪ ɒ ʌ/。",
-  "remoteAudio": { "an": "audio/first-words-1/an.mp3" },
-  "sets": [
-    { "a": "bad", "e": "bed", "i": "bid", "u": "bud" },
-    { "a": "bag", "e": "beg", "i": "big", "o": "bog", "u": "bug" },
-    { "a": "bat", "e": "bet", "i": "bit", "u": "but" },
-    { "a": "ban", "i": "bin", "u": "bun" },
-    { "a": "cab", "o": "cob", "u": "cub" },
-    { "a": "cap", "o": "cop", "u": "cup" },
-    { "a": "cat", "i": "kit", "o": "cot", "u": "cut" },
-    { "a": "dad", "i": "did", "u": "dud" },
-    { "i": "dig", "o": "dog", "u": "dug" },
-    { "a": "fan", "i": "fin", "u": "fun" },
-    { "a": "fat", "i": "fit" },
-    { "a": "fax", "i": "fix", "o": "fox" },
-    { "i": "fig", "o": "fog" },
-    { "e": "get", "o": "got", "u": "gut" },
-    { "a": "had", "i": "hid" },
-    { "o": "hog", "u": "hug" },
-    { "a": "ham", "e": "hem", "i": "him", "u": "hum" },
-    { "i": "hip", "o": "hop" },
-    { "a": "hat", "i": "hit", "o": "hot", "u": "hut" },
-    { "a": "jab", "o": "job" },
-    { "i": "jig", "o": "jog", "u": "jug" },
-    { "a": "jam", "e": "gem" },
-    { "a": "lad", "e": "led", "i": "lid" },
-    { "a": "lag", "e": "leg", "o": "log", "u": "lug" },
-    { "a": "lap", "i": "lip" },
-    { "e": "let", "i": "lit", "o": "lot" },
-    { "a": "mad", "i": "mid", "u": "mud" },
-    { "a": "man", "e": "men" },
-    { "a": "map", "o": "mop" },
-    { "a": "mat", "e": "met" },
-    { "e": "net", "o": "not", "u": "nut" },
-    { "e": "peg", "i": "pig", "u": "pug" },
-    { "a": "pan", "e": "pen", "i": "pin", "u": "pun" },
-    { "a": "pat", "e": "pet", "i": "pit", "o": "pot" },
-    { "i": "rib", "o": "rob", "u": "rub" },
-    { "e": "red", "i": "rid", "o": "rod" },
-    { "a": "ran", "u": "run" },
-    { "a": "rat", "o": "rot", "u": "rut" },
-    { "a": "sat", "e": "set", "i": "sit" },
-    { "a": "tab", "u": "tub" },
-    { "a": "tan", "e": "ten", "i": "tin" },
-    { "a": "tap", "i": "tip", "o": "top" },
-    { "a": "wag", "i": "wig" },
-    { "e": "wet", "i": "wit" },
-    { "a": "zap", "i": "zip" },
-    { "a": "rang", "i": "ring", "u": "rung" },
-    { "a": "sang", "i": "sing", "o": "song", "u": "sung" },
-    { "a": "hang", "u": "hung" },
-    { "a": "at", "i": "it" },
-    { "a": "an", "i": "in", "o": "on" }
-  ]
+ "note": "短母音最小對立組，全部取自 Word Mapper（有音檔）。同組的字子音發音相同，只有母音不同；鍵 a/e/i/o/u = /æ ɛ ɪ ɑ ʌ/。audio 路徑相對於 word-mapper 的 GitHub Pages。",
+ "sets": [
+  {
+   "a": {
+    "word": "bat",
+    "ipa": "/bæt/",
+    "graphemes": [
+     "b",
+     "a",
+     "t"
+    ],
+    "phonemes": [
+     "/b",
+     "æ",
+     "t/"
+    ],
+    "phonics": [
+     "/b",
+     "ă",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🦇 蝙蝠",
+    "audio": "audio/animals-2/bat.mp3"
+   },
+   "i": {
+    "word": "bit",
+    "ipa": "/bɪt/",
+    "graphemes": [
+     "b",
+     "i",
+     "t"
+    ],
+    "phonemes": [
+     "/b",
+     "ɪ",
+     "t/"
+    ],
+    "phonics": [
+     "/b",
+     "ĭ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "咬(過去式)",
+    "audio": "audio/ABC-misc/bit.mp3"
+   },
+   "u": {
+    "word": "but",
+    "ipa": "/bʌt/",
+    "graphemes": [
+     "b",
+     "u",
+     "t"
+    ],
+    "phonemes": [
+     "/b",
+     "ʌ",
+     "t/"
+    ],
+    "phonics": [
+     "/b",
+     "ŭ",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "但是",
+    "audio": "audio/conj/but.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "cap",
+    "ipa": "/kæp/",
+    "graphemes": [
+     "c",
+     "a",
+     "p"
+    ],
+    "phonemes": [
+     "/k",
+     "æ",
+     "p/"
+    ],
+    "phonics": [
+     "/k",
+     "ă",
+     "p/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🧢 帽子（無簷便帽）",
+    "audio": "audio/clothes-3/cap.mp3"
+   },
+   "o": {
+    "word": "cop",
+    "ipa": "/kɑp/",
+    "graphemes": [
+     "c",
+     "o",
+     "p"
+    ],
+    "phonemes": [
+     "/k",
+     "ɑ",
+     "p/"
+    ],
+    "phonics": [
+     "/k",
+     "ŏ",
+     "p/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "👮 警察",
+    "audio": "audio/occupations-4/cop.mp3"
+   },
+   "u": {
+    "word": "cup",
+    "ipa": "/kʌp/",
+    "graphemes": [
+     "c",
+     "u",
+     "p"
+    ],
+    "phonemes": [
+     "/k",
+     "ʌ",
+     "p/"
+    ],
+    "phonics": [
+     "/k",
+     "ŭ",
+     "p/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🥛 杯子",
+    "audio": "audio/food-5/cup.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "cat",
+    "ipa": "/kæt/",
+    "graphemes": [
+     "c",
+     "a",
+     "t"
+    ],
+    "phonemes": [
+     "/k",
+     "æ",
+     "t/"
+    ],
+    "phonics": [
+     "/k",
+     "ă",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🐱 貓",
+    "audio": "audio/animals-1/cat.mp3"
+   },
+   "i": {
+    "word": "kit",
+    "ipa": "/kɪt/",
+    "graphemes": [
+     "k",
+     "i",
+     "t"
+    ],
+    "phonemes": [
+     "/k",
+     "ɪ",
+     "t/"
+    ],
+    "phonics": [
+     "/k",
+     "ĭ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🧰 工具包",
+    "audio": "audio/house-3/kit.mp3"
+   },
+   "u": {
+    "word": "cut",
+    "ipa": "/kʌt/",
+    "graphemes": [
+     "c",
+     "u",
+     "t"
+    ],
+    "phonemes": [
+     "/k",
+     "ʌ",
+     "t/"
+    ],
+    "phonics": [
+     "/k",
+     "ŭ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "切(三態相同)",
+    "audio": "audio/AAA/cut.mp3"
+   }
+  },
+  {
+   "e": {
+    "word": "get",
+    "ipa": "/ɡɛt/",
+    "graphemes": [
+     "g",
+     "e",
+     "t"
+    ],
+    "phonemes": [
+     "/ɡ",
+     "ɛ",
+     "t/"
+    ],
+    "phonics": [
+     "/ɡ",
+     "ĕ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "得到(原形)",
+    "audio": "audio/ABB-1/get.mp3"
+   },
+   "o": {
+    "word": "got",
+    "ipa": "/ɡɑt/",
+    "graphemes": [
+     "g",
+     "o",
+     "t"
+    ],
+    "phonemes": [
+     "/ɡ",
+     "ɑ",
+     "t/"
+    ],
+    "phonics": [
+     "/ɡ",
+     "ŏ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "得到(過去式/過去分詞)",
+    "audio": "audio/ABB-1/got.mp3"
+   },
+   "u": {
+    "word": "gut",
+    "ipa": "/ɡʌt/",
+    "graphemes": [
+     "g",
+     "u",
+     "t"
+    ],
+    "phonemes": [
+     "/ɡ",
+     "ʌ",
+     "t/"
+    ],
+    "phonics": [
+     "/ɡ",
+     "ŭ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🫃 腸",
+    "audio": "audio/body-and-face-2/gut.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "hat",
+    "ipa": "/hæt/",
+    "graphemes": [
+     "h",
+     "a",
+     "t"
+    ],
+    "phonemes": [
+     "/h",
+     "æ",
+     "t/"
+    ],
+    "phonics": [
+     "/h",
+     "ă",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🎩 帽子",
+    "audio": "audio/clothes-1/hat.mp3"
+   },
+   "i": {
+    "word": "hit",
+    "ipa": "/hɪt/",
+    "graphemes": [
+     "h",
+     "i",
+     "t"
+    ],
+    "phonemes": [
+     "/h",
+     "ɪ",
+     "t/"
+    ],
+    "phonics": [
+     "/h",
+     "ĭ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "打(三態相同)",
+    "audio": "audio/AAA/hit.mp3"
+   },
+   "o": {
+    "word": "hot",
+    "ipa": "/hɑt/",
+    "graphemes": [
+     "h",
+     "o",
+     "t"
+    ],
+    "phonemes": [
+     "/h",
+     "ɑ",
+     "t/"
+    ],
+    "phonics": [
+     "/h",
+     "ŏ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🥵 熱的",
+    "audio": "audio/food-5/hot.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "lack",
+    "ipa": "/læk/",
+    "graphemes": [
+     "l",
+     "a",
+     "ck"
+    ],
+    "phonemes": [
+     "/l",
+     "æ",
+     "k/"
+    ],
+    "phonics": [
+     "/l",
+     "ă",
+     "k/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🚫 缺乏",
+    "audio": "audio/nouns-1/lack.mp3"
+   },
+   "i": {
+    "word": "lick",
+    "ipa": "/lɪk/",
+    "graphemes": [
+     "l",
+     "i",
+     "ck"
+    ],
+    "phonemes": [
+     "/l",
+     "ɪ",
+     "k/"
+    ],
+    "phonics": [
+     "/l",
+     "ĭ",
+     "k/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "👅 舔",
+    "audio": "audio/1C-3/lick.mp3"
+   },
+   "o": {
+    "word": "lock",
+    "ipa": "/lɑk/",
+    "graphemes": [
+     "l",
+     "o",
+     "ck"
+    ],
+    "phonemes": [
+     "/l",
+     "ɑ",
+     "k/"
+    ],
+    "phonics": [
+     "/l",
+     "ŏ",
+     "k/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🔒 鎖",
+    "audio": "audio/1B-2/lock.mp3"
+   }
+  },
+  {
+   "e": {
+    "word": "net",
+    "ipa": "/nɛt/",
+    "graphemes": [
+     "n",
+     "e",
+     "t"
+    ],
+    "phonemes": [
+     "/n",
+     "ɛ",
+     "t/"
+    ],
+    "phonics": [
+     "/n",
+     "ĕ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🕸️ 網",
+    "audio": "audio/nouns-4/net.mp3"
+   },
+   "o": {
+    "word": "not",
+    "ipa": "/nɑt/",
+    "graphemes": [
+     "n",
+     "o",
+     "t"
+    ],
+    "phonemes": [
+     "/n",
+     "ɑ",
+     "t/"
+    ],
+    "phonics": [
+     "/n",
+     "ŏ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🚫 不",
+    "audio": "audio/adv-4/not.mp3"
+   },
+   "u": {
+    "word": "nut",
+    "ipa": "/nʌt/",
+    "graphemes": [
+     "n",
+     "u",
+     "t"
+    ],
+    "phonemes": [
+     "/n",
+     "ʌ",
+     "t/"
+    ],
+    "phonics": [
+     "/n",
+     "ŭ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🌰 堅果",
+    "audio": "audio/food-1/nut.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "pan",
+    "ipa": "/pæn/",
+    "graphemes": [
+     "p",
+     "a",
+     "n"
+    ],
+    "phonemes": [
+     "/p",
+     "æ",
+     "n/"
+    ],
+    "phonics": [
+     "/p",
+     "ă",
+     "n/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🍳 平底鍋",
+    "audio": "audio/house-3/pan.mp3"
+   },
+   "e": {
+    "word": "pen",
+    "ipa": "/pɛn/",
+    "graphemes": [
+     "p",
+     "e",
+     "n"
+    ],
+    "phonemes": [
+     "/p",
+     "ɛ",
+     "n/"
+    ],
+    "phonics": [
+     "/p",
+     "ĕ",
+     "n/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🖊 原子筆",
+    "audio": "audio/school-2/pen.mp3"
+   },
+   "i": {
+    "word": "pin",
+    "ipa": "/pɪn/",
+    "graphemes": [
+     "p",
+     "i",
+     "n"
+    ],
+    "phonemes": [
+     "/p",
+     "ɪ",
+     "n/"
+    ],
+    "phonics": [
+     "/p",
+     "ĭ",
+     "n/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "📌 大頭針",
+    "audio": "audio/school-2/pin.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "pat",
+    "ipa": "/pæt/",
+    "graphemes": [
+     "p",
+     "a",
+     "t"
+    ],
+    "phonemes": [
+     "/p",
+     "æ",
+     "t/"
+    ],
+    "phonics": [
+     "/p",
+     "ă",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🤚 輕拍",
+    "audio": "audio/1A-2/pat.mp3"
+   },
+   "e": {
+    "word": "pet",
+    "ipa": "/pɛt/",
+    "graphemes": [
+     "p",
+     "e",
+     "t"
+    ],
+    "phonemes": [
+     "/p",
+     "ɛ",
+     "t/"
+    ],
+    "phonics": [
+     "/p",
+     "ĕ",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🐕 寵物",
+    "audio": "audio/animals-1/pet.mp3"
+   },
+   "o": {
+    "word": "pot",
+    "ipa": "/pɑt/",
+    "graphemes": [
+     "p",
+     "o",
+     "t"
+    ],
+    "phonemes": [
+     "/p",
+     "ɑ",
+     "t/"
+    ],
+    "phonics": [
+     "/p",
+     "ŏ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🥘 鍋子",
+    "audio": "audio/house-3/pot.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "rang",
+    "ipa": "/ræŋ/",
+    "graphemes": [
+     "r",
+     "a",
+     "ng"
+    ],
+    "phonemes": [
+     "/r",
+     "æ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/r",
+     "ă",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "響鈴(過去式)",
+    "audio": "audio/ABC-iau/rang.mp3"
+   },
+   "i": {
+    "word": "ring",
+    "ipa": "/rɪŋ/",
+    "graphemes": [
+     "r",
+     "i",
+     "ng"
+    ],
+    "phonemes": [
+     "/r",
+     "ɪ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/r",
+     "ĭ",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "響鈴(原形)",
+    "audio": "audio/ABC-iau/ring.mp3"
+   },
+   "u": {
+    "word": "rung",
+    "ipa": "/rʌŋ/",
+    "graphemes": [
+     "r",
+     "u",
+     "ng"
+    ],
+    "phonemes": [
+     "/r",
+     "ʌ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/r",
+     "ŭ",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "響鈴(過去分詞)",
+    "audio": "audio/ABC-iau/rung.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "sack",
+    "ipa": "/sæk/",
+    "graphemes": [
+     "s",
+     "a",
+     "ck"
+    ],
+    "phonemes": [
+     "/s",
+     "æ",
+     "k/"
+    ],
+    "phonics": [
+     "/s",
+     "ă",
+     "k/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🛍️ 麻布袋",
+    "audio": "audio/house-4/sack.mp3"
+   },
+   "i": {
+    "word": "sick",
+    "ipa": "/sɪk/",
+    "graphemes": [
+     "s",
+     "i",
+     "ck"
+    ],
+    "phonemes": [
+     "/s",
+     "ɪ",
+     "k/"
+    ],
+    "phonics": [
+     "/s",
+     "ĭ",
+     "k/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🤢 生病的",
+    "audio": "audio/health-1/sick.mp3"
+   },
+   "o": {
+    "word": "sock",
+    "ipa": "/sɑk/",
+    "graphemes": [
+     "s",
+     "o",
+     "ck"
+    ],
+    "phonemes": [
+     "/s",
+     "ɑ",
+     "k/"
+    ],
+    "phonics": [
+     "/s",
+     "ŏ",
+     "k/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🧦 襪子（單數）",
+    "audio": "audio/clothes-1/sock.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "sang",
+    "ipa": "/sæŋ/",
+    "graphemes": [
+     "s",
+     "a",
+     "ng"
+    ],
+    "phonemes": [
+     "/s",
+     "æ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/s",
+     "ă",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "唱歌(過去式)",
+    "audio": "audio/ABC-iau/sang.mp3"
+   },
+   "i": {
+    "word": "sing",
+    "ipa": "/sɪŋ/",
+    "graphemes": [
+     "s",
+     "i",
+     "ng"
+    ],
+    "phonemes": [
+     "/s",
+     "ɪ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/s",
+     "ĭ",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "唱歌(原形)",
+    "audio": "audio/ABC-iau/sing.mp3"
+   },
+   "u": {
+    "word": "sung",
+    "ipa": "/sʌŋ/",
+    "graphemes": [
+     "s",
+     "u",
+     "ng"
+    ],
+    "phonemes": [
+     "/s",
+     "ʌ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/s",
+     "ŭ",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "唱歌(過去分詞)",
+    "audio": "audio/ABC-iau/sung.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "sat",
+    "ipa": "/sæt/",
+    "graphemes": [
+     "s",
+     "a",
+     "t"
+    ],
+    "phonemes": [
+     "/s",
+     "æ",
+     "t/"
+    ],
+    "phonics": [
+     "/s",
+     "ă",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "坐(過去式/過去分詞)",
+    "audio": "audio/ABB-3/sat.mp3"
+   },
+   "e": {
+    "word": "set",
+    "ipa": "/sɛt/",
+    "graphemes": [
+     "s",
+     "e",
+     "t"
+    ],
+    "phonemes": [
+     "/s",
+     "ɛ",
+     "t/"
+    ],
+    "phonics": [
+     "/s",
+     "ĕ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "設定(三態相同)",
+    "audio": "audio/AAA/set.mp3"
+   },
+   "i": {
+    "word": "sit",
+    "ipa": "/sɪt/",
+    "graphemes": [
+     "s",
+     "i",
+     "t"
+    ],
+    "phonemes": [
+     "/s",
+     "ɪ",
+     "t/"
+    ],
+    "phonics": [
+     "/s",
+     "ĭ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "坐(原形)",
+    "audio": "audio/ABB-3/sit.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "tap",
+    "ipa": "/tæp/",
+    "graphemes": [
+     "t",
+     "a",
+     "p"
+    ],
+    "phonemes": [
+     "/t",
+     "æ",
+     "p/"
+    ],
+    "phonics": [
+     "/t",
+     "ă",
+     "p/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "👆 輕觸",
+    "audio": "audio/1B-1/tap.mp3"
+   },
+   "i": {
+    "word": "tip",
+    "ipa": "/tɪp/",
+    "graphemes": [
+     "t",
+     "i",
+     "p"
+    ],
+    "phonemes": [
+     "/t",
+     "ɪ",
+     "p/"
+    ],
+    "phonics": [
+     "/t",
+     "ĭ",
+     "p/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "💵 訣竅",
+    "audio": "audio/money/tip.mp3"
+   },
+   "o": {
+    "word": "top",
+    "ipa": "/tɑp/",
+    "graphemes": [
+     "t",
+     "o",
+     "p"
+    ],
+    "phonemes": [
+     "/t",
+     "ɑ",
+     "p/"
+    ],
+    "phonics": [
+     "/t",
+     "ŏ",
+     "p/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🔝 頂端",
+    "audio": "audio/places-1/top.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "as",
+    "ipa": "/æz/",
+    "graphemes": [
+     "a",
+     "s"
+    ],
+    "phonemes": [
+     "/æ",
+     "z/"
+    ],
+    "phonics": [
+     "/ă",
+     "z/"
+    ],
+    "hearts": [
+     false,
+     false
+    ],
+    "zh": "由於；當……時",
+    "audio": "audio/conj/as.mp3"
+   },
+   "i": {
+    "word": "is",
+    "ipa": "/ɪz/",
+    "graphemes": [
+     "i",
+     "s"
+    ],
+    "phonemes": [
+     "/ɪ",
+     "z/"
+    ],
+    "phonics": [
+     "/ĭ",
+     "z/"
+    ],
+    "hearts": [
+     false,
+     true
+    ],
+    "zh": "是（現在式；第三人稱單數）",
+    "audio": "audio/be/is.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "at",
+    "ipa": "/æt/",
+    "graphemes": [
+     "a",
+     "t"
+    ],
+    "phonemes": [
+     "/æ",
+     "t/"
+    ],
+    "phonics": [
+     "/ă",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false
+    ],
+    "zh": "在…；到…",
+    "audio": "audio/prep-1/at.mp3"
+   },
+   "i": {
+    "word": "it",
+    "ipa": "/ɪt/",
+    "graphemes": [
+     "i",
+     "t"
+    ],
+    "phonemes": [
+     "/ɪ",
+     "t/"
+    ],
+    "phonics": [
+     "/ĭ",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false
+    ],
+    "zh": "它；這件事（主格/受格）",
+    "audio": "audio/pron-2/it.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "bad",
+    "ipa": "/bæd/",
+    "graphemes": [
+     "b",
+     "a",
+     "d"
+    ],
+    "phonemes": [
+     "/b",
+     "æ",
+     "d/"
+    ],
+    "phonics": [
+     "/b",
+     "ă",
+     "d/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "👎 壞的",
+    "audio": "audio/people-5/bad.mp3"
+   },
+   "e": {
+    "word": "bed",
+    "ipa": "/bɛd/",
+    "graphemes": [
+     "b",
+     "e",
+     "d"
+    ],
+    "phonemes": [
+     "/b",
+     "ɛ",
+     "d/"
+    ],
+    "phonics": [
+     "/b",
+     "ĕ",
+     "d/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🛏 床",
+    "audio": "audio/house-2/bed.mp3"
+   }
+  },
+  {
+   "i": {
+    "word": "big",
+    "ipa": "/bɪɡ/",
+    "graphemes": [
+     "b",
+     "i",
+     "g"
+    ],
+    "phonemes": [
+     "/b",
+     "ɪ",
+     "ɡ/"
+    ],
+    "phonics": [
+     "/b",
+     "ĭ",
+     "ɡ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🐘 大的",
+    "audio": "audio/size-3/big.mp3"
+   },
+   "u": {
+    "word": "bug",
+    "ipa": "/bʌɡ/",
+    "graphemes": [
+     "b",
+     "u",
+     "g"
+    ],
+    "phonemes": [
+     "/b",
+     "ʌ",
+     "ɡ/"
+    ],
+    "phonics": [
+     "/b",
+     "ŭ",
+     "ɡ/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🐞 小蟲；臭蟲",
+    "audio": "audio/animals-3/bug.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "cab",
+    "ipa": "/kæb/",
+    "graphemes": [
+     "c",
+     "a",
+     "b"
+    ],
+    "phonemes": [
+     "/k",
+     "æ",
+     "b/"
+    ],
+    "phonics": [
+     "/k",
+     "ă",
+     "b/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🚕 計程車",
+    "audio": "audio/transportation-2/cab.mp3"
+   },
+   "u": {
+    "word": "cub",
+    "ipa": "/kʌb/",
+    "graphemes": [
+     "c",
+     "u",
+     "b"
+    ],
+    "phonemes": [
+     "/k",
+     "ʌ",
+     "b/"
+    ],
+    "phonics": [
+     "/k",
+     "ŭ",
+     "b/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🐻 幼獸",
+    "audio": "audio/animals-3/cub.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "dad",
+    "ipa": "/dæd/",
+    "graphemes": [
+     "d",
+     "a",
+     "d"
+    ],
+    "phonemes": [
+     "/d",
+     "æ",
+     "d/"
+    ],
+    "phonics": [
+     "/d",
+     "ă",
+     "d/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "👨🏻爸爸",
+    "audio": "audio/family-friends-1/dad.mp3"
+   },
+   "i": {
+    "word": "did",
+    "ipa": "/dɪd/",
+    "graphemes": [
+     "d",
+     "i",
+     "d"
+    ],
+    "phonemes": [
+     "/d",
+     "ɪ",
+     "d/"
+    ],
+    "phonics": [
+     "/d",
+     "ĭ",
+     "d/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "做(過去式)",
+    "audio": "audio/ABC-misc/did.mp3"
+   }
+  },
+  {
+   "i": {
+    "word": "dig",
+    "ipa": "/dɪɡ/",
+    "graphemes": [
+     "d",
+     "i",
+     "g"
+    ],
+    "phonemes": [
+     "/d",
+     "ɪ",
+     "ɡ/"
+    ],
+    "phonics": [
+     "/d",
+     "ĭ",
+     "ɡ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "挖(原形)",
+    "audio": "audio/ABB-1/dig.mp3"
+   },
+   "u": {
+    "word": "dug",
+    "ipa": "/dʌɡ/",
+    "graphemes": [
+     "d",
+     "u",
+     "g"
+    ],
+    "phonemes": [
+     "/d",
+     "ʌ",
+     "ɡ/"
+    ],
+    "phonics": [
+     "/d",
+     "ŭ",
+     "ɡ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "挖(過去式/過去分詞)",
+    "audio": "audio/ABB-1/dug.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "fan",
+    "ipa": "/fæn/",
+    "graphemes": [
+     "f",
+     "a",
+     "n"
+    ],
+    "phonemes": [
+     "/f",
+     "æ",
+     "n/"
+    ],
+    "phonics": [
+     "/f",
+     "ă",
+     "n/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "💨 風扇",
+    "audio": "audio/house-2/fan.mp3"
+   },
+   "u": {
+    "word": "fun",
+    "ipa": "/fʌn/",
+    "graphemes": [
+     "f",
+     "u",
+     "n"
+    ],
+    "phonemes": [
+     "/f",
+     "ʌ",
+     "n/"
+    ],
+    "phonics": [
+     "/f",
+     "ŭ",
+     "n/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🎉 樂趣；有趣的",
+    "audio": "audio/sports-3/fun.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "fat",
+    "ipa": "/fæt/",
+    "graphemes": [
+     "f",
+     "a",
+     "t"
+    ],
+    "phonemes": [
+     "/f",
+     "æ",
+     "t/"
+    ],
+    "phonics": [
+     "/f",
+     "ă",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "肥胖的",
+    "audio": "audio/body-and-face-2/fat.mp3"
+   },
+   "i": {
+    "word": "fit",
+    "ipa": "/fɪt/",
+    "graphemes": [
+     "f",
+     "i",
+     "t"
+    ],
+    "phonemes": [
+     "/f",
+     "ɪ",
+     "t/"
+    ],
+    "phonics": [
+     "/f",
+     "ĭ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "👔 適合",
+    "audio": "audio/1A-1/fit.mp3"
+   }
+  },
+  {
+   "i": {
+    "word": "fix",
+    "ipa": "/fɪks/",
+    "graphemes": [
+     "f",
+     "i",
+     "x"
+    ],
+    "phonemes": [
+     "/f",
+     "ɪ",
+     "ks/"
+    ],
+    "phonics": [
+     "/f",
+     "ĭ",
+     "ks/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🔧 修理",
+    "audio": "audio/house-3/fix.mp3"
+   },
+   "o": {
+    "word": "fox",
+    "ipa": "/fɑks/",
+    "graphemes": [
+     "f",
+     "o",
+     "x"
+    ],
+    "phonemes": [
+     "/f",
+     "ɑ",
+     "ks/"
+    ],
+    "phonics": [
+     "/f",
+     "ŏ",
+     "ks/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🦊 狐狸",
+    "audio": "audio/animals-3/fox.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "had",
+    "ipa": "/hæd/",
+    "graphemes": [
+     "h",
+     "a",
+     "d"
+    ],
+    "phonemes": [
+     "/h",
+     "æ",
+     "d/"
+    ],
+    "phonics": [
+     "/h",
+     "ă",
+     "d/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "有(過去式/過去分詞)",
+    "audio": "audio/ABB-1/had.mp3"
+   },
+   "i": {
+    "word": "hid",
+    "ipa": "/hɪd/",
+    "graphemes": [
+     "h",
+     "i",
+     "d"
+    ],
+    "phonemes": [
+     "/h",
+     "ɪ",
+     "d/"
+    ],
+    "phonics": [
+     "/h",
+     "ĭ",
+     "d/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "隱藏(過去式)",
+    "audio": "audio/ABC-misc/hid.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "ham",
+    "ipa": "/hæm/",
+    "graphemes": [
+     "h",
+     "a",
+     "m"
+    ],
+    "phonemes": [
+     "/h",
+     "æ",
+     "m/"
+    ],
+    "phonics": [
+     "/h",
+     "ă",
+     "m/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🍖 火腿",
+    "audio": "audio/food-2/ham.mp3"
+   },
+   "i": {
+    "word": "him",
+    "ipa": "/hɪm/",
+    "graphemes": [
+     "h",
+     "i",
+     "m"
+    ],
+    "phonemes": [
+     "/h",
+     "ɪ",
+     "m/"
+    ],
+    "phonics": [
+     "/h",
+     "ĭ",
+     "m/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "他（受格）",
+    "audio": "audio/pron-2/him.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "hang",
+    "ipa": "/hæŋ/",
+    "graphemes": [
+     "h",
+     "a",
+     "ng"
+    ],
+    "phonemes": [
+     "/h",
+     "æ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/h",
+     "ă",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "懸掛(原形)",
+    "audio": "audio/ABB-1/hang.mp3"
+   },
+   "u": {
+    "word": "hung",
+    "ipa": "/hʌŋ/",
+    "graphemes": [
+     "h",
+     "u",
+     "ng"
+    ],
+    "phonemes": [
+     "/h",
+     "ʌ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/h",
+     "ŭ",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "懸掛(過去式/過去分詞)",
+    "audio": "audio/ABB-1/hung.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "has",
+    "ipa": "/hæz/",
+    "graphemes": [
+     "h",
+     "a",
+     "s"
+    ],
+    "phonemes": [
+     "/h",
+     "æ",
+     "z/"
+    ],
+    "phonics": [
+     "/h",
+     "ă",
+     "z/"
+    ],
+    "hearts": [
+     false,
+     false,
+     true
+    ],
+    "zh": "有（第三人稱單數）",
+    "audio": "audio/auxi/has.mp3"
+   },
+   "i": {
+    "word": "his",
+    "ipa": "/hɪz/",
+    "graphemes": [
+     "h",
+     "i",
+     "s"
+    ],
+    "phonemes": [
+     "/h",
+     "ɪ",
+     "z/"
+    ],
+    "phonics": [
+     "/h",
+     "ĭ",
+     "z/"
+    ],
+    "hearts": [
+     false,
+     false,
+     true
+    ],
+    "zh": "他的（所有格/所有格代名詞）",
+    "audio": "audio/pron-2/his.mp3"
+   }
+  },
+  {
+   "i": {
+    "word": "hip",
+    "ipa": "/hɪp/",
+    "graphemes": [
+     "h",
+     "i",
+     "p"
+    ],
+    "phonemes": [
+     "/h",
+     "ɪ",
+     "p/"
+    ],
+    "phonics": [
+     "/h",
+     "ĭ",
+     "p/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🦵 臀部",
+    "audio": "audio/body-and-face-3/hip.mp3"
+   },
+   "o": {
+    "word": "hop",
+    "ipa": "/hɑp/",
+    "graphemes": [
+     "h",
+     "o",
+     "p"
+    ],
+    "phonemes": [
+     "/h",
+     "ɑ",
+     "p/"
+    ],
+    "phonics": [
+     "/h",
+     "ŏ",
+     "p/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🐰 跳躍",
+    "audio": "audio/1B-1/hop.mp3"
+   }
+  },
+  {
+   "i": {
+    "word": "in",
+    "ipa": "/ɪn/",
+    "graphemes": [
+     "i",
+     "n"
+    ],
+    "phonemes": [
+     "/ɪ",
+     "n/"
+    ],
+    "phonics": [
+     "/ĭ",
+     "n/"
+    ],
+    "hearts": [
+     false,
+     false
+    ],
+    "zh": "在…之中；在…裡面",
+    "audio": "audio/prep-2/in.mp3"
+   },
+   "o": {
+    "word": "on",
+    "ipa": "/ɑn/",
+    "graphemes": [
+     "o",
+     "n"
+    ],
+    "phonemes": [
+     "/ɑ",
+     "n/"
+    ],
+    "phonics": [
+     "/ŏ",
+     "n/"
+    ],
+    "hearts": [
+     false,
+     false
+    ],
+    "zh": "在…之上；打開",
+    "audio": "audio/prep-2/on.mp3"
+   }
+  },
+  {
+   "i": {
+    "word": "kid",
+    "ipa": "/kɪd/",
+    "graphemes": [
+     "k",
+     "i",
+     "d"
+    ],
+    "phonemes": [
+     "/k",
+     "ɪ",
+     "d/"
+    ],
+    "phonics": [
+     "/k",
+     "ĭ",
+     "d/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🧒🏻小孩",
+    "audio": "audio/family-friends-1/kid.mp3"
+   },
+   "o": {
+    "word": "cod",
+    "ipa": "/kɑd/",
+    "graphemes": [
+     "c",
+     "o",
+     "d"
+    ],
+    "phonemes": [
+     "/k",
+     "ɑ",
+     "d/"
+    ],
+    "phonics": [
+     "/k",
+     "ŏ",
+     "d/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🐟 鱈魚",
+    "audio": "audio/animals-3/cod.mp3"
+   }
+  },
+  {
+   "e": {
+    "word": "led",
+    "ipa": "/lɛd/",
+    "graphemes": [
+     "l",
+     "e",
+     "d"
+    ],
+    "phonemes": [
+     "/l",
+     "ɛ",
+     "d/"
+    ],
+    "phonics": [
+     "/l",
+     "ĕ",
+     "d/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "領導（過去式/過去分詞）",
+    "audio": "audio/ABB-2/led.mp3"
+   },
+   "i": {
+    "word": "lid",
+    "ipa": "/lɪd/",
+    "graphemes": [
+     "l",
+     "i",
+     "d"
+    ],
+    "phonemes": [
+     "/l",
+     "ɪ",
+     "d/"
+    ],
+    "phonics": [
+     "/l",
+     "ĭ",
+     "d/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🫙 蓋子",
+    "audio": "audio/house-4/lid.mp3"
+   }
+  },
+  {
+   "e": {
+    "word": "let",
+    "ipa": "/lɛt/",
+    "graphemes": [
+     "l",
+     "e",
+     "t"
+    ],
+    "phonemes": [
+     "/l",
+     "ɛ",
+     "t/"
+    ],
+    "phonics": [
+     "/l",
+     "ĕ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "讓(三態相同)",
+    "audio": "audio/AAA/let.mp3"
+   },
+   "o": {
+    "word": "lot",
+    "ipa": "/lɑt/",
+    "graphemes": [
+     "l",
+     "o",
+     "t"
+    ],
+    "phonemes": [
+     "/l",
+     "ɑ",
+     "t/"
+    ],
+    "phonics": [
+     "/l",
+     "ŏ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "許多；空地",
+    "audio": "audio/numbers-4/lot.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "mad",
+    "ipa": "/mæd/",
+    "graphemes": [
+     "m",
+     "a",
+     "d"
+    ],
+    "phonemes": [
+     "/m",
+     "æ",
+     "d/"
+    ],
+    "phonics": [
+     "/m",
+     "ă",
+     "d/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "😠 瘋狂/生氣",
+    "audio": "audio/people-3/mad.mp3"
+   },
+   "u": {
+    "word": "mud",
+    "ipa": "/mʌd/",
+    "graphemes": [
+     "m",
+     "u",
+     "d"
+    ],
+    "phonemes": [
+     "/m",
+     "ʌ",
+     "d/"
+    ],
+    "phonics": [
+     "/m",
+     "ŭ",
+     "d/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🟤 泥巴",
+    "audio": "audio/weather-4/mud.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "man",
+    "ipa": "/mæn/",
+    "graphemes": [
+     "m",
+     "a",
+     "n"
+    ],
+    "phonemes": [
+     "/m",
+     "æ",
+     "n/"
+    ],
+    "phonics": [
+     "/m",
+     "ă",
+     "n/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "👨🏻男人",
+    "audio": "audio/family-friends-1/man.mp3"
+   },
+   "e": {
+    "word": "men",
+    "ipa": "/mɛn/",
+    "graphemes": [
+     "m",
+     "e",
+     "n"
+    ],
+    "phonemes": [
+     "/m",
+     "ɛ",
+     "n/"
+    ],
+    "phonics": [
+     "/m",
+     "ĕ",
+     "n/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "👨🏻👨🏻男人們",
+    "audio": "audio/family-friends-1/men.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "map",
+    "ipa": "/mæp/",
+    "graphemes": [
+     "m",
+     "a",
+     "p"
+    ],
+    "phonemes": [
+     "/m",
+     "æ",
+     "p/"
+    ],
+    "phonics": [
+     "/m",
+     "ă",
+     "p/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🗺 地圖",
+    "audio": "audio/school-2/map.mp3"
+   },
+   "o": {
+    "word": "mop",
+    "ipa": "/mɑp/",
+    "graphemes": [
+     "m",
+     "o",
+     "p"
+    ],
+    "phonemes": [
+     "/m",
+     "ɑ",
+     "p/"
+    ],
+    "phonics": [
+     "/m",
+     "ŏ",
+     "p/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🧹 拖地",
+    "audio": "audio/1C-3/mop.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "mat",
+    "ipa": "/mæt/",
+    "graphemes": [
+     "m",
+     "a",
+     "t"
+    ],
+    "phonemes": [
+     "/m",
+     "æ",
+     "t/"
+    ],
+    "phonics": [
+     "/m",
+     "ă",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "墊子",
+    "audio": "audio/house-3/mat.mp3"
+   },
+   "e": {
+    "word": "met",
+    "ipa": "/mɛt/",
+    "graphemes": [
+     "m",
+     "e",
+     "t"
+    ],
+    "phonemes": [
+     "/m",
+     "ɛ",
+     "t/"
+    ],
+    "phonics": [
+     "/m",
+     "ĕ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "遇見（過去式/過去分詞）",
+    "audio": "audio/ABB-2/met.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "match",
+    "ipa": "/mætʃ/",
+    "graphemes": [
+     "m",
+     "a",
+     "tch"
+    ],
+    "phonemes": [
+     "/m",
+     "æ",
+     "tʃ/"
+    ],
+    "phonics": [
+     "/m",
+     "ă",
+     "ch/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🔥 匹配",
+    "audio": "audio/1B-2/match.mp3"
+   },
+   "u": {
+    "word": "much",
+    "ipa": "/mʌtʃ/",
+    "graphemes": [
+     "m",
+     "u",
+     "ch"
+    ],
+    "phonemes": [
+     "/m",
+     "ʌ",
+     "tʃ/"
+    ],
+    "phonics": [
+     "/m",
+     "ŭ",
+     "ch/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "許多",
+    "audio": "audio/numbers-4/much.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "pack",
+    "ipa": "/pæk/",
+    "graphemes": [
+     "p",
+     "a",
+     "ck"
+    ],
+    "phonemes": [
+     "/p",
+     "æ",
+     "k/"
+    ],
+    "phonics": [
+     "/p",
+     "ă",
+     "k/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🎒 打包",
+    "audio": "audio/1B-2/pack.mp3"
+   },
+   "i": {
+    "word": "pick",
+    "ipa": "/pɪk/",
+    "graphemes": [
+     "p",
+     "i",
+     "ck"
+    ],
+    "phonemes": [
+     "/p",
+     "ɪ",
+     "k/"
+    ],
+    "phonics": [
+     "/p",
+     "ĭ",
+     "k/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🫴 挑選",
+    "audio": "audio/1B-2/pick.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "ran",
+    "ipa": "/ræn/",
+    "graphemes": [
+     "r",
+     "a",
+     "n"
+    ],
+    "phonemes": [
+     "/r",
+     "æ",
+     "n/"
+    ],
+    "phonics": [
+     "/r",
+     "ă",
+     "n/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "跑(過去式)",
+    "audio": "audio/ABA/ran.mp3"
+   },
+   "u": {
+    "word": "run",
+    "ipa": "/rʌn/",
+    "graphemes": [
+     "r",
+     "u",
+     "n"
+    ],
+    "phonemes": [
+     "/r",
+     "ʌ",
+     "n/"
+    ],
+    "phonics": [
+     "/r",
+     "ŭ",
+     "n/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "跑(原形/過去分詞)",
+    "audio": "audio/ABA/run.mp3"
+   }
+  },
+  {
+   "o": {
+    "word": "rob",
+    "ipa": "/rɑb/",
+    "graphemes": [
+     "r",
+     "o",
+     "b"
+    ],
+    "phonemes": [
+     "/r",
+     "ɑ",
+     "b/"
+    ],
+    "phonics": [
+     "/r",
+     "ŏ",
+     "b/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🔫 搶劫",
+    "audio": "audio/1C-4/rob.mp3"
+   },
+   "u": {
+    "word": "rub",
+    "ipa": "/rʌb/",
+    "graphemes": [
+     "r",
+     "u",
+     "b"
+    ],
+    "phonemes": [
+     "/r",
+     "ʌ",
+     "b/"
+    ],
+    "phonics": [
+     "/r",
+     "ŭ",
+     "b/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🤲 摩擦",
+    "audio": "audio/1C-4/rub.mp3"
+   }
+  },
+  {
+   "i": {
+    "word": "ship",
+    "ipa": "/ʃɪp/",
+    "graphemes": [
+     "sh",
+     "i",
+     "p"
+    ],
+    "phonemes": [
+     "/ʃ",
+     "ɪ",
+     "p/"
+    ],
+    "phonics": [
+     "/sh",
+     "ĭ",
+     "p/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🚢 輪船",
+    "audio": "audio/transportation-2/ship.mp3"
+   },
+   "o": {
+    "word": "shop",
+    "ipa": "/ʃɑp/",
+    "graphemes": [
+     "sh",
+     "o",
+     "p"
+    ],
+    "phonemes": [
+     "/ʃ",
+     "ɑ",
+     "p/"
+    ],
+    "phonics": [
+     "/sh",
+     "ŏ",
+     "p/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🛍️ 商店",
+    "audio": "audio/places-3/shop.mp3"
+   }
+  },
+  {
+   "o": {
+    "word": "shot",
+    "ipa": "/ʃɑt/",
+    "graphemes": [
+     "sh",
+     "o",
+     "t"
+    ],
+    "phonemes": [
+     "/ʃ",
+     "ɑ",
+     "t/"
+    ],
+    "phonics": [
+     "/sh",
+     "ŏ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "射擊(過去式/過去分詞)",
+    "audio": "audio/ABB-3/shot.mp3"
+   },
+   "u": {
+    "word": "shut",
+    "ipa": "/ʃʌt/",
+    "graphemes": [
+     "sh",
+     "u",
+     "t"
+    ],
+    "phonemes": [
+     "/ʃ",
+     "ʌ",
+     "t/"
+    ],
+    "phonics": [
+     "/sh",
+     "ŭ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "關閉(三態相同)",
+    "audio": "audio/AAA/shut.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "than",
+    "ipa": "/ðæn/",
+    "graphemes": [
+     "th",
+     "a",
+     "n"
+    ],
+    "phonemes": [
+     "/ð",
+     "æ",
+     "n/"
+    ],
+    "phonics": [
+     "/<u>th</u>",
+     "ă",
+     "n/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "比...更...",
+    "audio": "audio/conj/than.mp3"
+   },
+   "e": {
+    "word": "then",
+    "ipa": "/ðɛn/",
+    "graphemes": [
+     "th",
+     "e",
+     "n"
+    ],
+    "phonemes": [
+     "/ð",
+     "ɛ",
+     "n/"
+    ],
+    "phonics": [
+     "/<u>th</u>",
+     "ĕ",
+     "n/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "👉 然後",
+    "audio": "audio/adv-2/then.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "vat",
+    "ipa": "/væt/",
+    "graphemes": [
+     "v",
+     "a",
+     "t"
+    ],
+    "phonemes": [
+     "/v",
+     "æ",
+     "t/"
+    ],
+    "phonics": [
+     "/v",
+     "ă",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🛢️ 大桶",
+    "audio": "audio/house-3/vat.mp3"
+   },
+   "e": {
+    "word": "vet",
+    "ipa": "/vɛt/",
+    "graphemes": [
+     "v",
+     "e",
+     "t"
+    ],
+    "phonemes": [
+     "/v",
+     "ɛ",
+     "t/"
+    ],
+    "phonics": [
+     "/v",
+     "ĕ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🐾 獸醫",
+    "audio": "audio/occupations-2/vet.mp3"
+   }
+  },
+  {
+   "e": {
+    "word": "when",
+    "ipa": "/wɛn/",
+    "graphemes": [
+     "wh",
+     "e",
+     "n"
+    ],
+    "phonemes": [
+     "/w",
+     "ɛ",
+     "n/"
+    ],
+    "phonics": [
+     "/w",
+     "ĕ",
+     "n/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "何時；什麼時候",
+    "audio": "audio/wh-words/when.mp3"
+   },
+   "i": {
+    "word": "win",
+    "ipa": "/wɪn/",
+    "graphemes": [
+     "w",
+     "i",
+     "n"
+    ],
+    "phonemes": [
+     "/w",
+     "ɪ",
+     "n/"
+    ],
+    "phonics": [
+     "/w",
+     "ĭ",
+     "n/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "贏(原形)",
+    "audio": "audio/ABB-3/win.mp3"
+   }
+  }
+ ]
 }

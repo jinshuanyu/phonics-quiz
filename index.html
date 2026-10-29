@@ -703,9 +703,17 @@ body {
   -webkit-overflow-scrolling: touch;
   margin: 0 -16px;
   scrollbar-width: none;
-  touch-action: pan-x;
+  touch-action: pan-x pan-y; /* let the page still scroll vertically when a finger starts on the map */
+  cursor: grab;
 }
+.quest-map.dragging { cursor: grabbing; }
 .quest-map::-webkit-scrollbar { display: none; }
+/* Mouse users: show a thin scrollbar so the map is obviously scrollable */
+@media (hover: hover) and (pointer: fine) {
+  .quest-map { scrollbar-width: thin; }
+  .quest-map::-webkit-scrollbar { display: block; height: 8px; }
+  .quest-map::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.2); border-radius: 4px; }
+}
 
 .map-inner {
   position: relative;
@@ -1129,6 +1137,29 @@ function renderHome() {
       const atEnd = mapEl.scrollLeft + mapEl.clientWidth >= mapEl.scrollWidth - 10;
       mapEl.classList.toggle('scrolled-end', atEnd);
     });
+
+    // Desktop: mouse wheel scrolls the map sideways, and the map can be dragged with the mouse
+    mapEl.addEventListener('wheel', (e) => {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        mapEl.scrollLeft += e.deltaY;
+        e.preventDefault();
+      }
+    }, { passive: false });
+    let dragStartX = 0, dragStartScroll = 0, dragMoved = false;
+    mapEl.addEventListener('mousedown', (e) => {
+      dragStartX = e.clientX; dragStartScroll = mapEl.scrollLeft; dragMoved = false;
+      mapEl.classList.add('dragging');
+      e.preventDefault();
+    });
+    document.addEventListener('mousemove', (e) => {
+      if (!mapEl.classList.contains('dragging')) return;
+      const dx = e.clientX - dragStartX;
+      if (Math.abs(dx) > 4) dragMoved = true;
+      mapEl.scrollLeft = dragStartScroll - dx;
+    });
+    document.addEventListener('mouseup', () => mapEl.classList.remove('dragging'));
+    // A drag must not count as a click on a level node
+    mapEl.addEventListener('click', (e) => { if (dragMoved) e.stopPropagation(); }, true);
   }
 }
 
@@ -1339,7 +1370,7 @@ function renderLearn() {
 
   // First vowel of a contrast level: nothing to compare with yet, so no test
   const learnFooter = isFirstContrastUnit(currentUnit)
-    ? `<div style="font-size:0.95rem;color:#888;line-height:1.6;">👍 學完下一個母音之後，就可以來測驗分辨這兩個音囉！</div>`
+    ? `<div style="font-size:0.95rem;color:#888;line-height:1.6;">👍 這個母音先聽熟，學完下一個母音之後就可以測驗囉！</div>`
     : `<button class="btn-action btn-primary" onclick="goToQuizFromLearn()" style="font-size:1rem;padding:10px 28px;">💪 我準備好了，去測驗！</button>`;
   html += `</div>
     <div style="text-align:center;margin:18px 0 24px;">
@@ -1441,31 +1472,18 @@ function isContrastUnit(unit) {
   return !!(unit && unit.contrastVowels && CONTRASTS && Array.isArray(CONTRASTS.sets));
 }
 
-// Teaching words of the current level, keyed by lowercase spelling
-function stageWordMap() {
-  const map = {};
-  currentStage.units.forEach(u => {
-    if (u.isMixed) return;
-    (u.words || []).forEach(w => { if (w.word && !w.isLetter) map[w.word.toLowerCase()] = w; });
-  });
-  return map;
-}
-
-// Build n questions. Answers are taught words (they have audio + mapping data);
-// options are the other real words in the same contrast set, limited to vowels learned so far.
+// Build n questions from the contrast sets (every set member is a full Word Mapper word
+// with audio). Options are the other words in the same set, limited to vowels learned so far.
 function buildContrastQuiz(vowels, n) {
-  const pool = stageWordMap();
   const vs = vowels.split('');
   const wantSize = Math.min(3, vs.length); // prefer sets with 3+ choices once 3 vowels are learned
 
   const cands = [];
   CONTRASTS.sets.forEach((set, setIdx) => {
-    const members = vs.filter(v => set[v]);
+    const members = vs.filter(v => set[v] && set[v].audio);
     if (members.length < 2) return;
     members.forEach(v => {
-      const wordObj = pool[set[v]];
-      if (!wordObj || !wordObj.audio) return;
-      cands.push({ v, setIdx, wordObj, words: members.map(m => set[m]), rich: members.length >= wantSize });
+      cands.push({ v, setIdx, wordObj: set[v], words: members.map(m => set[m].word), rich: members.length >= wantSize });
     });
   });
 
@@ -1491,19 +1509,22 @@ function buildContrastQuiz(vowels, n) {
   return shuffle(picked);
 }
 
-// Audio for any word in a contrast set (taught word, or an extra word recorded just for contrast)
+// Audio for any word in a contrast set (all of them come from Word Mapper)
 function contrastAudioUrl(word) {
   const w = String(word).toLowerCase();
-  const obj = stageWordMap()[w];
-  if (obj && obj.audio) return AUDIO_BASE + obj.audio;
-  if (CONTRASTS && CONTRASTS.remoteAudio && CONTRASTS.remoteAudio[w]) return AUDIO_BASE + CONTRASTS.remoteAudio[w];
-  return 'audio/contrast/' + w + '.mp3';
+  for (const set of CONTRASTS.sets) {
+    for (const v in set) {
+      if (set[v].word === w && set[v].audio) return AUDIO_BASE + set[v].audio;
+    }
+  }
+  return null;
 }
 
 function playContrastWord(btn) {
   const word = btn.dataset.word;
-  const audio = new Audio(contrastAudioUrl(word));
-  audio.play().catch(() => speakTTS(word));
+  const url = contrastAudioUrl(word);
+  if (!url) { speakTTS(word); return; }
+  new Audio(url).play().catch(() => speakTTS(word));
 }
 
 function nextQuestion() {
@@ -2264,10 +2285,12 @@ function renderGPMapping(word) {
   return html;
 }
 
-// Pass line for vowel-contrast tests. Two-choice tests (a / e) need 90%, because guessing gets 50%.
+// Pass line for vowel-contrast tests. When most questions were two-choice, guessing gets 50%,
+// so the bar is 90%; otherwise 80%.
 function contrastPassHtml(score, total) {
   if (currentMode !== 'listen' || quizOptions.length === 0 || !isContrastUnit(currentUnit)) return '';
-  const need = Math.ceil(total * (currentUnit.contrastVowels.length === 2 ? 0.9 : 0.8));
+  const avgChoices = quizOptions.reduce((s, o) => s + o.length, 0) / quizOptions.length;
+  const need = Math.ceil(total * (avgChoices < 2.5 ? 0.9 : 0.8));
   return score >= need
     ? `<div style="font-weight:800;color:var(--correct);margin:6px 0;">✅ 過關！這幾個母音你分得出來了</div>`
     : `<div style="font-weight:700;color:#888;margin:6px 0;">還沒過關（要答對 ${need} 題），回去聽一聽再試一次</div>`;
@@ -2313,12 +2336,12 @@ function renderResult() {
     html += `
       <div class="wrong-review">
         <h3>📝 錯題回顧</h3>`;
-    wrongItems.forEach(w => {
+    wrongItems.forEach((w, i) => {
       html += `
         <div class="wrong-item">
           <div class="wrong-word">
             ${escHtml(w.word)}
-            <button class="btn-speak" onclick="speakWord(findWord('${escHtml(w.word)}'))" aria-label="再聽一次">🔊</button>
+            <button class="btn-speak" onclick="speakWord(wrongItems[${i}])" aria-label="再聽一次">🔊</button>
           </div>
           ${renderGPMapping(w)}
         </div>`;

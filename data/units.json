@@ -4934,16 +4934,6 @@
           ]
         },
         {
-          "id": 99,
-          "name": "🎯 綜合測驗 Mixed Vowels",
-          "pattern": "5 short vowels mixed — true ear test",
-          "words": [],
-          "isMixed": true,
-          "mixSourceUnitIds": [2, 3, 4, 5, 6],
-          "contrastVowels": "aeiou",
-          "learnIntro": "把短 a / e / i / o / u 五個母音的字混在一起測。要靠耳朵真的分辨喔！"
-        },
-        {
           "id": 91,
           "name": "🎯 a / e 聽辨",
           "pattern": "學完 Short e 之後測：分辨短母音 a 和 e",
@@ -4963,12 +4953,12 @@
         },
         {
           "id": 93,
-          "name": "🎯 a / e / i / o 聽辨",
-          "pattern": "學完 Short o 之後測：分辨 a、e、i、o",
+          "name": "🎯 a / o / u 聽辨",
+          "pattern": "學完 Short u 之後測：分辨 a、o、u",
           "words": [],
           "isMixed": true,
-          "mixSourceUnitIds": [2, 3, 4, 5],
-          "contrastVowels": "aeio"
+          "mixSourceUnitIds": [2, 5, 6],
+          "contrastVowels": "aou"
         }
       ]
     },
