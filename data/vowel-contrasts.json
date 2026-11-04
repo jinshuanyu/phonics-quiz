@@ -1,6 +1,112 @@
 {
- "note": "短母音最小對立組，全部取自 Word Mapper（有音檔）。同組的字子音發音相同，只有母音不同；鍵 a/e/i/o/u = /æ ɛ ɪ ɑ ʌ/。audio 路徑相對於 word-mapper 的 GitHub Pages。",
+ "note": "短母音最小對立組，全部取自 Word Mapper（有音檔）。同組的字子音發音相同，只有母音不同；鍵 a/e/i/o/u = /æ ɛ ɪ ɑ·ɔ ʌ/。audio 路徑相對於 word-mapper 的 GitHub Pages。",
  "sets": [
+  {
+   "a": {
+    "word": "sang",
+    "ipa": "/sæŋ/",
+    "graphemes": [
+     "s",
+     "a",
+     "ng"
+    ],
+    "phonemes": [
+     "/s",
+     "æ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/s",
+     "ă",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "唱歌(過去式)",
+    "audio": "audio/ABC-iau/sang.mp3"
+   },
+   "i": {
+    "word": "sing",
+    "ipa": "/sɪŋ/",
+    "graphemes": [
+     "s",
+     "i",
+     "ng"
+    ],
+    "phonemes": [
+     "/s",
+     "ɪ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/s",
+     "ĭ",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "唱歌(原形)",
+    "audio": "audio/ABC-iau/sing.mp3"
+   },
+   "o": {
+    "word": "song",
+    "ipa": "/sɔŋ/",
+    "graphemes": [
+     "s",
+     "o",
+     "ng"
+    ],
+    "phonemes": [
+     "/s",
+     "ɔ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/s",
+     "aw",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🎤 歌曲",
+    "audio": "audio/sports-3/song.mp3"
+   },
+   "u": {
+    "word": "sung",
+    "ipa": "/sʌŋ/",
+    "graphemes": [
+     "s",
+     "u",
+     "ng"
+    ],
+    "phonemes": [
+     "/s",
+     "ʌ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/s",
+     "ŭ",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "唱歌(過去分詞)",
+    "audio": "audio/ABC-iau/sung.mp3"
+   }
+  },
   {
    "a": {
     "word": "bat",
@@ -239,6 +345,86 @@
     ],
     "zh": "切(三態相同)",
     "audio": "audio/AAA/cut.mp3"
+   }
+  },
+  {
+   "i": {
+    "word": "dig",
+    "ipa": "/dɪɡ/",
+    "graphemes": [
+     "d",
+     "i",
+     "g"
+    ],
+    "phonemes": [
+     "/d",
+     "ɪ",
+     "ɡ/"
+    ],
+    "phonics": [
+     "/d",
+     "ĭ",
+     "ɡ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "挖(原形)",
+    "audio": "audio/ABB-1/dig.mp3"
+   },
+   "o": {
+    "word": "dog",
+    "ipa": "/dɔɡ/",
+    "graphemes": [
+     "d",
+     "o",
+     "g"
+    ],
+    "phonemes": [
+     "/d",
+     "ɑ",
+     "ɡ/"
+    ],
+    "phonics": [
+     "/d",
+     "ŏ",
+     "ɡ/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🐶 狗",
+    "audio": "audio/animals-1/dog.mp3"
+   },
+   "u": {
+    "word": "dug",
+    "ipa": "/dʌɡ/",
+    "graphemes": [
+     "d",
+     "u",
+     "g"
+    ],
+    "phonemes": [
+     "/d",
+     "ʌ",
+     "ɡ/"
+    ],
+    "phonics": [
+     "/d",
+     "ŭ",
+     "ɡ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "挖(過去式/過去分詞)",
+    "audio": "audio/ABB-1/dug.mp3"
    }
   },
   {
@@ -883,86 +1069,6 @@
   },
   {
    "a": {
-    "word": "sang",
-    "ipa": "/sæŋ/",
-    "graphemes": [
-     "s",
-     "a",
-     "ng"
-    ],
-    "phonemes": [
-     "/s",
-     "æ",
-     "ŋ/"
-    ],
-    "phonics": [
-     "/s",
-     "ă",
-     "ŋ/"
-    ],
-    "hearts": [
-     0,
-     0,
-     0
-    ],
-    "zh": "唱歌(過去式)",
-    "audio": "audio/ABC-iau/sang.mp3"
-   },
-   "i": {
-    "word": "sing",
-    "ipa": "/sɪŋ/",
-    "graphemes": [
-     "s",
-     "i",
-     "ng"
-    ],
-    "phonemes": [
-     "/s",
-     "ɪ",
-     "ŋ/"
-    ],
-    "phonics": [
-     "/s",
-     "ĭ",
-     "ŋ/"
-    ],
-    "hearts": [
-     0,
-     0,
-     0
-    ],
-    "zh": "唱歌(原形)",
-    "audio": "audio/ABC-iau/sing.mp3"
-   },
-   "u": {
-    "word": "sung",
-    "ipa": "/sʌŋ/",
-    "graphemes": [
-     "s",
-     "u",
-     "ng"
-    ],
-    "phonemes": [
-     "/s",
-     "ʌ",
-     "ŋ/"
-    ],
-    "phonics": [
-     "/s",
-     "ŭ",
-     "ŋ/"
-    ],
-    "hearts": [
-     0,
-     0,
-     0
-    ],
-    "zh": "唱歌(過去分詞)",
-    "audio": "audio/ABC-iau/sung.mp3"
-   }
-  },
-  {
-   "a": {
     "word": "sat",
     "ipa": "/sæt/",
     "graphemes": [
@@ -1427,60 +1533,6 @@
     ],
     "zh": "做(過去式)",
     "audio": "audio/ABC-misc/did.mp3"
-   }
-  },
-  {
-   "i": {
-    "word": "dig",
-    "ipa": "/dɪɡ/",
-    "graphemes": [
-     "d",
-     "i",
-     "g"
-    ],
-    "phonemes": [
-     "/d",
-     "ɪ",
-     "ɡ/"
-    ],
-    "phonics": [
-     "/d",
-     "ĭ",
-     "ɡ/"
-    ],
-    "hearts": [
-     0,
-     0,
-     0
-    ],
-    "zh": "挖(原形)",
-    "audio": "audio/ABB-1/dig.mp3"
-   },
-   "u": {
-    "word": "dug",
-    "ipa": "/dʌɡ/",
-    "graphemes": [
-     "d",
-     "u",
-     "g"
-    ],
-    "phonemes": [
-     "/d",
-     "ʌ",
-     "ɡ/"
-    ],
-    "phonics": [
-     "/d",
-     "ŭ",
-     "ɡ/"
-    ],
-    "hearts": [
-     0,
-     0,
-     0
-    ],
-    "zh": "挖(過去式/過去分詞)",
-    "audio": "audio/ABB-1/dug.mp3"
    }
   },
   {
@@ -2121,6 +2173,60 @@
     ],
     "zh": "許多；空地",
     "audio": "audio/numbers-4/lot.mp3"
+   }
+  },
+  {
+   "o": {
+    "word": "long",
+    "ipa": "/lɔŋ/",
+    "graphemes": [
+     "l",
+     "o",
+     "ng"
+    ],
+    "phonemes": [
+     "/l",
+     "ɔ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/l",
+     "aw",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "📏 長的",
+    "audio": "audio/size-3/long.mp3"
+   },
+   "u": {
+    "word": "lung",
+    "ipa": "/lʌŋ/",
+    "graphemes": [
+     "l",
+     "u",
+     "ng"
+    ],
+    "phonemes": [
+     "/l",
+     "ʌ",
+     "ŋ/"
+    ],
+    "phonics": [
+     "/l",
+     "ŭ",
+     "ŋ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🫁 肺",
+    "audio": "audio/body-and-face-3/lung.mp3"
    }
   },
   {
