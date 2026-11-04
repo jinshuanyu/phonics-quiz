@@ -1514,7 +1514,7 @@ function contrastAudioUrl(word) {
   const w = String(word).toLowerCase();
   for (const set of CONTRASTS.sets) {
     for (const v in set) {
-      if (set[v].word === w && set[v].audio) return AUDIO_BASE + set[v].audio;
+      if (set[v].word === w && set[v].audio) return audioUrl(set[v].audio);
     }
   }
   return null;
@@ -2396,8 +2396,7 @@ function speakWord(wordObj) {
 
   // Try MP3 first
   if (wordObj.audio) {
-    const audioUrl = AUDIO_BASE + wordObj.audio;
-    const audio = new Audio(audioUrl);
+    const audio = new Audio(audioUrl(wordObj.audio));
     audio.play().catch(() => {
       // Fallback to Web Speech API
       speakTTS(typeof word === 'string' ? word : word);
@@ -2410,6 +2409,12 @@ function speakWord(wordObj) {
   }
 
   speakTTS(typeof word === 'string' ? word : wordObj.word);
+}
+
+// Audio paths are relative to Word Mapper's site unless they are already full URLs
+// (e.g. words borrowed from 母音偵探 vowel-detective)
+function audioUrl(path) {
+  return /^https?:\/\//.test(path) ? path : AUDIO_BASE + path;
 }
 
 function speakTTS(text) {

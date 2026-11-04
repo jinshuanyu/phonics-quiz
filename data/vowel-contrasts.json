@@ -1,6 +1,431 @@
 {
- "note": "短母音最小對立組，全部取自 Word Mapper（有音檔）。同組的字子音發音相同，只有母音不同；鍵 a/e/i/o/u = /æ ɛ ɪ ɑ·ɔ ʌ/。audio 路徑相對於 word-mapper 的 GitHub Pages。",
+ "note": "短母音最小對立組。字優先取自 Word Mapper，沒有的取自母音偵探（audio 為完整網址）。同組的字子音發音相同，只有母音不同；鍵 a/e/i/o/u = /æ ɛ ɪ ɑ·ɔ ʌ/。相對路徑的 audio 以 word-mapper 的 GitHub Pages 為根。",
  "sets": [
+  {
+   "a": {
+    "word": "bat",
+    "ipa": "/bæt/",
+    "graphemes": [
+     "b",
+     "a",
+     "t"
+    ],
+    "phonemes": [
+     "/b",
+     "æ",
+     "t/"
+    ],
+    "phonics": [
+     "/b",
+     "ă",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🦇 蝙蝠",
+    "audio": "audio/animals-2/bat.mp3"
+   },
+   "e": {
+    "word": "bet",
+    "ipa": "/bɛt/",
+    "graphemes": [
+     "b",
+     "e",
+     "t"
+    ],
+    "phonemes": [
+     "/b",
+     "ɛ",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "打賭",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/bet.mp3"
+   },
+   "i": {
+    "word": "bit",
+    "ipa": "/bɪt/",
+    "graphemes": [
+     "b",
+     "i",
+     "t"
+    ],
+    "phonemes": [
+     "/b",
+     "ɪ",
+     "t/"
+    ],
+    "phonics": [
+     "/b",
+     "ĭ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "咬(過去式)",
+    "audio": "audio/ABC-misc/bit.mp3"
+   },
+   "o": {
+    "word": "bot",
+    "ipa": "/bɑt/",
+    "graphemes": [
+     "b",
+     "o",
+     "t"
+    ],
+    "phonemes": [
+     "/b",
+     "ɑ",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "機器人",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/bot.mp3"
+   },
+   "u": {
+    "word": "but",
+    "ipa": "/bʌt/",
+    "graphemes": [
+     "b",
+     "u",
+     "t"
+    ],
+    "phonemes": [
+     "/b",
+     "ʌ",
+     "t/"
+    ],
+    "phonics": [
+     "/b",
+     "ŭ",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "但是",
+    "audio": "audio/conj/but.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "cat",
+    "ipa": "/kæt/",
+    "graphemes": [
+     "c",
+     "a",
+     "t"
+    ],
+    "phonemes": [
+     "/k",
+     "æ",
+     "t/"
+    ],
+    "phonics": [
+     "/k",
+     "ă",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🐱 貓",
+    "audio": "audio/animals-1/cat.mp3"
+   },
+   "i": {
+    "word": "kit",
+    "ipa": "/kɪt/",
+    "graphemes": [
+     "k",
+     "i",
+     "t"
+    ],
+    "phonemes": [
+     "/k",
+     "ɪ",
+     "t/"
+    ],
+    "phonics": [
+     "/k",
+     "ĭ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🧰 工具包",
+    "audio": "audio/house-3/kit.mp3"
+   },
+   "o": {
+    "word": "cot",
+    "ipa": "/kɑt/",
+    "graphemes": [
+     "c",
+     "o",
+     "t"
+    ],
+    "phonemes": [
+     "/k",
+     "ɑ",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "嬰兒床",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/cot.mp3"
+   },
+   "u": {
+    "word": "cut",
+    "ipa": "/kʌt/",
+    "graphemes": [
+     "c",
+     "u",
+     "t"
+    ],
+    "phonemes": [
+     "/k",
+     "ʌ",
+     "t/"
+    ],
+    "phonics": [
+     "/k",
+     "ŭ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "切(三態相同)",
+    "audio": "audio/AAA/cut.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "hat",
+    "ipa": "/hæt/",
+    "graphemes": [
+     "h",
+     "a",
+     "t"
+    ],
+    "phonemes": [
+     "/h",
+     "æ",
+     "t/"
+    ],
+    "phonics": [
+     "/h",
+     "ă",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🎩 帽子",
+    "audio": "audio/clothes-1/hat.mp3"
+   },
+   "i": {
+    "word": "hit",
+    "ipa": "/hɪt/",
+    "graphemes": [
+     "h",
+     "i",
+     "t"
+    ],
+    "phonemes": [
+     "/h",
+     "ɪ",
+     "t/"
+    ],
+    "phonics": [
+     "/h",
+     "ĭ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "打(三態相同)",
+    "audio": "audio/AAA/hit.mp3"
+   },
+   "o": {
+    "word": "hot",
+    "ipa": "/hɑt/",
+    "graphemes": [
+     "h",
+     "o",
+     "t"
+    ],
+    "phonemes": [
+     "/h",
+     "ɑ",
+     "t/"
+    ],
+    "phonics": [
+     "/h",
+     "ŏ",
+     "t/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🥵 熱的",
+    "audio": "audio/food-5/hot.mp3"
+   },
+   "u": {
+    "word": "hut",
+    "ipa": "/hʌt/",
+    "graphemes": [
+     "h",
+     "u",
+     "t"
+    ],
+    "phonemes": [
+     "/h",
+     "ʌ",
+     "t/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "小屋",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/hut.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "lack",
+    "ipa": "/læk/",
+    "graphemes": [
+     "l",
+     "a",
+     "ck"
+    ],
+    "phonemes": [
+     "/l",
+     "æ",
+     "k/"
+    ],
+    "phonics": [
+     "/l",
+     "ă",
+     "k/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🚫 缺乏",
+    "audio": "audio/nouns-1/lack.mp3"
+   },
+   "i": {
+    "word": "lick",
+    "ipa": "/lɪk/",
+    "graphemes": [
+     "l",
+     "i",
+     "ck"
+    ],
+    "phonemes": [
+     "/l",
+     "ɪ",
+     "k/"
+    ],
+    "phonics": [
+     "/l",
+     "ĭ",
+     "k/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "👅 舔",
+    "audio": "audio/1C-3/lick.mp3"
+   },
+   "o": {
+    "word": "lock",
+    "ipa": "/lɑk/",
+    "graphemes": [
+     "l",
+     "o",
+     "ck"
+    ],
+    "phonemes": [
+     "/l",
+     "ɑ",
+     "k/"
+    ],
+    "phonics": [
+     "/l",
+     "ŏ",
+     "k/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🔒 鎖",
+    "audio": "audio/1B-2/lock.mp3"
+   },
+   "u": {
+    "word": "luck",
+    "ipa": "/lʌk/",
+    "graphemes": [
+     "l",
+     "u",
+     "ck"
+    ],
+    "phonemes": [
+     "/l",
+     "ʌ",
+     "k/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "運氣",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/luck.mp3"
+   }
+  },
   {
    "a": {
     "word": "sang",
@@ -108,83 +533,153 @@
    }
   },
   {
-   "a": {
-    "word": "bat",
-    "ipa": "/bæt/",
-    "graphemes": [
-     "b",
-     "a",
-     "t"
-    ],
-    "phonemes": [
-     "/b",
-     "æ",
-     "t/"
-    ],
-    "phonics": [
-     "/b",
-     "ă",
-     "t/"
-    ],
-    "hearts": [
-     false,
-     false,
-     false
-    ],
-    "zh": "🦇 蝙蝠",
-    "audio": "audio/animals-2/bat.mp3"
-   },
    "i": {
-    "word": "bit",
-    "ipa": "/bɪt/",
+    "word": "big",
+    "ipa": "/bɪɡ/",
     "graphemes": [
      "b",
      "i",
-     "t"
+     "g"
     ],
     "phonemes": [
      "/b",
      "ɪ",
-     "t/"
+     "ɡ/"
     ],
     "phonics": [
      "/b",
      "ĭ",
-     "t/"
+     "ɡ/"
     ],
     "hearts": [
      0,
      0,
      0
     ],
-    "zh": "咬(過去式)",
-    "audio": "audio/ABC-misc/bit.mp3"
+    "zh": "🐘 大的",
+    "audio": "audio/size-3/big.mp3"
    },
-   "u": {
-    "word": "but",
-    "ipa": "/bʌt/",
+   "o": {
+    "word": "bog",
+    "ipa": "/bɑɡ/",
     "graphemes": [
      "b",
-     "u",
-     "t"
+     "o",
+     "g"
     ],
     "phonemes": [
      "/b",
-     "ʌ",
-     "t/"
-    ],
-    "phonics": [
-     "/b",
-     "ŭ",
-     "t/"
+     "ɑ",
+     "ɡ/"
     ],
     "hearts": [
      false,
      false,
      false
     ],
-    "zh": "但是",
-    "audio": "audio/conj/but.mp3"
+    "zh": "沼澤",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/bog.mp3"
+   },
+   "u": {
+    "word": "bug",
+    "ipa": "/bʌɡ/",
+    "graphemes": [
+     "b",
+     "u",
+     "g"
+    ],
+    "phonemes": [
+     "/b",
+     "ʌ",
+     "ɡ/"
+    ],
+    "phonics": [
+     "/b",
+     "ŭ",
+     "ɡ/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🐞 小蟲；臭蟲",
+    "audio": "audio/animals-3/bug.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "cab",
+    "ipa": "/kæb/",
+    "graphemes": [
+     "c",
+     "a",
+     "b"
+    ],
+    "phonemes": [
+     "/k",
+     "æ",
+     "b/"
+    ],
+    "phonics": [
+     "/k",
+     "ă",
+     "b/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🚕 計程車",
+    "audio": "audio/transportation-2/cab.mp3"
+   },
+   "o": {
+    "word": "cob",
+    "ipa": "/kɑb/",
+    "graphemes": [
+     "c",
+     "o",
+     "b"
+    ],
+    "phonemes": [
+     "/k",
+     "ɑ",
+     "b/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "玉米穗軸",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/cob.mp3"
+   },
+   "u": {
+    "word": "cub",
+    "ipa": "/kʌb/",
+    "graphemes": [
+     "c",
+     "u",
+     "b"
+    ],
+    "phonemes": [
+     "/k",
+     "ʌ",
+     "b/"
+    ],
+    "phonics": [
+     "/k",
+     "ŭ",
+     "b/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🐻 幼獸",
+    "audio": "audio/animals-3/cub.mp3"
    }
   },
   {
@@ -265,86 +760,6 @@
     ],
     "zh": "🥛 杯子",
     "audio": "audio/food-5/cup.mp3"
-   }
-  },
-  {
-   "a": {
-    "word": "cat",
-    "ipa": "/kæt/",
-    "graphemes": [
-     "c",
-     "a",
-     "t"
-    ],
-    "phonemes": [
-     "/k",
-     "æ",
-     "t/"
-    ],
-    "phonics": [
-     "/k",
-     "ă",
-     "t/"
-    ],
-    "hearts": [
-     false,
-     false,
-     false
-    ],
-    "zh": "🐱 貓",
-    "audio": "audio/animals-1/cat.mp3"
-   },
-   "i": {
-    "word": "kit",
-    "ipa": "/kɪt/",
-    "graphemes": [
-     "k",
-     "i",
-     "t"
-    ],
-    "phonemes": [
-     "/k",
-     "ɪ",
-     "t/"
-    ],
-    "phonics": [
-     "/k",
-     "ĭ",
-     "t/"
-    ],
-    "hearts": [
-     0,
-     0,
-     0
-    ],
-    "zh": "🧰 工具包",
-    "audio": "audio/house-3/kit.mp3"
-   },
-   "u": {
-    "word": "cut",
-    "ipa": "/kʌt/",
-    "graphemes": [
-     "c",
-     "u",
-     "t"
-    ],
-    "phonemes": [
-     "/k",
-     "ʌ",
-     "t/"
-    ],
-    "phonics": [
-     "/k",
-     "ŭ",
-     "t/"
-    ],
-    "hearts": [
-     0,
-     0,
-     0
-    ],
-    "zh": "切(三態相同)",
-    "audio": "audio/AAA/cut.mp3"
    }
   },
   {
@@ -509,162 +924,152 @@
   },
   {
    "a": {
-    "word": "hat",
-    "ipa": "/hæt/",
+    "word": "lad",
+    "ipa": "/læd/",
     "graphemes": [
-     "h",
+     "l",
      "a",
-     "t"
+     "d"
     ],
     "phonemes": [
-     "/h",
+     "/l",
      "æ",
-     "t/"
-    ],
-    "phonics": [
-     "/h",
-     "ă",
-     "t/"
+     "d/"
     ],
     "hearts": [
      false,
      false,
      false
     ],
-    "zh": "🎩 帽子",
-    "audio": "audio/clothes-1/hat.mp3"
+    "zh": "小伙子",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/lad.mp3"
+   },
+   "e": {
+    "word": "led",
+    "ipa": "/lɛd/",
+    "graphemes": [
+     "l",
+     "e",
+     "d"
+    ],
+    "phonemes": [
+     "/l",
+     "ɛ",
+     "d/"
+    ],
+    "phonics": [
+     "/l",
+     "ĕ",
+     "d/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "領導（過去式/過去分詞）",
+    "audio": "audio/ABB-2/led.mp3"
    },
    "i": {
-    "word": "hit",
-    "ipa": "/hɪt/",
+    "word": "lid",
+    "ipa": "/lɪd/",
     "graphemes": [
-     "h",
+     "l",
      "i",
-     "t"
+     "d"
     ],
     "phonemes": [
-     "/h",
+     "/l",
      "ɪ",
-     "t/"
+     "d/"
     ],
     "phonics": [
-     "/h",
+     "/l",
      "ĭ",
-     "t/"
+     "d/"
     ],
     "hearts": [
      0,
      0,
      0
     ],
-    "zh": "打(三態相同)",
-    "audio": "audio/AAA/hit.mp3"
-   },
-   "o": {
-    "word": "hot",
-    "ipa": "/hɑt/",
-    "graphemes": [
-     "h",
-     "o",
-     "t"
-    ],
-    "phonemes": [
-     "/h",
-     "ɑ",
-     "t/"
-    ],
-    "phonics": [
-     "/h",
-     "ŏ",
-     "t/"
-    ],
-    "hearts": [
-     0,
-     0,
-     0
-    ],
-    "zh": "🥵 熱的",
-    "audio": "audio/food-5/hot.mp3"
+    "zh": "🫙 蓋子",
+    "audio": "audio/house-4/lid.mp3"
    }
   },
   {
    "a": {
-    "word": "lack",
-    "ipa": "/læk/",
+    "word": "mad",
+    "ipa": "/mæd/",
     "graphemes": [
-     "l",
+     "m",
      "a",
-     "ck"
+     "d"
     ],
     "phonemes": [
-     "/l",
+     "/m",
      "æ",
-     "k/"
+     "d/"
     ],
     "phonics": [
-     "/l",
+     "/m",
      "ă",
-     "k/"
+     "d/"
     ],
     "hearts": [
      0,
      0,
      0
     ],
-    "zh": "🚫 缺乏",
-    "audio": "audio/nouns-1/lack.mp3"
+    "zh": "😠 瘋狂/生氣",
+    "audio": "audio/people-3/mad.mp3"
    },
-   "i": {
-    "word": "lick",
-    "ipa": "/lɪk/",
+   "e": {
+    "word": "med",
+    "ipa": "/mɛd/",
     "graphemes": [
-     "l",
-     "i",
-     "ck"
+     "m",
+     "e",
+     "d"
     ],
     "phonemes": [
-     "/l",
-     "ɪ",
-     "k/"
-    ],
-    "phonics": [
-     "/l",
-     "ĭ",
-     "k/"
+     "/m",
+     "ɛ",
+     "d/"
     ],
     "hearts": [
-     0,
-     0,
-     0
+     false,
+     false,
+     false
     ],
-    "zh": "👅 舔",
-    "audio": "audio/1C-3/lick.mp3"
+    "zh": "醫學的",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/med.mp3"
    },
-   "o": {
-    "word": "lock",
-    "ipa": "/lɑk/",
+   "u": {
+    "word": "mud",
+    "ipa": "/mʌd/",
     "graphemes": [
-     "l",
-     "o",
-     "ck"
+     "m",
+     "u",
+     "d"
     ],
     "phonemes": [
-     "/l",
-     "ɑ",
-     "k/"
+     "/m",
+     "ʌ",
+     "d/"
     ],
     "phonics": [
-     "/l",
-     "ŏ",
-     "k/"
+     "/m",
+     "ŭ",
+     "d/"
     ],
     "hearts": [
      0,
      0,
      0
     ],
-    "zh": "🔒 鎖",
-    "audio": "audio/1B-2/lock.mp3"
+    "zh": "🟤 泥巴",
+    "audio": "audio/weather-4/mud.mp3"
    }
   },
   {
@@ -745,6 +1150,81 @@
     ],
     "zh": "🌰 堅果",
     "audio": "audio/food-1/nut.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "pack",
+    "ipa": "/pæk/",
+    "graphemes": [
+     "p",
+     "a",
+     "ck"
+    ],
+    "phonemes": [
+     "/p",
+     "æ",
+     "k/"
+    ],
+    "phonics": [
+     "/p",
+     "ă",
+     "k/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🎒 打包",
+    "audio": "audio/1B-2/pack.mp3"
+   },
+   "e": {
+    "word": "peck",
+    "ipa": "/pɛk/",
+    "graphemes": [
+     "p",
+     "e",
+     "ck"
+    ],
+    "phonemes": [
+     "/p",
+     "ɛ",
+     "k/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "啄",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/peck.mp3"
+   },
+   "i": {
+    "word": "pick",
+    "ipa": "/pɪk/",
+    "graphemes": [
+     "p",
+     "i",
+     "ck"
+    ],
+    "phonemes": [
+     "/p",
+     "ɪ",
+     "k/"
+    ],
+    "phonics": [
+     "/p",
+     "ĭ",
+     "k/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🫴 挑選",
+    "audio": "audio/1B-2/pick.mp3"
    }
   },
   {
@@ -905,6 +1385,76 @@
     ],
     "zh": "🥘 鍋子",
     "audio": "audio/house-3/pot.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "rad",
+    "ipa": "/ræd/",
+    "graphemes": [
+     "r",
+     "a",
+     "d"
+    ],
+    "phonemes": [
+     "/r",
+     "æ",
+     "d/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "激進的",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/rad.mp3"
+   },
+   "e": {
+    "word": "red",
+    "ipa": "/rɛd/",
+    "graphemes": [
+     "r",
+     "e",
+     "d"
+    ],
+    "phonemes": [
+     "/r",
+     "ɛ",
+     "d/"
+    ],
+    "phonics": [
+     "/r",
+     "ĕ",
+     "d/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🔴 紅色；紅色的",
+    "audio": "audio/colors/red.mp3"
+   },
+   "i": {
+    "word": "rid",
+    "ipa": "/rɪd/",
+    "graphemes": [
+     "r",
+     "i",
+     "d"
+    ],
+    "phonemes": [
+     "/r",
+     "ɪ",
+     "d/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "擺脫",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/rid.mp3"
    }
   },
   {
@@ -1321,6 +1871,55 @@
   },
   {
    "a": {
+    "word": "back",
+    "ipa": "/bæk/",
+    "graphemes": [
+     "b",
+     "a",
+     "ck"
+    ],
+    "phonemes": [
+     "/b",
+     "æ",
+     "k/"
+    ],
+    "phonics": [
+     "/b",
+     "ă",
+     "k/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "背部",
+    "audio": "audio/body-and-face-2/back.mp3"
+   },
+   "u": {
+    "word": "buck",
+    "ipa": "/bʌk/",
+    "graphemes": [
+     "b",
+     "u",
+     "ck"
+    ],
+    "phonemes": [
+     "/b",
+     "ʌ",
+     "k/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/buck.mp3"
+   }
+  },
+  {
+   "a": {
     "word": "bad",
     "ipa": "/bæd/",
     "graphemes": [
@@ -1375,110 +1974,149 @@
   },
   {
    "i": {
-    "word": "big",
-    "ipa": "/bɪɡ/",
+    "word": "bin",
+    "ipa": "/bɪn/",
     "graphemes": [
      "b",
      "i",
-     "g"
+     "n"
     ],
     "phonemes": [
      "/b",
      "ɪ",
-     "ɡ/"
-    ],
-    "phonics": [
-     "/b",
-     "ĭ",
-     "ɡ/"
-    ],
-    "hearts": [
-     0,
-     0,
-     0
-    ],
-    "zh": "🐘 大的",
-    "audio": "audio/size-3/big.mp3"
-   },
-   "u": {
-    "word": "bug",
-    "ipa": "/bʌɡ/",
-    "graphemes": [
-     "b",
-     "u",
-     "g"
-    ],
-    "phonemes": [
-     "/b",
-     "ʌ",
-     "ɡ/"
-    ],
-    "phonics": [
-     "/b",
-     "ŭ",
-     "ɡ/"
+     "n/"
     ],
     "hearts": [
      false,
      false,
      false
     ],
-    "zh": "🐞 小蟲；臭蟲",
-    "audio": "audio/animals-3/bug.mp3"
+    "zh": "垃圾桶",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/bin.mp3"
+   },
+   "u": {
+    "word": "bun",
+    "ipa": "/bʌn/",
+    "graphemes": [
+     "b",
+     "u",
+     "n"
+    ],
+    "phonemes": [
+     "/b",
+     "ʌ",
+     "n/"
+    ],
+    "phonics": [
+     "/b",
+     "ŭ",
+     "n/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🫓 小圓麵包",
+    "audio": "audio/food-3/bun.mp3"
    }
   },
   {
-   "a": {
-    "word": "cab",
-    "ipa": "/kæb/",
+   "e": {
+    "word": "check",
+    "ipa": "/tʃɛk/",
     "graphemes": [
-     "c",
-     "a",
-     "b"
+     "ch",
+     "e",
+     "ck"
     ],
     "phonemes": [
-     "/k",
-     "æ",
-     "b/"
+     "/tʃ",
+     "ɛ",
+     "k/"
     ],
     "phonics": [
-     "/k",
-     "ă",
-     "b/"
+     "/ch",
+     "ĕ",
+     "k/"
     ],
     "hearts": [
      0,
      0,
      0
     ],
-    "zh": "🚕 計程車",
-    "audio": "audio/transportation-2/cab.mp3"
+    "zh": "✅ 檢查",
+    "audio": "audio/1B-1/check.mp3"
    },
-   "u": {
-    "word": "cub",
-    "ipa": "/kʌb/",
+   "i": {
+    "word": "chick",
+    "ipa": "/tʃɪk/",
     "graphemes": [
-     "c",
-     "u",
-     "b"
+     "ch",
+     "i",
+     "ck"
     ],
     "phonemes": [
-     "/k",
-     "ʌ",
-     "b/"
+     "/tʃ",
+     "ɪ",
+     "k/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "小雞",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/chick.mp3"
+   }
+  },
+  {
+   "i": {
+    "word": "chip",
+    "ipa": "/tʃɪp/",
+    "graphemes": [
+     "ch",
+     "i",
+     "p"
+    ],
+    "phonemes": [
+     "/tʃ",
+     "ɪ",
+     "p/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "薯片",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/chip.mp3"
+   },
+   "o": {
+    "word": "chop",
+    "ipa": "/tʃɑp/",
+    "graphemes": [
+     "ch",
+     "o",
+     "p"
+    ],
+    "phonemes": [
+     "/tʃ",
+     "ɑ",
+     "p/"
     ],
     "phonics": [
-     "/k",
-     "ŭ",
-     "b/"
+     "/ch",
+     "ŏ",
+     "p/"
     ],
     "hearts": [
      0,
      0,
      0
     ],
-    "zh": "🐻 幼獸",
-    "audio": "audio/animals-3/cub.mp3"
+    "zh": "🔪 剁；切碎",
+    "audio": "audio/food-6/chop.mp3"
    }
   },
   {
@@ -1533,6 +2171,104 @@
     ],
     "zh": "做(過去式)",
     "audio": "audio/ABC-misc/did.mp3"
+   }
+  },
+  {
+   "o": {
+    "word": "dock",
+    "ipa": "/dɑk/",
+    "graphemes": [
+     "d",
+     "o",
+     "ck"
+    ],
+    "phonemes": [
+     "/d",
+     "ɑ",
+     "k/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "碼頭",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/dock.mp3"
+   },
+   "u": {
+    "word": "duck",
+    "ipa": "/dʌk/",
+    "graphemes": [
+     "d",
+     "u",
+     "ck"
+    ],
+    "phonemes": [
+     "/d",
+     "ʌ",
+     "k/"
+    ],
+    "phonics": [
+     "/d",
+     "ŭ",
+     "k/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "🦆 鴨子",
+    "audio": "audio/animals-1/duck.mp3"
+   }
+  },
+  {
+   "a": {
+    "word": "fad",
+    "ipa": "/fæd/",
+    "graphemes": [
+     "f",
+     "a",
+     "d"
+    ],
+    "phonemes": [
+     "/f",
+     "æ",
+     "d/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "一時的風潮",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/fad.mp3"
+   },
+   "e": {
+    "word": "fed",
+    "ipa": "/fɛd/",
+    "graphemes": [
+     "f",
+     "e",
+     "d"
+    ],
+    "phonemes": [
+     "/f",
+     "ɛ",
+     "d/"
+    ],
+    "phonics": [
+     "/f",
+     "ĕ",
+     "d/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "餵養(過去式/過去分詞)",
+    "audio": "audio/ABB-1/fed.mp3"
    }
   },
   {
@@ -1968,6 +2704,55 @@
    }
   },
   {
+   "o": {
+    "word": "hog",
+    "ipa": "/hɑɡ/",
+    "graphemes": [
+     "h",
+     "o",
+     "g"
+    ],
+    "phonemes": [
+     "/h",
+     "ɑ",
+     "ɡ/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "豬",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/hog.mp3"
+   },
+   "u": {
+    "word": "hug",
+    "ipa": "/hʌɡ/",
+    "graphemes": [
+     "h",
+     "u",
+     "g"
+    ],
+    "phonemes": [
+     "/h",
+     "ʌ",
+     "ɡ/"
+    ],
+    "phonics": [
+     "/h",
+     "ŭ",
+     "ɡ/"
+    ],
+    "hearts": [
+     0,
+     0,
+     0
+    ],
+    "zh": "🤗 擁抱",
+    "audio": "audio/1C-3/hug.mp3"
+   }
+  },
+  {
    "i": {
     "word": "in",
     "ipa": "/ɪn/",
@@ -2068,57 +2853,52 @@
    }
   },
   {
+   "a": {
+    "word": "lag",
+    "ipa": "/læɡ/",
+    "graphemes": [
+     "l",
+     "a",
+     "g"
+    ],
+    "phonemes": [
+     "/l",
+     "æ",
+     "ɡ/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "落後",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/lag.mp3"
+   },
    "e": {
-    "word": "led",
-    "ipa": "/lɛd/",
+    "word": "leg",
+    "ipa": "/lɛɡ/",
     "graphemes": [
      "l",
      "e",
-     "d"
+     "g"
     ],
     "phonemes": [
      "/l",
      "ɛ",
-     "d/"
+     "ɡ/"
     ],
     "phonics": [
      "/l",
      "ĕ",
-     "d/"
+     "ɡ/"
     ],
     "hearts": [
-     0,
-     0,
-     0
+     false,
+     false,
+     false
     ],
-    "zh": "領導（過去式/過去分詞）",
-    "audio": "audio/ABB-2/led.mp3"
-   },
-   "i": {
-    "word": "lid",
-    "ipa": "/lɪd/",
-    "graphemes": [
-     "l",
-     "i",
-     "d"
-    ],
-    "phonemes": [
-     "/l",
-     "ɪ",
-     "d/"
-    ],
-    "phonics": [
-     "/l",
-     "ĭ",
-     "d/"
-    ],
-    "hearts": [
-     0,
-     0,
-     0
-    ],
-    "zh": "🫙 蓋子",
-    "audio": "audio/house-4/lid.mp3"
+    "zh": "🦵 腿",
+    "audio": "audio/body-and-face-1/leg.mp3"
    }
   },
   {
@@ -2227,60 +3007,6 @@
     ],
     "zh": "🫁 肺",
     "audio": "audio/body-and-face-3/lung.mp3"
-   }
-  },
-  {
-   "a": {
-    "word": "mad",
-    "ipa": "/mæd/",
-    "graphemes": [
-     "m",
-     "a",
-     "d"
-    ],
-    "phonemes": [
-     "/m",
-     "æ",
-     "d/"
-    ],
-    "phonics": [
-     "/m",
-     "ă",
-     "d/"
-    ],
-    "hearts": [
-     0,
-     0,
-     0
-    ],
-    "zh": "😠 瘋狂/生氣",
-    "audio": "audio/people-3/mad.mp3"
-   },
-   "u": {
-    "word": "mud",
-    "ipa": "/mʌd/",
-    "graphemes": [
-     "m",
-     "u",
-     "d"
-    ],
-    "phonemes": [
-     "/m",
-     "ʌ",
-     "d/"
-    ],
-    "phonics": [
-     "/m",
-     "ŭ",
-     "d/"
-    ],
-    "hearts": [
-     0,
-     0,
-     0
-    ],
-    "zh": "🟤 泥巴",
-    "audio": "audio/weather-4/mud.mp3"
    }
   },
   {
@@ -2500,57 +3226,47 @@
    }
   },
   {
-   "a": {
-    "word": "pack",
-    "ipa": "/pæk/",
+   "o": {
+    "word": "mock",
+    "ipa": "/mɑk/",
     "graphemes": [
-     "p",
-     "a",
+     "m",
+     "o",
      "ck"
     ],
     "phonemes": [
-     "/p",
-     "æ",
-     "k/"
-    ],
-    "phonics": [
-     "/p",
-     "ă",
+     "/m",
+     "ɑ",
      "k/"
     ],
     "hearts": [
-     0,
-     0,
-     0
+     false,
+     false,
+     false
     ],
-    "zh": "🎒 打包",
-    "audio": "audio/1B-2/pack.mp3"
+    "zh": "嘲笑",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/mock.mp3"
    },
-   "i": {
-    "word": "pick",
-    "ipa": "/pɪk/",
+   "u": {
+    "word": "muck",
+    "ipa": "/mʌk/",
     "graphemes": [
-     "p",
-     "i",
+     "m",
+     "u",
      "ck"
     ],
     "phonemes": [
-     "/p",
-     "ɪ",
-     "k/"
-    ],
-    "phonics": [
-     "/p",
-     "ĭ",
+     "/m",
+     "ʌ",
      "k/"
     ],
     "hearts": [
-     0,
-     0,
-     0
+     false,
+     false,
+     false
     ],
-    "zh": "🫴 挑選",
-    "audio": "audio/1B-2/pick.mp3"
+    "zh": "泥濘",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/muck.mp3"
    }
   },
   {
@@ -2767,6 +3483,55 @@
     ],
     "zh": "關閉(三態相同)",
     "audio": "audio/AAA/shut.mp3"
+   }
+  },
+  {
+   "e": {
+    "word": "ten",
+    "ipa": "/tɛn/",
+    "graphemes": [
+     "t",
+     "e",
+     "n"
+    ],
+    "phonemes": [
+     "/t",
+     "ɛ",
+     "n/"
+    ],
+    "phonics": [
+     "/t",
+     "ĕ",
+     "n/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": 10,
+    "audio": "audio/numbers-1/ten.mp3"
+   },
+   "i": {
+    "word": "tin",
+    "ipa": "/tɪn/",
+    "graphemes": [
+     "t",
+     "i",
+     "n"
+    ],
+    "phonemes": [
+     "/t",
+     "ɪ",
+     "n/"
+    ],
+    "hearts": [
+     false,
+     false,
+     false
+    ],
+    "zh": "錫罐",
+    "audio": "https://jinshuanyu.github.io/vowel-detective/audio/tin.mp3"
    }
   },
   {
