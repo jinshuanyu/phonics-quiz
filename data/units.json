@@ -9,7 +9,7 @@
           "id": 1,
           "name": "字母名 Letter Names",
           "pattern": "26 letters: names (A-Z)",
-          "explain": "每個字母都有自己的名字，就是唱 ABC 歌時唸的音。這一關先認得 26 個字母的名字，還有大寫、小寫長什麼樣子。",
+          "explain": "每個字母都有自己的名字。這一關認識 26 個字母的名字和大小寫。",
           "keys": [],
           "words": [
             {
@@ -383,7 +383,7 @@
           "id": 2,
           "name": "字母音 Letter Sounds",
           "pattern": "26 letters + digraphs (sh, ch, th, ph, ck, qu, wh, ng)",
-          "explain": "字母除了名字，還有它在單字裡發的「音」。例如 B 的名字是 /bi/，在單字裡發 /b/。最後幾個（sh、ch、th…）是兩個字母合起來只發一個音。",
+          "explain": "每個字母在單字裡有自己的音，跟字母的名字不一樣。sh、ch、th 這類是兩個字母合起來發一個音。",
           "keys": [],
           "words": [
             { "word": "Aa", "ipa": "/æ/", "graphemes": ["a"], "phonemes": ["/æ/"], "phonics": ["/æ/"], "tags": ["vowel"], "hearts": [0], "zh": "字母 A 的音", "img": "🍎", "audio": "audio/phonemes/a_short.mp3", "letterSound": "/æ/", "isLetter": true, "isSound": true },
@@ -434,7 +434,7 @@
           "id": 2,
           "name": "Short a /æ/",
           "pattern": "CVC short a",
-          "explain": "短母音 a 發 /æ/：嘴巴張大、嘴角往兩邊拉，像 cat、hat。一個母音夾在兩個子音中間時，通常發短音。",
+          "explain": "CVC（子音＋母音＋子音）中間的母音發短音。a 的短音是 /æ/，像 cat、hat。",
           "keys": [{ "g": "a", "ipa": "æ" }],
           "words": [
             {
@@ -1523,7 +1523,7 @@
           "id": 3,
           "name": "Short e /ɛ/",
           "pattern": "CVC short e",
-          "explain": "短母音 e 發 /ɛ/：嘴巴比 a 小一點、放鬆，像 bed、pen。它跟短 a 很像，要仔細聽。",
+          "explain": "CVC（子音＋母音＋子音）中間的母音發短音。e 的短音是 /ɛ/，像 bed、pen。",
           "keys": [{ "g": "e", "ipa": "ɛ" }],
           "words": [
             {
@@ -2481,7 +2481,7 @@
           "id": 4,
           "name": "Short i /ɪ/",
           "pattern": "CVC short i",
-          "explain": "短母音 i 發 /ɪ/：短短的、輕輕的，嘴巴只開一點點，像 sit、pig。不是拉長的「衣」。",
+          "explain": "CVC（子音＋母音＋子音）中間的母音發短音。i 的短音是 /ɪ/，像 sit、pig。",
           "keys": [{ "g": "i", "ipa": "ɪ" }],
           "words": [
             {
@@ -3618,7 +3618,7 @@
           "id": 5,
           "name": "Short o /ɒ/",
           "pattern": "CVC short o",
-          "explain": "短母音 o 發 /ɑ/：嘴巴張大張圓，像看醫生時說「啊」，像 hot、dog。",
+          "explain": "CVC（子音＋母音＋子音）中間的母音發短音。o 的短音是 /ɑ/，像 hot、dog。",
           "keys": [{ "g": "o", "ipa": "ɑ" }],
           "words": [
             {
@@ -4285,7 +4285,7 @@
           "id": 6,
           "name": "Short u /ʌ/",
           "pattern": "CVC short u",
-          "explain": "短母音 u 發 /ʌ/：嘴巴放鬆，短短的「ㄜ」，像 cup、sun。",
+          "explain": "CVC（子音＋母音＋子音）中間的母音發短音。u 的短音是 /ʌ/，像 cup、sun。",
           "keys": [{ "g": "u", "ipa": "ʌ" }],
           "words": [
             {
@@ -4985,7 +4985,7 @@
           "id": 7,
           "name": "ar /ɑr/",
           "pattern": "R-controlled: ar",
-          "explain": "a 後面跟著 r，兩個字母黏在一起發 /ɑr/，a 不再發短音，像 car、star。",
+          "explain": "a 後面接 r，合起來發 /ɑr/，a 不再發短音，像 car、star。",
           "keys": [{ "g": "ar", "ipa": "ɑr" }],
           "words": [
             {
@@ -5820,7 +5820,7 @@
           "id": 8,
           "name": "or /ɔr/",
           "pattern": "R-controlled: or",
-          "explain": "o 後面跟著 r，合起來發 /ɔr/，像 fork、horse。",
+          "explain": "o 後面接 r，合起來發 /ɔr/，o 不再發短音，像 fork、horse。",
           "keys": [{ "g": "or", "ipa": "ɔr" }],
           "words": [
             {
@@ -6629,7 +6629,7 @@
           "id": 9,
           "name": "er, ir, ur /ɝ/",
           "pattern": "R-controlled: er, ir, ur",
-          "explain": "er、ir、ur 三種拼法發同一個音 /ɝ/，像 her、bird、turn。光用聽的分不出是哪一種拼法，要靠多看多記。",
+          "explain": "er、ir、ur 三種拼法都發 /ɝ/，像 her、bird、turn。",
           "keys": [{ "g": "er", "ipa": "ɝ" }, { "g": "ir", "ipa": "ɝ" }, { "g": "ur", "ipa": "ɝ" }],
           "words": [
             {
@@ -7987,7 +7987,7 @@
           "id": 10,
           "name": "FLOSS",
           "pattern": "FLOSS (ff, ll, ss, zz)",
-          "explain": "短母音後面的 f、l、s、z，在單音節字的字尾要寫兩個，但只發一個音，像 off、bell、miss、buzz。",
+          "explain": "單音節字裡，短母音後面的 f、l、s、z 要寫兩個，只發一個音，像 off、bell、miss、buzz。",
           "keys": [{ "g": "ff", "ipa": "f" }, { "g": "ll", "ipa": "l" }, { "g": "ss", "ipa": "s" }, { "g": "zz", "ipa": "z" }],
           "words": [
             {
@@ -9298,7 +9298,7 @@
           "id": 11,
           "name": "sh, ch, th",
           "pattern": "Digraphs: sh, ch, th",
-          "explain": "兩個字母合起來發一個新的音：sh /ʃ/、ch /tʃ/（短母音後面常寫成 tch）。th 有兩種，無聲 /θ/（think）和有聲 /ð/（this），舌頭都要伸出來。",
+          "explain": "兩個字母合起來發一個音。sh 發 /ʃ/，ch 發 /tʃ/（短母音後面寫成 tch），th 發 /θ/（think）或 /ð/（this）。",
           "keys": [{ "g": "sh", "ipa": "ʃ" }, { "g": "ch", "ipa": "tʃ" }, { "g": "tch", "ipa": "tʃ" }, { "g": "th", "ipa": "θ" }, { "g": "th", "ipa": "ð" }],
           "words": [
             {
@@ -14226,7 +14226,7 @@
           "id": 12,
           "name": "wh, ph, ck, qu",
           "pattern": "Digraphs: wh, ph, ck, qu",
-          "explain": "wh 發 /w/、ph 發 /f/、qu 發 /kw/。ck 發 /k/，只出現在短母音後面，像 back、duck。",
+          "explain": "兩個字母合起來發一個音。wh 發 /w/，ph 發 /f/，qu 發 /kw/。ck 發 /k/，只用在短母音後面，像 back、duck。",
           "keys": [{ "g": "wh", "ipa": "w" }, { "g": "ph", "ipa": "f" }, { "g": "ck", "ipa": "k" }, { "g": "qu", "ipa": "kw" }],
           "words": [
             {
@@ -16147,7 +16147,7 @@
           "id": 13,
           "name": "L + R blends",
           "pattern": "L-blends & R-blends",
-          "explain": "兩個子音連在一起，每個音都要發出來，而且要唸得很快、黏在一起，中間不能多加母音。像 bl-ack、tr-ee。",
+          "explain": "子音後面接 l 或 r，兩個子音連著唸，每個音都要發出來，像 black、tree。",
           "keys": [{ "g": "bl", "ipa": ["b","l"] }, { "g": "cl", "ipa": ["k","l"] }, { "g": "fl", "ipa": ["f","l"] }, { "g": "gl", "ipa": ["ɡ","l"] }, { "g": "pl", "ipa": ["p","l"] }, { "g": "sl", "ipa": ["s","l"] }, { "g": "br", "ipa": ["b","r"] }, { "g": "cr", "ipa": ["k","r"] }, { "g": "dr", "ipa": ["d","r"] }, { "g": "fr", "ipa": ["f","r"] }, { "g": "gr", "ipa": ["ɡ","r"] }, { "g": "pr", "ipa": ["p","r"] }, { "g": "tr", "ipa": ["t","r"] }],
           "words": [
             {
@@ -22186,7 +22186,7 @@
           "id": 14,
           "name": "S-blends + 三子音群",
           "pattern": "S-blends & 3-letter clusters",
-          "explain": "s 後面緊接著另一個子音，兩個音都要發，像 st-op、sk-y。三個子音連在一起也一樣，每個都要發出來，像 str-eet。",
+          "explain": "s 後面接另一個子音，兩個音都要發，像 stop、sky。三個子音連在一起也是每個都發，像 street。",
           "keys": [{ "g": "st", "ipa": ["s","t"] }, { "g": "sk", "ipa": ["s","k"] }, { "g": "sp", "ipa": ["s","p"] }, { "g": "sw", "ipa": ["s","w"] }, { "g": "sm", "ipa": ["s","m"] }, { "g": "sn", "ipa": ["s","n"] }, { "g": "str", "ipa": ["s","t","r"] }, { "g": "spr", "ipa": ["s","p","r"] }, { "g": "scr", "ipa": ["s","k","r"] }],
           "words": [
             {
@@ -26401,7 +26401,7 @@
           "id": 15,
           "name": "尾子音群 + Silent",
           "pattern": "Final clusters & silent letters",
-          "explain": "字尾的子音群（-nt、-nd、-nk、-mp）每個音都要發，像 went、hand、pink。另外有些字母不發音，像 know 的 k、write 的 w、lamb 的 b、walk 的 l。",
+          "explain": "字尾連著兩個子音（-nt、-nd、-nk、-mp），兩個音都要發，像 went、hand、pink。有些字母不發音，像 know 的 k、write 的 w、lamb 的 b。",
           "keys": [{ "g": "nt", "ipa": ["n","t"] }, { "g": "nd", "ipa": ["n","d"] }, { "g": "nk", "ipa": ["ŋ","k"] }, { "g": "mp", "ipa": ["m","p"] }, { "g": "kn", "ipa": "n" }, { "g": "wr", "ipa": "r" }, { "g": "mb", "ipa": "m" }],
           "words": [
             {
@@ -33841,7 +33841,7 @@
           "id": 16,
           "name": "oi, oy /ɔɪ/",
           "pattern": "Diphthong: oi, oy",
-          "explain": "oi 和 oy 發同一個音 /ɔɪ/。oi 通常在字的中間（coin），oy 通常在字尾（boy）。",
+          "explain": "oi 和 oy 都發 /ɔɪ/。oi 用在字的中間（coin），oy 用在字尾（boy）。",
           "keys": [{ "g": "oi", "ipa": "ɔɪ" }, { "g": "oy", "ipa": "ɔɪ" }],
           "words": [
             {
@@ -34293,7 +34293,7 @@
           "id": 17,
           "name": "ou, ow /aʊ/",
           "pattern": "Diphthong: ou, ow",
-          "explain": "ou 和 ow 都可以發 /aʊ/，像 out、cow。ou 通常在字的中間，ow 常在字尾。",
+          "explain": "ou 和 ow 都發 /aʊ/。ou 用在字的中間（out），ow 常用在字尾（cow）。",
           "keys": [{ "g": "ou", "ipa": "aʊ" }, { "g": "ow", "ipa": "aʊ" }],
           "words": [
             {
@@ -36312,7 +36312,7 @@
           "id": 18,
           "name": "oo",
           "pattern": "Diphthong: oo /ʊ/ & /uː/",
-          "explain": "oo 有兩種音：長的 /u/（moon、food）和短的 /ʊ/（book、look）。看到 oo 要兩種都試試看。",
+          "explain": "oo 有兩種音：/u/（moon、food）和 /ʊ/（book、look）。",
           "keys": [{ "g": "oo", "ipa": "u" }, { "g": "oo", "ipa": "ʊ" }],
           "words": [
             {
@@ -37928,7 +37928,7 @@
           "id": 19,
           "name": "Magic e 綜合",
           "pattern": "a-e, i-e, o-e, u-e (mixed)",
-          "explain": "字尾的 e 自己不發音，但它會讓前面的母音「說出自己的名字」（發長音）：cap → cape、kit → kite、hop → hope、cut → cute。",
+          "explain": "字尾的 e 不發音，但會讓前面的母音發長音（字母的名字）：cap → cape、kit → kite、hop → hope、cut → cute。",
           "keys": [{ "g": "a_e", "ipa": "eɪ" }, { "g": "e_e", "ipa": "i" }, { "g": "i_e", "ipa": "aɪ" }, { "g": "o_e", "ipa": "oʊ" }, { "g": "u_e", "ipa": "ju" }],
           "words": [
             {
@@ -43818,7 +43818,7 @@
           "id": 20,
           "name": "Long a /eɪ/",
           "pattern": "a-e, ai, ay",
-          "explain": "長母音 a 發 /eɪ/，就是字母 A 的名字。常見三種拼法：a_e（cake）、ai（rain，在字中間）、ay（day，在字尾）。",
+          "explain": "長母音 a 發 /eɪ/（字母 A 的名字）。三種拼法：a_e（cake）、ai（rain，用在字中間）、ay（day，用在字尾）。",
           "keys": [{ "g": "a_e", "ipa": "eɪ" }, { "g": "ai", "ipa": "eɪ" }, { "g": "ay", "ipa": "eɪ" }],
           "words": [
             {
@@ -47356,7 +47356,7 @@
           "id": 21,
           "name": "Long e /iː/",
           "pattern": "e-e, ea, ee",
-          "explain": "長母音 e 發 /i/，就是字母 E 的名字。常見三種拼法：ee（see）、ea（eat）、e_e（these）。",
+          "explain": "長母音 e 發 /i/（字母 E 的名字）。三種拼法：ee（see）、ea（eat）、e_e（these）。",
           "keys": [{ "g": "ee", "ipa": "i" }, { "g": "ea", "ipa": "i" }, { "g": "e_e", "ipa": "i" }],
           "words": [
             {
@@ -52018,7 +52018,7 @@
           "id": 22,
           "name": "Long i /aɪ/",
           "pattern": "i-e, ie, y, -igh",
-          "explain": "長母音 i 發 /aɪ/，就是字母 I 的名字。常見拼法：i_e（bike）、igh（night）、ie（pie）、字尾的 y（my）。",
+          "explain": "長母音 i 發 /aɪ/（字母 I 的名字）。四種拼法：i_e（bike）、igh（night）、ie（pie）、字尾的 y（my）。",
           "keys": [{ "g": "i_e", "ipa": "aɪ" }, { "g": "igh", "ipa": "aɪ" }, { "g": "ie", "ipa": "aɪ" }, { "g": "y", "ipa": "aɪ" }],
           "words": [
             {
@@ -55732,7 +55732,7 @@
           "id": 23,
           "name": "Long o /oʊ/",
           "pattern": "o-e, oa, ow, oe",
-          "explain": "長母音 o 發 /oʊ/，就是字母 O 的名字。常見拼法：o_e（home）、oa（boat）、ow（snow）、oe（toe）。",
+          "explain": "長母音 o 發 /oʊ/（字母 O 的名字）。四種拼法：o_e（home）、oa（boat）、ow（snow）、oe（toe）。",
           "keys": [{ "g": "o_e", "ipa": "oʊ" }, { "g": "oa", "ipa": "oʊ" }, { "g": "ow", "ipa": "oʊ" }, { "g": "oe", "ipa": "oʊ" }],
           "words": [
             {
@@ -58100,7 +58100,7 @@
           "id": 24,
           "name": "Long u /juː/",
           "pattern": "u-e, ui, ue, ew",
-          "explain": "長母音 u 發 /ju/（cute）或 /u/（blue）。常見拼法：u_e（cute）、ue（blue）、ui（fruit）、ew（new）。",
+          "explain": "長母音 u 發 /ju/（cute）或 /u/（blue）。四種拼法：u_e（cute）、ue（blue）、ui（fruit）、ew（new）。",
           "keys": [{ "g": "u_e", "ipa": "ju" }, { "g": "ue", "ipa": "u" }, { "g": "ui", "ipa": "u" }, { "g": "ew", "ipa": "ju" }],
           "words": [
             {
@@ -59039,7 +59039,7 @@
           "id": 25,
           "name": "殺手 R",
           "pattern": "長母音 + r",
-          "explain": "母音後面遇到 r，會被 r 影響而變音：air、are 發 /ɛr/（chair、care），ore 發 /ɔr/（more）。",
+          "explain": "母音後面接 r，母音的音會改變：air、are 發 /ɛr/（chair、care），ore 發 /ɔr/（more）。",
           "keys": [{ "g": "air", "ipa": ["ɛ","r"] }, { "g": "are", "ipa": ["ɛ","r"] }, { "g": "ore", "ipa": "ɔr" }],
           "words": [
             {
@@ -60570,7 +60570,7 @@
           "id": 26,
           "name": "-le 音節",
           "pattern": "Consonant-le (table, apple)",
-          "explain": "「子音＋le」在字尾自成一個音節，發 /əl/，e 不發音，像 ta-ble、ap-ple。",
+          "explain": "字尾的「子音＋le」自成一個音節，發 /əl/，e 不發音，像 table、apple。",
           "keys": [{ "g": "le", "ipa": "əl" }],
           "words": [
             {
@@ -62779,7 +62779,7 @@
           "id": 27,
           "name": "-ed 字尾",
           "pattern": "-ed endings (/t/, /d/, /ɪd/)",
-          "explain": "過去式字尾 -ed 有三種唸法：無聲子音後面唸 /t/（liked）、有聲的音後面唸 /d/（played）、t 或 d 後面唸 /ɪd/（wanted）。",
+          "explain": "過去式字尾 -ed 有三種唸法：/t/（liked）、/d/（played）、/ɪd/（wanted）。t 或 d 結尾的字加 -ed 唸 /ɪd/。",
           "keys": [{ "g": "ed", "ipa": "t" }, { "g": "ed", "ipa": "d" }, { "g": "ed", "ipa": "ɪd" }],
           "words": [
             {
