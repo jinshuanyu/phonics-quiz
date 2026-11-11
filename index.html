@@ -1020,6 +1020,8 @@ const GRAPHEME_DEFAULT_IPA = {
 let DATA = null;
 let CONTRASTS = null;      // data/vowel-contrasts.json
 let quizOptions = [];      // per-question option list for contrast quizzes (parallel to quizWords)
+let CONS_CONTRASTS = null; // data/consonant-contrasts.json (Level 4 consonant contrast sets)
+let contrastAudio = {};    // word → audio path for the options of the current consonant-contrast quiz
 const CONTRAST_QUESTIONS = 10;
 let currentStage = null;
 let currentUnit = null;
@@ -1057,6 +1059,11 @@ async function init() {
       const cRes = await fetch('data/vowel-contrasts.json');
       if (cRes.ok) CONTRASTS = await cRes.json();
     } catch (e) { CONTRASTS = null; }
+    // Consonant-contrast sets for the Level 4 listening tests (optional file)
+    try {
+      const kRes = await fetch('data/consonant-contrasts.json');
+      if (kRes.ok) CONS_CONTRASTS = await kRes.json();
+    } catch (e) { CONS_CONTRASTS = null; }
     showHome();
   } catch (e) {
     $content.innerHTML = '<p style="text-align:center;color:var(--wrong);padding:40px;">載入資料失敗，請重新整理頁面。</p>';
@@ -1527,10 +1534,23 @@ function startQuiz(mode) {
   currentQ = 0;
   wrongItems = [];
   quizOptions = [];
+  contrastAudio = {};
 
   // Cumulative short-vowel test: every option differs from the answer ONLY in the vowel
   if (mode === 'listen' && isContrastUnit(currentUnit)) {
     const built = buildContrastQuiz(currentUnit.contrastVowels, CONTRAST_QUESTIONS);
+    if (built.length > 0) {
+      quizWords = built.map(q => q.word);
+      quizOptions = built.map(q => q.options);
+      pushView('quiz', () => renderQuestion());
+      return;
+    }
+  }
+
+  // Consonant-contrast test (Level 4): every option differs from the answer ONLY in the unit's consonants
+  const consGroup = mode === 'listen' ? consonantGroup(currentUnit) : null;
+  if (consGroup) {
+    const built = buildConsonantQuiz(consGroup, CONTRAST_QUESTIONS);
     if (built.length > 0) {
       quizWords = built.map(q => q.word);
       quizOptions = built.map(q => q.options);
@@ -1592,9 +1612,51 @@ function buildContrastQuiz(vowels, n) {
   return shuffle(picked);
 }
 
+// ── Consonant-contrast quiz (Level 4: digraphs, blends, final clusters) ──
+// The unit names its group with "contrastSet"; null when the unit has none or the file is missing.
+function consonantGroup(unit) {
+  const groups = CONS_CONTRASTS && CONS_CONTRASTS.groups;
+  const g = unit && unit.contrastSet && groups ? groups[unit.contrastSet] : null;
+  return g && Array.isArray(g.sets) && g.sets.length > 0 ? g : null;
+}
+
+// Build n questions. Each set is a list of real words (all with audio) that differ only in the
+// tested consonants, e.g. black / back / lack. Any member can be the answer, so the student
+// can't pass by always picking the word with the blend. group.cycle balances the answer types.
+function buildConsonantQuiz(group, n) {
+  const cands = [];
+  group.sets.forEach((set, setIdx) => {
+    if (!Array.isArray(set) || set.length < 2) return;
+    set.forEach(m => cands.push({ cat: m.cat, setIdx, wordObj: m, set, rich: set.length >= 3 }));
+  });
+  const cycle = Array.isArray(group.cycle) && group.cycle.length ? group.cycle : [...new Set(cands.map(c => c.cat))];
+  const start = Math.floor(Math.random() * cycle.length);
+
+  const usedWords = new Set();
+  const usedSets = new Set();
+  const picked = [];
+  let misses = 0;
+  for (let i = 0; picked.length < n && misses < cycle.length; i++) {
+    const cat = cycle[(start + i) % cycle.length];
+    const avail = shuffle(cands.filter(c => c.cat === cat && !usedWords.has(c.wordObj.word)));
+    if (avail.length === 0) { misses++; continue; }
+    misses = 0;
+    const rank = c => (usedSets.has(c.setIdx) ? 0 : 2) + (c.rich ? 1 : 0);
+    avail.sort((a, b) => rank(b) - rank(a));
+    const c = avail[0];
+    usedWords.add(c.wordObj.word);
+    usedSets.add(c.setIdx);
+    const others = shuffle(c.set.filter(m => m.word !== c.wordObj.word)).slice(0, 3); // at most 4 choices
+    [c.wordObj, ...others].forEach(m => { contrastAudio[m.word] = m.audio; });
+    picked.push({ word: c.wordObj, options: shuffle([c.wordObj.word, ...others.map(m => m.word)]) });
+  }
+  return shuffle(picked);
+}
+
 // Audio for any word in a contrast set (all of them come from Word Mapper)
 function contrastAudioUrl(word) {
   const w = String(word).toLowerCase();
+  if (contrastAudio[w]) return audioUrl(contrastAudio[w]);
   for (const set of CONTRASTS.sets) {
     for (const v in set) {
       if (set[v].word === w && set[v].audio) return audioUrl(set[v].audio);
@@ -2336,7 +2398,7 @@ function checkAnswer(btn, selected, correct) {
     const nextDiv = document.createElement('div');
     nextDiv.style.cssText = 'text-align:center;margin-top:14px;';
     nextDiv.innerHTML = `
-      <div style="font-size:0.9rem;color:#888;margin-bottom:10px;">👆 點每個選項，聽聽看母音哪裡不一樣</div>
+      <div style="font-size:0.9rem;color:#888;margin-bottom:10px;">👆 點每個選項，聽聽看${currentUnit && currentUnit.contrastVowels ? '母音' : ''}哪裡不一樣</div>
       <button class="btn-action btn-primary" onclick="nextQuestion()" style="font-size:1rem;padding:10px 28px;">下一題 →</button>`;
     grid.parentNode.appendChild(nextDiv);
     return;
@@ -2371,11 +2433,11 @@ function renderGPMapping(word) {
 // Pass line for vowel-contrast tests. When most questions were two-choice, guessing gets 50%,
 // so the bar is 90%; otherwise 80%.
 function contrastPassHtml(score, total) {
-  if (currentMode !== 'listen' || quizOptions.length === 0 || !isContrastUnit(currentUnit)) return '';
+  if (currentMode !== 'listen' || quizOptions.length === 0 || !(isContrastUnit(currentUnit) || consonantGroup(currentUnit))) return '';
   const avgChoices = quizOptions.reduce((s, o) => s + o.length, 0) / quizOptions.length;
   const need = Math.ceil(total * (avgChoices < 2.5 ? 0.9 : 0.8));
   return score >= need
-    ? `<div style="font-weight:800;color:var(--correct);margin:6px 0;">✅ 過關！這幾個母音你分得出來了</div>`
+    ? `<div style="font-weight:800;color:var(--correct);margin:6px 0;">✅ 過關！${isContrastUnit(currentUnit) ? '這幾個母音' : '這一關的音'}你分得出來了</div>`
     : `<div style="font-weight:700;color:#888;margin:6px 0;">還沒過關（要答對 ${need} 題），回去聽一聽再試一次</div>`;
 }
 

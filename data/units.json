@@ -9300,6 +9300,7 @@
           "pattern": "Digraphs: sh, ch, th",
           "explain": "兩個字母合起來發一個音。sh 發 /ʃ/，ch 發 /tʃ/（短母音後面寫成 tch），th 發 /θ/（think）或 /ð/（this）。",
           "keys": [{ "g": "sh", "ipa": "ʃ" }, { "g": "ch", "ipa": "tʃ" }, { "g": "tch", "ipa": "tʃ" }, { "g": "th", "ipa": "θ" }, { "g": "th", "ipa": "ð" }],
+          "contrastSet": "digraphs",
           "words": [
             {
               "word": "although",
@@ -16149,6 +16150,7 @@
           "pattern": "L-blends & R-blends",
           "explain": "子音後面接 l 或 r，兩個子音連著唸，每個音都要發出來，像 black、tree。",
           "keys": [{ "g": "bl", "ipa": ["b","l"] }, { "g": "cl", "ipa": ["k","l"] }, { "g": "fl", "ipa": ["f","l"] }, { "g": "gl", "ipa": ["ɡ","l"] }, { "g": "pl", "ipa": ["p","l"] }, { "g": "sl", "ipa": ["s","l"] }, { "g": "br", "ipa": ["b","r"] }, { "g": "cr", "ipa": ["k","r"] }, { "g": "dr", "ipa": ["d","r"] }, { "g": "fr", "ipa": ["f","r"] }, { "g": "gr", "ipa": ["ɡ","r"] }, { "g": "pr", "ipa": ["p","r"] }, { "g": "tr", "ipa": ["t","r"] }],
+          "contrastSet": "lr-blends",
           "words": [
             {
               "word": "abroad",
@@ -22188,6 +22190,7 @@
           "pattern": "S-blends & 3-letter clusters",
           "explain": "s 後面接另一個子音，兩個音都要發，像 stop、sky。三個子音連在一起也是每個都發，像 street。",
           "keys": [{ "g": "st", "ipa": ["s","t"] }, { "g": "sk", "ipa": ["s","k"] }, { "g": "sp", "ipa": ["s","p"] }, { "g": "sw", "ipa": ["s","w"] }, { "g": "sm", "ipa": ["s","m"] }, { "g": "sn", "ipa": ["s","n"] }, { "g": "str", "ipa": ["s","t","r"] }, { "g": "spr", "ipa": ["s","p","r"] }, { "g": "scr", "ipa": ["s","k","r"] }],
+          "contrastSet": "s-blends",
           "words": [
             {
               "word": "against",
@@ -26403,6 +26406,7 @@
           "pattern": "Final clusters & silent letters",
           "explain": "字尾連著兩個子音（-nt、-nd、-nk、-mp），兩個音都要發，像 went、hand、pink。有些字母不發音，像 know 的 k、write 的 w、lamb 的 b。",
           "keys": [{ "g": "nt", "ipa": ["n","t"] }, { "g": "nd", "ipa": ["n","d"] }, { "g": "nk", "ipa": ["ŋ","k"] }, { "g": "mp", "ipa": ["m","p"] }, { "g": "kn", "ipa": "n" }, { "g": "wr", "ipa": "r" }, { "g": "mb", "ipa": "m" }],
+          "contrastSet": "final-clusters",
           "words": [
             {
               "word": "a.m.",
