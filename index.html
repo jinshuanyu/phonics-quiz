@@ -459,6 +459,48 @@ body {
 }
 .learn-intro b { color: #c2410c; }
 
+/* 🔑 Key sounds + short explanation at the top of every Learn page */
+.learn-key-card {
+  background: #fff;
+  border: 3px solid var(--primary);
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+.learn-key-title {
+  font-weight: 800;
+  color: var(--primary);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+.learn-key-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.learn-key {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 64px;
+  padding: 8px 12px;
+  background: var(--vowel-bg, #fef3c7);
+  border: 2px solid var(--vowel-border, #fbbf24);
+  border-radius: 12px;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+.learn-key:active, .learn-key.playing {
+  background: #fed7aa;
+  border-color: var(--primary);
+  transform: scale(0.95);
+}
+.learn-key .lk-g { font-size: 1.6rem; font-weight: 800; color: #92400e; line-height: 1.2; }
+.learn-key .lk-ipa { font-size: 0.85rem; font-weight: 600; color: #888; }
+.learn-key-explain { font-size: 0.98rem; line-height: 1.7; color: #333; }
+
 .learn-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -1004,6 +1046,12 @@ async function init() {
   try {
     const res = await fetch('data/units.json');
     DATA = await res.json();
+    // Word Mapper's key-sound entries ("er, ir, ur", "ch, tch", "a_e, ai, ay" …) have no IPA of
+    // their own. They are not words: keep them out of the word lists and out of every quiz.
+    // Each unit's key sounds are shown at the top of its Learn page from unit.keys instead.
+    DATA.levels.forEach(level => level.units.forEach(unit => {
+      if (Array.isArray(unit.words)) unit.words = unit.words.filter(w => w.isLetter || w.ipa);
+    }));
     // Vowel-contrast sets for the cumulative short-vowel tests (optional file)
     try {
       const cRes = await fetch('data/vowel-contrasts.json');
@@ -1335,9 +1383,26 @@ function renderLearn() {
 
   const words = currentUnit.words.filter(w => w.word);
   const introText = currentUnit.learnIntro
-    || '👆 點任一字母聽單音，按 🔊 聽完整單字。熟悉這個母音的拼法後，再去做測驗 💪';
+    || '👆 點任一個字母方塊聽單音，按 🔊 聽完整的發音。';
 
-  let html = `<div class="learn-screen">
+  // 🔑 Key sounds first, then the short explanation, then the words
+  const keys = currentUnit.keys || [];
+  let keyCard = '';
+  if (keys.length > 0 || currentUnit.explain) {
+    const tiles = keys.map((k, i) => `
+        <button class="learn-key" onclick="playKeySound(${i}, this)" aria-label="聽 ${escHtml(k.g)} 的發音">
+          <span class="lk-g">${escHtml(k.g)}</span>
+          <span class="lk-ipa">/${escHtml([].concat(k.ipa).join(''))}/</span>
+        </button>`).join('');
+    keyCard = `
+    <div class="learn-key-card">
+      <div class="learn-key-title">🔑 本關重點${keys.length ? '（點一下聽發音）' : ''}</div>
+      ${keys.length ? `<div class="learn-key-tiles">${tiles}</div>` : ''}
+      ${currentUnit.explain ? `<div class="learn-key-explain">${escHtml(currentUnit.explain)}</div>` : ''}
+    </div>`;
+  }
+
+  let html = `<div class="learn-screen">${keyCard}
     <div class="learn-intro">${introText}</div>
     <div class="learn-list">`;
 
@@ -1430,6 +1495,24 @@ function onLearnGraphemeClick(el) {
   el.classList.add('playing');
   setTimeout(() => el.classList.remove('playing'), 350);
   speakGrapheme(w.graphemes[gidx], w, gidx);
+}
+
+// Play a unit's key sound. A blend (ipa is an array, e.g. ["b","l"]) plays its sounds in a row.
+function playKeySound(i, el) {
+  const key = (currentUnit.keys || [])[i];
+  if (!key) return;
+  if (el) { el.classList.add('playing'); setTimeout(() => el.classList.remove('playing'), 400); }
+  const seq = [].concat(key.ipa);
+  let n = 0;
+  const next = () => {
+    if (n >= seq.length) return;
+    const path = IPA_AUDIO[seq[n++]];
+    if (!path) { next(); return; }
+    const audio = new Audio(AUDIO_BASE + path);
+    audio.onended = next;
+    audio.play().catch(() => {});
+  };
+  next();
 }
 
 function onLearnWordClick(widx) {
