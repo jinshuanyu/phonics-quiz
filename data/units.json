@@ -60072,6 +60072,7 @@
           "pattern": "Consonant-le (table, apple)",
           "explain": "字尾的「子音＋le」自成一個音節，發 /əl/，e 不發音，像 table、apple。",
           "keys": [{ "g": "le", "ipa": "əl" }],
+          "spellingSet": "le",
           "words": [
             {
               "word": "a little",
@@ -62281,7 +62282,55 @@
           "pattern": "-ed endings (/t/, /d/, /ɪd/)",
           "explain": "過去式字尾 -ed 有三種唸法：/t/（liked）、/d/（played）、/ɪd/（wanted）。t 或 d 結尾的字加 -ed 唸 /ɪd/。",
           "keys": [{ "g": "ed", "ipa": "t" }, { "g": "ed", "ipa": "d" }, { "g": "ed", "ipa": "ɪd" }],
+          "spellingSet": "ed-sounds",
           "words": [
+            {
+              "word": "balanced",
+              "ipa": "/ˈbælənst/",
+              "graphemes": [
+                "b",
+                "a",
+                "l",
+                "a",
+                "n",
+                "c",
+                "ed"
+              ],
+              "phonemes": [
+                "/'b",
+                "æ",
+                "l",
+                "ə",
+                "n",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/'b",
+                "ă",
+                "l",
+                "ə",
+                "n",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "closed",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+              ],
+              "zh": "均衡的",
+              "img": "⚖️",
+              "audio": "audio/adjs-3/balanced.mp3"
+            },
             {
               "word": "bored",
               "ipa": "/bɔrd/",
@@ -62312,6 +62361,81 @@
               "zh": "無聊的(感覺)",
               "img": "🥱",
               "audio": "audio/people-3/bored.mp3"
+            },
+            {
+              "word": "cleaned",
+              "ipa": "/klind/",
+              "graphemes": [
+                "c",
+                "l",
+                "ea",
+                "n",
+                "ed"
+              ],
+              "phonemes": [
+                "/k",
+                "l",
+                "i",
+                "n",
+                "d/"
+              ],
+              "phonics": [
+                "/k",
+                "l",
+                "ē",
+                "n",
+                "d/"
+              ],
+              "tags": [
+                "cluster",
+                "vowel_team",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "整理（過去式）",
+              "img": "🧹",
+              "audio": "audio/1C-5/cleaned.mp3"
+            },
+            {
+              "word": "cooked",
+              "ipa": "/kʊkt/",
+              "graphemes": [
+                "c",
+                "oo",
+                "k",
+                "ed"
+              ],
+              "phonemes": [
+                "/k",
+                "ʊ",
+                "k",
+                "t/"
+              ],
+              "phonics": [
+                "/k",
+                "oo",
+                "k",
+                "t/"
+              ],
+              "tags": [
+                "vowel_team",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "烹煮（過去式）",
+              "img": "🍳",
+              "audio": "audio/1B-2/cooked.mp3"
             },
             {
               "word": "crowded",
@@ -62401,6 +62525,157 @@
               "audio": "audio/people-3/excited.mp3"
             },
             {
+              "word": "filled",
+              "ipa": "/fɪld/",
+              "graphemes": [
+                "f",
+                "i",
+                "ll",
+                "ed"
+              ],
+              "phonemes": [
+                "/f",
+                "ɪ",
+                "l",
+                "d/"
+              ],
+              "phonics": [
+                "/f",
+                "ĭ",
+                "l",
+                "d/"
+              ],
+              "tags": [
+                "cvc",
+                "floss",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "充滿的",
+              "img": "🫗",
+              "audio": "audio/adjs-1/filled.mp3"
+            },
+            {
+              "word": "fried",
+              "ipa": "/fraɪd/",
+              "graphemes": [
+                "f",
+                "r",
+                "i",
+                "ed"
+              ],
+              "phonemes": [
+                "/f",
+                "r",
+                "aɪ",
+                "d/"
+              ],
+              "phonics": [
+                "/f",
+                "r",
+                "ī",
+                "d/"
+              ],
+              "tags": [
+                "cluster",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                1,
+                0
+              ],
+              "zh": "油炸的",
+              "img": "🍳",
+              "audio": "audio/food-6/fried.mp3"
+            },
+            {
+              "word": "haunted",
+              "ipa": "/ˈhɔntɪd/",
+              "graphemes": [
+                "h",
+                "au",
+                "n",
+                "t",
+                "ed"
+              ],
+              "phonemes": [
+                "/'h",
+                "ɔ",
+                "n",
+                "t",
+                "ɪd/"
+              ],
+              "phonics": [
+                "/'h",
+                "aw",
+                "n",
+                "t",
+                "ĭd/"
+              ],
+              "tags": [
+                "vowel_team",
+                "cluster",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "鬧鬼的",
+              "img": "👻",
+              "audio": "audio/holidays-2/haunted.mp3"
+            },
+            {
+              "word": "helped",
+              "ipa": "/hɛlpt/",
+              "graphemes": [
+                "h",
+                "e",
+                "l",
+                "p",
+                "ed"
+              ],
+              "phonemes": [
+                "/h",
+                "ɛ",
+                "l",
+                "p",
+                "t/"
+              ],
+              "phonics": [
+                "/h",
+                "ĕ",
+                "l",
+                "p",
+                "t/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "幫忙（過去式）",
+              "img": "🙋",
+              "audio": "audio/1B-2/helped.mp3"
+            },
+            {
               "word": "interested",
               "ipa": "/ˈɪntrɪstɪd/",
               "graphemes": [
@@ -62452,6 +62727,94 @@
               "audio": "audio/people-3/interested.mp3"
             },
             {
+              "word": "landed",
+              "ipa": "/ˈlændɪd/",
+              "graphemes": [
+                "l",
+                "a",
+                "n",
+                "d",
+                "ed"
+              ],
+              "phonemes": [
+                "/'l",
+                "æ",
+                "n",
+                "d",
+                "ɪd/"
+              ],
+              "phonics": [
+                "/'l",
+                "ă",
+                "n",
+                "d",
+                "ĭd/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "著陸（過去式）",
+              "img": "🛬",
+              "audio": "audio/1A-2/landed.mp3"
+            },
+            {
+              "word": "listened",
+              "ipa": "/ˈlɪsənd/",
+              "graphemes": [
+                "l",
+                "i",
+                "s",
+                "t",
+                "e",
+                "n",
+                "ed"
+              ],
+              "phonemes": [
+                "/'l",
+                "ɪ",
+                "s",
+                "-",
+                "ə",
+                "n",
+                "d/"
+              ],
+              "phonics": [
+                "/'l",
+                "ĭ",
+                "s",
+                "-",
+                "ə",
+                "n",
+                "d/"
+              ],
+              "tags": [
+                "closed",
+                "silent_consonant",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "zh": "聆聽（過去式）",
+              "img": "🎧",
+              "audio": "audio/1C-5/listened.mp3"
+            },
+            {
               "word": "married",
               "ipa": "/ˈmɛrid/",
               "graphemes": [
@@ -62488,6 +62851,85 @@
               "zh": "🏻‍❤️‍👨🏻已婚的",
               "img": "👩",
               "audio": "audio/family-friends-2/married.mp3"
+            },
+            {
+              "word": "pirated",
+              "ipa": "/ˈpaɪrətɪd/",
+              "graphemes": [
+                "p",
+                "i",
+                "r",
+                "a",
+                "t",
+                "ed"
+              ],
+              "phonemes": [
+                "/'p",
+                "aɪ",
+                "r",
+                "ə",
+                "t",
+                "ɪd/"
+              ],
+              "phonics": [
+                "/'p",
+                "ī",
+                "r",
+                "ə",
+                "t",
+                "ĭd/"
+              ],
+              "tags": [
+                "open",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "zh": "盜版的",
+              "img": "🏴‍☠️",
+              "audio": "audio/adjs-3/pirated.mp3"
+            },
+            {
+              "word": "played",
+              "ipa": "/pleɪd/",
+              "graphemes": [
+                "p",
+                "l",
+                "ay",
+                "ed"
+              ],
+              "phonemes": [
+                "/p",
+                "l",
+                "eɪ",
+                "d/"
+              ],
+              "phonics": [
+                "/p",
+                "l",
+                "ā",
+                "d/"
+              ],
+              "tags": [
+                "cluster",
+                "vowel_team",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "玩耍（過去式）",
+              "img": "🎮",
+              "audio": "audio/1C-5/played.mp3"
             },
             {
               "word": "pleased",
@@ -62534,6 +62976,41 @@
               "audio": "audio/adjs-3/pleased.mp3"
             },
             {
+              "word": "rained",
+              "ipa": "/reɪnd/",
+              "graphemes": [
+                "r",
+                "ai",
+                "n",
+                "ed"
+              ],
+              "phonemes": [
+                "/r",
+                "eɪ",
+                "n",
+                "d/"
+              ],
+              "phonics": [
+                "/r",
+                "ā",
+                "n",
+                "d/"
+              ],
+              "tags": [
+                "vowel_team",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "下雨（過去式）",
+              "img": "🌧️",
+              "audio": "audio/1C-5/rained.mp3"
+            },
+            {
               "word": "scared",
               "ipa": "/skɛrd/",
               "graphemes": [
@@ -62571,6 +63048,42 @@
               "zh": "害怕的",
               "img": "😱",
               "audio": "audio/people-3/scared.mp3"
+            },
+            {
+              "word": "shouted",
+              "ipa": "/ˈʃaʊtɪd/",
+              "graphemes": [
+                "sh",
+                "ou",
+                "t",
+                "ed"
+              ],
+              "phonemes": [
+                "/'ʃ",
+                "aʊ",
+                "t",
+                "ɪd/"
+              ],
+              "phonics": [
+                "/'sh",
+                "ow",
+                "t",
+                "ĭd/"
+              ],
+              "tags": [
+                "digraph",
+                "vowel_team",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "大叫（過去式）",
+              "img": "📢",
+              "audio": "audio/1A-2/shouted.mp3"
             },
             {
               "word": "showed",
@@ -62689,6 +63202,105 @@
               "audio": "audio/clothes-2/striped.mp3"
             },
             {
+              "word": "surprised",
+              "ipa": "/sɚˈpraɪzd/",
+              "graphemes": [
+                "s",
+                "ur",
+                "p",
+                "r",
+                "i",
+                "s",
+                "e",
+                "d"
+              ],
+              "phonemes": [
+                "/s",
+                "ɚ",
+                "'p",
+                "r",
+                "aɪ",
+                "z",
+                "-",
+                "d/"
+              ],
+              "phonics": [
+                "/s",
+                "er",
+                "'p",
+                "r",
+                "ī",
+                "z",
+                "-",
+                "d/"
+              ],
+              "tags": [
+                "cluster",
+                "magic_e",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "zh": "感到驚訝的",
+              "img": "😲",
+              "audio": "audio/adjs-6/surprised.mp3"
+            },
+            {
+              "word": "talented",
+              "ipa": "/ˈtæləntɪd/",
+              "graphemes": [
+                "t",
+                "a",
+                "l",
+                "e",
+                "n",
+                "t",
+                "ed"
+              ],
+              "phonemes": [
+                "/'t",
+                "æ",
+                "l",
+                "ə",
+                "n",
+                "t",
+                "ɪd/"
+              ],
+              "phonics": [
+                "/'t",
+                "ă",
+                "l",
+                "ə",
+                "n",
+                "t",
+                "ĭd/"
+              ],
+              "tags": [
+                "closed",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "zh": "有才華的",
+              "img": "🌟",
+              "audio": "audio/adjs-3/talented.mp3"
+            },
+            {
               "word": "tired",
               "ipa": "/taɪɚd/",
               "graphemes": [
@@ -62725,6 +63337,125 @@
               "zh": "疲倦的",
               "img": "",
               "audio": "audio/health-1/tired.mp3"
+            },
+            {
+              "word": "visited",
+              "ipa": "/ˈvɪzɪtɪd/",
+              "graphemes": [
+                "v",
+                "i",
+                "s",
+                "i",
+                "t",
+                "ed"
+              ],
+              "phonemes": [
+                "/'v",
+                "ɪ",
+                "z",
+                "ɪ",
+                "t",
+                "ɪd/"
+              ],
+              "phonics": [
+                "/'v",
+                "ĭ",
+                "z",
+                "ĭ",
+                "t",
+                "ĭd/"
+              ],
+              "tags": [
+                "closed",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "zh": "拜訪（過去式）",
+              "img": "🏠",
+              "audio": "audio/1A-2/visited.mp3"
+            },
+            {
+              "word": "walked",
+              "ipa": "/wɔkt/",
+              "graphemes": [
+                "w",
+                "a",
+                "l",
+                "k",
+                "ed"
+              ],
+              "phonemes": [
+                "/w",
+                "ɔ",
+                "-",
+                "k",
+                "t/"
+              ],
+              "phonics": [
+                "/w",
+                "aw",
+                "-",
+                "k",
+                "t/"
+              ],
+              "tags": [
+                "irregular",
+                "silent_consonant",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              "zh": "走路（過去式）",
+              "img": "🚶",
+              "audio": "audio/1B-2/walked.mp3"
+            },
+            {
+              "word": "watched",
+              "ipa": "/wɑtʃt/",
+              "graphemes": [
+                "w",
+                "a",
+                "tch",
+                "ed"
+              ],
+              "phonemes": [
+                "/w",
+                "ɑ",
+                "tʃ",
+                "t/"
+              ],
+              "phonics": [
+                "/w",
+                "ŏ",
+                "ch",
+                "t/"
+              ],
+              "tags": [
+                "irregular",
+                "digraph",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "zh": "觀看（過去式）",
+              "img": "📺",
+              "audio": "audio/1B-2/watched.mp3"
             }
           ]
         }
