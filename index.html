@@ -1054,7 +1054,8 @@ const $header = document.getElementById('header');
 // ── Init ───────────────────────────────────────────────
 async function init() {
   try {
-    const res = await fetch('data/units.json');
+    // { cache: 'no-cache' } = always check with the server, so a freshly updated page never runs on stale cached data
+    const res = await fetch('data/units.json', { cache: 'no-cache' });
     DATA = await res.json();
     // Word Mapper's key-sound entries ("er, ir, ur", "ch, tch", "a_e, ai, ay" …) have no IPA of
     // their own. They are not words: keep them out of the word lists and out of every quiz.
@@ -1064,18 +1065,18 @@ async function init() {
     }));
     // Vowel-contrast sets for the cumulative short-vowel tests (optional file)
     try {
-      const cRes = await fetch('data/vowel-contrasts.json');
+      const cRes = await fetch('data/vowel-contrasts.json', { cache: 'no-cache' });
       if (cRes.ok) CONTRASTS = await cRes.json();
     } catch (e) { CONTRASTS = null; }
     // Consonant-contrast sets for the Level 4 listening tests (optional file)
     try {
-      const kRes = await fetch('data/consonant-contrasts.json');
+      const kRes = await fetch('data/consonant-contrasts.json', { cache: 'no-cache' });
       if (kRes.ok) CONS_CONTRASTS = await kRes.json();
     } catch (e) { CONS_CONTRASTS = null; }
     // Level 3 r-vowel and Level 5 diphthong contrast sets: same shape, merged into the same groups (optional files)
     for (const extra of ['data/r-vowel-contrasts.json', 'data/diphthong-contrasts.json']) {
       try {
-        const rRes = await fetch(extra);
+        const rRes = await fetch(extra, { cache: 'no-cache' });
         if (rRes.ok) {
           const rv = await rRes.json();
           if (!CONS_CONTRASTS) CONS_CONTRASTS = { groups: {} };
@@ -1085,7 +1086,7 @@ async function init() {
     }
     // Pick-the-correct-spelling items for rules that can't be heard (optional file)
     try {
-      const sRes = await fetch('data/spelling-choices.json');
+      const sRes = await fetch('data/spelling-choices.json', { cache: 'no-cache' });
       if (sRes.ok) SPELLING = await sRes.json();
     } catch (e) { SPELLING = null; }
     showHome();

@@ -10258,7 +10258,7 @@
               ],
               "zh": "農曆新年",
               "img": "🧨",
-              "audio": ""
+              "audio": "audio/holidays/chinese_new_year.mp3"
             },
             {
               "word": "chocolate",
@@ -10761,7 +10761,7 @@
               ],
               "zh": "父親節",
               "img": "👨",
-              "audio": ""
+              "audio": "audio/holidays/father's_day.mp3"
             },
             {
               "word": "fifth",
@@ -11576,7 +11576,7 @@
               ],
               "zh": "母親節",
               "img": "👩",
-              "audio": ""
+              "audio": "audio/holidays/mother's_day.mp3"
             },
             {
               "word": "movie theater",
@@ -11634,7 +11634,7 @@
               ],
               "zh": "電影院",
               "img": "🎬",
-              "audio": ""
+              "audio": "audio/places-3/movie_theater.mp3"
             },
             {
               "word": "much",
@@ -11876,7 +11876,7 @@
               ],
               "zh": "北美洲",
               "img": "",
-              "audio": ""
+              "audio": "audio/world-4/north_america.mp3"
             },
             {
               "word": "North Pole",
@@ -11927,7 +11927,7 @@
               ],
               "zh": "北極",
               "img": "",
-              "audio": ""
+              "audio": "audio/world-1/north_pole.mp3"
             },
             {
               "word": "nothing",
@@ -12937,7 +12937,7 @@
               ],
               "zh": "南美洲",
               "img": "",
-              "audio": ""
+              "audio": "audio/world-4/south_america.mp3"
             },
             {
               "word": "South Korea",
@@ -12992,7 +12992,7 @@
               ],
               "zh": "南韓",
               "img": "",
-              "audio": ""
+              "audio": "audio/world-2/south_korea.mp3"
             },
             {
               "word": "Southern",
@@ -13101,7 +13101,7 @@
               ],
               "zh": "T 恤",
               "img": "👕",
-              "audio": ""
+              "audio": "audio/clothes-1/t_shirt.mp3"
             },
             {
               "word": "tenth",
@@ -14291,7 +14291,7 @@
               ],
               "zh": "鬧鐘",
               "img": "⏰",
-              "audio": ""
+              "audio": "audio/time-1/alarm_clock.mp3"
             },
             {
               "word": "alphabet",
@@ -15113,7 +15113,7 @@
               ],
               "zh": "在後面",
               "img": "",
-              "audio": ""
+              "audio": "audio/prep-2/in_back_of.mp3"
             },
             {
               "word": "jacket",
@@ -17375,7 +17375,7 @@
               ],
               "zh": "小丑",
               "img": "🎪",
-              "audio": ""
+              "audio": "audio/occupations-1/circus_clown.mp3"
             },
             {
               "word": "clap",
@@ -18004,7 +18004,7 @@
               ],
               "zh": "信用卡",
               "img": "💳",
-              "audio": ""
+              "audio": "audio/money/credit_card.mp3"
             },
             {
               "word": "crocodile",
@@ -18933,7 +18933,7 @@
               ],
               "zh": "消防車",
               "img": "🚒",
-              "audio": ""
+              "audio": "audio/occupations-4/fire_truck.mp3"
             },
             {
               "word": "floor",
@@ -19967,7 +19967,7 @@
               ],
               "zh": "在前面",
               "img": "",
-              "audio": ""
+              "audio": "audio/prep-2/in_front_of.mp3"
             },
             {
               "word": "include",
@@ -21574,7 +21574,7 @@
               ],
               "zh": "南非",
               "img": "",
-              "audio": ""
+              "audio": "audio/world-3/south_africa.mp3"
             },
             {
               "word": "sunglasses",
@@ -21811,7 +21811,7 @@
               ],
               "zh": "垃圾桶",
               "img": "🗑",
-              "audio": ""
+              "audio": "audio/house-3/trash_can.mp3"
             },
             {
               "word": "travel",
@@ -23037,7 +23037,7 @@
               ],
               "zh": "端午節",
               "img": "🐉",
-              "audio": ""
+              "audio": "audio/holidays/dragon_boat_festival.mp3"
             },
             {
               "word": "drugstore",
@@ -23163,7 +23163,7 @@
               ],
               "zh": "國小",
               "img": "🏫",
-              "audio": ""
+              "audio": "audio/school-1/elementary_school.mp3"
             },
             {
               "word": "exist",
@@ -23858,7 +23858,7 @@
               ],
               "zh": "警局",
               "img": "🏛",
-              "audio": ""
+              "audio": "audio/occupations-4/police_station.mp3"
             },
             {
               "word": "postcard",
@@ -25182,7 +25182,7 @@
               ],
               "zh": "文具店",
               "img": "✏️",
-              "audio": ""
+              "audio": "audio/places-3/stationery_store.mp3"
             },
             {
               "word": "steak",
@@ -26845,7 +26845,7 @@
               ],
               "zh": "不是（are not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/be/aren't.mp3"
             },
             {
               "word": "assistant",
@@ -27467,7 +27467,7 @@
               ],
               "zh": "可以；能；罐頭",
               "img": "",
-              "audio": ""
+              "audio": "audio/auxi/can't.mp3"
             },
             {
               "word": "cent",
@@ -28000,7 +28000,7 @@
               ],
               "zh": "不能；無法（could not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/auxi/couldn't.mp3"
             },
             {
               "word": "current",
@@ -28262,7 +28262,7 @@
               ],
               "zh": "沒有（did not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/auxi/didn't.mp3"
             },
             {
               "word": "different",
@@ -28510,7 +28510,7 @@
               ],
               "zh": "不（does not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/auxi/doesn't.mp3"
             },
             {
               "word": "don't",
@@ -28550,7 +28550,7 @@
               ],
               "zh": "不要；別（do not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/auxi/don't.mp3"
             },
             {
               "word": "drank",
@@ -28962,7 +28962,7 @@
               ],
               "zh": "速食店",
               "img": "🍔",
-              "audio": ""
+              "audio": "audio/places-2/fast_food_restaurant.mp3"
             },
             {
               "word": "find",
@@ -29719,7 +29719,7 @@
               ],
               "zh": "沒有（had not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/auxi/hadn't.mp3"
             },
             {
               "word": "half",
@@ -29942,7 +29942,7 @@
               ],
               "zh": "沒有（has not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/auxi/hasn't.mp3"
             },
             {
               "word": "haven't",
@@ -29990,7 +29990,7 @@
               ],
               "zh": "沒有（have not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/auxi/haven't.mp3"
             },
             {
               "word": "honest",
@@ -30510,7 +30510,7 @@
               ],
               "zh": "不是（is not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/be/isn't.mp3"
             },
             {
               "word": "jump",
@@ -31066,7 +31066,7 @@
               ],
               "zh": "不可（must not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/auxi/mustn't.mp3"
             },
             {
               "word": "o'clock",
@@ -31963,7 +31963,7 @@
               ],
               "zh": "不該（shall not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/auxi/shan't.mp3"
             },
             {
               "word": "should",
@@ -32049,7 +32049,7 @@
               ],
               "zh": "不應該（should not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/auxi/shouldn't.mp3"
             },
             {
               "word": "shrimp",
@@ -32313,7 +32313,7 @@
               ],
               "zh": "軟性飲料",
               "img": "🍹",
-              "audio": ""
+              "audio": "audio/food-4/soft_drink.mp3"
             },
             {
               "word": "spend",
@@ -33324,7 +33324,7 @@
               ],
               "zh": "不是（was not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/be/wasn't.mp3"
             },
             {
               "word": "Wednesday",
@@ -33450,7 +33450,7 @@
               ],
               "zh": "不是（were not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/be/weren't.mp3"
             },
             {
               "word": "wind",
@@ -33525,7 +33525,7 @@
               ],
               "zh": "不會；不願意（will not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/auxi/won't.mp3"
             },
             {
               "word": "would",
@@ -33609,7 +33609,7 @@
               ],
               "zh": "不會；不願意（would not）",
               "img": "",
-              "audio": ""
+              "audio": "audio/auxi/wouldn't.mp3"
             },
             {
               "word": "wound",
@@ -34274,7 +34274,7 @@
               ],
               "zh": "醬油",
               "img": "🧴",
-              "audio": ""
+              "audio": "audio/food-4/soy_sauce.mp3"
             },
             {
               "word": "toy",
@@ -35087,7 +35087,7 @@
               ],
               "zh": "花店",
               "img": "💐",
-              "audio": ""
+              "audio": "audio/places-2/flower_shop.mp3"
             },
             {
               "word": "found",
@@ -35608,7 +35608,7 @@
               ],
               "zh": "離開；出於",
               "img": "",
-              "audio": ""
+              "audio": "audio/prep-2/out_of.mp3"
             },
             {
               "word": "pound",
@@ -36035,7 +36035,7 @@
               ],
               "zh": "南極",
               "img": "",
-              "audio": ""
+              "audio": "audio/world-1/south_pole.mp3"
             },
             {
               "word": "sprout",
@@ -37135,7 +37135,7 @@
               ],
               "zh": "月餅",
               "img": "🥮",
-              "audio": ""
+              "audio": "audio/food-3/moon_cake.mp3"
             },
             {
               "word": "noon",
@@ -37537,7 +37537,7 @@
               ],
               "zh": "流星",
               "img": "🌠",
-              "audio": ""
+              "audio": "audio/space/shooting_star.mp3"
             },
             {
               "word": "soon",
@@ -37679,7 +37679,7 @@
               ],
               "zh": "☾ 月球",
               "img": "",
-              "audio": ""
+              "audio": "audio/space/the_moon.mp3"
             },
             {
               "word": "too",
@@ -45339,7 +45339,7 @@
               ],
               "zh": "郵差(配送)",
               "img": "📬",
-              "audio": ""
+              "audio": "audio/occupations-2/mail_carrier.mp3"
             },
             {
               "word": "mailman",
@@ -48023,7 +48023,7 @@
               ],
               "zh": "班長",
               "img": "👮",
-              "audio": ""
+              "audio": "audio/school-3/class_leader.mp3"
             },
             {
               "word": "clean",
@@ -51470,7 +51470,7 @@
               ],
               "zh": "‍🏫 教師節",
               "img": "👩",
-              "audio": ""
+              "audio": "audio/holidays/teacher's_day.mp3"
             },
             {
               "word": "teapot",
@@ -53178,7 +53178,7 @@
               ],
               "zh": "薯條",
               "img": "🍟",
-              "audio": ""
+              "audio": "audio/food-2/french_fries.mp3"
             },
             {
               "word": "frighten",
@@ -53725,7 +53725,7 @@
               ],
               "zh": "國中",
               "img": "🏫",
-              "audio": ""
+              "audio": "audio/school-1/junior_high_school.mp3"
             },
             {
               "word": "kite",
@@ -54881,7 +54881,7 @@
               ],
               "zh": "高中",
               "img": "🏫",
-              "audio": ""
+              "audio": "audio/school-1/senior_high_school.mp3"
             },
             {
               "word": "shine",
@@ -57605,7 +57605,7 @@
               ],
               "zh": "喉嚨痛",
               "img": "🗣️",
-              "audio": ""
+              "audio": "audio/health-2/sore_throat.mp3"
             },
             {
               "word": "spoke",
@@ -58153,7 +58153,7 @@
               ],
               "zh": "少數；幾個",
               "img": "",
-              "audio": ""
+              "audio": "audio/numbers-4/a_few.mp3"
             },
             {
               "word": "blew",
@@ -58598,7 +58598,7 @@
               ],
               "zh": "元旦",
               "img": "🌅",
-              "audio": ""
+              "audio": "audio/holidays/new_year's_day.mp3"
             },
             {
               "word": "New Year's Eve",
@@ -58659,7 +58659,7 @@
               ],
               "zh": "除夕",
               "img": "🎆",
-              "audio": ""
+              "audio": "audio/holidays/new_year's_eve.mp3"
             },
             {
               "word": "New Zealand",
@@ -58714,7 +58714,7 @@
               ],
               "zh": "紐西蘭",
               "img": "",
-              "audio": ""
+              "audio": "audio/world-2/new_zealand.mp3"
             },
             {
               "word": "news",
@@ -59116,7 +59116,7 @@
               ],
               "zh": "冷氣",
               "img": "❄",
-              "audio": ""
+              "audio": "audio/house-2/air_conditioner.mp3"
             },
             {
               "word": "airlines",
@@ -59654,7 +59654,7 @@
               ],
               "zh": "百貨公司",
               "img": "🏬",
-              "audio": ""
+              "audio": "audio/places-2/department_store.mp3"
             },
             {
               "word": "disappear",
@@ -60009,7 +60009,7 @@
               ],
               "zh": "北韓",
               "img": "",
-              "audio": ""
+              "audio": "audio/world-2/north_korea.mp3"
             },
             {
               "word": "or, ore",
@@ -60632,7 +60632,7 @@
               ],
               "zh": "一點點",
               "img": "",
-              "audio": ""
+              "audio": "audio/numbers-4/a_little.mp3"
             },
             {
               "word": "able",
@@ -61302,7 +61302,7 @@
               ],
               "zh": "🇼 雙十節",
               "img": "🇹",
-              "audio": ""
+              "audio": "audio/holidays/double_tenth_day.mp3"
             },
             {
               "word": "eagle",
@@ -62494,7 +62494,7 @@
               ],
               "zh": "桌球",
               "img": "🏓",
-              "audio": ""
+              "audio": "audio/sports-1/table_tennis.mp3"
             },
             {
               "word": "temple",
