@@ -8,6 +8,7 @@
         {
           "id": 1,
           "name": "字母名 Letter Names",
+          "learnIntro": "👆 點字母方塊或 🔊，聽字母的名字。",
           "pattern": "26 letters: names (A-Z)",
           "explain": "每個字母都有自己的名字。這一關認識 26 個字母的名字和大小寫。",
           "keys": [],
@@ -464,7 +465,7 @@
                 0,
                 0
               ],
-              "zh": "行動",
+              "zh": "行動；演戲",
               "img": "🎬",
               "audio": "audio/1A-1/act.mp3"
             },
