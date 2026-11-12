@@ -16427,68 +16427,6 @@
               "audio": "audio/wh-words/which.mp3"
             },
             {
-              "word": "who",
-              "ipa": "/hu/",
-              "graphemes": [
-                "wh",
-                "o"
-              ],
-              "phonemes": [
-                "/h",
-                "u/"
-              ],
-              "phonics": [
-                "/h",
-                "ū/"
-              ],
-              "tags": [
-                "irregular",
-                "digraph"
-              ],
-              "hearts": [
-                1,
-                1
-              ],
-              "zh": "誰",
-              "img": "",
-              "audio": "audio/wh-words/who.mp3"
-            },
-            {
-              "word": "whose",
-              "ipa": "/huz/",
-              "graphemes": [
-                "wh",
-                "o",
-                "s",
-                "e"
-              ],
-              "phonemes": [
-                "/h",
-                "u",
-                "z",
-                "-/"
-              ],
-              "phonics": [
-                "/h",
-                "ū",
-                "z",
-                "-/"
-              ],
-              "tags": [
-                "irregular",
-                "digraph"
-              ],
-              "hearts": [
-                1,
-                1,
-                0,
-                0
-              ],
-              "zh": "誰的",
-              "img": "",
-              "audio": "audio/wh-words/whose.mp3"
-            },
-            {
               "word": "why",
               "ipa": "/waɪ/",
               "graphemes": [
@@ -50878,6 +50816,48 @@
               "audio": "audio/house-1/street.mp3"
             },
             {
+              "word": "succeed",
+              "ipa": "/səkˈsid/",
+              "graphemes": [
+                "s",
+                "u",
+                "c",
+                "c",
+                "ee",
+                "d"
+              ],
+              "phonemes": [
+                "/s",
+                "ə",
+                "k",
+                "'s",
+                "i",
+                "d/"
+              ],
+              "phonics": [
+                "/s",
+                "ə",
+                "k",
+                "'s",
+                "ē",
+                "d/"
+              ],
+              "tags": [
+                "vowel_team"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "成功",
+              "img": "✅",
+              "audio": "audio/1A-2/succeed.mp3"
+            },
+            {
               "word": "sweep",
               "ipa": "/swip/",
               "graphemes": [
@@ -62707,48 +62687,6 @@
               "zh": "有條紋的",
               "img": "🐅",
               "audio": "audio/clothes-2/striped.mp3"
-            },
-            {
-              "word": "succeed",
-              "ipa": "/səkˈsid/",
-              "graphemes": [
-                "s",
-                "u",
-                "c",
-                "c",
-                "ee",
-                "d"
-              ],
-              "phonemes": [
-                "/s",
-                "ə",
-                "k",
-                "'s",
-                "i",
-                "d/"
-              ],
-              "phonics": [
-                "/s",
-                "ə",
-                "k",
-                "'s",
-                "ē",
-                "d/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "成功",
-              "img": "✅",
-              "audio": "audio/1A-2/succeed.mp3"
             },
             {
               "word": "tired",
