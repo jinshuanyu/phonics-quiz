@@ -1070,6 +1070,15 @@ async function init() {
       const kRes = await fetch('data/consonant-contrasts.json');
       if (kRes.ok) CONS_CONTRASTS = await kRes.json();
     } catch (e) { CONS_CONTRASTS = null; }
+    // Level 3 r-vowel contrast sets: same shape, merged into the same groups (optional file)
+    try {
+      const rRes = await fetch('data/r-vowel-contrasts.json');
+      if (rRes.ok) {
+        const rv = await rRes.json();
+        if (!CONS_CONTRASTS) CONS_CONTRASTS = { groups: {} };
+        Object.assign(CONS_CONTRASTS.groups, rv.groups || {});
+      }
+    } catch (e) { /* keep whatever loaded */ }
     // Pick-the-correct-spelling items for rules that can't be heard (optional file)
     try {
       const sRes = await fetch('data/spelling-choices.json');
@@ -1560,16 +1569,17 @@ function startQuiz(mode) {
     }
   }
 
-  // Level 4 tests built from data files:
-  //  - consonant-contrast questions: every option differs from the answer ONLY in the unit's consonants
-  //  - spelling questions: for rules that can't be heard (FLOSS, ck, silent letters…), pick the correct spelling
-  // A unit that teaches both (尾子音群 + Silent) gets 8 + 4 questions.
+  // Level 3–4 tests built from data files:
+  //  - contrast questions: every option differs from the answer ONLY in the sound the unit teaches
+  //  - spelling questions: for rules that can't be heard (FLOSS, ck, silent letters, er/ir/ur…), pick the correct spelling
+  // A unit that teaches both gets a mix: 8 + 4 questions unless the spelling group says otherwise ("mix").
   const consGroup = mode === 'listen' ? consonantGroup(currentUnit) : null;
   const spellGroup = mode === 'listen' ? spellingGroup(currentUnit) : null;
   if (consGroup || spellGroup) {
     let built;
     if (consGroup && spellGroup) {
-      built = shuffle([...buildConsonantQuiz(consGroup, 8), ...buildSpellingQuiz(spellGroup, 4)]);
+      const mix = spellGroup.mix || { contrast: 8, spelling: 4 };
+      built = shuffle([...buildConsonantQuiz(consGroup, mix.contrast), ...buildSpellingQuiz(spellGroup, mix.spelling)]);
     } else if (consGroup) {
       built = buildConsonantQuiz(consGroup, CONTRAST_QUESTIONS);
     } else {

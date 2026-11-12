@@ -1,6 +1,41 @@
 {
   "note": "Pick-the-correct-spelling items for rules that cannot be heard (FLOSS, ck/qu/wh/ph, silent kn/wr/mb). Every word has Word Mapper audio. wrong = misspellings that sound the same and are not normal English words. cat = answer category used to balance questions.",
   "groups": {
+    "er-ir-ur": {
+      "cycle": ["er","ir","ur"],
+      "mix": {"contrast":6,"spelling":6},
+      "items": [
+        {"word":"her","ipa":"/hɝ/","graphemes":["h","er"],"phonemes":["/h","ɝ/"],"phonics":["/h","er/"],"hearts":[0,0],"zh":"她（受格）/ 她的（所有格）","img":"","audio":"audio/pron-2/her.mp3","cat":"er","wrong":["hir","hur"]},
+        {"word":"term","ipa":"/tɝm/","graphemes":["t","er","m"],"phonemes":["/t","ɝ","m/"],"phonics":["/t","er","m/"],"hearts":[0,0,0],"zh":"學期；術語","img":"📆","audio":"audio/school-5/term.mp3","cat":"er","wrong":["tirm","turm"]},
+        {"word":"clerk","ipa":"/klɝk/","graphemes":["c","l","er","k"],"phonemes":["/k","l","ɝ","k/"],"phonics":["/k","l","er","k/"],"hearts":[0,0,0,0],"zh":"店員","img":"🧾","audio":"audio/occupations-2/clerk.mp3","cat":"er","wrong":["clirk","clurk"]},
+        {"word":"serve","ipa":"/sɝv/","graphemes":["s","er","v","e"],"phonemes":["/s","ɝ","v","-/"],"phonics":["/s","er","v","-/"],"hearts":[0,0,0,1],"zh":"服務","img":"🍽","audio":"audio/1C-5/serve.mp3","cat":"er","wrong":["sirve","surve"]},
+        {"word":"person","ipa":"/ˈpɝ.sən/","graphemes":["p","er","s","o","n"],"phonemes":["/'p","ɝ","s","ə","n/"],"phonics":["/'p","er","s","ə","n/"],"hearts":[0,0,0,0,0],"zh":"🏻人","img":"🧍","audio":"audio/family-friends-1/person.mp3","cat":"er","wrong":["pirson","purson"]},
+        {"word":"perfect","ipa":"/ˈpɝfɪkt/","graphemes":["p","er","f","e","c","t"],"phonemes":["/'p","ɝ","f","ɛ","k","t/"],"phonics":["/'p","er","f","ĕ","k","t/"],"hearts":[0,0,0,0,0,0],"zh":"完美的","img":"💯","audio":"audio/adjs-3/perfect.mp3","cat":"er","wrong":["pirfect","purfect"]},
+        {"word":"bird","ipa":"/bɝd/","graphemes":["b","ir","d"],"phonemes":["/b","ɝ","d/"],"phonics":["/b","er","d/"],"hearts":[0,0,0],"zh":"鳥","img":"🐦","audio":"audio/animals-1/bird.mp3","cat":"ir","wrong":["berd","burd"]},
+        {"word":"girl","ipa":"/ɡɝl/","graphemes":["g","ir","l"],"phonemes":["/ɡ","ɝ","l/"],"phonics":["/ɡ","er","l/"],"hearts":[0,0,0],"zh":"🏻女孩","img":"👧","audio":"audio/family-friends-1/girl.mp3","cat":"ir","wrong":["gurl"]},
+        {"word":"sir","ipa":"/sɝ/","graphemes":["s","ir"],"phonemes":["/s","ɝ/"],"phonics":["/s","er/"],"hearts":[0,0],"zh":"先生(敬稱)","img":"👨","audio":"audio/people-6/sir.mp3","cat":"ir","wrong":["ser","sur"]},
+        {"word":"third","ipa":"/θɝd/","graphemes":["th","ir","d"],"phonemes":["/θ","ɝ","d/"],"phonics":["/th","er","d/"],"hearts":[0,0,0],"zh":"rd 第三","img":"3","audio":"audio/numbers-5/third.mp3","cat":"ir","wrong":["therd","thurd"]},
+        {"word":"first","ipa":"/fɝst/","graphemes":["f","ir","s","t"],"phonemes":["/f","ɝ","s","t/"],"phonics":["/f","er","s","t/"],"hearts":[0,0,0,0],"zh":"st 第一","img":"1","audio":"audio/numbers-5/first.mp3","cat":"ir","wrong":["ferst","furst"]},
+        {"word":"shirt","ipa":"/ʃɝt/","graphemes":["sh","ir","t"],"phonemes":["/ʃ","ɝ","t/"],"phonics":["/sh","er","t/"],"hearts":[0,0,0],"zh":"襯衫","img":"👔","audio":"audio/clothes-1/shirt.mp3","cat":"ir","wrong":["shert","shurt"]},
+        {"word":"stir","ipa":"/stɝ/","graphemes":["s","t","ir"],"phonemes":["/s","t","ɝ/"],"phonics":["/s","t","er/"],"hearts":[0,0,0],"zh":"攪拌","img":"🥄","audio":"audio/food-6/stir.mp3","cat":"ir","wrong":["ster","stur"]},
+        {"word":"dirty","ipa":"/ˈdɝti/","graphemes":["d","ir","t","y"],"phonemes":["/'d","ɝ","t","i/"],"phonics":["/'d","er","t","ē/"],"hearts":[0,0,0,0],"zh":"髒的","img":"🧹","audio":"audio/adjs-4/dirty.mp3","cat":"ir","wrong":["derty","durty"]},
+        {"word":"skirt","ipa":"/skɝt/","graphemes":["s","k","ir","t"],"phonemes":["/s","k","ɝ","t/"],"phonics":["/s","k","er","t/"],"hearts":[0,0,0,0],"zh":"裙子","img":"👗","audio":"audio/clothes-1/skirt.mp3","cat":"ir","wrong":["skert","skurt"]},
+        {"word":"thirsty","ipa":"/ˈθɝsti/","graphemes":["th","ir","s","t","y"],"phonemes":["/'θ","ɝ","s","t","i/"],"phonics":["/'th","er","s","t","ē/"],"hearts":[0,0,0,0,0],"zh":"口渴的","img":"🥵","audio":"audio/food-5/thirsty.mp3","cat":"ir","wrong":["thersty","thursty"]},
+        {"word":"birthday","ipa":"/ˈbɝθˌdeɪ/","graphemes":["b","ir","th","d","ay"],"phonemes":["/'b","ɝ","θ","d","eɪ/"],"phonics":["/'b","er","th","d","ā/"],"hearts":[0,0,0,0,0],"zh":"生日","img":"🎂","audio":"audio/holidays/birthday.mp3","cat":"ir","wrong":["berthday","burthday"]},
+        {"word":"burn","ipa":"/bɝn/","graphemes":["b","ur","n"],"phonemes":["/b","ɝ","n/"],"phonics":["/b","er","n/"],"hearts":[0,0,0],"zh":"燃燒(原形)","img":"","audio":"audio/ABB-1/burn.mp3","cat":"ur","wrong":["bern","birn"]},
+        {"word":"fur","ipa":"/fɝ/","graphemes":["f","ur"],"phonemes":["/f","ɝ/"],"phonics":["/f","er/"],"hearts":[0,0],"zh":"毛皮","img":"","audio":"audio/animals-2/fur.mp3","cat":"ur","wrong":["fer"]},
+        {"word":"hurt","ipa":"/hɝt/","graphemes":["h","ur","t"],"phonemes":["/h","ɝ","t/"],"phonics":["/h","er","t/"],"hearts":[0,0,0],"zh":"傷害(三態相同)","img":"","audio":"audio/AAA/hurt.mp3","cat":"ur","wrong":["hert","hirt"]},
+        {"word":"surf","ipa":"/sɝf/","graphemes":["s","ur","f"],"phonemes":["/s","ɝ","f/"],"phonics":["/s","er","f/"],"hearts":[0,0,0],"zh":"衝浪","img":"🏄","audio":"audio/sports-2/surf.mp3","cat":"ur","wrong":["sirf"]},
+        {"word":"turn","ipa":"/tɝn/","graphemes":["t","ur","n"],"phonemes":["/t","ɝ","n/"],"phonics":["/t","er","n/"],"hearts":[0,0,0],"zh":"轉","img":"🔄","audio":"audio/1C-5/turn.mp3","cat":"ur","wrong":["tirn"]},
+        {"word":"church","ipa":"/tʃɝtʃ/","graphemes":["ch","ur","ch"],"phonemes":["/tʃ","ɝ","tʃ/"],"phonics":["/ch","er","ch/"],"hearts":[0,0,0],"zh":"教堂","img":"⛪","audio":"audio/places-2/church.mp3","cat":"ur","wrong":["cherch","chirch"]},
+        {"word":"burst","ipa":"/bɝst/","graphemes":["b","ur","s","t"],"phonemes":["/b","ɝ","s","t/"],"phonics":["/b","er","s","t/"],"hearts":[0,0,0,0],"zh":"爆裂(三態相同)","img":"","audio":"audio/AAA/burst.mp3","cat":"ur","wrong":["berst","birst"]},
+        {"word":"nurse","ipa":"/nɝs/","graphemes":["n","ur","s","e"],"phonemes":["/n","ɝ","s","-/"],"phonics":["/n","er","s","-/"],"hearts":[0,0,0,1],"zh":"‍⚕️ 護士","img":"👩","audio":"audio/health-1/nurse.mp3","cat":"ur","wrong":["nerse","nirse"]},
+        {"word":"purse","ipa":"/pɝs/","graphemes":["p","ur","s","e"],"phonemes":["/p","ɝ","s","-/"],"phonics":["/p","er","s","-/"],"hearts":[0,0,0,1],"zh":"錢包（女用小包）","img":"👛","audio":"audio/clothes-3/purse.mp3","cat":"ur","wrong":["perse","pirse"]},
+        {"word":"return","ipa":"/rɪˈtɝn/","graphemes":["r","e","t","ur","n"],"phonemes":["/r","ɪ","'t","ɝ","n/"],"phonics":["/r","ĭ","'t","er","n/"],"hearts":[0,0,0,0,0],"zh":"返回","img":"↩️","audio":"audio/1C-4/return.mp3","cat":"ur","wrong":["retern","retirn"]},
+        {"word":"turkey","ipa":"/ˈtɝki/","graphemes":["t","ur","k","ey"],"phonemes":["/'t","ɝ","k","i/"],"phonics":["/'t","er","k","ē/"],"hearts":[0,0,0,1],"zh":"火雞","img":"🦃","audio":"audio/animals-3/turkey.mp3","cat":"ur","wrong":["terkey","tirkey"]},
+        {"word":"purple","ipa":"/ˈpɝpəl/","graphemes":["p","ur","p","le"],"phonemes":["/'p","ɝ","p","əl/"],"phonics":["/'p","er","p","əl/"],"hearts":[0,0,0,0],"zh":"紫色；紫色的","img":"🟣","audio":"audio/colors/purple.mp3","cat":"ur","wrong":["perple","pirple"]}
+      ]
+    },
     "floss": {
       "cycle": ["double","double","single"],
       "items": [

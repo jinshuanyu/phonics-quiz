@@ -4989,6 +4989,7 @@
           "pattern": "R-controlled: ar",
           "explain": "a 後面接 r，合起來發 /ɑr/，a 不再發短音，像 car、star。",
           "keys": [{ "g": "ar", "ipa": "ɑr" }],
+          "contrastSet": "r-ar",
           "words": [
             {
               "word": "Antarctica",
@@ -5824,6 +5825,7 @@
           "pattern": "R-controlled: or",
           "explain": "o 後面接 r，合起來發 /ɔr/，o 不再發短音，像 fork、horse。",
           "keys": [{ "g": "or", "ipa": "ɔr" }],
+          "contrastSet": "r-or",
           "words": [
             {
               "word": "boring",
@@ -6633,6 +6635,8 @@
           "pattern": "R-controlled: er, ir, ur",
           "explain": "er、ir、ur 三種拼法都發 /ɝ/，像 her、bird、turn。",
           "keys": [{ "g": "er", "ipa": "ɝ" }, { "g": "ir", "ipa": "ɝ" }, { "g": "ur", "ipa": "ɝ" }],
+          "contrastSet": "r-er",
+          "spellingSet": "er-ir-ur",
           "words": [
             {
               "word": "barber",
