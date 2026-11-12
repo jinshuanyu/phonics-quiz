@@ -1030,7 +1030,7 @@ let CONS_CONTRASTS = null; // data/consonant-contrasts.json (Level 4 consonant c
 let contrastAudio = {};    // word → audio path for the options of the current consonant-contrast quiz
 let SPELLING = null;       // data/spelling-choices.json (pick-the-correct-spelling items)
 let quizSpellChoice = [];  // per question: true = pick-the-correct-spelling (wrong options are misspellings, no audio)
-let quizSound = [];        // per question: null, or { answer, prompt, mark } for a sound-choice question (-ed: /t/, /d/, /ɪd/)
+let quizSound = [];        // per question: null, or { answer, prompt, mark, hi, silent } for a sound-choice question (-ed: /t/, /d/, /ɪd/; y; soft c)
 const CONTRAST_QUESTIONS = 10;
 let currentStage = null;
 let currentUnit = null;
@@ -1708,8 +1708,10 @@ function spellingGroup(unit) {
 // spelling among misspellings that sound the same (bell / bel). Some answers are words where the
 // rule does NOT apply (pig / pigg), so always picking the longer spelling doesn't pass.
 //
-// A group with "choices" is a sound-choice group (-ed endings): the word is shown, the options are
-// always the same sounds (/t/, /d/, /ɪd/) and the answer is the item's category.
+// A group with "choices" is a sound-choice group (-ed endings, y, soft c): the word is shown, the options
+// are always the same sounds (/t/, /d/, /ɪd/) and the answer is the item's category. The letters in question
+// are marked: group.mark = an ending ("ed"), or item.hi = [start, length]. group.silent = the word is not
+// played before answering, so the student has to apply the rule (c + e, i, y → /s/).
 function buildSpellingQuiz(group, n) {
   const fixed = Array.isArray(group.choices) && group.choices.length ? group.choices.map(c => '/' + c + '/') : null;
   const cycle = Array.isArray(group.cycle) && group.cycle.length ? group.cycle : [...new Set(group.items.map(m => m.cat))];
@@ -1725,7 +1727,7 @@ function buildSpellingQuiz(group, n) {
     const m = avail[Math.floor(Math.random() * avail.length)];
     used.add(m.word);
     if (fixed) {
-      picked.push({ word: m, options: fixed, spelling: true, sound: { answer: '/' + m.cat + '/', prompt: group.prompt || '', mark: group.mark || '' } });
+      picked.push({ word: m, options: fixed, spelling: true, sound: { answer: '/' + m.cat + '/', prompt: group.prompt || '', mark: group.mark || '', hi: Array.isArray(m.hi) ? m.hi : null, silent: !!group.silent } });
       continue;
     }
     picked.push({ word: m, options: shuffle([m.word, ...m.wrong.slice(0, 3)]), spelling: true });
@@ -1823,15 +1825,16 @@ function renderListenQuestion(word) {
   let shownWord = '';
   if (sound) {
     const w = word.word, mk = sound.mark || '';
-    const cut = mk && w.endsWith(mk) ? w.length - mk.length : w.length;
-    shownWord = `<div style="font-size:clamp(1.8rem, 8vw, 2.6rem);font-weight:800;margin-bottom:8px;">${escHtml(w.slice(0, cut))}<span style="color:var(--primary);">${escHtml(w.slice(cut))}</span></div>`;
+    const from = sound.hi ? sound.hi[0] : (mk && w.endsWith(mk) ? w.length - mk.length : w.length);
+    const to = sound.hi ? sound.hi[0] + sound.hi[1] : w.length;
+    shownWord = `<div style="font-size:clamp(1.8rem, 8vw, 2.6rem);font-weight:800;margin-bottom:8px;">${escHtml(w.slice(0, from))}<span style="color:var(--primary);">${escHtml(w.slice(from, to))}</span>${escHtml(w.slice(to))}</div>`;
   }
   let html = `
     <div class="question-area">
       <div class="question-prompt">${promptText}</div>
       ${shownWord}
       ${quizSpellChoice[currentQ] && (word.img || word.zh) ? `<div class="question-zh">${word.img || ''} ${escHtml(word.zh || '')}</div>` : ''}
-      <button class="btn-speak" onclick="speakWord(quizWords[${currentQ}])" aria-label="播放發音">
+      <button class="btn-speak" id="btnSpeak" onclick="speakWord(quizWords[${currentQ}])" aria-label="播放發音"${sound && sound.silent ? ' style="display:none;"' : ''}>
         🔊 播放發音
       </button>
     </div>
@@ -2499,8 +2502,10 @@ function checkAnswer(btn, selected, correct) {
     return;
   }
 
-  // Sound-choice question (-ed): tap an option to hear that sound
+  // Sound-choice question (-ed, y, soft c): tap an option to hear that sound
   if (quizSound[currentQ]) {
+    const speakBtn = document.getElementById('btnSpeak'); // hidden until answered when the question is "silent"
+    if (speakBtn) speakBtn.style.display = '';
     buttons.forEach(b => {
       b.classList.remove('disabled');
       b.onclick = () => { playPhonemeAudio(b.dataset.word).catch(() => {}); };
@@ -2563,10 +2568,10 @@ function contrastPassHtml(score, total) {
   const avgChoices = quizOptions.reduce((s, o) => s + o.length, 0) / quizOptions.length;
   const need = Math.ceil(total * (avgChoices < 2.5 ? 0.9 : 0.8));
   const sg = spellingGroup(currentUnit);
-  if (sg && sg.choices && !consonantGroup(currentUnit)) { // sound-choice unit (-ed): it tests sounds, not spellings
+  if (sg && sg.choices && !consonantGroup(currentUnit)) { // sound-choice unit (-ed, y, soft c): it tests sounds, not spellings
     return score >= need
-      ? `<div style="font-weight:800;color:var(--correct);margin:6px 0;">✅ 過關！這一關的音你分得出來了</div>`
-      : `<div style="font-weight:700;color:#888;margin:6px 0;">還沒過關（要答對 ${need} 題），回去聽一聽再試一次</div>`;
+      ? `<div style="font-weight:800;color:var(--correct);margin:6px 0;">✅ 過關！${sg.silent ? '這一關的規則你會了' : '這一關的音你分得出來了'}</div>`
+      : `<div style="font-weight:700;color:#888;margin:6px 0;">還沒過關（要答對 ${need} 題），回去${sg.silent ? '看一看規則' : '聽一聽'}再試一次</div>`;
   }
   return score >= need
     ? `<div style="font-weight:800;color:var(--correct);margin:6px 0;">✅ 過關！${isContrastUnit(currentUnit) ? '這幾個母音你分得出來了' : !spellingGroup(currentUnit) ? '這一關的音你分得出來了' : consonantGroup(currentUnit) ? '這一關的音和拼法你都會了' : '這一關的拼法你會了'}</div>`
