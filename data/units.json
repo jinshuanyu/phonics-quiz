@@ -8301,6 +8301,37 @@
               "audio": "audio/occupations-3/business.mp3"
             },
             {
+              "word": "buzz",
+              "ipa": "/bʌz/",
+              "graphemes": [
+                "b",
+                "u",
+                "zz"
+              ],
+              "phonemes": [
+                "/b",
+                "ʌ",
+                "z/"
+              ],
+              "phonics": [
+                "/b",
+                "ŭ",
+                "z/"
+              ],
+              "tags": [
+                "cvc",
+                "floss"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "嗡嗡叫",
+              "img": "🐝",
+              "audio": "audio/animals-3/buzz.mp3"
+            },
+            {
               "word": "call",
               "ipa": "/kɔl/",
               "graphemes": [
@@ -8329,6 +8360,73 @@
               "zh": "叫",
               "img": "📞",
               "audio": "audio/1C-1/call.mp3"
+            },
+            {
+              "word": "cliff",
+              "ipa": "/klɪf/",
+              "graphemes": [
+                "c",
+                "l",
+                "i",
+                "ff"
+              ],
+              "phonemes": [
+                "/k",
+                "l",
+                "ɪ",
+                "f/"
+              ],
+              "phonics": [
+                "/k",
+                "l",
+                "ĭ",
+                "f/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster",
+                "floss"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "懸崖",
+              "img": "🏔️",
+              "audio": "audio/weather-4/cliff.mp3"
+            },
+            {
+              "word": "cuff",
+              "ipa": "/kʌf/",
+              "graphemes": [
+                "c",
+                "u",
+                "ff"
+              ],
+              "phonemes": [
+                "/k",
+                "ʌ",
+                "f/"
+              ],
+              "phonics": [
+                "/k",
+                "ŭ",
+                "f/"
+              ],
+              "tags": [
+                "cvc",
+                "floss"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "袖口",
+              "img": "👔",
+              "audio": "audio/clothes-3/cuff.mp3"
             },
             {
               "word": "dodgeball",
@@ -8499,6 +8597,73 @@
               "audio": "audio/1C-2/fill.mp3"
             },
             {
+              "word": "fizz",
+              "ipa": "/fɪz/",
+              "graphemes": [
+                "f",
+                "i",
+                "zz"
+              ],
+              "phonemes": [
+                "/f",
+                "ɪ",
+                "z/"
+              ],
+              "phonics": [
+                "/f",
+                "ĭ",
+                "z/"
+              ],
+              "tags": [
+                "cvc",
+                "floss"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "冒泡；嘶嘶聲",
+              "img": "🥤",
+              "audio": "audio/food-4/fizz.mp3"
+            },
+            {
+              "word": "fluff",
+              "ipa": "/flʌf/",
+              "graphemes": [
+                "f",
+                "l",
+                "u",
+                "ff"
+              ],
+              "phonemes": [
+                "/f",
+                "l",
+                "ʌ",
+                "f/"
+              ],
+              "phonics": [
+                "/f",
+                "l",
+                "ŭ",
+                "f/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster",
+                "floss"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "絨毛",
+              "img": "🐥",
+              "audio": "audio/nouns-5/fluff.mp3"
+            },
+            {
               "word": "full",
               "ipa": "/fʊl/",
               "graphemes": [
@@ -8528,6 +8693,37 @@
               "zh": "飽的",
               "img": "🫄",
               "audio": "audio/food-5/full.mp3"
+            },
+            {
+              "word": "fuzz",
+              "ipa": "/fʌz/",
+              "graphemes": [
+                "f",
+                "u",
+                "zz"
+              ],
+              "phonemes": [
+                "/f",
+                "ʌ",
+                "z/"
+              ],
+              "phonics": [
+                "/f",
+                "ŭ",
+                "z/"
+              ],
+              "tags": [
+                "cvc",
+                "floss"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "細毛；絨毛",
+              "img": "🧶",
+              "audio": "audio/nouns-5/fuzz.mp3"
             },
             {
               "word": "guess",
@@ -8893,6 +9089,37 @@
               "audio": "audio/1B-2/pass.mp3"
             },
             {
+              "word": "puff",
+              "ipa": "/pʌf/",
+              "graphemes": [
+                "p",
+                "u",
+                "ff"
+              ],
+              "phonemes": [
+                "/p",
+                "ʌ",
+                "f/"
+              ],
+              "phonics": [
+                "/p",
+                "ŭ",
+                "f/"
+              ],
+              "tags": [
+                "cvc",
+                "floss"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "一吹；一陣煙",
+              "img": "💨",
+              "audio": "audio/weather-2/puff.mp3"
+            },
+            {
               "word": "pull",
               "ipa": "/pʊl/",
               "graphemes": [
@@ -8984,6 +9211,150 @@
               "zh": "賣（原形）",
               "img": "",
               "audio": "audio/ABB-2/sell.mp3"
+            },
+            {
+              "word": "sniff",
+              "ipa": "/snɪf/",
+              "graphemes": [
+                "s",
+                "n",
+                "i",
+                "ff"
+              ],
+              "phonemes": [
+                "/s",
+                "n",
+                "ɪ",
+                "f/"
+              ],
+              "phonics": [
+                "/s",
+                "n",
+                "ĭ",
+                "f/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster",
+                "floss"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "吸鼻子；嗅",
+              "img": "👃",
+              "audio": "audio/health-2/sniff.mp3"
+            },
+            {
+              "word": "staff",
+              "ipa": "/stæf/",
+              "graphemes": [
+                "s",
+                "t",
+                "a",
+                "ff"
+              ],
+              "phonemes": [
+                "/s",
+                "t",
+                "æ",
+                "f/"
+              ],
+              "phonics": [
+                "/s",
+                "t",
+                "ă",
+                "f/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster",
+                "floss"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "員工；全體職員",
+              "img": "👥",
+              "audio": "audio/occupations-3/staff.mp3"
+            },
+            {
+              "word": "stiff",
+              "ipa": "/stɪf/",
+              "graphemes": [
+                "s",
+                "t",
+                "i",
+                "ff"
+              ],
+              "phonemes": [
+                "/s",
+                "t",
+                "ɪ",
+                "f/"
+              ],
+              "phonics": [
+                "/s",
+                "t",
+                "ĭ",
+                "f/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster",
+                "floss"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "僵硬的",
+              "img": "🦴",
+              "audio": "audio/health-2/stiff.mp3"
+            },
+            {
+              "word": "stuff",
+              "ipa": "/stʌf/",
+              "graphemes": [
+                "s",
+                "t",
+                "u",
+                "ff"
+              ],
+              "phonemes": [
+                "/s",
+                "t",
+                "ʌ",
+                "f/"
+              ],
+              "phonics": [
+                "/s",
+                "t",
+                "ŭ",
+                "f/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster",
+                "floss"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "東西；物品",
+              "img": "🎒",
+              "audio": "audio/house-4/stuff.mp3"
             },
             {
               "word": "tall",
@@ -33950,6 +34321,36 @@
               "audio": "audio/family-friends-1/boy.mp3"
             },
             {
+              "word": "coil",
+              "ipa": "/kɔɪl/",
+              "graphemes": [
+                "c",
+                "oi",
+                "l"
+              ],
+              "phonemes": [
+                "/k",
+                "ɔɪ",
+                "l/"
+              ],
+              "phonics": [
+                "/k",
+                "oi",
+                "l/"
+              ],
+              "tags": [
+                "vowel_team"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "線圈；一捲",
+              "img": "🌀",
+              "audio": "audio/house-4/coil.mp3"
+            },
+            {
               "word": "coin",
               "ipa": "/kɔɪn/",
               "graphemes": [
@@ -34053,6 +34454,36 @@
               "audio": "audio/1C-2/enjoy.mp3"
             },
             {
+              "word": "foil",
+              "ipa": "/fɔɪl/",
+              "graphemes": [
+                "f",
+                "oi",
+                "l"
+              ],
+              "phonemes": [
+                "/f",
+                "ɔɪ",
+                "l/"
+              ],
+              "phonics": [
+                "/f",
+                "oi",
+                "l/"
+              ],
+              "tags": [
+                "vowel_team"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "鋁箔紙",
+              "img": "🥫",
+              "audio": "audio/food-5/foil.mp3"
+            },
+            {
               "word": "join",
               "ipa": "/dʒɔɪn/",
               "graphemes": [
@@ -34081,6 +34512,41 @@
               "zh": "加入",
               "img": "🤝",
               "audio": "audio/1C-3/join.mp3"
+            },
+            {
+              "word": "moist",
+              "ipa": "/mɔɪst/",
+              "graphemes": [
+                "m",
+                "oi",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/m",
+                "ɔɪ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/m",
+                "oi",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "vowel_team",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "潮濕的；濕潤的",
+              "img": "💧",
+              "audio": "audio/weather-1/moist.mp3"
             },
             {
               "word": "oi, oy",
@@ -34275,6 +34741,71 @@
               "zh": "醬油",
               "img": "🧴",
               "audio": "audio/food-4/soy_sauce.mp3"
+            },
+            {
+              "word": "spoil",
+              "ipa": "/spɔɪl/",
+              "graphemes": [
+                "s",
+                "p",
+                "oi",
+                "l"
+              ],
+              "phonemes": [
+                "/s",
+                "p",
+                "ɔɪ",
+                "l/"
+              ],
+              "phonics": [
+                "/s",
+                "p",
+                "oi",
+                "l/"
+              ],
+              "tags": [
+                "vowel_team",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "腐壞；寵壞",
+              "img": "🍌",
+              "audio": "audio/food-6/spoil.mp3"
+            },
+            {
+              "word": "toil",
+              "ipa": "/tɔɪl/",
+              "graphemes": [
+                "t",
+                "oi",
+                "l"
+              ],
+              "phonemes": [
+                "/t",
+                "ɔɪ",
+                "l/"
+              ],
+              "phonics": [
+                "/t",
+                "oi",
+                "l/"
+              ],
+              "tags": [
+                "vowel_team"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "辛苦工作",
+              "img": "💪",
+              "audio": "audio/nouns-1/toil.mp3"
             },
             {
               "word": "toy",
