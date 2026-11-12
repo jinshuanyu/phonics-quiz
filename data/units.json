@@ -8,7 +8,7 @@
         {
           "id": 1,
           "name": "字母名 Letter Names",
-          "learnIntro": "👆 點字母方塊或 🔊，聽字母的名字。",
+          "learnIntro": "👆 按 🔊 聽字母的名字。",
           "pattern": "26 letters: names (A-Z)",
           "explain": "每個字母都有自己的名字。這一關認識 26 個字母的名字和大小寫。",
           "keys": [],
@@ -383,6 +383,7 @@
         {
           "id": 2,
           "name": "字母音 Letter Sounds",
+          "learnIntro": "👆 按 🔊 聽字母的音。",
           "pattern": "26 letters + digraphs (sh, ch, th, ph, ck, qu, wh, ng)",
           "explain": "每個字母在單字裡有自己的音，跟字母的名字不一樣。sh、ch、th 這類是兩個字母合起來發一個音。",
           "keys": [],

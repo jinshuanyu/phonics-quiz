@@ -1438,7 +1438,7 @@ function renderLearn() {
       <div class="learn-card">
         ${letterDisplay}
         <div class="learn-mid">
-          <div class="learn-graphemes">${grHtml}</div>
+          ${w.isLetter ? '' : `<div class="learn-graphemes">${grHtml}</div>`}
           ${w.zh ? `<div class="learn-zh">${escHtml(w.zh)}</div>` : ''}
         </div>
         <button class="learn-play" onclick="onLearnWordClick(${idx})" aria-label="播放整個單字">🔊</button>
@@ -1506,8 +1506,6 @@ function onLearnGraphemeClick(el) {
   if (!w) return;
   el.classList.add('playing');
   setTimeout(() => el.classList.remove('playing'), 350);
-  // Letter-name unit: the tile says the letter's name (the letter sound belongs to the next unit)
-  if (w.isLetter && !w.isSound) { speakWord(w); return; }
   speakGrapheme(w.graphemes[gidx], w, gidx);
 }
 
