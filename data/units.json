@@ -33856,6 +33856,8 @@
           "pattern": "Diphthong: oi, oy",
           "explain": "oi 和 oy 都發 /ɔɪ/。oi 用在字的中間（coin），oy 用在字尾（boy）。",
           "keys": [{ "g": "oi", "ipa": "ɔɪ" }, { "g": "oy", "ipa": "ɔɪ" }],
+          "contrastSet": "d-oi",
+          "spellingSet": "oi-oy",
           "words": [
             {
               "word": "avoid",
@@ -33919,7 +33921,7 @@
               ],
               "zh": "煮沸",
               "img": "🍲",
-              "audio": "audio/food-5/boil.mp3"
+              "audio": "audio/food-6/boil.mp3"
             },
             {
               "word": "boy",
@@ -34308,6 +34310,8 @@
           "pattern": "Diphthong: ou, ow",
           "explain": "ou 和 ow 都發 /aʊ/。ou 用在字的中間（out），ow 常用在字尾（cow）。",
           "keys": [{ "g": "ou", "ipa": "aʊ" }, { "g": "ow", "ipa": "aʊ" }],
+          "contrastSet": "d-ou",
+          "spellingSet": "ou-ow",
           "words": [
             {
               "word": "about",
@@ -35949,7 +35953,7 @@
               ],
               "zh": "酸的",
               "img": "😖",
-              "audio": "audio/food-5/sour.mp3"
+              "audio": "audio/food-6/sour.mp3"
             },
             {
               "word": "south",
@@ -36327,6 +36331,7 @@
           "pattern": "Diphthong: oo /ʊ/ & /uː/",
           "explain": "oo 有兩種音：/u/（moon、food）和 /ʊ/（book、look）。",
           "keys": [{ "g": "oo", "ipa": "u" }, { "g": "oo", "ipa": "ʊ" }],
+          "contrastSet": "d-oo",
           "words": [
             {
               "word": "afternoon",
@@ -42283,7 +42288,7 @@
               ],
               "zh": "切片",
               "img": "🔪",
-              "audio": "audio/food-5/slice.mp3"
+              "audio": "audio/food-6/slice.mp3"
             },
             {
               "word": "slide",
@@ -51321,7 +51326,7 @@
               ],
               "zh": "甜的",
               "img": "🍬",
-              "audio": "audio/food-5/sweet.mp3"
+              "audio": "audio/food-6/sweet.mp3"
             },
             {
               "word": "tea",
@@ -54980,7 +54985,7 @@
               ],
               "zh": "切片",
               "img": "🔪",
-              "audio": "audio/food-5/slice.mp3"
+              "audio": "audio/food-6/slice.mp3"
             },
             {
               "word": "slide",

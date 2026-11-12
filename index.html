@@ -1072,15 +1072,17 @@ async function init() {
       const kRes = await fetch('data/consonant-contrasts.json');
       if (kRes.ok) CONS_CONTRASTS = await kRes.json();
     } catch (e) { CONS_CONTRASTS = null; }
-    // Level 3 r-vowel contrast sets: same shape, merged into the same groups (optional file)
-    try {
-      const rRes = await fetch('data/r-vowel-contrasts.json');
-      if (rRes.ok) {
-        const rv = await rRes.json();
-        if (!CONS_CONTRASTS) CONS_CONTRASTS = { groups: {} };
-        Object.assign(CONS_CONTRASTS.groups, rv.groups || {});
-      }
-    } catch (e) { /* keep whatever loaded */ }
+    // Level 3 r-vowel and Level 5 diphthong contrast sets: same shape, merged into the same groups (optional files)
+    for (const extra of ['data/r-vowel-contrasts.json', 'data/diphthong-contrasts.json']) {
+      try {
+        const rRes = await fetch(extra);
+        if (rRes.ok) {
+          const rv = await rRes.json();
+          if (!CONS_CONTRASTS) CONS_CONTRASTS = { groups: {} };
+          Object.assign(CONS_CONTRASTS.groups, rv.groups || {});
+        }
+      } catch (e) { /* keep whatever loaded */ }
+    }
     // Pick-the-correct-spelling items for rules that can't be heard (optional file)
     try {
       const sRes = await fetch('data/spelling-choices.json');
