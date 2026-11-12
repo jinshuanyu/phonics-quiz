@@ -34181,7 +34181,7 @@
     },
     {
       "id": 5,
-      "name": "雙母音",
+      "name": "母音組合",
       "emoji": "🎵",
       "units": [
         {
@@ -36791,7 +36791,7 @@
         {
           "id": 18,
           "name": "oo",
-          "pattern": "Diphthong: oo /ʊ/ & /uː/",
+          "pattern": "Vowel team: oo /ʊ/ & /uː/",
           "explain": "oo 有兩種音：/u/（moon、food）和 /ʊ/（book、look）。",
           "keys": [{ "g": "oo", "ipa": "u" }, { "g": "oo", "ipa": "ʊ" }],
           "contrastSet": "d-oo",
