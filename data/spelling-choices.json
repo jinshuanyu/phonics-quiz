@@ -3,7 +3,7 @@
   "groups": {
     "oi-oy": {
       "cycle": ["oi","oy"],
-      "mix": {"contrast":4,"spelling":6},
+      "mix": {"contrast":6,"spelling":6},
       "items": [
         {"word":"coin","ipa":"/kɔɪn/","graphemes":["c","oi","n"],"phonemes":["/k","ɔɪ","n/"],"phonics":["/k","oi","n/"],"hearts":[0,0,0],"zh":"硬幣","img":"🪙","audio":"audio/money/coin.mp3","cat":"oi","wrong":["coyn"]},
         {"word":"oil","ipa":"/ɔɪl/","graphemes":["oi","l"],"phonemes":["/ɔɪ","l/"],"phonics":["/oi","l/"],"hearts":[0,0],"zh":"油","img":"🛢️","audio":"audio/food-4/oil.mp3","cat":"oi","wrong":["oyl"]},
