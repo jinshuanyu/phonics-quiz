@@ -26746,8 +26746,8 @@
           "id": 15,
           "name": "尾子音群 + Silent",
           "pattern": "Final clusters & silent letters",
-          "explain": "字尾連著兩個子音（-nt、-nd、-nk、-mp），兩個音都要發，像 went、hand、pink。有些字母不發音，像 know 的 k、write 的 w、lamb 的 b。",
-          "keys": [{ "g": "nt", "ipa": ["n","t"] }, { "g": "nd", "ipa": ["n","d"] }, { "g": "nk", "ipa": ["ŋ","k"] }, { "g": "mp", "ipa": ["m","p"] }, { "g": "kn", "ipa": "n" }, { "g": "wr", "ipa": "r" }, { "g": "mb", "ipa": "m" }],
+          "explain": "字尾連著兩個子音（-nt、-nd、-nk、-mp），兩個音都要發，像 went、hand、pink。字尾的 ng 是一個音 /ŋ/，像 sing、long。有些字母不發音，像 know 的 k、write 的 w、lamb 的 b。",
+          "keys": [{ "g": "nt", "ipa": ["n","t"] }, { "g": "nd", "ipa": ["n","d"] }, { "g": "nk", "ipa": ["ŋ","k"] }, { "g": "mp", "ipa": ["m","p"] }, { "g": "ng", "ipa": "ŋ" }, { "g": "kn", "ipa": "n" }, { "g": "wr", "ipa": "r" }, { "g": "mb", "ipa": "m" }],
           "spellingSet": "silent",
           "contrastSet": "final-clusters",
           "words": [
