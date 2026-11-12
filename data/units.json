@@ -2771,36 +2771,6 @@
               "audio": "audio/ABC-ave/give.mp3"
             },
             {
-              "word": "gym",
-              "ipa": "/dʒɪm/",
-              "graphemes": [
-                "g",
-                "y",
-                "m"
-              ],
-              "phonemes": [
-                "/dʒ",
-                "ɪ",
-                "m/"
-              ],
-              "phonics": [
-                "/-j",
-                "ĭ",
-                "m/"
-              ],
-              "tags": [
-                "cvc"
-              ],
-              "hearts": [
-                0,
-                0,
-                0
-              ],
-              "zh": "體育館",
-              "img": "🏋️",
-              "audio": "audio/school-1/gym.mp3"
-            },
-            {
               "word": "hid",
               "ipa": "/hɪd/",
               "graphemes": [
@@ -6269,6 +6239,61 @@
               "audio": "audio/adv-4/nor.mp3"
             },
             {
+              "word": "North Korea",
+              "ipa": "/nɔrθ kəˈriə/",
+              "graphemes": [
+                "N",
+                "or",
+                "th",
+                " ",
+                "K",
+                "o",
+                "r",
+                "e",
+                "a"
+              ],
+              "phonemes": [
+                "/n",
+                "ɔr",
+                "θ",
+                " ",
+                "k",
+                "ə",
+                "'r",
+                "i",
+                "ə/"
+              ],
+              "phonics": [
+                "/n",
+                "or",
+                "th",
+                " ",
+                "k",
+                "ə",
+                "'r",
+                "ē",
+                "ə/"
+              ],
+              "tags": [
+                "digraph",
+                "rcontrolled"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "zh": "北韓",
+              "img": "",
+              "audio": "audio/world-2/north_korea.mp3"
+            },
+            {
               "word": "or",
               "ipa": "/ɔr/",
               "graphemes": [
@@ -6554,48 +6579,6 @@
               "zh": "陸龜",
               "img": "🐢",
               "audio": "audio/animals-2/tortoise.mp3"
-            },
-            {
-              "word": "workbook",
-              "ipa": "/ˈwɝkbʊk/",
-              "graphemes": [
-                "w",
-                "or",
-                "k",
-                "b",
-                "oo",
-                "k"
-              ],
-              "phonemes": [
-                "/'w",
-                "ɝ",
-                "k",
-                "b",
-                "ʊ",
-                "k/"
-              ],
-              "phonics": [
-                "/'w",
-                "er",
-                "k",
-                "b",
-                "oo",
-                "k/"
-              ],
-              "tags": [
-                "rcontrolled"
-              ],
-              "hearts": [
-                0,
-                1,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "習作",
-              "img": "📓",
-              "audio": "audio/school-2/workbook.mp3"
             },
             {
               "word": "worn",
@@ -6950,36 +6933,6 @@
               "audio": "audio/adjs-4/dirty.mp3"
             },
             {
-              "word": "early",
-              "ipa": "/ˈɝli/",
-              "graphemes": [
-                "ear",
-                "l",
-                "y"
-              ],
-              "phonemes": [
-                "/'ɝ",
-                "l",
-                "i/"
-              ],
-              "phonics": [
-                "/'er",
-                "l",
-                "ē/"
-              ],
-              "tags": [
-                "rcontrolled"
-              ],
-              "hearts": [
-                1,
-                0,
-                0
-              ],
-              "zh": "早的",
-              "img": "🌅",
-              "audio": "audio/time-5/early.mp3"
-            },
-            {
               "word": "er, ir, ur",
               "ipa": "",
               "graphemes": [
@@ -7300,36 +7253,6 @@
               "zh": "傷害(三態相同)",
               "img": "",
               "audio": "audio/AAA/hurt.mp3"
-            },
-            {
-              "word": "learn",
-              "ipa": "/lɝn/",
-              "graphemes": [
-                "l",
-                "ear",
-                "n"
-              ],
-              "phonemes": [
-                "/l",
-                "ɝ",
-                "n/"
-              ],
-              "phonics": [
-                "/l",
-                "er",
-                "n/"
-              ],
-              "tags": [
-                "rcontrolled"
-              ],
-              "hearts": [
-                0,
-                0,
-                0
-              ],
-              "zh": "學習",
-              "img": "📚",
-              "audio": "audio/1C-3/learn.mp3"
             },
             {
               "word": "marker",
@@ -7831,37 +7754,6 @@
               "zh": "返回",
               "img": "↩️",
               "audio": "audio/1C-4/return.mp3"
-            },
-            {
-              "word": "search",
-              "ipa": "/sɝtʃ/",
-              "graphemes": [
-                "s",
-                "ear",
-                "ch"
-              ],
-              "phonemes": [
-                "/s",
-                "ɝ",
-                "tʃ/"
-              ],
-              "phonics": [
-                "/s",
-                "er",
-                "ch/"
-              ],
-              "tags": [
-                "rcontrolled",
-                "digraph"
-              ],
-              "hearts": [
-                0,
-                0,
-                0
-              ],
-              "zh": "搜尋",
-              "img": "🔍",
-              "audio": "audio/1B-2/search.mp3"
             },
             {
               "word": "serve",
@@ -36955,37 +36847,6 @@
               "zh": "哇（驚嘆）",
               "img": "",
               "audio": "audio/interj/wow.mp3"
-            },
-            {
-              "word": "youth",
-              "ipa": "/juθ/",
-              "graphemes": [
-                "y",
-                "ou",
-                "th"
-              ],
-              "phonemes": [
-                "/j",
-                "u",
-                "θ/"
-              ],
-              "phonics": [
-                "/y",
-                "ū",
-                "th/"
-              ],
-              "tags": [
-                "vowel_team",
-                "digraph"
-              ],
-              "hearts": [
-                0,
-                0,
-                0
-              ],
-              "zh": "青年",
-              "img": "🧑",
-              "audio": "audio/people-1/youth.mp3"
             }
           ]
         },
@@ -44878,41 +44739,6 @@
               "audio": "audio/people-4/brave.mp3"
             },
             {
-              "word": "break",
-              "ipa": "/breɪk/",
-              "graphemes": [
-                "b",
-                "r",
-                "ea",
-                "k"
-              ],
-              "phonemes": [
-                "/b",
-                "r",
-                "eɪ",
-                "k/"
-              ],
-              "phonics": [
-                "/b",
-                "r",
-                "ā",
-                "k/"
-              ],
-              "tags": [
-                "cluster",
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "打破(原形)",
-              "img": "",
-              "audio": "audio/ABC-oken/break.mp3"
-            },
-            {
               "word": "cage",
               "ipa": "/keɪdʒ/",
               "graphemes": [
@@ -45258,123 +45084,6 @@
               "zh": "日/天",
               "img": "📆",
               "audio": "audio/time-2/day.mp3"
-            },
-            {
-              "word": "eight",
-              "ipa": "/eɪt/",
-              "graphemes": [
-                "eigh",
-                "t"
-              ],
-              "phonemes": [
-                "/eɪ",
-                "t/"
-              ],
-              "phonics": [
-                "/ā",
-                "t/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                1,
-                0
-              ],
-              "zh": "",
-              "img": "",
-              "audio": "audio/numbers-1/eight.mp3"
-            },
-            {
-              "word": "eighteen",
-              "ipa": "/eɪˈtiːn/",
-              "graphemes": [
-                "eigh",
-                "t",
-                "ee",
-                "n"
-              ],
-              "phonemes": [
-                "/eɪ",
-                "'t",
-                "i",
-                "n/"
-              ],
-              "phonics": [
-                "/ā",
-                "'t",
-                "ē",
-                "n/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                1,
-                0,
-                0,
-                0
-              ],
-              "zh": "",
-              "img": "",
-              "audio": "audio/numbers-2/eighteen.mp3"
-            },
-            {
-              "word": "eighth",
-              "ipa": "/eɪtθ/",
-              "graphemes": [
-                "eigh",
-                "th"
-              ],
-              "phonemes": [
-                "/eɪ",
-                "tθ/"
-              ],
-              "phonics": [
-                "/ā",
-                "tth/"
-              ],
-              "tags": [
-                "vowel_team",
-                "digraph"
-              ],
-              "hearts": [
-                1,
-                1
-              ],
-              "zh": "th 第八",
-              "img": "8",
-              "audio": "audio/numbers-5/eighth.mp3"
-            },
-            {
-              "word": "eighty",
-              "ipa": "/ˈeɪti/",
-              "graphemes": [
-                "eigh",
-                "t",
-                "y"
-              ],
-              "phonemes": [
-                "/'eɪ",
-                "t",
-                "i/"
-              ],
-              "phonics": [
-                "/'ā",
-                "t",
-                "ē/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                1,
-                0,
-                0
-              ],
-              "zh": "",
-              "img": "",
-              "audio": "audio/numbers-3/eighty.mp3"
             },
             {
               "word": "explain",
@@ -45741,41 +45450,6 @@
               "audio": "audio/food-1/grape.mp3"
             },
             {
-              "word": "great",
-              "ipa": "/greɪt/",
-              "graphemes": [
-                "g",
-                "r",
-                "ea",
-                "t"
-              ],
-              "phonemes": [
-                "/ɡ",
-                "r",
-                "eɪ",
-                "t/"
-              ],
-              "phonics": [
-                "/ɡ",
-                "r",
-                "ā",
-                "t/"
-              ],
-              "tags": [
-                "cluster",
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "很棒的",
-              "img": "👍",
-              "audio": "audio/adjs-3/great.mp3"
-            },
-            {
               "word": "hate",
               "ipa": "/heɪt/",
               "graphemes": [
@@ -45807,32 +45481,6 @@
               "zh": "恨",
               "img": "😡",
               "audio": "audio/1A-1/hate.mp3"
-            },
-            {
-              "word": "hey",
-              "ipa": "/heɪ/",
-              "graphemes": [
-                "h",
-                "ey"
-              ],
-              "phonemes": [
-                "/h",
-                "eɪ/"
-              ],
-              "phonics": [
-                "/h",
-                "ā/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0
-              ],
-              "zh": "嘿；喂（招呼／引起注意）",
-              "img": "",
-              "audio": "audio/interj/hey.mp3"
             },
             {
               "word": "laid",
@@ -46249,112 +45897,6 @@
               "zh": "名字",
               "img": "📛",
               "audio": "audio/people-6/name.mp3"
-            },
-            {
-              "word": "neighbor",
-              "ipa": "/ˈneɪbɚ/",
-              "graphemes": [
-                "n",
-                "eigh",
-                "b",
-                "or"
-              ],
-              "phonemes": [
-                "/'n",
-                "eɪ",
-                "b",
-                "ɚ/"
-              ],
-              "phonics": [
-                "/'n",
-                "ā",
-                "b",
-                "er/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                1,
-                0,
-                1
-              ],
-              "zh": "鄰居",
-              "img": "🏘",
-              "audio": "audio/people-1/neighbor.mp3"
-            },
-            {
-              "word": "obey",
-              "ipa": "/oʊˈbeɪ/",
-              "graphemes": [
-                "o",
-                "b",
-                "ey"
-              ],
-              "phonemes": [
-                "/oʊ",
-                "'b",
-                "eɪ/"
-              ],
-              "phonics": [
-                "/ō",
-                "'b",
-                "ā/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                0
-              ],
-              "zh": "服從",
-              "img": "✅",
-              "audio": "audio/1C-3/obey.mp3"
-            },
-            {
-              "word": "overweight",
-              "ipa": "/ˌoʊvɚˈweɪt/",
-              "graphemes": [
-                "o",
-                "v",
-                "er",
-                "w",
-                "eigh",
-                "t"
-              ],
-              "phonemes": [
-                "/'oʊ",
-                "v",
-                "ɚ",
-                "w",
-                "eɪ",
-                "t/"
-              ],
-              "phonics": [
-                "/'ō",
-                "v",
-                "er",
-                "w",
-                "ā",
-                "t/"
-              ],
-              "tags": [
-                "open"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "過重的",
-              "img": "",
-              "audio": "audio/people-2/overweight.mp3"
             },
             {
               "word": "paid",
@@ -47502,45 +47044,6 @@
               "audio": "audio/1C-5/stay.mp3"
             },
             {
-              "word": "straight",
-              "ipa": "/streɪt/",
-              "graphemes": [
-                "s",
-                "t",
-                "r",
-                "aigh",
-                "t"
-              ],
-              "phonemes": [
-                "/s",
-                "t",
-                "r",
-                "eɪ",
-                "t/"
-              ],
-              "phonics": [
-                "/s",
-                "t",
-                "r",
-                "ā",
-                "t/"
-              ],
-              "tags": [
-                "cluster",
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "直的",
-              "img": "📏",
-              "audio": "audio/size-2/straight.mp3"
-            },
-            {
               "word": "strange",
               "ipa": "/streɪndʒ/",
               "graphemes": [
@@ -47685,33 +47188,6 @@
               "zh": "品嚐",
               "img": "👅",
               "audio": "audio/1A-2/taste.mp3"
-            },
-            {
-              "word": "they",
-              "ipa": "/ðeɪ/",
-              "graphemes": [
-                "th",
-                "ey"
-              ],
-              "phonemes": [
-                "/ð",
-                "eɪ/"
-              ],
-              "phonics": [
-                "/<u>th</u>",
-                "ā/"
-              ],
-              "tags": [
-                "digraph",
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                1
-              ],
-              "zh": "他們（主格）",
-              "img": "",
-              "audio": "audio/pron-2/they.mp3"
             },
             {
               "word": "today",
@@ -47899,52 +47375,6 @@
               "zh": "慢跑鞋（英）",
               "img": "👟",
               "audio": "audio/clothes-2/trainers.mp3"
-            },
-            {
-              "word": "underweight",
-              "ipa": "/ˌʌndɚˈweɪt/",
-              "graphemes": [
-                "u",
-                "n",
-                "d",
-                "er",
-                "w",
-                "eigh",
-                "t"
-              ],
-              "phonemes": [
-                "/'ʌ",
-                "n",
-                "d",
-                "ɚ",
-                "w",
-                "eɪ",
-                "t/"
-              ],
-              "phonics": [
-                "/'ŭ",
-                "n",
-                "d",
-                "er",
-                "w",
-                "ā",
-                "t/"
-              ],
-              "tags": [
-                "closed"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "過輕的",
-              "img": "",
-              "audio": "audio/people-2/underweight.mp3"
             },
             {
               "word": "waist",
@@ -48221,36 +47651,6 @@
               "zh": "方法",
               "img": "🛤️",
               "audio": "audio/nouns-3/way.mp3"
-            },
-            {
-              "word": "weight",
-              "ipa": "/weɪt/",
-              "graphemes": [
-                "w",
-                "eigh",
-                "t"
-              ],
-              "phonemes": [
-                "/w",
-                "eɪ",
-                "t/"
-              ],
-              "phonics": [
-                "/w",
-                "ā",
-                "t/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                1,
-                0
-              ],
-              "zh": "重量",
-              "img": "⚖️",
-              "audio": "audio/size-1/weight.mp3"
             },
             {
               "word": "whale",
@@ -48532,48 +47932,6 @@
               "audio": "audio/food-2/beef.mp3"
             },
             {
-              "word": "believe",
-              "ipa": "/bɪˈliv/",
-              "graphemes": [
-                "b",
-                "e",
-                "l",
-                "ie",
-                "v",
-                "e"
-              ],
-              "phonemes": [
-                "/b",
-                "ɪ",
-                "'l",
-                "i",
-                "v",
-                "-/"
-              ],
-              "phonics": [
-                "/b",
-                "ĭ",
-                "'l",
-                "ē",
-                "v",
-                "-/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "相信",
-              "img": "🙏",
-              "audio": "audio/1C-1/believe.mp3"
-            },
-            {
               "word": "between",
               "ipa": "/bɪˈtwin/",
               "graphemes": [
@@ -48848,40 +48206,6 @@
               "zh": "清潔",
               "img": "🧹",
               "audio": "audio/1C-1/clean.mp3"
-            },
-            {
-              "word": "cookie",
-              "ipa": "/ˈkʊki/",
-              "graphemes": [
-                "c",
-                "oo",
-                "k",
-                "ie"
-              ],
-              "phonemes": [
-                "/'k",
-                "ʊ",
-                "k",
-                "i/"
-              ],
-              "phonics": [
-                "/'k",
-                "oo",
-                "k",
-                "ē/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1
-              ],
-              "zh": "餅乾",
-              "img": "🍪",
-              "audio": "audio/food-3/cookie.mp3"
             },
             {
               "word": "cream",
@@ -50108,32 +49432,6 @@
               "audio": "audio/ABB-2/keep.mp3"
             },
             {
-              "word": "key",
-              "ipa": "/ki/",
-              "graphemes": [
-                "k",
-                "ey"
-              ],
-              "phonemes": [
-                "/k",
-                "i/"
-              ],
-              "phonics": [
-                "/k",
-                "ē/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0
-              ],
-              "zh": "鑰匙",
-              "img": "🔑",
-              "audio": "audio/house-3/key.mp3"
-            },
-            {
               "word": "lead",
               "ipa": "/lid/",
               "graphemes": [
@@ -50616,36 +49914,6 @@
               "audio": "audio/food-1/peach.mp3"
             },
             {
-              "word": "piece",
-              "ipa": "/pis/",
-              "graphemes": [
-                "p",
-                "ie",
-                "ce"
-              ],
-              "phonemes": [
-                "/p",
-                "i",
-                "s/"
-              ],
-              "phonics": [
-                "/p",
-                "ē",
-                "s/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                1,
-                0
-              ],
-              "zh": "一片/塊",
-              "img": "🧩",
-              "audio": "audio/size-3/piece.mp3"
-            },
-            {
               "word": "please",
               "ipa": "/pliz/",
               "graphemes": [
@@ -50683,45 +49951,6 @@
               "zh": "取悅",
               "img": "🙏",
               "audio": "audio/1C-4/please.mp3"
-            },
-            {
-              "word": "priest",
-              "ipa": "/prist/",
-              "graphemes": [
-                "p",
-                "r",
-                "ie",
-                "s",
-                "t"
-              ],
-              "phonemes": [
-                "/p",
-                "r",
-                "i",
-                "s",
-                "t/"
-              ],
-              "phonics": [
-                "/p",
-                "r",
-                "ē",
-                "s",
-                "t/"
-              ],
-              "tags": [
-                "cluster",
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "zh": "牧師",
-              "img": "⛪",
-              "audio": "audio/occupations-4/priest.mp3"
             },
             {
               "word": "queen",
@@ -53369,36 +52598,6 @@
               "zh": "使害怕",
               "img": "😱",
               "audio": "audio/1C-2/frighten.mp3"
-            },
-            {
-              "word": "height",
-              "ipa": "/haɪt/",
-              "graphemes": [
-                "h",
-                "eigh",
-                "t"
-              ],
-              "phonemes": [
-                "/h",
-                "aɪ",
-                "t/"
-              ],
-              "phonics": [
-                "/h",
-                "ī",
-                "t/"
-              ],
-              "tags": [
-                "irregular"
-              ],
-              "hearts": [
-                0,
-                1,
-                0
-              ],
-              "zh": "高度",
-              "img": "📏",
-              "audio": "audio/size-1/height.mp3"
             },
             {
               "word": "hide",
@@ -58979,36 +58178,6 @@
               "audio": "audio/prep-1/before.mp3"
             },
             {
-              "word": "board",
-              "ipa": "/bɔrd/",
-              "graphemes": [
-                "b",
-                "oar",
-                "d"
-              ],
-              "phonemes": [
-                "/b",
-                "ɔr",
-                "d/"
-              ],
-              "phonics": [
-                "/b",
-                "or",
-                "d/"
-              ],
-              "tags": [
-                "rcontrolled"
-              ],
-              "hearts": [
-                0,
-                0,
-                0
-              ],
-              "zh": "板子",
-              "img": "📋",
-              "audio": "audio/school-2/board.mp3"
-            },
-            {
               "word": "bore",
               "ipa": "/bɔr/",
               "graphemes": [
@@ -60185,61 +59354,6 @@
               "audio": "audio/adjs-2/nearly.mp3"
             },
             {
-              "word": "North Korea",
-              "ipa": "/nɔrθ kəˈriə/",
-              "graphemes": [
-                "N",
-                "or",
-                "th",
-                " ",
-                "K",
-                "o",
-                "r",
-                "e",
-                "a"
-              ],
-              "phonemes": [
-                "/n",
-                "ɔr",
-                "θ",
-                " ",
-                "k",
-                "ə",
-                "'r",
-                "i",
-                "ə/"
-              ],
-              "phonics": [
-                "/n",
-                "or",
-                "th",
-                " ",
-                "k",
-                "ə",
-                "'r",
-                "ē",
-                "ə/"
-              ],
-              "tags": [
-                "digraph",
-                "rcontrolled"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0
-              ],
-              "zh": "北韓",
-              "img": "",
-              "audio": "audio/world-2/north_korea.mp3"
-            },
-            {
               "word": "or, ore",
               "ipa": "",
               "graphemes": [
@@ -60291,49 +59405,6 @@
               "zh": "一雙",
               "img": "👟",
               "audio": "audio/size-3/pair.mp3"
-            },
-            {
-              "word": "parent",
-              "ipa": "/ˈpɛrənt/",
-              "graphemes": [
-                "p",
-                "a",
-                "r",
-                "e",
-                "n",
-                "t"
-              ],
-              "phonemes": [
-                "/'p",
-                "ɛ",
-                "r",
-                "ə",
-                "n",
-                "t/"
-              ],
-              "phonics": [
-                "/'p",
-                "ĕ",
-                "r",
-                "ə",
-                "n",
-                "t/"
-              ],
-              "tags": [
-                "rcontrolled",
-                "cluster"
-              ],
-              "hearts": [
-                0,
-                1,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "🏻👩🏻父母親（之一）",
-              "img": "👨",
-              "audio": "audio/family-friends-2/parent.mp3"
             },
             {
               "word": "prepare",
