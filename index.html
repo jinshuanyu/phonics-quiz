@@ -1357,7 +1357,8 @@ function renderModes(levelIdx, unitIdx) {
           <div class="card-desc">聽發音，選出正確的單字</div>
         </div>
       </div>`;
-    html += `
+    // Modes a unit can't offer are hidden instead of shown greyed out
+    if (picAvailable) html += `
       <div class="card mode-card ${picAvailable ? '' : 'disabled-mode'}" onclick="${picAvailable ? "startQuiz('picture')" : ''}" role="button" tabindex="0"
            style="${picAvailable ? '' : 'opacity:0.5;cursor:default;'}">
         <div class="mode-icon">🖼️</div>
@@ -1367,7 +1368,7 @@ function renderModes(levelIdx, unitIdx) {
         </div>
       </div>`;
     const spellAvailable = !currentUnit.isSpecial;
-    html += `
+    if (spellAvailable) html += `
       <div class="card mode-card ${spellAvailable ? '' : 'disabled-mode'}" onclick="${spellAvailable ? "startQuiz('spell')" : ''}" role="button" tabindex="0"
            style="${spellAvailable ? '' : 'opacity:0.5;cursor:default;'}">
         <div class="mode-icon">✏️</div>
