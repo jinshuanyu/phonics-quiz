@@ -47949,40 +47949,6 @@
               "audio": "audio/1C-1/agree.mp3"
             },
             {
-              "word": "appear",
-              "ipa": "/əˈpɪr/",
-              "graphemes": [
-                "a",
-                "pp",
-                "ea",
-                "r"
-              ],
-              "phonemes": [
-                "/ə",
-                "'p",
-                "ɪ",
-                "r/"
-              ],
-              "phonics": [
-                "/ə",
-                "'p",
-                "ĭ",
-                "r/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "出現",
-              "img": "👀",
-              "audio": "audio/1C-1/appear.mp3"
-            },
-            {
               "word": "asleep",
               "ipa": "/əˈslip/",
               "graphemes": [
@@ -48081,40 +48047,6 @@
               "zh": "豆子",
               "img": "🫘",
               "audio": "audio/food-1/bean.mp3"
-            },
-            {
-              "word": "beard",
-              "ipa": "/bɪrd/",
-              "graphemes": [
-                "b",
-                "ea",
-                "r",
-                "d"
-              ],
-              "phonemes": [
-                "/b",
-                "ɪ",
-                "r",
-                "d/"
-              ],
-              "phonics": [
-                "/b",
-                "ĭ",
-                "r",
-                "d/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "🏻‍♂️ 鬍鬚（下巴）",
-              "img": "🧔",
-              "audio": "audio/body-and-face-2/beard.mp3"
             },
             {
               "word": "beat",
@@ -48255,35 +48187,6 @@
               "zh": "牛肉",
               "img": "🥩",
               "audio": "audio/food-2/beef.mp3"
-            },
-            {
-              "word": "beer",
-              "ipa": "/bɪr/",
-              "graphemes": [
-                "b",
-                "ee",
-                "r"
-              ],
-              "phonemes": [
-                "/b",
-                "ɪ",
-                "r/"
-              ],
-              "phonics": [
-                "/b",
-                "ĭ",
-                "r/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0
-              ],
-              "zh": "啤酒",
-              "img": "🍺",
-              "audio": "audio/food-4/beer.mp3"
             },
             {
               "word": "between",
@@ -48597,41 +48500,6 @@
               "audio": "audio/1C-1/clean.mp3"
             },
             {
-              "word": "clear",
-              "ipa": "/klɪr/",
-              "graphemes": [
-                "c",
-                "l",
-                "ea",
-                "r"
-              ],
-              "phonemes": [
-                "/k",
-                "l",
-                "ɪ",
-                "r/"
-              ],
-              "phonics": [
-                "/k",
-                "l",
-                "ĭ",
-                "r/"
-              ],
-              "tags": [
-                "vowel_team",
-                "cluster"
-              ],
-              "hearts": [
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "放晴",
-              "img": "🌤",
-              "audio": "audio/weather-1/clear.mp3"
-            },
-            {
               "word": "cream",
               "ipa": "/krim/",
               "graphemes": [
@@ -48778,35 +48646,6 @@
               "audio": "audio/ABB-1/deal.mp3"
             },
             {
-              "word": "dear",
-              "ipa": "/dɪr/",
-              "graphemes": [
-                "d",
-                "ea",
-                "r"
-              ],
-              "phonemes": [
-                "/d",
-                "ɪ",
-                "r/"
-              ],
-              "phonics": [
-                "/d",
-                "ĭ",
-                "r/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0
-              ],
-              "zh": "親愛的",
-              "img": "💕",
-              "audio": "audio/adjs-4/dear.mp3"
-            },
-            {
               "word": "debate",
               "ipa": "/dɪˈbeɪt/",
               "graphemes": [
@@ -48926,36 +48765,6 @@
               "audio": "audio/size-3/deep.mp3"
             },
             {
-              "word": "deer",
-              "ipa": "/dɪr/",
-              "graphemes": [
-                "d",
-                "ee",
-                "r"
-              ],
-              "phonemes": [
-                "/d",
-                "ɪ",
-                "r/"
-              ],
-              "phonics": [
-                "/d",
-                "ĭ",
-                "r/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                0
-              ],
-              "zh": "鹿",
-              "img": "🫎",
-              "audio": "audio/animals-3/deer.mp3"
-            },
-            {
               "word": "degree",
               "ipa": "/dɪˈɡri/",
               "graphemes": [
@@ -49047,111 +48856,6 @@
               "zh": "各自；每個",
               "img": "",
               "audio": "audio/indef-pron/each.mp3"
-            },
-            {
-              "word": "ear",
-              "ipa": "/ɪr/",
-              "graphemes": [
-                "ea",
-                "r"
-              ],
-              "phonemes": [
-                "/ɪ",
-                "r/"
-              ],
-              "phonics": [
-                "/ĭ",
-                "r/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0
-              ],
-              "zh": "耳朵",
-              "img": "👂",
-              "audio": "audio/body-and-face-1/ear.mp3"
-            },
-            {
-              "word": "earache",
-              "ipa": "/ˈɪreɪk/",
-              "graphemes": [
-                "ea",
-                "r",
-                "a",
-                "ch",
-                "e"
-              ],
-              "phonemes": [
-                "/'ɪ",
-                "r",
-                "eɪ",
-                "k",
-                "-/"
-              ],
-              "phonics": [
-                "/'ĭ",
-                "r",
-                "ā",
-                "k",
-                "-/"
-              ],
-              "tags": [
-                "vowel_team",
-                "digraph"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1,
-                1
-              ],
-              "zh": "耳痛",
-              "img": "👂",
-              "audio": "audio/health-2/earache.mp3"
-            },
-            {
-              "word": "earrings",
-              "ipa": "/ˈɪrɪŋz/",
-              "graphemes": [
-                "ea",
-                "rr",
-                "i",
-                "ng",
-                "s"
-              ],
-              "phonemes": [
-                "/'ɪ",
-                "r",
-                "ɪ",
-                "ŋ",
-                "z/"
-              ],
-              "phonics": [
-                "/'ĭ",
-                "r",
-                "ĭ",
-                "ŋ",
-                "z/"
-              ],
-              "tags": [
-                "vowel_team",
-                "digraph",
-                "suffix"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "耳環",
-              "img": "",
-              "audio": "audio/clothes-3/earrings.mp3"
             },
             {
               "word": "ease",
@@ -49337,36 +49041,6 @@
               "zh": "吃(過去分詞)",
               "img": "",
               "audio": "audio/ABC-misc/eaten.mp3"
-            },
-            {
-              "word": "fear",
-              "ipa": "/fɪr/",
-              "graphemes": [
-                "f",
-                "ea",
-                "r"
-              ],
-              "phonemes": [
-                "/f",
-                "ɪ",
-                "r/"
-              ],
-              "phonics": [
-                "/f",
-                "ĭ",
-                "r/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                0
-              ],
-              "zh": "恐懼",
-              "img": "😨",
-              "audio": "audio/nouns-2/fear.mp3"
             },
             {
               "word": "feed",
@@ -49950,36 +49624,6 @@
               "zh": "問候",
               "img": "👋",
               "audio": "audio/1A-1/greet.mp3"
-            },
-            {
-              "word": "hear",
-              "ipa": "/hɪr/",
-              "graphemes": [
-                "h",
-                "ea",
-                "r"
-              ],
-              "phonemes": [
-                "/h",
-                "ɪ",
-                "r/"
-              ],
-              "phonics": [
-                "/h",
-                "ĭ",
-                "r/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                0
-              ],
-              "zh": "聽到(原形)",
-              "img": "",
-              "audio": "audio/ABB-1/hear.mp3"
             },
             {
               "word": "heater",
@@ -50584,74 +50228,6 @@
               "audio": "audio/occupations-3/meeting.mp3"
             },
             {
-              "word": "near",
-              "ipa": "/nɪr/",
-              "graphemes": [
-                "n",
-                "ea",
-                "r"
-              ],
-              "phonemes": [
-                "/n",
-                "ɪ",
-                "r/"
-              ],
-              "phonics": [
-                "/n",
-                "ĭ",
-                "r/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                0
-              ],
-              "zh": "靠近；接近",
-              "img": "",
-              "audio": "audio/prep-2/near.mp3"
-            },
-            {
-              "word": "nearly",
-              "ipa": "/ˈnɪrli/",
-              "graphemes": [
-                "n",
-                "ea",
-                "r",
-                "l",
-                "y"
-              ],
-              "phonemes": [
-                "/'n",
-                "ɪ",
-                "r",
-                "l",
-                "i/"
-              ],
-              "phonics": [
-                "/'n",
-                "ĭ",
-                "r",
-                "l",
-                "ē/"
-              ],
-              "tags": [
-                "vowel_team",
-                "suffix"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "幾乎",
-              "img": "📍",
-              "audio": "audio/adjs-2/nearly.mp3"
-            },
-            {
               "word": "need",
               "ipa": "/nid/",
               "graphemes": [
@@ -51028,48 +50604,6 @@
               "zh": "真的",
               "img": "💯",
               "audio": "audio/adv-1/really.mp3"
-            },
-            {
-              "word": "reindeer",
-              "ipa": "/ˈreɪndɪr/",
-              "graphemes": [
-                "r",
-                "ei",
-                "n",
-                "d",
-                "ee",
-                "r"
-              ],
-              "phonemes": [
-                "/'r",
-                "eɪ",
-                "n",
-                "d",
-                "ɪ",
-                "r/"
-              ],
-              "phonics": [
-                "/'r",
-                "ā",
-                "n",
-                "d",
-                "ĭ",
-                "r/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                1,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "馴鹿",
-              "img": "🦌",
-              "audio": "audio/animals-3/reindeer.mp3"
             },
             {
               "word": "repeat",
@@ -52535,36 +52069,6 @@
               "zh": "輪子",
               "img": "🛞",
               "audio": "audio/transportation-1/wheel.mp3"
-            },
-            {
-              "word": "year",
-              "ipa": "/jɪr/",
-              "graphemes": [
-                "y",
-                "ea",
-                "r"
-              ],
-              "phonemes": [
-                "/j",
-                "ɪ",
-                "r/"
-              ],
-              "phonics": [
-                "/y",
-                "ĭ",
-                "r/"
-              ],
-              "tags": [
-                "vowel_team"
-              ],
-              "hearts": [
-                0,
-                0,
-                0
-              ],
-              "zh": "年",
-              "img": "📅",
-              "audio": "audio/time-5/year.mp3"
             }
           ]
         },
@@ -60662,6 +60166,45 @@
               "audio": "audio/body-and-face-1/ear.mp3"
             },
             {
+              "word": "earache",
+              "ipa": "/ˈɪreɪk/",
+              "graphemes": [
+                "ea",
+                "r",
+                "a",
+                "ch",
+                "e"
+              ],
+              "phonemes": [
+                "/'ɪ",
+                "r",
+                "eɪ",
+                "k",
+                "-/"
+              ],
+              "phonics": [
+                "/'ĭ",
+                "r",
+                "ā",
+                "k",
+                "-/"
+              ],
+              "tags": [
+                "vowel_team",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                1,
+                1
+              ],
+              "zh": "耳痛",
+              "img": "👂",
+              "audio": "audio/health-2/earache.mp3"
+            },
+            {
               "word": "early",
               "ipa": "/ˈɝli/",
               "graphemes": [
@@ -60690,6 +60233,46 @@
               "zh": "早的",
               "img": "🌅",
               "audio": "audio/time-5/early.mp3"
+            },
+            {
+              "word": "earrings",
+              "ipa": "/ˈɪrɪŋz/",
+              "graphemes": [
+                "ea",
+                "rr",
+                "i",
+                "ng",
+                "s"
+              ],
+              "phonemes": [
+                "/'ɪ",
+                "r",
+                "ɪ",
+                "ŋ",
+                "z/"
+              ],
+              "phonics": [
+                "/'ĭ",
+                "r",
+                "ĭ",
+                "ŋ",
+                "z/"
+              ],
+              "tags": [
+                "vowel_team",
+                "digraph",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "耳環",
+              "img": "",
+              "audio": "audio/clothes-3/earrings.mp3"
             },
             {
               "word": "engineer",
@@ -61242,6 +60825,48 @@
               "zh": "稀有的",
               "img": "💎",
               "audio": "audio/adjs-6/rare.mp3"
+            },
+            {
+              "word": "reindeer",
+              "ipa": "/ˈreɪndɪr/",
+              "graphemes": [
+                "r",
+                "ei",
+                "n",
+                "d",
+                "ee",
+                "r"
+              ],
+              "phonemes": [
+                "/'r",
+                "eɪ",
+                "n",
+                "d",
+                "ɪ",
+                "r/"
+              ],
+              "phonics": [
+                "/'r",
+                "ā",
+                "n",
+                "d",
+                "ĭ",
+                "r/"
+              ],
+              "tags": [
+                "vowel_team"
+              ],
+              "hearts": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "馴鹿",
+              "img": "🦌",
+              "audio": "audio/animals-3/reindeer.mp3"
             },
             {
               "word": "repair",
