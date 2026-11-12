@@ -598,7 +598,7 @@
       ]
     },
     "air-are-ore": {
-      "cycle": ["air","are","ore"],
+      "cycle": ["air","ear","ore","are","eer","ure"],
       "mix": {"contrast":6,"spelling":6},
       "items": [
         {"word":"chair","ipa":"/tʃɛr/","graphemes":["ch","ai","r"],"phonemes":["/tʃ","ɛ","r/"],"phonics":["/ch","ĕ","r/"],"hearts":[0,0,0],"zh":"椅子","img":"🪑","audio":"audio/house-2/chair.mp3","cat":"air","wrong":["chare"]},
@@ -629,7 +629,28 @@
         {"word":"bore","ipa":"/bɔr/","graphemes":["b","or","e"],"phonemes":["/b","ɔr","-/"],"phonics":["/b","or","-/"],"hearts":[0,0,0],"zh":"承受(過去式)","img":"","audio":"audio/ABC-orn/bore.mp3","cat":"ore","wrong":["bor"]},
         {"word":"tore","ipa":"/tɔr/","graphemes":["t","or","e"],"phonemes":["/t","ɔr","-/"],"phonics":["/t","or","-/"],"hearts":[0,0,0],"zh":"撕裂(過去式)","img":"","audio":"audio/ABC-orn/tore.mp3","cat":"ore","wrong":["toar"]},
         {"word":"ignore","ipa":"/ɪɡˈnɔr/","graphemes":["i","g","n","o","r","e"],"phonemes":["/ɪ","ɡ","'n","ɔ","r","-/"],"phonics":["/ĭ","ɡ","'n","aw","r","-/"],"hearts":[0,0,0,0,0,0],"zh":"忽視","img":"🙈","audio":"audio/1C-3/ignore.mp3","cat":"ore","wrong":["ignor","ignoar"]},
-        {"word":"swore","ipa":"/swɔr/","graphemes":["s","w","or","e"],"phonemes":["/s","w","ɔr","-/"],"phonics":["/s","w","or","-/"],"hearts":[0,0,0,0],"zh":"發誓(過去式)","img":"","audio":"audio/ABC-orn/swore.mp3","cat":"ore","wrong":["swor","swoar"]}
+        {"word":"swore","ipa":"/swɔr/","graphemes":["s","w","or","e"],"phonemes":["/s","w","ɔr","-/"],"phonics":["/s","w","or","-/"],"hearts":[0,0,0,0],"zh":"發誓(過去式)","img":"","audio":"audio/ABC-orn/swore.mp3","cat":"ore","wrong":["swor","swoar"]},
+        {"word":"hear","ipa":"/hɪr/","graphemes":["h","ea","r"],"phonemes":["/h","ɪ","r/"],"phonics":["/h","ĭ","r/"],"hearts":[0,0,0],"zh":"聽到(原形)","img":"","audio":"audio/ABB-1/hear.mp3","cat":"ear","wrong":["heer"]},
+        {"word":"near","ipa":"/nɪr/","graphemes":["n","ea","r"],"phonemes":["/n","ɪ","r/"],"phonics":["/n","ĭ","r/"],"hearts":[0,0,0],"zh":"靠近；接近","img":"","audio":"audio/prep-2/near.mp3","cat":"ear","wrong":["neer","nere"]},
+        {"word":"year","ipa":"/jɪr/","graphemes":["y","ea","r"],"phonemes":["/j","ɪ","r/"],"phonics":["/y","ĭ","r/"],"hearts":[0,0,0],"zh":"年","img":"📅","audio":"audio/time-5/year.mp3","cat":"ear","wrong":["yeer","yere"]},
+        {"word":"fear","ipa":"/fɪr/","graphemes":["f","ea","r"],"phonemes":["/f","ɪ","r/"],"phonics":["/f","ĭ","r/"],"hearts":[0,0,0],"zh":"恐懼","img":"😨","audio":"audio/nouns-2/fear.mp3","cat":"ear","wrong":["feer","fere"]},
+        {"word":"ear","ipa":"/ɪr/","graphemes":["ea","r"],"phonemes":["/ɪ","r/"],"phonics":["/ĭ","r/"],"hearts":[0,0],"zh":"耳朵","img":"👂","audio":"audio/body-and-face-1/ear.mp3","cat":"ear","wrong":["eer"]},
+        {"word":"clear","ipa":"/klɪr/","graphemes":["c","l","ea","r"],"phonemes":["/k","l","ɪ","r/"],"phonics":["/k","l","ĭ","r/"],"hearts":[0,0,1,0],"zh":"放晴","img":"🌤","audio":"audio/weather-1/clear.mp3","cat":"ear","wrong":["cleer","clere"]},
+        {"word":"beard","ipa":"/bɪrd/","graphemes":["b","ea","r","d"],"phonemes":["/b","ɪ","r","d/"],"phonics":["/b","ĭ","r","d/"],"hearts":[0,0,0,0],"zh":"🏻‍♂️ 鬍鬚（下巴）","img":"🧔","audio":"audio/body-and-face-2/beard.mp3","cat":"ear","wrong":["beerd"]},
+        {"word":"appear","ipa":"/əˈpɪr/","graphemes":["a","pp","ea","r"],"phonemes":["/ə","'p","ɪ","r/"],"phonics":["/ə","'p","ĭ","r/"],"hearts":[0,0,0,0],"zh":"出現","img":"👀","audio":"audio/1C-1/appear.mp3","cat":"ear","wrong":["appeer","appere"]},
+        {"word":"disappear","ipa":"/dɪsəˈpɪr/","graphemes":["d","i","s","a","pp","ea","r"],"phonemes":["/d","ɪ","s","ə","'p","ɪ","r/"],"phonics":["/d","ĭ","s","ə","'p","ĭ","r/"],"hearts":[0,0,0,0,0,0],"zh":"消失","img":"👻","audio":"audio/1C-2/disappear.mp3","cat":"ear","wrong":["disappeer","disappere"]},
+        {"word":"nearly","ipa":"/ˈnɪrli/","graphemes":["n","ea","r","l","y"],"phonemes":["/'n","ɪ","r","l","i/"],"phonics":["/'n","ĭ","r","l","ē/"],"hearts":[0,0,0,0],"zh":"幾乎","img":"📍","audio":"audio/adjs-2/nearly.mp3","cat":"ear","wrong":["neerly"]},
+        {"word":"dear","ipa":"/dɪr/","graphemes":["d","ea","r"],"phonemes":["/d","ɪ","r/"],"phonics":["/d","ĭ","r/"],"hearts":[0,0],"zh":"親愛的","img":"💕","audio":"audio/adjs-4/dear.mp3","cat":"ear","wrong":["dere"]},
+        {"word":"deer","ipa":"/dɪr/","graphemes":["d","ee","r"],"phonemes":["/d","ɪ","r/"],"phonics":["/d","ĭ","r/"],"hearts":[0,0,0],"zh":"鹿","img":"🫎","audio":"audio/animals-3/deer.mp3","cat":"eer","wrong":["dere"]},
+        {"word":"cheer","ipa":"/tʃɪr/","graphemes":["ch","ee","r"],"phonemes":["/tʃ","ɪ","r/"],"phonics":["/ch","ĭ","r/"],"hearts":[0,0,0],"zh":"歡呼","img":"📣","audio":"audio/1C-5/cheer.mp3","cat":"eer","wrong":["chear","chere"]},
+        {"word":"cheerleader","ipa":"/ˈtʃɪrlidɚ/","graphemes":["ch","ee","r","l","ea","d","er"],"phonemes":["/'tʃ","ɪ","r","l","i","d","ɚ/"],"phonics":["/'ch","ĭ","r","l","ē","d","er/"],"hearts":[0,0,0,0,0,0],"zh":"‍♀️ 啦啦隊","img":"👯","audio":"audio/school-3/cheerleader.mp3","cat":"eer","wrong":["chearleader"]},
+        {"word":"engineer","ipa":"/ɛndʒəˈnɪr/","graphemes":["e","n","g","i","n","ee","r"],"phonemes":["/ɛ","n","dʒ","ə","'n","ɪ","r/"],"phonics":["/ĕ","n","-j","ə","'n","ĭ","r/"],"hearts":[0,0,0,0,0,1,0],"zh":"工程師","img":"🧑‍🔧","audio":"audio/occupations-5/engineer.mp3","cat":"eer","wrong":["enginear","enginere"]},
+        {"word":"volunteer","ipa":"/ˌvɑlənˈtɪr/","graphemes":["v","o","l","u","n","t","ee","r"],"phonemes":["/v","ɑ","l","ə","n","'t","ɪ","r/"],"phonics":["/v","ŏ","l","ə","n","'t","ĭ","r/"],"hearts":[0,0,0,1,0,0,1,0],"zh":"志工","img":"🙋","audio":"audio/occupations-2/volunteer.mp3","cat":"eer","wrong":["voluntear","voluntere"]},
+        {"word":"career","ipa":"/kəˈrɪr/","graphemes":["c","a","r","ee","r"],"phonemes":["/k","ə","'r","ɪ","r/"],"phonics":["/k","ə","'r","ĭ","r/"],"hearts":[0,0,0,1,0],"zh":"職業","img":"💼","audio":"audio/occupations-3/career.mp3","cat":"eer","wrong":["carear","carere"]},
+        {"word":"here","ipa":"/hɪr/","graphemes":["h","e","r","e"],"phonemes":["/h","ɪ","r","-/"],"phonics":["/h","ĭ","r","-/"],"hearts":[0,0,0,0],"zh":"這裡","img":"📍","audio":"audio/places-1/here.mp3","cat":"eer","wrong":["heer"]},
+        {"word":"sincere","ipa":"/sɪnˈsɪr/","graphemes":["s","i","n","c","e","r","e"],"phonemes":["/s","ɪ","n","'s","ɪ","r","-/"],"phonics":["/s","ĭ","n","'s","i","r","-/"],"hearts":[0,0,0,0,0,0,0],"zh":"真誠的","img":"🤝","audio":"audio/people-4/sincere.mp3","cat":"eer","wrong":["sinceer","sincear"]},
+        {"word":"cure","ipa":"/kjʊr/","graphemes":["c","u","r","e"],"phonemes":["/k","jʊ","r","-/"],"phonics":["/k","yoo","r","-/"],"hearts":[0,0,0,0],"zh":"治癒；治好","img":"💊","audio":"audio/health-2/cure.mp3","cat":"ure","wrong":["cuer","cyoor"]},
+        {"word":"sure","ipa":"/ʃʊr/","graphemes":["s","u","r","e"],"phonemes":["/ʃ","ʊ","r","-/"],"phonics":["/sh","oo","r","-/"],"hearts":[1,0,0],"zh":"確定的","img":"✔️","audio":"audio/adjs-3/sure.mp3","cat":"ure","wrong":["shure","shoor"]}
       ]
     }
   }
