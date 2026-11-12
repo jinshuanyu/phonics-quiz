@@ -1073,8 +1073,8 @@ async function init() {
       const kRes = await fetch('data/consonant-contrasts.json', { cache: 'no-cache' });
       if (kRes.ok) CONS_CONTRASTS = await kRes.json();
     } catch (e) { CONS_CONTRASTS = null; }
-    // Level 3 r-vowel and Level 5 diphthong contrast sets: same shape, merged into the same groups (optional files)
-    for (const extra of ['data/r-vowel-contrasts.json', 'data/diphthong-contrasts.json']) {
+    // Level 3 r-vowel, Level 5 diphthong and Level 6 long-vowel contrast sets: same shape, merged into the same groups (optional files)
+    for (const extra of ['data/r-vowel-contrasts.json', 'data/diphthong-contrasts.json', 'data/long-vowel-contrasts.json']) {
       try {
         const rRes = await fetch(extra, { cache: 'no-cache' });
         if (rRes.ok) {
