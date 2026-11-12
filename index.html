@@ -420,6 +420,8 @@ body {
   min-width: 36px;
   text-align: center;
 }
+.gp-grapheme { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.gp-grapheme.playing { transform: scale(0.92); filter: brightness(0.95); }
 .gp-grapheme.vowel {
   background: var(--vowel-bg);
   border-color: var(--vowel-border);
@@ -2481,6 +2483,18 @@ function checkAnswer(btn, selected, correct) {
 }
 
 // ── GP Mapping Component ───────────────────────────────
+// Tap a tile in the letter breakdown to hear that single sound (silent letters make no sound)
+function playGpSound(el) {
+  const ph = el.dataset.ph || '';
+  el.classList.add('playing');
+  setTimeout(() => el.classList.remove('playing'), 350);
+  if (ph === '' || ph === '-') return;
+  playPhonemeAudio(ph).catch(() => {
+    const d = GRAPHEME_DEFAULT_IPA[(el.dataset.g || '').toLowerCase()];
+    if (d) playPhonemeAudio(d).catch(() => {});
+  });
+}
+
 function renderGPMapping(word) {
   const vowelPhonemes = new Set(['æ','ɛ','ɪ','ɒ','ʌ','ɑ','eɪ','i','aɪ','oʊ','əʊ','u','ju','ɔɪ','aʊ','ɔ','ʊ','ə','ɝ','ɜ','ɚ','ɑr','ɔr','ɪr','ɛr','ʊr']);
 
@@ -2492,7 +2506,7 @@ function renderGPMapping(word) {
     const heartVal = Array.isArray(word.hearts) && word.hearts[i] ? 1 : 0;
     html += `
       <div class="gp-item">
-        <div class="gp-grapheme ${isVowel ? 'vowel' : ''}">
+        <div class="gp-grapheme ${isVowel ? 'vowel' : ''}" role="button" tabindex="0" data-g="${escHtml(g)}" data-ph="${escHtml(cleanPhoneme)}" onclick="playGpSound(this)" aria-label="聽 ${escHtml(g)} 的單音">
           ${escHtml(g)}
           ${heartVal ? '<span class="heart">❤️</span>' : ''}
         </div>
