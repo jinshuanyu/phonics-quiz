@@ -7991,6 +7991,7 @@
           "pattern": "FLOSS (ff, ll, ss, zz)",
           "explain": "單音節字裡，短母音後面的 f、l、s、z 要寫兩個，只發一個音，像 off、bell、miss、buzz。",
           "keys": [{ "g": "ff", "ipa": "f" }, { "g": "ll", "ipa": "l" }, { "g": "ss", "ipa": "s" }, { "g": "zz", "ipa": "z" }],
+          "spellingSet": "floss",
           "words": [
             {
               "word": "address",
@@ -14231,6 +14232,7 @@
           "pattern": "Digraphs: wh, ph, ck, qu",
           "explain": "兩個字母合起來發一個音。wh 發 /w/，ph 發 /f/，qu 發 /kw/。ck 發 /k/，只用在短母音後面，像 back、duck。",
           "keys": [{ "g": "wh", "ipa": "w" }, { "g": "ph", "ipa": "f" }, { "g": "ck", "ipa": "k" }, { "g": "qu", "ipa": "kw" }],
+          "spellingSet": "digraph-spelling",
           "words": [
             {
               "word": "alarm clock",
@@ -26408,6 +26410,7 @@
           "pattern": "Final clusters & silent letters",
           "explain": "字尾連著兩個子音（-nt、-nd、-nk、-mp），兩個音都要發，像 went、hand、pink。有些字母不發音，像 know 的 k、write 的 w、lamb 的 b。",
           "keys": [{ "g": "nt", "ipa": ["n","t"] }, { "g": "nd", "ipa": ["n","d"] }, { "g": "nk", "ipa": ["ŋ","k"] }, { "g": "mp", "ipa": ["m","p"] }, { "g": "kn", "ipa": "n" }, { "g": "wr", "ipa": "r" }, { "g": "mb", "ipa": "m" }],
+          "spellingSet": "silent",
           "contrastSet": "final-clusters",
           "words": [
             {

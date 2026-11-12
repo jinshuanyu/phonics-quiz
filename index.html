@@ -1026,6 +1026,8 @@ let CONTRASTS = null;      // data/vowel-contrasts.json
 let quizOptions = [];      // per-question option list for contrast quizzes (parallel to quizWords)
 let CONS_CONTRASTS = null; // data/consonant-contrasts.json (Level 4 consonant contrast sets)
 let contrastAudio = {};    // word → audio path for the options of the current consonant-contrast quiz
+let SPELLING = null;       // data/spelling-choices.json (pick-the-correct-spelling items)
+let quizSpellChoice = [];  // per question: true = pick-the-correct-spelling (wrong options are misspellings, no audio)
 const CONTRAST_QUESTIONS = 10;
 let currentStage = null;
 let currentUnit = null;
@@ -1068,6 +1070,11 @@ async function init() {
       const kRes = await fetch('data/consonant-contrasts.json');
       if (kRes.ok) CONS_CONTRASTS = await kRes.json();
     } catch (e) { CONS_CONTRASTS = null; }
+    // Pick-the-correct-spelling items for rules that can't be heard (optional file)
+    try {
+      const sRes = await fetch('data/spelling-choices.json');
+      if (sRes.ok) SPELLING = await sRes.json();
+    } catch (e) { SPELLING = null; }
     showHome();
   } catch (e) {
     $content.innerHTML = '<p style="text-align:center;color:var(--wrong);padding:40px;">載入資料失敗，請重新整理頁面。</p>';
@@ -1539,6 +1546,7 @@ function startQuiz(mode) {
   currentQ = 0;
   wrongItems = [];
   quizOptions = [];
+  quizSpellChoice = [];
   contrastAudio = {};
 
   // Cumulative short-vowel test: every option differs from the answer ONLY in the vowel
@@ -1552,13 +1560,25 @@ function startQuiz(mode) {
     }
   }
 
-  // Consonant-contrast test (Level 4): every option differs from the answer ONLY in the unit's consonants
+  // Level 4 tests built from data files:
+  //  - consonant-contrast questions: every option differs from the answer ONLY in the unit's consonants
+  //  - spelling questions: for rules that can't be heard (FLOSS, ck, silent letters…), pick the correct spelling
+  // A unit that teaches both (尾子音群 + Silent) gets 8 + 4 questions.
   const consGroup = mode === 'listen' ? consonantGroup(currentUnit) : null;
-  if (consGroup) {
-    const built = buildConsonantQuiz(consGroup, CONTRAST_QUESTIONS);
+  const spellGroup = mode === 'listen' ? spellingGroup(currentUnit) : null;
+  if (consGroup || spellGroup) {
+    let built;
+    if (consGroup && spellGroup) {
+      built = shuffle([...buildConsonantQuiz(consGroup, 8), ...buildSpellingQuiz(spellGroup, 4)]);
+    } else if (consGroup) {
+      built = buildConsonantQuiz(consGroup, CONTRAST_QUESTIONS);
+    } else {
+      built = buildSpellingQuiz(spellGroup, CONTRAST_QUESTIONS);
+    }
     if (built.length > 0) {
       quizWords = built.map(q => q.word);
       quizOptions = built.map(q => q.options);
+      quizSpellChoice = built.map(q => !!q.spelling);
       pushView('quiz', () => renderQuestion());
       return;
     }
@@ -1658,6 +1678,35 @@ function buildConsonantQuiz(group, n) {
   return shuffle(picked);
 }
 
+// ── Pick-the-correct-spelling quiz (FLOSS, ck / qu / wh / ph, silent letters) ──
+// The unit names its group with "spellingSet"; null when the unit has none or the file is missing.
+function spellingGroup(unit) {
+  const groups = SPELLING && SPELLING.groups;
+  const g = unit && unit.spellingSet && groups ? groups[unit.spellingSet] : null;
+  return g && Array.isArray(g.items) && g.items.length > 0 ? g : null;
+}
+
+// Build n questions: the student hears a real word (and sees its meaning) and picks the right
+// spelling among misspellings that sound the same (bell / bel). Some answers are words where the
+// rule does NOT apply (pig / pigg), so always picking the longer spelling doesn't pass.
+function buildSpellingQuiz(group, n) {
+  const cycle = Array.isArray(group.cycle) && group.cycle.length ? group.cycle : [...new Set(group.items.map(m => m.cat))];
+  const start = Math.floor(Math.random() * cycle.length);
+  const used = new Set();
+  const picked = [];
+  let misses = 0;
+  for (let i = 0; picked.length < n && misses < cycle.length; i++) {
+    const cat = cycle[(start + i) % cycle.length];
+    const avail = group.items.filter(m => m.cat === cat && !used.has(m.word) && Array.isArray(m.wrong) && m.wrong.length);
+    if (avail.length === 0) { misses++; continue; }
+    misses = 0;
+    const m = avail[Math.floor(Math.random() * avail.length)];
+    used.add(m.word);
+    picked.push({ word: m, options: shuffle([m.word, ...m.wrong.slice(0, 3)]), spelling: true });
+  }
+  return shuffle(picked);
+}
+
 // Audio for any word in a contrast set (all of them come from Word Mapper)
 function contrastAudioUrl(word) {
   const w = String(word).toLowerCase();
@@ -1746,6 +1795,7 @@ function renderListenQuestion(word) {
   let html = `
     <div class="question-area">
       <div class="question-prompt">${promptText}</div>
+      ${quizSpellChoice[currentQ] && (word.img || word.zh) ? `<div class="question-zh">${word.img || ''} ${escHtml(word.zh || '')}</div>` : ''}
       <button class="btn-speak" onclick="speakWord(quizWords[${currentQ}])" aria-label="播放發音">
         🔊 播放發音
       </button>
@@ -2399,7 +2449,7 @@ function checkAnswer(btn, selected, correct) {
 
   // Vowel-contrast question: let the student tap every option to hear the difference,
   // and move on only when they press 下一題 (no auto-advance).
-  if (quizOptions[currentQ]) {
+  if (quizOptions[currentQ] && !quizSpellChoice[currentQ]) {
     buttons.forEach(b => {
       b.classList.remove('disabled');
       b.onclick = () => playContrastWord(b);
@@ -2446,12 +2496,12 @@ function renderGPMapping(word) {
 // Pass line for vowel-contrast tests. When most questions were two-choice, guessing gets 50%,
 // so the bar is 90%; otherwise 80%.
 function contrastPassHtml(score, total) {
-  if (currentMode !== 'listen' || quizOptions.length === 0 || !(isContrastUnit(currentUnit) || consonantGroup(currentUnit))) return '';
+  if (currentMode !== 'listen' || quizOptions.length === 0 || !(isContrastUnit(currentUnit) || consonantGroup(currentUnit) || spellingGroup(currentUnit))) return '';
   const avgChoices = quizOptions.reduce((s, o) => s + o.length, 0) / quizOptions.length;
   const need = Math.ceil(total * (avgChoices < 2.5 ? 0.9 : 0.8));
   return score >= need
-    ? `<div style="font-weight:800;color:var(--correct);margin:6px 0;">✅ 過關！${isContrastUnit(currentUnit) ? '這幾個母音' : '這一關的音'}你分得出來了</div>`
-    : `<div style="font-weight:700;color:#888;margin:6px 0;">還沒過關（要答對 ${need} 題），回去聽一聽再試一次</div>`;
+    ? `<div style="font-weight:800;color:var(--correct);margin:6px 0;">✅ 過關！${isContrastUnit(currentUnit) ? '這幾個母音你分得出來了' : !spellingGroup(currentUnit) ? '這一關的音你分得出來了' : consonantGroup(currentUnit) ? '這一關的音和拼法你都會了' : '這一關的拼法你會了'}</div>`
+    : `<div style="font-weight:700;color:#888;margin:6px 0;">還沒過關（要答對 ${need} 題），回去${spellingGroup(currentUnit) && !consonantGroup(currentUnit) ? '看一看規則' : '聽一聽'}再試一次</div>`;
 }
 
 // ── Result Screen ──────────────────────────────────────
