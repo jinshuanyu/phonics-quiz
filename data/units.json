@@ -65199,10 +65199,51 @@
           "id": 34,
           "name": "-s、-es 字尾",
           "pattern": "Plurals: dogs, glasses",
-          "explain": "複數字尾一般加 -s（dogs、socks）。字尾是 s、x、ch、sh、z 的字加 -es，多唸一個音節 /ɪz/（glasses、dishes、sandwiches）。",
+          "explain": "複數字尾一般加 -s（dogs、socks）。字尾是 s、x、ch、sh、z 的字加 -es，多唸一個音節 /ɪz/（buses、boxes、watches、dishes、quizzes）。",
           "keys": [{ "g": "s", "ipa": "s" }, { "g": "s", "ipa": "z" }, { "g": "es", "ipa": "ɪz" }],
           "spellingSet": "s-es",
           "words": [
+            {
+              "word": "benches",
+              "ipa": "/ˈbɛntʃɪz/",
+              "graphemes": [
+                "b",
+                "e",
+                "n",
+                "ch",
+                "es"
+              ],
+              "phonemes": [
+                "/'b",
+                "ɛ",
+                "n",
+                "tʃ",
+                "ɪz/"
+              ],
+              "phonics": [
+                "/'b",
+                "ĕ",
+                "n",
+                "ch",
+                "ĭz/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph",
+                "cluster",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "長椅（複數）",
+              "img": "🪑",
+              "audio": "audio/house-2/benches.mp3"
+            },
             {
               "word": "boots",
               "ipa": "/buts/",
@@ -65232,6 +65273,158 @@
               "zh": "靴子",
               "img": "🥾",
               "audio": "audio/clothes-1/boots.mp3"
+            },
+            {
+              "word": "boxes",
+              "ipa": "/ˈbɑksɪz/",
+              "graphemes": [
+                "b",
+                "o",
+                "x",
+                "es"
+              ],
+              "phonemes": [
+                "/'b",
+                "ɑ",
+                "ks",
+                "ɪz/"
+              ],
+              "phonics": [
+                "/'b",
+                "ŏ",
+                "ks",
+                "ĭz/"
+              ],
+              "tags": [
+                "cvc",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "盒子（複數）",
+              "img": "📦",
+              "audio": "audio/house-3/boxes.mp3"
+            },
+            {
+              "word": "brushes",
+              "ipa": "/ˈbrʌʃɪz/",
+              "graphemes": [
+                "b",
+                "r",
+                "u",
+                "sh",
+                "es"
+              ],
+              "phonemes": [
+                "/'b",
+                "r",
+                "ʌ",
+                "ʃ",
+                "ɪz/"
+              ],
+              "phonics": [
+                "/'b",
+                "r",
+                "ŭ",
+                "sh",
+                "ĭz/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "digraph",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "刷子（複數）",
+              "img": "🪥",
+              "audio": "audio/house-3/brushes.mp3"
+            },
+            {
+              "word": "buses",
+              "ipa": "/ˈbʌsɪz/",
+              "graphemes": [
+                "b",
+                "u",
+                "s",
+                "es"
+              ],
+              "phonemes": [
+                "/'b",
+                "ʌ",
+                "s",
+                "ɪz/"
+              ],
+              "phonics": [
+                "/'b",
+                "ŭ",
+                "s",
+                "ĭz/"
+              ],
+              "tags": [
+                "cvc",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "公車（複數）",
+              "img": "🚌",
+              "audio": "audio/transportation-2/buses.mp3"
+            },
+            {
+              "word": "classes",
+              "ipa": "/ˈklæsɪz/",
+              "graphemes": [
+                "c",
+                "l",
+                "a",
+                "ss",
+                "es"
+              ],
+              "phonemes": [
+                "/'k",
+                "l",
+                "æ",
+                "s",
+                "ɪz/"
+              ],
+              "phonics": [
+                "/'k",
+                "l",
+                "ă",
+                "s",
+                "ĭz/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "floss",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "班級（複數）",
+              "img": "🏫",
+              "audio": "audio/school-1/classes.mp3"
             },
             {
               "word": "dishes",
@@ -65303,6 +65496,47 @@
               "zh": "狗（複數）",
               "img": "🐶",
               "audio": "audio/animals-1/dogs.mp3"
+            },
+            {
+              "word": "dresses",
+              "ipa": "/ˈdrɛsɪz/",
+              "graphemes": [
+                "d",
+                "r",
+                "e",
+                "ss",
+                "es"
+              ],
+              "phonemes": [
+                "/'d",
+                "r",
+                "ɛ",
+                "s",
+                "ɪz/"
+              ],
+              "phonics": [
+                "/'d",
+                "r",
+                "ĕ",
+                "s",
+                "ĭz/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "floss",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "洋裝（複數）",
+              "img": "👗",
+              "audio": "audio/clothes-1/dresses.mp3"
             },
             {
               "word": "dumplings",
@@ -65427,6 +65661,41 @@
               "zh": "蛋（複數）",
               "img": "🥚",
               "audio": "audio/food-2/eggs.mp3"
+            },
+            {
+              "word": "foxes",
+              "ipa": "/ˈfɑksɪz/",
+              "graphemes": [
+                "f",
+                "o",
+                "x",
+                "es"
+              ],
+              "phonemes": [
+                "/'f",
+                "ɑ",
+                "ks",
+                "ɪz/"
+              ],
+              "phonics": [
+                "/'f",
+                "ŏ",
+                "ks",
+                "ĭz/"
+              ],
+              "tags": [
+                "cvc",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "狐狸（複數）",
+              "img": "🦊",
+              "audio": "audio/animals-3/foxes.mp3"
             },
             {
               "word": "glasses",
@@ -65597,6 +65866,42 @@
               "audio": "audio/clothes-1/jeans.mp3"
             },
             {
+              "word": "kisses",
+              "ipa": "/ˈkɪsɪz/",
+              "graphemes": [
+                "k",
+                "i",
+                "ss",
+                "es"
+              ],
+              "phonemes": [
+                "/'k",
+                "ɪ",
+                "s",
+                "ɪz/"
+              ],
+              "phonics": [
+                "/'k",
+                "ĭ",
+                "s",
+                "ĭz/"
+              ],
+              "tags": [
+                "cvc",
+                "floss",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "親吻（複數）",
+              "img": "💋",
+              "audio": "audio/nouns-2/kisses.mp3"
+            },
+            {
               "word": "lights",
               "ipa": "/laɪts/",
               "graphemes": [
@@ -65630,6 +65935,47 @@
               "zh": "燈（複數）",
               "img": "🚦",
               "audio": "audio/transportation-2/lights.mp3"
+            },
+            {
+              "word": "lunches",
+              "ipa": "/ˈlʌntʃɪz/",
+              "graphemes": [
+                "l",
+                "u",
+                "n",
+                "ch",
+                "es"
+              ],
+              "phonemes": [
+                "/'l",
+                "ʌ",
+                "n",
+                "tʃ",
+                "ɪz/"
+              ],
+              "phonics": [
+                "/'l",
+                "ŭ",
+                "n",
+                "ch",
+                "ĭz/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph",
+                "cluster",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "午餐（複數）",
+              "img": "🍱",
+              "audio": "audio/food-4/lunches.mp3"
             },
             {
               "word": "pants",
@@ -65713,6 +66059,78 @@
               "zh": "父母親",
               "img": "👨‍👩‍👧",
               "audio": "audio/family-friends-1/parents.mp3"
+            },
+            {
+              "word": "peaches",
+              "ipa": "/ˈpitʃɪz/",
+              "graphemes": [
+                "p",
+                "ea",
+                "ch",
+                "es"
+              ],
+              "phonemes": [
+                "/'p",
+                "i",
+                "tʃ",
+                "ɪz/"
+              ],
+              "phonics": [
+                "/'p",
+                "ē",
+                "ch",
+                "ĭz/"
+              ],
+              "tags": [
+                "vowel_team",
+                "digraph",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "桃子（複數）",
+              "img": "🍑",
+              "audio": "audio/food-1/peaches.mp3"
+            },
+            {
+              "word": "quizzes",
+              "ipa": "/ˈkwɪzɪz/",
+              "graphemes": [
+                "qu",
+                "i",
+                "zz",
+                "es"
+              ],
+              "phonemes": [
+                "/'kw",
+                "ɪ",
+                "z",
+                "ɪz/"
+              ],
+              "phonics": [
+                "/'kw",
+                "ĭ",
+                "z",
+                "ĭz/"
+              ],
+              "tags": [
+                "cvc",
+                "floss",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "測驗（複數）",
+              "img": "❓",
+              "audio": "audio/school-4/quizzes.mp3"
             },
             {
               "word": "sandwiches",
@@ -66127,6 +66545,78 @@
               "zh": "太陽眼鏡",
               "img": "🕶",
               "audio": "audio/clothes-2/sunglasses.mp3"
+            },
+            {
+              "word": "watches",
+              "ipa": "/ˈwɑtʃɪz/",
+              "graphemes": [
+                "w",
+                "a",
+                "tch",
+                "es"
+              ],
+              "phonemes": [
+                "/'w",
+                "ɑ",
+                "tʃ",
+                "ɪz/"
+              ],
+              "phonics": [
+                "/'w",
+                "ŏ",
+                "ch",
+                "ĭz/"
+              ],
+              "tags": [
+                "irregular",
+                "digraph",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                1,
+                1,
+                0
+              ],
+              "zh": "手錶（複數）",
+              "img": "⌚",
+              "audio": "audio/time-1/watches.mp3"
+            },
+            {
+              "word": "wishes",
+              "ipa": "/ˈwɪʃɪz/",
+              "graphemes": [
+                "w",
+                "i",
+                "sh",
+                "es"
+              ],
+              "phonemes": [
+                "/'w",
+                "ɪ",
+                "ʃ",
+                "ɪz/"
+              ],
+              "phonics": [
+                "/'w",
+                "ĭ",
+                "sh",
+                "ĭz/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph",
+                "suffix"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "願望（複數）",
+              "img": "🌟",
+              "audio": "audio/nouns-2/wishes.mp3"
             },
             {
               "word": "years",
