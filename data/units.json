@@ -438,6 +438,7 @@
           "pattern": "CVC short a",
           "explain": "CVC（子音＋母音＋子音）中間的母音發短音。a 的短音是 /æ/，像 cat、hat。",
           "keys": [{ "g": "a", "ipa": "æ" }],
+          "examples": ["cat","hat","bat","map","bag","fan","dad","sad","jam","ham","cap","van","can","man","pan","tap","gap","lab","mat","bad","cab","gas","pat","rat","had"],
           "words": [
             {
               "word": "act",
@@ -1767,6 +1768,7 @@
           "pattern": "CVC short e",
           "explain": "CVC（子音＋母音＋子音）中間的母音發短音。e 的短音是 /ɛ/，像 bed、pen。",
           "keys": [{ "g": "e", "ipa": "ɛ" }],
+          "examples": ["bed","pen","red","leg","pet","ten","hen","net","jet","web","wet","yes","men","get","let","den"],
           "words": [
             {
               "word": "bed",
@@ -2905,6 +2907,7 @@
           "pattern": "CVC short i",
           "explain": "CVC（子音＋母音＋子音）中間的母音發短音。i 的短音是 /ɪ/，像 sit、pig。",
           "keys": [{ "g": "i", "ipa": "ɪ" }],
+          "examples": ["pig","six","big","lip","zip","sit","kid","pin","hit","dig","win","wig","tip","lid","dip","sip","him"],
           "words": [
             {
               "word": "big",
@@ -4248,6 +4251,7 @@
           "pattern": "CVC short o",
           "explain": "CVC（子音＋母音＋子音）中間的母音發短音。o 的短音是 /ɑ/，像 hot、dog。",
           "keys": [{ "g": "o", "ipa": "ɑ" }],
+          "examples": ["box","fox","hot","dog","pot","mop","top","hop","not","jog","fog","mom","pop","cop","lot"],
           "words": [
             {
               "word": "box",
@@ -5095,6 +5099,7 @@
           "pattern": "CVC short u",
           "explain": "CVC（子音＋母音＋子音）中間的母音發短音。u 的短音是 /ʌ/，像 cup、sun。",
           "keys": [{ "g": "u", "ipa": "ʌ" }],
+          "examples": ["bus","sun","cup","run","bug","mud","nut","hug","cut","fun","gum","bun","but","up","tub","cub"],
           "words": [
             {
               "word": "bug",
@@ -5946,6 +5951,7 @@
           "explain": "a 後面接 r，合起來發 /ɑr/，a 不再發短音，像 car、farm。",
           "keys": [{ "g": "ar", "ipa": "ɑr" }],
           "contrastSet": "r-ar",
+          "examples": ["car","star","farm","park","arm","art","card","dark","far","hard","jar","yard","shark","smart","start","March","party","garden","market","scarf","sharp"],
           "words": [
             {
               "word": "alarm",
@@ -7915,6 +7921,7 @@
           "explain": "o 後面接 r，合起來發 /ɔr/，o 不再發短音，像 fork、horse。",
           "keys": [{ "g": "or", "ipa": "ɔr" }],
           "contrastSet": "r-or",
+          "examples": ["fork","horse","corn","north","short","storm","sport","pork","for","born","order","morning","forty","corner","story","forest","popcorn"],
           "words": [
             {
               "word": "boring",
@@ -9532,6 +9539,7 @@
           "keys": [{ "g": "er", "ipa": "ɝ" }, { "g": "ir", "ipa": "ɝ" }, { "g": "ur", "ipa": "ɝ" }],
           "contrastSet": "r-er",
           "spellingSet": "er-ir-ur",
+          "examples": ["her","term","clerk","perm","bird","girl","shirt","skirt","first","third","dirty","thirty","birthday","nurse","purse","turn","burn","hurt","fur","church","surf","turtle","purple","Thursday"],
           "words": [
             {
               "word": "advertisement",
@@ -12085,6 +12093,7 @@
           "explain": "單音節字裡，短母音後面的 f、l、s、z 要寫兩個，只發一個音，像 off、tell、miss、buzz。",
           "keys": [{ "g": "ff", "ipa": "f" }, { "g": "ll", "ipa": "l" }, { "g": "ss", "ipa": "s" }, { "g": "zz", "ipa": "z" }],
           "spellingSet": "floss",
+          "examples": ["off","stuff","cliff","puff","bell","tell","sell","well","hill","will","doll","ball","tall","small","kiss","miss","boss","class","dress","glass","grass","buzz","jazz","fizz"],
           "words": [
             {
               "word": "address",
@@ -14137,6 +14146,7 @@
           "explain": "兩個字母合起來發一個音。sh 發 /ʃ/，ch 發 /tʃ/（短母音後面寫成 tch），th 發 /θ/（thin）或 /ð/（that）。",
           "keys": [{ "g": "sh", "ipa": "ʃ" }, { "g": "ch", "ipa": "tʃ" }, { "g": "tch", "ipa": "tʃ" }, { "g": "th", "ipa": "θ" }, { "g": "th", "ipa": "ð" }],
           "contrastSet": "digraphs",
+          "examples": ["ship","shop","fish","dish","brush","sheep","chin","chop","lunch","much","rich","bench","chicken","cheese","catch","match","kitchen","thin","thick","bath","math","three","thing","this","that","then","them"],
           "words": [
             {
               "word": "altogether",
@@ -21620,6 +21630,7 @@
           "explain": "兩個字母合起來發一個音。wh 發 /w/，ph 發 /f/，qu 發 /kw/。ck 發 /k/，只用在短母音後面，像 back、duck。",
           "keys": [{ "g": "wh", "ipa": "w" }, { "g": "ph", "ipa": "f" }, { "g": "ck", "ipa": "k" }, { "g": "qu", "ipa": "kw" }],
           "spellingSet": "digraph-spelling",
+          "examples": ["when","which","white","whale","wheel","phone","photo","dolphin","elephant","back","duck","neck","sock","clock","black","queen","quiz","quick","quit","quiet"],
           "words": [
             {
               "word": "alarm clock",
@@ -25006,6 +25017,7 @@
           "explain": "/k/、/tʃ/、/dʒ/ 的音緊接在短母音後面時，要寫成 ck、tch、dge（back、catch、bridge）。前面隔著別的子音或是 r 母音時，寫 k、ch、ge（milk、lunch、large）。兩個音節以上的字，字尾 /ɪdʒ/ 寫 age（village、cabbage）。",
           "keys": [{ "g": "ck", "ipa": "k" }, { "g": "tch", "ipa": "tʃ" }, { "g": "dge", "ipa": "dʒ" }],
           "spellingSet": "ck-tch-dge",
+          "examples": ["back","duck","neck","sock","clock","milk","bank","pink","desk","catch","match","kitchen","witch","lunch","bench","inch","church","bridge","fridge","edge","judge","large","charge","village","cabbage","orange"],
           "words": [
             {
               "word": "back",
@@ -26456,6 +26468,7 @@
           "explain": "字首兩個子音連著唸，每個音都要發出來：子音＋l（black、slim）、子音＋r（brush、grass）、s＋m、n、w（small、snack、swim）。tr 唸起來像 ㄔㄨ（truck），dr 像 ㄓㄨ（dress）。thr、shr 是 th、sh 後面接 r（three、shrimp）。",
           "keys": [{ "g": "bl", "ipa": ["b","l"] }, { "g": "cl", "ipa": ["k","l"] }, { "g": "fl", "ipa": ["f","l"] }, { "g": "gl", "ipa": ["ɡ","l"] }, { "g": "pl", "ipa": ["p","l"] }, { "g": "sl", "ipa": ["s","l"] }, { "g": "br", "ipa": ["b","r"] }, { "g": "cr", "ipa": ["k","r"] }, { "g": "dr", "ipa": ["d","r"] }, { "g": "fr", "ipa": ["f","r"] }, { "g": "gr", "ipa": ["ɡ","r"] }, { "g": "pr", "ipa": ["p","r"] }, { "g": "tr", "ipa": ["t","r"] }, { "g": "sm", "ipa": ["s","m"] }, { "g": "sn", "ipa": ["s","n"] }, { "g": "sw", "ipa": ["s","w"] }, { "g": "thr", "ipa": ["θ","r"] }, { "g": "shr", "ipa": ["ʃ","r"] }],
           "contrastSet": "lr-blends",
+          "examples": ["black","blue","clock","class","flag","glass","plant","play","sleep","slow","brush","brown","crab","dress","drum","frog","fruit","grass","green","print","tree","truck","small","smile","snack","snow","swim","sweet","three","shrimp"],
           "words": [
             {
               "word": "black",
@@ -36410,6 +36423,7 @@
           "pattern": "sp, spl, spr, sk, sc, scr, st, str",
           "explain": "sp、spl、spr、sk、sc、scr、st、str：s 後面的 p、k（c）、t 不送氣。p 唸起來像 ㄅ（spot、spider），k 和 c 像 ㄍ（sky、scarf），t 像 ㄉ（stop、straw）。",
           "contrastSet": "s-blends",
+          "examples": ["spot","spoon","spider","speak","sport","spell","space","spring","star","stop","stamp","step","stick","stone","store","story","student","street","string","strong","sky","skin","skirt","skip","skate","scarf","score","scooter","screen"],
           "words": [
             {
               "word": "astronaut",
@@ -40358,6 +40372,7 @@
           "explain": "字尾連著兩個子音（-nt、-nd、-mp、-st、-sk、-nk），兩個音都要發，像 went、hand、fast、desk、pink。字尾的 ng 是一個音 /ŋ/，像 bring、strong。",
           "keys": [{ "g": "nt", "ipa": ["n","t"] }, { "g": "nd", "ipa": ["n","d"] }, { "g": "mp", "ipa": ["m","p"] }, { "g": "st", "ipa": ["s","t"] }, { "g": "sk", "ipa": ["s","k"] }, { "g": "nk", "ipa": ["ŋ","k"] }, { "g": "ng", "ipa": "ŋ" }],
           "contrastSet": "final-clusters",
+          "examples": ["ant","tent","went","plant","hand","sand","pond","wind","send","lamp","camp","jump","fast","nest","best","desk","mask","ask","west","bank","pink","sink","drink","think","ring","sing","king","long","song","strong"],
           "words": [
             {
               "word": "absent",
@@ -49102,6 +49117,7 @@
           "keys": [{ "g": "ou", "ipa": "aʊ" }, { "g": "ow", "ipa": "aʊ" }],
           "contrastSet": "d-ou",
           "spellingSet": "ou-ow",
+          "examples": ["out","house","mouse","cloud","mouth","loud","round","sound","count","shout","south","ground","mountain","cow","now","how","down","town","brown","clown","owl","flower","tower","shower"],
           "words": [
             {
               "word": "about",
@@ -51739,6 +51755,7 @@
           "explain": "oo 有兩種音：/u/（moon、food）和 /ʊ/（book、look）。",
           "keys": [{ "g": "oo", "ipa": "u" }, { "g": "oo", "ipa": "ʊ" }],
           "contrastSet": "d-oo",
+          "examples": ["moon","food","zoo","spoon","cool","pool","room","boots","tooth","noodle","balloon","book","look","cook","good","foot","wood"],
           "words": [
             {
               "word": "afternoon",
@@ -54124,6 +54141,7 @@
           "keys": [{ "g": "au", "ipa": "ɔ" }, { "g": "aw", "ipa": "ɔ" }, { "g": "all", "ipa": ["ɔ","l"] }, { "g": "alk", "ipa": ["ɔ","k"] }],
           "contrastSet": "d-aw",
           "spellingSet": "au-aw-al",
+          "examples": ["August","sauce","pause","cause","launch","astronaut","sausage","laundry","saw","draw","law","lawn","straw","strawberry","dawn","ball","tall","wall","call","fall","small","all","talk","walk","chalk","salt","also"],
           "words": [
             {
               "word": "all",
@@ -56380,6 +56398,7 @@
           "explain": "字尾的 e 不發音，但會讓前面的母音發長音（字母的名字）：cap → cape、kit → kite、hop → hope、cut → cute。",
           "keys": [{ "g": "a_e", "ipa": "eɪ" }, { "g": "e_e", "ipa": "i" }, { "g": "i_e", "ipa": "aɪ" }, { "g": "o_e", "ipa": "oʊ" }, { "g": "u_e", "ipa": "ju" }],
           "contrastSet": "magic-e",
+          "examples": ["cake","name","game","make","cape","tape","these","Pete","bike","kite","five","time","nine","pine","home","nose","rope","bone","hope","note","robe","cute","cube","tube","use","June","rule"],
           "words": [
             {
               "word": "a_e, ai, ay",
@@ -66948,6 +66967,7 @@
           "keys": [{ "g": "a_e", "ipa": "eɪ" }, { "g": "ai", "ipa": "eɪ" }, { "g": "ay", "ipa": "eɪ" }],
           "contrastSet": "l-a",
           "spellingSet": "long-a",
+          "examples": ["cake","name","game","make","gate","wave","face","rain","train","tail","wait","paint","mail","snail","day","play","say","way","stay","May","gray","holiday"],
           "words": [
             {
               "word": "a_e, ai, ay",
@@ -73471,6 +73491,7 @@
           "keys": [{ "g": "ee", "ipa": "i" }, { "g": "ea", "ipa": "i" }, { "g": "e_e", "ipa": "i" }],
           "contrastSet": "l-e",
           "spellingSet": "long-e",
+          "examples": ["tree","green","see","bee","feet","sleep","sheep","three","week","cheese","eat","tea","sea","read","meat","beach","peach","team","clean","teacher","these","Pete"],
           "words": [
             {
               "word": "agree",
@@ -79044,6 +79065,7 @@
           "keys": [{ "g": "i_e", "ipa": "aɪ" }, { "g": "igh", "ipa": "aɪ" }, { "g": "ie", "ipa": "aɪ" }, { "g": "y", "ipa": "aɪ" }],
           "contrastSet": "l-i",
           "spellingSet": "long-i",
+          "examples": ["bike","kite","five","time","nine","like","rice","smile","night","light","right","high","fight","my","fly","sky","cry","try","dry","why","pie","tie","die","lie"],
           "words": [
             {
               "word": "admire",
@@ -84406,6 +84428,7 @@
           "keys": [{ "g": "o_e", "ipa": "oʊ" }, { "g": "oa", "ipa": "oʊ" }, { "g": "ow", "ipa": "oʊ" }, { "g": "oe", "ipa": "oʊ" }],
           "contrastSet": "l-o",
           "spellingSet": "long-o",
+          "examples": ["home","nose","rope","bone","hope","note","stone","phone","boat","coat","goat","road","soap","toast","snow","slow","grow","show","yellow","window","low","toe"],
           "words": [
             {
               "word": "alone",
@@ -87977,6 +88000,7 @@
           "keys": [{ "g": "u_e", "ipa": "ju" }, { "g": "ue", "ipa": "u" }, { "g": "ui", "ipa": "u" }, { "g": "ew", "ipa": "ju" }],
           "contrastSet": "l-u",
           "spellingSet": "long-u",
+          "examples": ["cute","cube","tube","use","June","rule","flute","blue","glue","true","rescue","fruit","juice","suit","new","few","grew","drew","flew","news"],
           "words": [
             {
               "word": "amusement",
@@ -89801,6 +89825,7 @@
           "keys": [{ "g": "air", "ipa": ["ɛ","r"] }, { "g": "are", "ipa": ["ɛ","r"] }, { "g": "ear", "ipa": ["ɪ","r"] }, { "g": "eer", "ipa": ["ɪ","r"] }, { "g": "ere", "ipa": ["ɪ","r"] }, { "g": "ore", "ipa": "ɔr" }, { "g": "ure", "ipa": ["j","ʊ","r"] }],
           "contrastSet": "l-r",
           "spellingSet": "air-are-ore",
+          "examples": ["chair","hair","air","pair","fair","stairs","care","share","square","scare","rare","hear","near","year","ear","dear","clear","deer","cheer","here","more","store","score","shore","before","cure","fire","hire"],
           "words": [
             {
               "word": "admire",
@@ -92728,6 +92753,7 @@
           "pattern": "重複子音：rabbit, summer, carry",
           "explain": "兩個音節的字，短母音後面的子音要寫兩個（rabbit、summer、happy）；長母音後面只寫一個（tiger、paper、robot）。rr 也一樣：carry、mirror 的母音是短音，不會變成 ar、ir 的音。",
           "spellingSet": "rabbit",
+          "examples": ["rabbit","kitten","summer","happy","letter","butter","hammer","pepper","yellow","button","lesson","tennis","puppy","funny","sunny","dinner","carry","carrot","parrot","mirror","borrow","tomorrow","tiger","paper","robot","music","pilot","baby","lady","student"],
           "words": [
             {
               "word": "apples",
@@ -98671,6 +98697,7 @@
           "explain": "字尾的「子音＋le」自成一個音節，發 /əl/，e 不發音。le 前面隔兩個子音，母音發短音（apple、little）；只隔一個子音，母音發長音（table、title）。前面是 ur、ir 這類 r 母音時，r 母音照常發音（purple、circle）。",
           "keys": [{ "g": "le", "ipa": "əl" }],
           "spellingSet": "le",
+          "examples": ["apple","little","bottle","middle","puzzle","bubble","candle","handle","simple","uncle","single","gentle","ankle","angle","example","temple","table","cable","able","title","needle","eagle","noodle","beetle","purple","turtle","circle"],
           "words": [
             {
               "word": "able",
@@ -99805,6 +99832,7 @@
           "explain": "複數字尾一般加 -s（dogs、socks）。字尾是 s、x、ch、sh、z 的字加 -es，多唸一個音節 /ɪz/（buses、boxes、watches、dishes、quizzes）。",
           "keys": [{ "g": "s", "ipa": "s" }, { "g": "s", "ipa": "z" }, { "g": "es", "ipa": "ɪz" }],
           "spellingSet": "s-es",
+          "examples": ["dogs","hands","eggs","boots","socks","pants","shorts","songs","years","jeans","boxes","foxes","buses","classes","dresses","kisses","glasses","watches","peaches","benches","lunches","sandwiches","brushes","wishes","dishes","quizzes"],
           "words": [
             {
               "word": "benches",
@@ -102349,6 +102377,7 @@
           "explain": "y 在字首是子音，發 /j/（yes）。字尾「子音＋y」的 y 是母音：只有一個音節的字發 /aɪ/（my、cry），兩個音節以上的字發 /i/（baby、happy）。",
           "keys": [{ "g": "y", "ipa": "j" }, { "g": "y", "ipa": "aɪ" }, { "g": "y", "ipa": "i" }],
           "spellingSet": "y-sounds",
+          "examples": ["yes","yet","yell","yellow","yard","yogurt","year","yesterday","my","cry","fly","try","sky","dry","why","shy","by","baby","puppy","bunny","happy","sunny","funny","candy","lucky","daddy","mommy","party","story","lady"],
           "words": [
             {
               "word": "ability",
@@ -107902,6 +107931,7 @@
           "keys": [{ "g": "c", "ipa": "s" }, { "g": "c", "ipa": "k" }],
           "spellingSet": "c-sounds",
           "extraSpellingSet": "c-or-k",
+          "examples": ["cent","city","circle","pencil","ice","rice","nice","mice","face","race","place","space","dance","fence","prince","juice","cat","cup","car","cake","cold","corn","candy","clock","king","kid","kiss","kitten","keep","kitchen"],
           "words": [
             {
               "word": "accept",

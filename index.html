@@ -1433,7 +1433,52 @@ function renderModes(levelIdx, unitIdx) {
 }
 
 // ── Learn Mode (no scoring, exploration only) ──────────
+// Learn page: at most 30 example words per unit. Units carry a hand-picked "examples" list in units.json
+// (most typical words, grouped by spelling); a unit without one falls back to an automatic pick.
+// "顯示全部" shows the whole list. Letter units are never cut.
+const LEARN_MAX = 30;
+let learnWords = [];      // the words shown on the Learn page (the click handlers index into this)
+let learnShowAll = false;
+
+function pickLearnWords(unit) {
+  const all = unit.words.filter(w => w.word);
+  if (learnShowAll || all.some(w => w.isLetter)) return all; // letters are never cut
+  if (Array.isArray(unit.examples) && unit.examples.length) { // hand-picked examples, grouped by spelling
+    const byWord = new Map(all.map(w => [w.word, w]));
+    return [...all.filter(w => !w.ipa), ...unit.examples.map(x => byWord.get(x)).filter(Boolean)];
+  }
+  if (all.length <= LEARN_MAX) return all;
+  const cards = all.filter(w => !w.ipa);  // pattern cards always stay
+  const rank = w => (w.img && w.zh ? 0 : 20) + (/[\s-]/.test(w.word) ? 20 : 0) + (/^[A-Z]/.test(w.word) ? 10 : 0) + w.word.length;
+  const sorted = all.filter(w => w.ipa).sort((a, b) => rank(a) - rank(b) || a.word.localeCompare(b.word));
+  const keys = [...new Set((unit.keys || []).map(k => String(k.g).toLowerCase()))];
+  const hasKey = (w, k) => (k.includes('_')
+    ? new RegExp(k.replace('_', '[a-z]+?')).test(w.word.toLowerCase())
+    : (w.graphemes || []).some(g => String(g).toLowerCase() === k) || w.word.toLowerCase().includes(k));
+  const picked = [];
+  for (let round = 0; keys.length && picked.length < LEARN_MAX && round < LEARN_MAX; round++) {
+    const before = picked.length;
+    for (const k of keys) {
+      if (picked.length >= LEARN_MAX) break;
+      const w = sorted.find(x => !picked.includes(x) && hasKey(x, k));
+      if (w) picked.push(w);
+    }
+    if (picked.length === before) break;
+  }
+  for (const w of sorted) {
+    if (picked.length >= LEARN_MAX) break;
+    if (!picked.includes(w)) picked.push(w);
+  }
+  return [...cards, ...picked].sort((a, b) => a.word.toLowerCase().localeCompare(b.word.toLowerCase()));
+}
+
+function toggleLearnAll() {
+  learnShowAll = !learnShowAll;
+  renderLearn();
+}
+
 function startLearn() {
+  learnShowAll = false;
   pushView('learn', () => renderLearn());
 }
 
@@ -1442,7 +1487,10 @@ function renderLearn() {
   showNav(`📖 ${currentUnit.name}`);
   $footer.classList.add('hidden');
 
-  const words = currentUnit.words.filter(w => w.word);
+  learnWords = pickLearnWords(currentUnit);
+  const words = learnWords;
+  const totalWords = currentUnit.words.filter(w => w.word && w.ipa).length;
+  const shownWords = words.filter(w => w.ipa).length;
   const introText = currentUnit.learnIntro
     || '👆 點任一個字母方塊聽單音，按 🔊 聽完整的發音。';
 
@@ -1498,7 +1546,14 @@ function renderLearn() {
   const learnFooter = isFirstContrastUnit(currentUnit)
     ? `<div style="font-size:0.95rem;color:#888;line-height:1.6;">👍 這個母音先聽熟，學完下一個母音之後就可以測驗囉！</div>`
     : `<button class="btn-action btn-primary" onclick="goToQuizFromLearn()" style="font-size:1rem;padding:10px 28px;">💪 我準備好了，去測驗！</button>`;
+  const capNote = shownWords < totalWords
+    ? `<div style="text-align:center;margin:14px 0 0;font-size:0.9rem;color:#888;">這裡先列 ${shownWords} 個例字，這一關一共 ${totalWords} 個。
+        <button onclick="toggleLearnAll()" style="margin-left:6px;padding:6px 14px;border:2px solid #e8e4f0;border-radius:20px;background:var(--card);color:#555;font-weight:700;font-size:0.9rem;cursor:pointer;">顯示全部</button></div>`
+    : (learnShowAll && totalWords > LEARN_MAX
+      ? `<div style="text-align:center;margin:14px 0 0;"><button onclick="toggleLearnAll()" style="padding:6px 14px;border:2px solid #e8e4f0;border-radius:20px;background:var(--card);color:#555;font-weight:700;font-size:0.9rem;cursor:pointer;">只看 ${LEARN_MAX} 個例字</button></div>`
+      : '');
   html += `</div>
+    ${capNote}
     <div style="text-align:center;margin:18px 0 24px;">
       ${learnFooter}
     </div>
@@ -1551,7 +1606,7 @@ function isVowelGrapheme(g, ph) {
 function onLearnGraphemeClick(el) {
   const widx = parseInt(el.dataset.widx, 10);
   const gidx = parseInt(el.dataset.gidx, 10);
-  const w = currentUnit.words[widx];
+  const w = learnWords[widx];
   if (!w) return;
   el.classList.add('playing');
   setTimeout(() => el.classList.remove('playing'), 350);
@@ -1577,7 +1632,7 @@ function playKeySound(i, el) {
 }
 
 function onLearnWordClick(widx) {
-  const w = currentUnit.words[widx];
+  const w = learnWords[widx];
   if (w) speakWord(w);
 }
 
