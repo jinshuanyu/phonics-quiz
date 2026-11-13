@@ -48234,6 +48234,32 @@
               "audio": "audio/1C-5/survive.mp3"
             },
             {
+              "word": "tie",
+              "ipa": "/taɪ/",
+              "graphemes": [
+                "t",
+                "ie"
+              ],
+              "phonemes": [
+                "/t",
+                "aɪ/"
+              ],
+              "phonics": [
+                "/t",
+                "ī/"
+              ],
+              "tags": [
+                "open"
+              ],
+              "hearts": [
+                false,
+                false
+              ],
+              "zh": "領帶",
+              "img": "👔",
+              "audio": "audio/clothes-3/tie.mp3"
+            },
+            {
               "word": "time",
               "ipa": "/taɪm/",
               "graphemes": [
@@ -50589,6 +50615,32 @@
               "audio": "audio/food-3/toast.mp3"
             },
             {
+              "word": "toe",
+              "ipa": "/toʊ/",
+              "graphemes": [
+                "t",
+                "oe"
+              ],
+              "phonemes": [
+                "/t",
+                "oʊ/"
+              ],
+              "phonics": [
+                "/t",
+                "ō/"
+              ],
+              "tags": [
+                "open"
+              ],
+              "hearts": [
+                false,
+                false
+              ],
+              "zh": "腳趾",
+              "img": "🦶",
+              "audio": "audio/body-and-face-2/toe.mp3"
+            },
+            {
               "word": "upload",
               "ipa": "/ʌpˈloʊd/",
               "graphemes": [
@@ -51500,6 +51552,48 @@
           "spellingSet": "air-are-ore",
           "words": [
             {
+              "word": "admire",
+              "ipa": "/ədˈmaɪr/",
+              "graphemes": [
+                "a",
+                "d",
+                "m",
+                "i",
+                "r",
+                "e"
+              ],
+              "phonemes": [
+                "/ə",
+                "d",
+                "'m",
+                "aɪ",
+                "r",
+                "-/"
+              ],
+              "phonics": [
+                "/ə",
+                "d",
+                "'m",
+                "ī",
+                "r",
+                "-/"
+              ],
+              "tags": [
+                "magic_e"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "欽佩",
+              "img": "🌟",
+              "audio": "audio/1C-1/admire.mp3"
+            },
+            {
               "word": "air",
               "ipa": "/ɛr/",
               "graphemes": [
@@ -52374,6 +52468,48 @@
               "audio": "audio/places-2/department_store.mp3"
             },
             {
+              "word": "desire",
+              "ipa": "/dɪˈzaɪr/",
+              "graphemes": [
+                "d",
+                "e",
+                "s",
+                "i",
+                "r",
+                "e"
+              ],
+              "phonemes": [
+                "/d",
+                "ɪ",
+                "'z",
+                "aɪ",
+                "r",
+                "-/"
+              ],
+              "phonics": [
+                "/d",
+                "ĭ",
+                "'z",
+                "ī",
+                "r",
+                "-/"
+              ],
+              "tags": [
+                "magic_e"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "渴望",
+              "img": "💭",
+              "audio": "audio/nouns-1/desire.mp3"
+            },
+            {
               "word": "disappear",
               "ipa": "/dɪsəˈpɪr/",
               "graphemes": [
@@ -52640,6 +52776,40 @@
               "audio": "audio/nouns-2/fear.mp3"
             },
             {
+              "word": "fire",
+              "ipa": "/faɪr/",
+              "graphemes": [
+                "f",
+                "i",
+                "r",
+                "e"
+              ],
+              "phonemes": [
+                "/f",
+                "aɪ",
+                "r",
+                "-/"
+              ],
+              "phonics": [
+                "/f",
+                "ī",
+                "r",
+                "-/"
+              ],
+              "tags": [
+                "magic_e"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "火",
+              "img": "🔥",
+              "audio": "audio/occupations-4/fire.mp3"
+            },
+            {
               "word": "hair",
               "ipa": "/hɛr/",
               "graphemes": [
@@ -52829,6 +52999,40 @@
               "audio": "audio/places-1/here.mp3"
             },
             {
+              "word": "hire",
+              "ipa": "/haɪr/",
+              "graphemes": [
+                "h",
+                "i",
+                "r",
+                "e"
+              ],
+              "phonemes": [
+                "/h",
+                "aɪ",
+                "r",
+                "-/"
+              ],
+              "phonics": [
+                "/h",
+                "ī",
+                "r",
+                "-/"
+              ],
+              "tags": [
+                "magic_e"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "雇用(聘)",
+              "img": "📝",
+              "audio": "audio/occupations-3/hire.mp3"
+            },
+            {
               "word": "ignore",
               "ipa": "/ɪɡˈnɔr/",
               "graphemes": [
@@ -52869,6 +53073,53 @@
               "zh": "忽視",
               "img": "🙈",
               "audio": "audio/1C-3/ignore.mp3"
+            },
+            {
+              "word": "inspire",
+              "ipa": "/ɪnˈspaɪr/",
+              "graphemes": [
+                "i",
+                "n",
+                "s",
+                "p",
+                "i",
+                "r",
+                "e"
+              ],
+              "phonemes": [
+                "/ɪ",
+                "n",
+                "'s",
+                "p",
+                "aɪ",
+                "r",
+                "-/"
+              ],
+              "phonics": [
+                "/ĭ",
+                "n",
+                "'s",
+                "p",
+                "ī",
+                "r",
+                "-/"
+              ],
+              "tags": [
+                "magic_e",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "啟發",
+              "img": "💡",
+              "audio": "audio/1C-3/inspire.mp3"
             },
             {
               "word": "more",
@@ -53499,6 +53750,53 @@
               "zh": "樓上",
               "img": "⏫",
               "audio": "audio/house-1/upstairs.mp3"
+            },
+            {
+              "word": "vampire",
+              "ipa": "/ˈvæmpaɪr/",
+              "graphemes": [
+                "v",
+                "a",
+                "m",
+                "p",
+                "i",
+                "r",
+                "e"
+              ],
+              "phonemes": [
+                "/'v",
+                "æ",
+                "m",
+                "p",
+                "aɪ",
+                "r",
+                "-/"
+              ],
+              "phonics": [
+                "/'v",
+                "ă",
+                "m",
+                "p",
+                "ī",
+                "r",
+                "-/"
+              ],
+              "tags": [
+                "closed",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "吸血鬼",
+              "img": "🧛",
+              "audio": "audio/holidays-2/vampire.mp3"
             },
             {
               "word": "volunteer",

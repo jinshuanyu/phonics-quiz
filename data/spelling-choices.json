@@ -593,7 +593,7 @@
       ]
     },
     "air-are-ore": {
-      "cycle": ["air","ear","ore","are","eer","ure"],
+      "cycle": ["air","ear","ore","are","eer","ure","ire"],
       "mix": {"contrast":6,"spelling":6},
       "items": [
         {"word":"chair","ipa":"/tʃɛr/","graphemes":["ch","ai","r"],"phonemes":["/tʃ","ɛ","r/"],"phonics":["/ch","ĕ","r/"],"hearts":[0,0,0],"zh":"椅子","img":"🪑","audio":"audio/house-2/chair.mp3","cat":"air","wrong":["chare"]},
@@ -644,6 +644,12 @@
         {"word":"career","ipa":"/kəˈrɪr/","graphemes":["c","a","r","ee","r"],"phonemes":["/k","ə","'r","ɪ","r/"],"phonics":["/k","ə","'r","ĭ","r/"],"hearts":[0,0,0,1,0],"zh":"職業","img":"💼","audio":"audio/occupations-3/career.mp3","cat":"eer","wrong":["carear","carere"]},
         {"word":"here","ipa":"/hɪr/","graphemes":["h","e","r","e"],"phonemes":["/h","ɪ","r","-/"],"phonics":["/h","ĭ","r","-/"],"hearts":[0,0,0,0],"zh":"這裡","img":"📍","audio":"audio/places-1/here.mp3","cat":"eer","wrong":["heer"]},
         {"word":"sincere","ipa":"/sɪnˈsɪr/","graphemes":["s","i","n","c","e","r","e"],"phonemes":["/s","ɪ","n","'s","ɪ","r","-/"],"phonics":["/s","ĭ","n","'s","i","r","-/"],"hearts":[0,0,0,0,0,0,0],"zh":"真誠的","img":"🤝","audio":"audio/people-4/sincere.mp3","cat":"eer","wrong":["sinceer","sincear"]},
+        {"word":"fire","ipa":"/faɪr/","graphemes":["f","i","r","e"],"phonemes":["/f","aɪ","r","-/"],"phonics":["/f","ī","r","-/"],"hearts":[0,0,0,0],"zh":"火","img":"🔥","audio":"audio/occupations-4/fire.mp3","cat":"ire","wrong":["fier","fyre"]},
+        {"word":"hire","ipa":"/haɪr/","graphemes":["h","i","r","e"],"phonemes":["/h","aɪ","r","-/"],"phonics":["/h","ī","r","-/"],"hearts":[0,0,0,0],"zh":"雇用(聘)","img":"📝","audio":"audio/occupations-3/hire.mp3","cat":"ire","wrong":["hier","hyre"]},
+        {"word":"admire","ipa":"/ədˈmaɪr/","graphemes":["a","d","m","i","r","e"],"phonemes":["/ə","d","'m","aɪ","r","-/"],"phonics":["/ə","d","'m","ī","r","-/"],"hearts":[0,0,0,0,0,0],"zh":"欽佩","img":"🌟","audio":"audio/1C-1/admire.mp3","cat":"ire","wrong":["admier","admyre"]},
+        {"word":"desire","ipa":"/dɪˈzaɪr/","graphemes":["d","e","s","i","r","e"],"phonemes":["/d","ɪ","'z","aɪ","r","-/"],"phonics":["/d","ĭ","'z","ī","r","-/"],"hearts":[0,0,0,0,0,0],"zh":"渴望","img":"💭","audio":"audio/nouns-1/desire.mp3","cat":"ire","wrong":["desier","desyre"]},
+        {"word":"inspire","ipa":"/ɪnˈspaɪr/","graphemes":["i","n","s","p","i","r","e"],"phonemes":["/ɪ","n","'s","p","aɪ","r","-/"],"phonics":["/ĭ","n","'s","p","ī","r","-/"],"hearts":[0,0,0,0,0,0,0],"zh":"啟發","img":"💡","audio":"audio/1C-3/inspire.mp3","cat":"ire","wrong":["inspier","inspyre"]},
+        {"word":"vampire","ipa":"/ˈvæmpaɪr/","graphemes":["v","a","m","p","i","r","e"],"phonemes":["/'v","æ","m","p","aɪ","r","-/"],"phonics":["/'v","ă","m","p","ī","r","-/"],"hearts":[0,0,0,0,0,0,0],"zh":"吸血鬼","img":"🧛","audio":"audio/holidays-2/vampire.mp3","cat":"ire","wrong":["vampier","vampyre"]},
         {"word":"cure","ipa":"/kjʊr/","graphemes":["c","u","r","e"],"phonemes":["/k","jʊ","r","-/"],"phonics":["/k","yoo","r","-/"],"hearts":[0,0,0,0],"zh":"治癒；治好","img":"💊","audio":"audio/health-2/cure.mp3","cat":"ure","wrong":["cuer","cyoor"]}
       ]
     },
