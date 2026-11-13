@@ -22530,8 +22530,7 @@
           "id": 14,
           "name": "S-blends + 三子音群",
           "pattern": "S-blends & 3-letter clusters",
-          "explain": "s 後面接另一個子音，兩個音都要發，像 stop、sky。三個子音連在一起也是每個都發，像 street。",
-          "keys": [{ "g": "st", "ipa": ["s","t"] }, { "g": "sk", "ipa": ["s","k"] }, { "g": "sp", "ipa": ["s","p"] }, { "g": "sw", "ipa": ["s","w"] }, { "g": "sm", "ipa": ["s","m"] }, { "g": "sn", "ipa": ["s","n"] }, { "g": "str", "ipa": ["s","t","r"] }, { "g": "spr", "ipa": ["s","p","r"] }, { "g": "scr", "ipa": ["s","k","r"] }],
+          "explain": "sp、spl、spr、sk、sc、scr、st、str：s 後面的無聲子音要唸成有聲。p 唸成 /b/（spot、spread），k 和 c 唸成 /g/（sky、scarf），t 唸成 /d/（stop、straw）。",
           "contrastSet": "s-blends",
           "words": [
             {
