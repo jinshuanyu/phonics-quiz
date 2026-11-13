@@ -683,24 +683,30 @@ body {
   text-align: center;
   border-top: 1px solid #f0e6dd;
 }
+.footer-tools-title {
+  margin: 10px 0 6px;
+  font-size: 0.95rem;
+  color: #888;
+}
 .footer-tools {
-  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto 12px;
 }
 .footer-tools a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--card);
-  border: 2px solid #eee;
-  border-radius: 50px;
-  padding: 10px 20px;
+  display: inline-block;
+  background: #ffe8dc;
+  border-radius: 20px;
+  padding: 6px 14px;
   text-decoration: none;
-  color: #555;
-  font-weight: 600;
-  font-size: 0.9rem;
+  color: var(--primary-dark);
+  font-weight: 500;
+  font-size: 1rem;
   transition: all 0.2s;
 }
-.footer-tools a:hover { border-color: var(--primary); color: var(--primary); }
+.footer-tools a:hover { background: var(--primary); color: #fff; }
 
 .footer-icons {
   display: flex;
@@ -724,10 +730,23 @@ body {
 .footer-icons a:hover { background: var(--primary); color: #fff; }
 
 .footer-cta {
-  font-size: 0.9rem;
-  color: #888;
-  margin: 12px 0;
+  margin: 12px 0 16px;
 }
+.support-btn {
+  display: inline-block;
+  background: linear-gradient(to right, #facc15, #fb923c);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: .5rem 1.25rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+  transition: transform .2s ease;
+}
+.support-btn:hover { transform: scale(1.05); }
+.support-btn:focus { outline: 3px solid rgba(251, 191, 36, .45); outline-offset: 2px; }
+@media (max-width: 640px) { .support-btn { font-size: 0.9rem; font-weight: 500; padding: .45rem 1rem; } }
 .footer-copy {
   font-size: 0.8rem;
   color: #aaa;
@@ -933,18 +952,26 @@ body {
 
   <!-- Footer (only on home) -->
   <footer class="app-footer" id="footer">
-    <div class="footer-tools">
-      <a href="https://jinshuanyu.github.io/word-mapper/" target="_blank" rel="noopener">📖 Word Mapper 英文拼字 × 聲音對照</a>
-    </div>
     <div class="footer-icons">
       <a href="mailto:mamahowma@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
       <a href="https://www.facebook.com/mamahowma" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
       <a href="https://portaly.cc/mamahowma/support" target="_blank" rel="noopener" aria-label="贊助"><i class="fa-solid fa-mug-hot"></i></a>
     </div>
-    <div class="footer-cta">免費工具好用嗎？☕ 請我喝杯咖啡支持創作</div>
+    <div class="footer-cta">
+      <a href="https://portaly.cc/mamahowma/support" target="_blank" rel="noopener noreferrer" class="support-btn">喜歡這個免費工具嗎？☕ 請杯咖啡鼓勵我</a>
+    </div>
+    <div class="footer-tools-title">🔡 More English Tools:</div>
+    <div class="footer-tools">
+      <a href="https://jinshuanyu.github.io/">🧰 全部工具</a>
+      <a href="https://jinshuanyu.github.io/word-mapper/">Word Mapper 拼字聲音對照</a>
+      <a href="https://jinshuanyu.github.io/Dolch-List-by-spelling-patterns/">Dolch 高頻詞拼讀</a>
+      <a href="https://jinshuanyu.github.io/vowel-detective/">母音偵探</a>
+      <a href="https://jinshuanyu.github.io/grow-a-sentence/">句子擴寫</a>
+      <a href="https://jinshuanyu.github.io/englishplaylistsforkids/">英語影片片單</a>
+      <a href="https://jinshuanyu.github.io/ipa-guide/">IPA 音標指南</a>
+    </div>
     <div class="footer-copy">
-      &copy; 2025 Christina Yu. All rights reserved.<br>
-      <a href="https://github.com/jinshuanyu/phonics-quiz" target="_blank" rel="noopener">GitHub 原始碼</a>
+      &copy; 2025 Christina Yu. All rights reserved.
     </div>
   </footer>
 </div>
