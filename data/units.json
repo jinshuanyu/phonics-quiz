@@ -79061,7 +79061,7 @@
           "id": 22,
           "name": "Long i /aɪ/",
           "pattern": "i-e, ie, y, -igh",
-          "explain": "長母音 i 發 /aɪ/（字母 I 的名字）。\n口訣（XX＝後面沒有字母，用在字尾）：\n・i 子音 e（bike）\n・igh 子音（night）\n・ie XX（pie）\n・y XX（my）",
+          "explain": "長母音 i 發 /aɪ/（字母 I 的名字）。\n口訣（XX＝後面沒有字母，用在字尾）：\n・i 子音 e（bike）\n・igh 子音（night）\n・igh XX（high）\n・ie XX（pie）\n・y XX（my）",
           "keys": [{ "g": "i_e", "ipa": "aɪ" }, { "g": "igh", "ipa": "aɪ" }, { "g": "ie", "ipa": "aɪ" }, { "g": "y", "ipa": "aɪ" }],
           "contrastSet": "l-i",
           "spellingSet": "long-i",
