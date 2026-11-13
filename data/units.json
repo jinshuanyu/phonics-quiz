@@ -22530,7 +22530,7 @@
           "id": 14,
           "name": "S-blends + 三子音群",
           "pattern": "S-blends & 3-letter clusters",
-          "explain": "sp、spl、spr、sk、sc、scr、st、str：s 後面的無聲子音要唸成有聲。p 唸成 /b/（spot、spread），k 和 c 唸成 /g/（sky、scarf），t 唸成 /d/（stop、straw）。",
+          "explain": "sp、spl、spr、sk、sc、scr、st、str：s 後面的 p、k（c）、t 不送氣。p 唸起來像 ㄅ（spot、spread），k 和 c 像 ㄍ（sky、scarf），t 像 ㄉ（stop、straw）。",
           "contrastSet": "s-blends",
           "words": [
             {
