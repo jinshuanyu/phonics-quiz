@@ -59983,53 +59983,10 @@
           "id": 26,
           "name": "-le 音節",
           "pattern": "Consonant-le (table, apple)",
-          "explain": "字尾的「子音＋le」自成一個音節，發 /əl/，e 不發音，像 table、apple。",
+          "explain": "字尾的「子音＋le」自成一個音節，發 /əl/，e 不發音。le 前面隔兩個子音，母音發短音（apple、little）；只隔一個子音，母音發長音（table、title）。",
           "keys": [{ "g": "le", "ipa": "əl" }],
           "spellingSet": "le",
           "words": [
-            {
-              "word": "a little",
-              "ipa": "/ə ˈlɪtəl/",
-              "graphemes": [
-                "a",
-                " ",
-                "l",
-                "i",
-                "tt",
-                "le"
-              ],
-              "phonemes": [
-                "/ə",
-                " ",
-                "'l",
-                "ɪ",
-                "t",
-                "əl/"
-              ],
-              "phonics": [
-                "/ə",
-                " ",
-                "'l",
-                "ĭ",
-                "t",
-                "əl/"
-              ],
-              "tags": [
-                "closed",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "一點點",
-              "img": "",
-              "audio": "audio/numbers-4/a_little.mp3"
-            },
             {
               "word": "able",
               "ipa": "/ˈeɪbəl/",
@@ -60162,53 +60119,6 @@
               "audio": "audio/food-1/apple.mp3"
             },
             {
-              "word": "available",
-              "ipa": "/əˈveɪləbəl/",
-              "graphemes": [
-                "a",
-                "v",
-                "ai",
-                "l",
-                "a",
-                "b",
-                "le"
-              ],
-              "phonemes": [
-                "/ə",
-                "'v",
-                "eɪ",
-                "l",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "phonics": [
-                "/ə",
-                "'v",
-                "ā",
-                "l",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "tags": [
-                "vowel_team",
-                "cle",
-                "suffix"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "可用的",
-              "img": "✔️",
-              "audio": "audio/adjs-1/available.mp3"
-            },
-            {
               "word": "beetle",
               "ipa": "/ˈbitəl/",
               "graphemes": [
@@ -60244,49 +60154,6 @@
               "audio": "audio/animals-2/beetle.mp3"
             },
             {
-              "word": "bicycle",
-              "ipa": "/ˈbaɪsɪkəl/",
-              "graphemes": [
-                "b",
-                "i",
-                "c",
-                "y",
-                "c",
-                "le"
-              ],
-              "phonemes": [
-                "/'b",
-                "aɪ",
-                "s",
-                "ɪ",
-                "k",
-                "əl/"
-              ],
-              "phonics": [
-                "/'b",
-                "ī",
-                "s",
-                "ĭ",
-                "k",
-                "əl/"
-              ],
-              "tags": [
-                "open",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "腳踏車",
-              "img": "🚲",
-              "audio": "audio/transportation-2/bicycle.mp3"
-            },
-            {
               "word": "bottle",
               "ipa": "/ˈbɑtl/",
               "graphemes": [
@@ -60320,6 +60187,41 @@
               "zh": "瓶子",
               "img": "🍾",
               "audio": "audio/food-5/bottle.mp3"
+            },
+            {
+              "word": "bubble",
+              "ipa": "/ˈbʌbəl/",
+              "graphemes": [
+                "b",
+                "u",
+                "bb",
+                "le"
+              ],
+              "phonemes": [
+                "/'b",
+                "ʌ",
+                "b",
+                "əl/"
+              ],
+              "phonics": [
+                "/'b",
+                "ŭ",
+                "b",
+                "əl/"
+              ],
+              "tags": [
+                "closed",
+                "cle"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "泡泡",
+              "img": "🧋",
+              "audio": "audio/food-4/bubble.mp3"
             },
             {
               "word": "bundle",
@@ -60475,232 +60377,6 @@
               "audio": "audio/nouns-5/castle.mp3"
             },
             {
-              "word": "circle",
-              "ipa": "/ˈsɝkl/",
-              "graphemes": [
-                "c",
-                "ir",
-                "c",
-                "le"
-              ],
-              "phonemes": [
-                "/'s",
-                "ɝ",
-                "k",
-                "əl/"
-              ],
-              "phonics": [
-                "/'s",
-                "er",
-                "k",
-                "əl/"
-              ],
-              "tags": [
-                "rcontrolled",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "圓形",
-              "img": "⭕",
-              "audio": "audio/size-2/circle.mp3"
-            },
-            {
-              "word": "comfortable",
-              "ipa": "/ˈkʌmfɚtəbəl/",
-              "graphemes": [
-                "c",
-                "o",
-                "m",
-                "f",
-                "or",
-                "t",
-                "a",
-                "b",
-                "le"
-              ],
-              "phonemes": [
-                "/'k",
-                "ʌ",
-                "m",
-                "f",
-                "ɚ",
-                "t",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "phonics": [
-                "/'k",
-                "ŭ",
-                "m",
-                "f",
-                "er",
-                "t",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "tags": [
-                "irregular",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "舒服的",
-              "img": "",
-              "audio": "audio/health-1/comfortable.mp3"
-            },
-            {
-              "word": "couple",
-              "ipa": "/ˈkʌpəl/",
-              "graphemes": [
-                "c",
-                "ou",
-                "p",
-                "le"
-              ],
-              "phonemes": [
-                "/'k",
-                "ʌ",
-                "p",
-                "əl/"
-              ],
-              "phonics": [
-                "/'k",
-                "ŭ",
-                "p",
-                "əl/"
-              ],
-              "tags": [
-                "irregular",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                1,
-                0,
-                0
-              ],
-              "zh": "伴侶",
-              "img": "👫",
-              "audio": "audio/people-1/couple.mp3"
-            },
-            {
-              "word": "double",
-              "ipa": "/ˈdʌbəl/",
-              "graphemes": [
-                "d",
-                "ou",
-                "b",
-                "le"
-              ],
-              "phonemes": [
-                "/'d",
-                "ʌ",
-                "b",
-                "əl/"
-              ],
-              "phonics": [
-                "/'d",
-                "ŭ",
-                "b",
-                "əl/"
-              ],
-              "tags": [
-                "irregular",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                1,
-                0
-              ],
-              "zh": "雙倍的",
-              "img": "2️⃣",
-              "audio": "audio/adjs-2/double.mp3"
-            },
-            {
-              "word": "Double Tenth Day",
-              "ipa": "/ˈdʌbəl tɛnθ deɪ/",
-              "graphemes": [
-                "D",
-                "ou",
-                "b",
-                "le",
-                " ",
-                "T",
-                "e",
-                "n",
-                "th",
-                " ",
-                "D",
-                "ay"
-              ],
-              "phonemes": [
-                "/'d",
-                "ʌ",
-                "b",
-                "əl",
-                " ",
-                "'t",
-                "ɛ",
-                "n",
-                "θ",
-                " ",
-                "'d",
-                "eɪ/"
-              ],
-              "phonics": [
-                "/'d",
-                "ŭ",
-                "b",
-                "əl",
-                " ",
-                "'t",
-                "ĕ",
-                "n",
-                "th",
-                " ",
-                "'d",
-                "ā/"
-              ],
-              "tags": [
-                "cle",
-                "digraph"
-              ],
-              "hearts": [
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "🇼 雙十節",
-              "img": "🇹",
-              "audio": "audio/holidays/double_tenth_day.mp3"
-            },
-            {
               "word": "eagle",
               "ipa": "/ˈiɡəl/",
               "graphemes": [
@@ -60775,59 +60451,6 @@
               "audio": "audio/school-4/example.mp3"
             },
             {
-              "word": "fashionable",
-              "ipa": "/ˈfæʃənəbəl/",
-              "graphemes": [
-                "f",
-                "a",
-                "shi",
-                "o",
-                "n",
-                "a",
-                "b",
-                "le"
-              ],
-              "phonemes": [
-                "/'f",
-                "æ",
-                "ʃ",
-                "ə",
-                "n",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "phonics": [
-                "/'f",
-                "ă",
-                "sh",
-                "ə",
-                "n",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "tags": [
-                "closed",
-                "digraph",
-                "cle",
-                "suffix"
-              ],
-              "hearts": [
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "時尚的",
-              "img": "👗",
-              "audio": "audio/adjs-3/fashionable.mp3"
-            },
-            {
               "word": "gentle",
               "ipa": "/ˈdʒɛntl/",
               "graphemes": [
@@ -60865,57 +60488,6 @@
               "zh": "溫柔的",
               "img": "🐑",
               "audio": "audio/people-4/gentle.mp3"
-            },
-            {
-              "word": "gentleman",
-              "ipa": "/ˈdʒɛntlmən/",
-              "graphemes": [
-                "g",
-                "e",
-                "n",
-                "t",
-                "le",
-                "m",
-                "a",
-                "n"
-              ],
-              "phonemes": [
-                "/'dʒ",
-                "ɛ",
-                "n",
-                "t",
-                "əl",
-                "m",
-                "ə",
-                "n/"
-              ],
-              "phonics": [
-                "/'-j",
-                "ĕ",
-                "n",
-                "t",
-                "əl",
-                "m",
-                "ə",
-                "n/"
-              ],
-              "tags": [
-                "closed",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "紳士",
-              "img": "🎩",
-              "audio": "audio/people-1/gentleman.mp3"
             },
             {
               "word": "handle",
@@ -60957,46 +60529,6 @@
               "audio": "audio/1C-3/handle.mp3"
             },
             {
-              "word": "horrible",
-              "ipa": "/ˈhɔrəbəl/",
-              "graphemes": [
-                "h",
-                "orr",
-                "i",
-                "b",
-                "le"
-              ],
-              "phonemes": [
-                "/'h",
-                "ɔr",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "phonics": [
-                "/'h",
-                "or",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "tags": [
-                "rcontrolled",
-                "suffix",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "可怕的",
-              "img": "😱",
-              "audio": "audio/adjs-3/horrible.mp3"
-            },
-            {
               "word": "humble",
               "ipa": "/ˈhʌmbəl/",
               "graphemes": [
@@ -61034,57 +60566,6 @@
               "zh": "謙虛的",
               "img": "🙇",
               "audio": "audio/people-4/humble.mp3"
-            },
-            {
-              "word": "impossible",
-              "ipa": "/ɪmˈpɑsəbəl/",
-              "graphemes": [
-                "i",
-                "m",
-                "p",
-                "o",
-                "ss",
-                "i",
-                "b",
-                "le"
-              ],
-              "phonemes": [
-                "/ɪ",
-                "m",
-                "'p",
-                "ɑ",
-                "s",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "phonics": [
-                "/ĭ",
-                "m",
-                "'p",
-                "ŏ",
-                "s",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "tags": [
-                "closed",
-                "suffix",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "不可能的",
-              "img": "❌",
-              "audio": "audio/adjs-6/impossible.mp3"
             },
             {
               "word": "little",
@@ -61157,57 +60638,6 @@
               "audio": "audio/places-1/middle.mp3"
             },
             {
-              "word": "motorcycle",
-              "ipa": "/ˈmoʊtɚˌsaɪkəl/",
-              "graphemes": [
-                "m",
-                "o",
-                "t",
-                "or",
-                "c",
-                "y",
-                "c",
-                "le"
-              ],
-              "phonemes": [
-                "/'m",
-                "oʊ",
-                "t",
-                "ɚ",
-                "s",
-                "aɪ",
-                "k",
-                "əl/"
-              ],
-              "phonics": [
-                "/'m",
-                "ō",
-                "t",
-                "er",
-                "s",
-                "ī",
-                "k",
-                "əl/"
-              ],
-              "tags": [
-                "open",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "摩托車",
-              "img": "🏍️",
-              "audio": "audio/transportation-2/motorcycle.mp3"
-            },
-            {
               "word": "needle",
               "ipa": "/ˈnidl/",
               "graphemes": [
@@ -61243,255 +60673,39 @@
               "audio": "audio/house-3/needle.mp3"
             },
             {
-              "word": "noodles",
-              "ipa": "/ˈnudlz/",
+              "word": "noodle",
+              "ipa": "/ˈnudəl/",
               "graphemes": [
                 "n",
                 "oo",
                 "d",
-                "le",
-                "s"
+                "le"
               ],
               "phonemes": [
                 "/'n",
                 "u",
                 "d",
-                "əl",
-                "z/"
+                "əl/"
               ],
               "phonics": [
                 "/'n",
                 "ū",
                 "d",
-                "əl",
-                "z/"
+                "əl/"
               ],
               "tags": [
                 "vowel_team",
-                "cle",
-                "suffix"
+                "cle"
               ],
               "hearts": [
                 0,
                 0,
                 0,
-                0,
-                1
+                0
               ],
-              "zh": "麵",
+              "zh": "麵條（單數）",
               "img": "🍜",
-              "audio": "audio/food-2/noodles.mp3"
-            },
-            {
-              "word": "people",
-              "ipa": "/ˈpi.pəl/",
-              "graphemes": [
-                "p",
-                "eo",
-                "p",
-                "le"
-              ],
-              "phonemes": [
-                "/'p",
-                "i",
-                "p",
-                "əl/"
-              ],
-              "phonics": [
-                "/'p",
-                "ē",
-                "p",
-                "əl/"
-              ],
-              "tags": [
-                "irregular",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                1,
-                0,
-                0
-              ],
-              "zh": "🏻🧍🏻人們",
-              "img": "🧍",
-              "audio": "audio/family-friends-1/people.mp3"
-            },
-            {
-              "word": "pineapple",
-              "ipa": "/ˈpaɪnæpl/",
-              "graphemes": [
-                "p",
-                "i",
-                "n",
-                "e",
-                "a",
-                "pp",
-                "le"
-              ],
-              "phonemes": [
-                "/'p",
-                "aɪ",
-                "n",
-                "-",
-                "æ",
-                "p",
-                "əl/"
-              ],
-              "phonics": [
-                "/'p",
-                "ī",
-                "n",
-                "-",
-                "ă",
-                "p",
-                "əl/"
-              ],
-              "tags": [
-                "magic_e",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "鳳梨",
-              "img": "🍍",
-              "audio": "audio/food-1/pineapple.mp3"
-            },
-            {
-              "word": "possible",
-              "ipa": "/ˈpɑsəbəl/",
-              "graphemes": [
-                "p",
-                "o",
-                "ss",
-                "i",
-                "b",
-                "le"
-              ],
-              "phonemes": [
-                "/'p",
-                "ɑ",
-                "s",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "phonics": [
-                "/'p",
-                "ŏ",
-                "s",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "tags": [
-                "closed",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "可能的",
-              "img": "✔️",
-              "audio": "audio/adjs-2/possible.mp3"
-            },
-            {
-              "word": "principle",
-              "ipa": "/ˈprɪnsəpəl/",
-              "graphemes": [
-                "p",
-                "r",
-                "i",
-                "n",
-                "c",
-                "i",
-                "p",
-                "le"
-              ],
-              "phonemes": [
-                "/'p",
-                "r",
-                "ɪ",
-                "n",
-                "s",
-                "ə",
-                "p",
-                "əl/"
-              ],
-              "phonics": [
-                "/'p",
-                "r",
-                "ĭ",
-                "n",
-                "s",
-                "ə",
-                "p",
-                "əl/"
-              ],
-              "tags": [
-                "closed",
-                "cluster",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "原則",
-              "img": "📜",
-              "audio": "audio/nouns-3/principle.mp3"
-            },
-            {
-              "word": "purple",
-              "ipa": "/ˈpɝpəl/",
-              "graphemes": [
-                "p",
-                "ur",
-                "p",
-                "le"
-              ],
-              "phonemes": [
-                "/'p",
-                "ɝ",
-                "p",
-                "əl/"
-              ],
-              "phonics": [
-                "/'p",
-                "er",
-                "p",
-                "əl/"
-              ],
-              "tags": [
-                "rcontrolled",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "紫色；紫色的",
-              "img": "🟣",
-              "audio": "audio/colors/purple.mp3"
+              "audio": "audio/food-2/noodle.mp3"
             },
             {
               "word": "puzzle",
@@ -61527,57 +60741,6 @@
               "zh": "拼圖",
               "img": "🧩",
               "audio": "audio/sports-3/puzzle.mp3"
-            },
-            {
-              "word": "rectangle",
-              "ipa": "/ˈrɛkˌtæŋɡl/",
-              "graphemes": [
-                "r",
-                "e",
-                "c",
-                "t",
-                "a",
-                "n",
-                "g",
-                "le"
-              ],
-              "phonemes": [
-                "/'r",
-                "ɛ",
-                "k",
-                "t",
-                "æ",
-                "ŋ",
-                "ɡ",
-                "əl/"
-              ],
-              "phonics": [
-                "/'r",
-                "ĕ",
-                "k",
-                "t",
-                "ă",
-                "ŋ",
-                "ɡ",
-                "əl/"
-              ],
-              "tags": [
-                "closed",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "長方形",
-              "img": "✉️",
-              "audio": "audio/size-2/rectangle.mp3"
             },
             {
               "word": "recycle",
@@ -61621,65 +60784,6 @@
               "zh": "回收",
               "img": "♻️",
               "audio": "audio/1C-4/recycle.mp3"
-            },
-            {
-              "word": "responsible",
-              "ipa": "/rɪˈspɑnsəbəl/",
-              "graphemes": [
-                "r",
-                "e",
-                "s",
-                "p",
-                "o",
-                "n",
-                "s",
-                "i",
-                "b",
-                "le"
-              ],
-              "phonemes": [
-                "/r",
-                "ɪ",
-                "'s",
-                "p",
-                "ɑ",
-                "n",
-                "s",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "phonics": [
-                "/r",
-                "ĭ",
-                "'s",
-                "p",
-                "ŏ",
-                "n",
-                "s",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "tags": [
-                "closed",
-                "suffix",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "負責的",
-              "img": "📋",
-              "audio": "audio/adjs-6/responsible.mp3"
             },
             {
               "word": "sample",
@@ -61834,65 +60938,6 @@
               "audio": "audio/house-2/table.mp3"
             },
             {
-              "word": "table tennis",
-              "ipa": "/ˈteɪbəl tɛnɪs/",
-              "graphemes": [
-                "t",
-                "a",
-                "b",
-                "le",
-                " ",
-                "t",
-                "e",
-                "nn",
-                "i",
-                "s"
-              ],
-              "phonemes": [
-                "/'t",
-                "eɪ",
-                "b",
-                "əl",
-                " ",
-                "t",
-                "ɛ",
-                "n",
-                "ɪ",
-                "s/"
-              ],
-              "phonics": [
-                "/'t",
-                "ā",
-                "b",
-                "əl",
-                " ",
-                "t",
-                "ĕ",
-                "n",
-                "ĭ",
-                "s/"
-              ],
-              "tags": [
-                "open",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "桌球",
-              "img": "🏓",
-              "audio": "audio/sports-1/table_tennis.mp3"
-            },
-            {
               "word": "temple",
               "ipa": "/ˈtɛmpəl/",
               "graphemes": [
@@ -61932,80 +60977,27 @@
               "audio": "audio/places-3/temple.mp3"
             },
             {
-              "word": "terrible",
-              "ipa": "/ˈtɛrəbəl/",
+              "word": "title",
+              "ipa": "/ˈtaɪtəl/",
               "graphemes": [
                 "t",
-                "e",
-                "rr",
                 "i",
-                "b",
+                "t",
                 "le"
               ],
               "phonemes": [
                 "/'t",
-                "ɛ",
-                "r",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "phonics": [
-                "/'t",
-                "ĕ",
-                "r",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "tags": [
-                "closed",
-                "suffix",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "糟糕的",
-              "img": "😨",
-              "audio": "audio/adjs-3/terrible.mp3"
-            },
-            {
-              "word": "triangle",
-              "ipa": "/ˈtraɪˌæŋɡl/",
-              "graphemes": [
-                "t",
-                "r",
-                "i",
-                "a",
-                "n",
-                "g",
-                "le"
-              ],
-              "phonemes": [
-                "/'t",
-                "r",
                 "aɪ",
-                "æ",
-                "ŋ",
-                "ɡ",
+                "t",
                 "əl/"
               ],
               "phonics": [
                 "/'t",
-                "r",
                 "ī",
-                "ă",
-                "ŋ",
-                "ɡ",
+                "t",
                 "əl/"
               ],
               "tags": [
-                "cluster",
                 "open",
                 "cle"
               ],
@@ -62013,49 +61005,11 @@
                 0,
                 0,
                 0,
-                1,
-                0,
-                0,
                 0
               ],
-              "zh": "三角形",
-              "img": "🔺",
-              "audio": "audio/size-2/triangle.mp3"
-            },
-            {
-              "word": "turtle",
-              "ipa": "/ˈtɝtəl/",
-              "graphemes": [
-                "t",
-                "ur",
-                "t",
-                "le"
-              ],
-              "phonemes": [
-                "/'t",
-                "ɝ",
-                "t",
-                "əl/"
-              ],
-              "phonics": [
-                "/'t",
-                "er",
-                "t",
-                "əl/"
-              ],
-              "tags": [
-                "rcontrolled",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "烏龜",
-              "img": "🐢",
-              "audio": "audio/animals-3/turtle.mp3"
+              "zh": "標題",
+              "img": "🏷️",
+              "audio": "audio/nouns-3/title.mp3"
             },
             {
               "word": "uncle",
@@ -62091,101 +61045,6 @@
               "zh": "🏻叔叔；伯伯；舅舅",
               "img": "👨",
               "audio": "audio/family-friends-2/uncle.mp3"
-            },
-            {
-              "word": "valuable",
-              "ipa": "/ˈvæljuəbəl/",
-              "graphemes": [
-                "v",
-                "a",
-                "l",
-                "u",
-                "a",
-                "b",
-                "le"
-              ],
-              "phonemes": [
-                "/'v",
-                "æ",
-                "l",
-                "ju",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "phonics": [
-                "/'v",
-                "ă",
-                "l",
-                "yū",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "tags": [
-                "closed",
-                "suffix",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "有價值的",
-              "img": "💰",
-              "audio": "audio/adjs-3/valuable.mp3"
-            },
-            {
-              "word": "vegetable",
-              "ipa": "/ˈvɛdʒtəbl/",
-              "graphemes": [
-                "v",
-                "e",
-                "ge",
-                "t",
-                "a",
-                "b",
-                "le"
-              ],
-              "phonemes": [
-                "/'v",
-                "ɛ",
-                "dʒ",
-                "t",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "phonics": [
-                "/'v",
-                "ĕ",
-                "-j",
-                "t",
-                "ə",
-                "b",
-                "əl/"
-              ],
-              "tags": [
-                "irregular",
-                "cle"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "zh": "蔬菜",
-              "img": "🥬",
-              "audio": "audio/food-1/vegetable.mp3"
             }
           ]
         },
