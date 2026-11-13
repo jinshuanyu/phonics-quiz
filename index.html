@@ -1613,11 +1613,21 @@ function startQuiz(mode) {
     let built;
     if (consGroup && spellGroup) {
       const mix = spellGroup.mix || { contrast: 8, spelling: 4 };
-      built = shuffle([...buildConsonantQuiz(consGroup, mix.contrast), ...buildSpellingQuiz(spellGroup, mix.spelling)]);
+      const contrast = buildConsonantQuiz(consGroup, mix.contrast);
+      // spelling questions skip the words the listening questions already ask
+      built = shuffle([...contrast, ...buildSpellingQuiz(spellGroup, mix.spelling, contrast.map(q => q.word.word))]);
     } else if (consGroup) {
       built = buildConsonantQuiz(consGroup, CONTRAST_QUESTIONS);
     } else {
-      built = buildSpellingQuiz(spellGroup, CONTRAST_QUESTIONS);
+      // "extraSpellingSet": a second group of spelling questions for the same rule (soft c: c → /s/ or /k/, plus king / cing)
+      const extraGroup = spellingGroupByName(currentUnit.extraSpellingSet);
+      if (extraGroup) {
+        const mix = extraGroup.mix || { main: 6, extra: 4 };
+        const main = buildSpellingQuiz(spellGroup, mix.main);
+        built = shuffle([...main, ...buildSpellingQuiz(extraGroup, mix.extra, main.map(q => q.word.word))]);
+      } else {
+        built = buildSpellingQuiz(spellGroup, CONTRAST_QUESTIONS);
+      }
     }
     if (built.length > 0) {
       quizWords = built.map(q => q.word);
@@ -1726,8 +1736,11 @@ function buildConsonantQuiz(group, n) {
 // ── Pick-the-correct-spelling quiz (FLOSS, ck / qu / wh / ph, silent letters) ──
 // The unit names its group with "spellingSet"; null when the unit has none or the file is missing.
 function spellingGroup(unit) {
+  return spellingGroupByName(unit && unit.spellingSet);
+}
+function spellingGroupByName(name) {
   const groups = SPELLING && SPELLING.groups;
-  const g = unit && unit.spellingSet && groups ? groups[unit.spellingSet] : null;
+  const g = name && groups ? groups[name] : null;
   return g && Array.isArray(g.items) && g.items.length > 0 ? g : null;
 }
 
@@ -1739,11 +1752,11 @@ function spellingGroup(unit) {
 // are always the same sounds (/t/, /d/, /ɪd/) and the answer is the item's category. The letters in question
 // are marked: group.mark = an ending ("ed"), or item.hi = [start, length]. group.silent = the word is not
 // played before answering, so the student has to apply the rule (c + e, i, y → /s/).
-function buildSpellingQuiz(group, n) {
+function buildSpellingQuiz(group, n, exclude) {
   const fixed = Array.isArray(group.choices) && group.choices.length ? group.choices.map(c => '/' + c + '/') : null;
   const cycle = Array.isArray(group.cycle) && group.cycle.length ? group.cycle : [...new Set(group.items.map(m => m.cat))];
   const start = Math.floor(Math.random() * cycle.length);
-  const used = new Set();
+  const used = new Set(exclude || []); // words already asked by another group of the same quiz
   const picked = [];
   let misses = 0;
   for (let i = 0; picked.length < n && misses < cycle.length; i++) {
