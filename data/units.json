@@ -16488,10 +16488,10 @@
         },
         {
           "id": 13,
-          "name": "L + R blends",
-          "pattern": "L-blends & R-blends",
-          "explain": "子音後面接 l 或 r，兩個子音連著唸，每個音都要發出來，像 black、tree。",
-          "keys": [{ "g": "bl", "ipa": ["b","l"] }, { "g": "cl", "ipa": ["k","l"] }, { "g": "fl", "ipa": ["f","l"] }, { "g": "gl", "ipa": ["ɡ","l"] }, { "g": "pl", "ipa": ["p","l"] }, { "g": "sl", "ipa": ["s","l"] }, { "g": "br", "ipa": ["b","r"] }, { "g": "cr", "ipa": ["k","r"] }, { "g": "dr", "ipa": ["d","r"] }, { "g": "fr", "ipa": ["f","r"] }, { "g": "gr", "ipa": ["ɡ","r"] }, { "g": "pr", "ipa": ["p","r"] }, { "g": "tr", "ipa": ["t","r"] }],
+          "name": "首子音群",
+          "pattern": "bl cl fl gl pl sl · br cr dr fr gr pr tr · sm sn sw · thr shr",
+          "explain": "字首兩個子音連著唸，每個音都要發出來：子音＋l（black、slim）、子音＋r（bread、grass）、s＋m、n、w（small、snack、swim）。tr 唸起來像 ㄔㄨ（truck），dr 像 ㄓㄨ（dress）。thr、shr 是 th、sh 後面接 r（three、shrimp）。",
+          "keys": [{ "g": "bl", "ipa": ["b","l"] }, { "g": "cl", "ipa": ["k","l"] }, { "g": "fl", "ipa": ["f","l"] }, { "g": "gl", "ipa": ["ɡ","l"] }, { "g": "pl", "ipa": ["p","l"] }, { "g": "sl", "ipa": ["s","l"] }, { "g": "br", "ipa": ["b","r"] }, { "g": "cr", "ipa": ["k","r"] }, { "g": "dr", "ipa": ["d","r"] }, { "g": "fr", "ipa": ["f","r"] }, { "g": "gr", "ipa": ["ɡ","r"] }, { "g": "pr", "ipa": ["p","r"] }, { "g": "tr", "ipa": ["t","r"] }, { "g": "sm", "ipa": ["s","m"] }, { "g": "sn", "ipa": ["s","n"] }, { "g": "sw", "ipa": ["s","w"] }, { "g": "thr", "ipa": ["θ","r"] }, { "g": "shr", "ipa": ["ʃ","r"] }],
           "contrastSet": "lr-blends",
           "words": [
             {
@@ -21691,6 +21691,46 @@
               "audio": "audio/occupations-3/secretary.mp3"
             },
             {
+              "word": "shrimp",
+              "ipa": "/ʃrɪmp/",
+              "graphemes": [
+                "sh",
+                "r",
+                "i",
+                "m",
+                "p"
+              ],
+              "phonemes": [
+                "/ʃ",
+                "r",
+                "ɪ",
+                "m",
+                "p/"
+              ],
+              "phonics": [
+                "/sh",
+                "r",
+                "ĭ",
+                "m",
+                "p/"
+              ],
+              "tags": [
+                "digraph",
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "蝦",
+              "img": "🦐",
+              "audio": "audio/animals-3/shrimp.mp3"
+            },
+            {
               "word": "slender",
               "ipa": "/ˈslɛndɚ/",
               "graphemes": [
@@ -21851,6 +21891,185 @@
               "audio": "audio/clothes-3/slippers.mp3"
             },
             {
+              "word": "small",
+              "ipa": "/smɔl/",
+              "graphemes": [
+                "s",
+                "m",
+                "a",
+                "ll"
+              ],
+              "phonemes": [
+                "/s",
+                "m",
+                "ɔ",
+                "l/"
+              ],
+              "phonics": [
+                "/s",
+                "m",
+                "aw",
+                "l/"
+              ],
+              "tags": [
+                "cluster",
+                "irregular",
+                "floss"
+              ],
+              "hearts": [
+                0,
+                0,
+                1
+              ],
+              "zh": "小的",
+              "img": "🐁",
+              "audio": "audio/size-3/small.mp3"
+            },
+            {
+              "word": "smart",
+              "ipa": "/smɑrt/",
+              "graphemes": [
+                "s",
+                "m",
+                "ar",
+                "t"
+              ],
+              "phonemes": [
+                "/s",
+                "m",
+                "ɑr",
+                "t/"
+              ],
+              "phonics": [
+                "/s",
+                "m",
+                "ɑr",
+                "t/"
+              ],
+              "tags": [
+                "cluster",
+                "rcontrolled"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "機靈的",
+              "img": "🤓",
+              "audio": "audio/people-5/smart.mp3"
+            },
+            {
+              "word": "smell",
+              "ipa": "/smɛl/",
+              "graphemes": [
+                "s",
+                "m",
+                "e",
+                "ll"
+              ],
+              "phonemes": [
+                "/s",
+                "m",
+                "ɛ",
+                "l/"
+              ],
+              "phonics": [
+                "/s",
+                "m",
+                "ĕ",
+                "l/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster",
+                "floss"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "聞(原形)",
+              "img": "",
+              "audio": "audio/ABB-3/smell.mp3"
+            },
+            {
+              "word": "smelt",
+              "ipa": "/smɛlt/",
+              "graphemes": [
+                "s",
+                "m",
+                "e",
+                "l",
+                "t"
+              ],
+              "phonemes": [
+                "/s",
+                "m",
+                "ɛ",
+                "l",
+                "t/"
+              ],
+              "phonics": [
+                "/s",
+                "m",
+                "ĕ",
+                "l",
+                "t/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "聞(過去式/過去分詞)",
+              "img": "",
+              "audio": "audio/ABB-3/smelt.mp3"
+            },
+            {
+              "word": "snack",
+              "ipa": "/snæk/",
+              "graphemes": [
+                "s",
+                "n",
+                "a",
+                "ck"
+              ],
+              "phonemes": [
+                "/s",
+                "n",
+                "æ",
+                "k/"
+              ],
+              "phonics": [
+                "/s",
+                "n",
+                "ă",
+                "k/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "點心",
+              "img": "🍿",
+              "audio": "audio/food-4/snack.mp3"
+            },
+            {
               "word": "South Africa",
               "ipa": "/saʊθ ˈæfrɪkə/",
               "graphemes": [
@@ -21962,6 +22181,541 @@
               "zh": "太陽眼鏡",
               "img": "🕶",
               "audio": "audio/clothes-2/sunglasses.mp3"
+            },
+            {
+              "word": "swallow",
+              "ipa": "/ˈswæloʊ/",
+              "graphemes": [
+                "s",
+                "w",
+                "a",
+                "ll",
+                "ow"
+              ],
+              "phonemes": [
+                "/'s",
+                "w",
+                "ɑ",
+                "l",
+                "oʊ/"
+              ],
+              "phonics": [
+                "/'s",
+                "w",
+                "ŏ",
+                "l",
+                "ō/"
+              ],
+              "tags": [
+                "irregular",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "zh": "燕子；吞嚥",
+              "img": "",
+              "audio": "audio/animals-3/swallow.mp3"
+            },
+            {
+              "word": "swam",
+              "ipa": "/swæm/",
+              "graphemes": [
+                "s",
+                "w",
+                "a",
+                "m"
+              ],
+              "phonemes": [
+                "/s",
+                "w",
+                "æ",
+                "m/"
+              ],
+              "phonics": [
+                "/s",
+                "w",
+                "ă",
+                "m/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "游泳(過去式)",
+              "img": "",
+              "audio": "audio/ABC-iau/swam.mp3"
+            },
+            {
+              "word": "swan",
+              "ipa": "/swɑn/",
+              "graphemes": [
+                "s",
+                "w",
+                "a",
+                "n"
+              ],
+              "phonemes": [
+                "/s",
+                "w",
+                "ɑ",
+                "n/"
+              ],
+              "phonics": [
+                "/s",
+                "w",
+                "ŏ",
+                "n/"
+              ],
+              "tags": [
+                "cluster",
+                "irregular"
+              ],
+              "hearts": [
+                0,
+                0,
+                1,
+                0
+              ],
+              "zh": "天鵝",
+              "img": "🦢",
+              "audio": "audio/animals-2/swan.mp3"
+            },
+            {
+              "word": "swear",
+              "ipa": "/swɛr/",
+              "graphemes": [
+                "s",
+                "w",
+                "ea",
+                "r"
+              ],
+              "phonemes": [
+                "/s",
+                "w",
+                "ɛ",
+                "r/"
+              ],
+              "phonics": [
+                "/s",
+                "w",
+                "ĕ",
+                "r/"
+              ],
+              "tags": [
+                "cluster",
+                "irregular"
+              ],
+              "hearts": [
+                0,
+                0,
+                1,
+                0
+              ],
+              "zh": "發誓(原形)",
+              "img": "",
+              "audio": "audio/ABC-orn/swear.mp3"
+            },
+            {
+              "word": "sweater",
+              "ipa": "/ˈswɛtɚ/",
+              "graphemes": [
+                "s",
+                "w",
+                "ea",
+                "t",
+                "er"
+              ],
+              "phonemes": [
+                "/'s",
+                "w",
+                "ɛ",
+                "t",
+                "ɚ/"
+              ],
+              "phonics": [
+                "/'s",
+                "w",
+                "ĕ",
+                "t",
+                "er/"
+              ],
+              "tags": [
+                "cluster",
+                "irregular"
+              ],
+              "hearts": [
+                0,
+                0,
+                1,
+                0,
+                0
+              ],
+              "zh": "毛衣",
+              "img": "",
+              "audio": "audio/clothes-1/sweater.mp3"
+            },
+            {
+              "word": "swim",
+              "ipa": "/swɪm/",
+              "graphemes": [
+                "s",
+                "w",
+                "i",
+                "m"
+              ],
+              "phonemes": [
+                "/s",
+                "w",
+                "ɪ",
+                "m/"
+              ],
+              "phonics": [
+                "/s",
+                "w",
+                "ĭ",
+                "m/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "游泳(原形)",
+              "img": "",
+              "audio": "audio/ABC-iau/swim.mp3"
+            },
+            {
+              "word": "swimsuit",
+              "ipa": "/ˈswɪmsut/",
+              "graphemes": [
+                "s",
+                "w",
+                "i",
+                "m",
+                "s",
+                "ui",
+                "t"
+              ],
+              "phonemes": [
+                "/'s",
+                "w",
+                "ɪ",
+                "m",
+                "s",
+                "u",
+                "t/"
+              ],
+              "phonics": [
+                "/'s",
+                "w",
+                "ĭ",
+                "m",
+                "s",
+                "ū",
+                "t/"
+              ],
+              "tags": [
+                "closed",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "泳裝",
+              "img": "🩱",
+              "audio": "audio/clothes-1/swimsuit.mp3"
+            },
+            {
+              "word": "sworn",
+              "ipa": "/swɔrn/",
+              "graphemes": [
+                "s",
+                "w",
+                "or",
+                "n"
+              ],
+              "phonemes": [
+                "/s",
+                "w",
+                "ɔr",
+                "n/"
+              ],
+              "phonics": [
+                "/s",
+                "w",
+                "or",
+                "n/"
+              ],
+              "tags": [
+                "cluster",
+                "rcontrolled"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "發誓(過去分詞)",
+              "img": "",
+              "audio": "audio/ABC-orn/sworn.mp3"
+            },
+            {
+              "word": "swum",
+              "ipa": "/swʌm/",
+              "graphemes": [
+                "s",
+                "w",
+                "u",
+                "m"
+              ],
+              "phonemes": [
+                "/s",
+                "w",
+                "ʌ",
+                "m/"
+              ],
+              "phonics": [
+                "/s",
+                "w",
+                "ŭ",
+                "m/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "游泳(過去分詞)",
+              "img": "",
+              "audio": "audio/ABC-iau/swum.mp3"
+            },
+            {
+              "word": "three",
+              "ipa": "/θri/",
+              "graphemes": [
+                "th",
+                "r",
+                "ee"
+              ],
+              "phonemes": [
+                "/θ",
+                "r",
+                "i/"
+              ],
+              "phonics": [
+                "/th",
+                "r",
+                "ē/"
+              ],
+              "tags": [
+                "digraph",
+                "cluster",
+                "open"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "",
+              "img": "",
+              "audio": "audio/numbers-1/three.mp3"
+            },
+            {
+              "word": "threw",
+              "ipa": "/θru/",
+              "graphemes": [
+                "th",
+                "r",
+                "ew"
+              ],
+              "phonemes": [
+                "/θ",
+                "r",
+                "u/"
+              ],
+              "phonics": [
+                "/th",
+                "r",
+                "ū/"
+              ],
+              "tags": [
+                "cluster",
+                "digraph",
+                "vowel_team"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "丟(過去式)",
+              "img": "",
+              "audio": "audio/ABC-ew/threw.mp3"
+            },
+            {
+              "word": "throat",
+              "ipa": "/θroʊt/",
+              "graphemes": [
+                "th",
+                "r",
+                "oa",
+                "t"
+              ],
+              "phonemes": [
+                "/θ",
+                "r",
+                "oʊ",
+                "t/"
+              ],
+              "phonics": [
+                "/th",
+                "r",
+                "ō",
+                "t/"
+              ],
+              "tags": [
+                "digraph",
+                "cluster",
+                "vowel_team"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "喉嚨",
+              "img": "🗣",
+              "audio": "audio/body-and-face-3/throat.mp3"
+            },
+            {
+              "word": "through",
+              "ipa": "/θru/",
+              "graphemes": [
+                "th",
+                "r",
+                "ough"
+              ],
+              "phonemes": [
+                "/θ",
+                "r",
+                "u/"
+              ],
+              "phonics": [
+                "/th",
+                "r",
+                "ū/"
+              ],
+              "tags": [
+                "digraph",
+                "vowel_team",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                1
+              ],
+              "zh": "穿過；透過",
+              "img": "",
+              "audio": "audio/prep-3/through.mp3"
+            },
+            {
+              "word": "throw",
+              "ipa": "/θroʊ/",
+              "graphemes": [
+                "th",
+                "r",
+                "ow"
+              ],
+              "phonemes": [
+                "/θ",
+                "r",
+                "oʊ/"
+              ],
+              "phonics": [
+                "/th",
+                "r",
+                "ō/"
+              ],
+              "tags": [
+                "cluster",
+                "digraph",
+                "vowel_team"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "丟(原形)",
+              "img": "",
+              "audio": "audio/ABC-ew/throw.mp3"
+            },
+            {
+              "word": "thrown",
+              "ipa": "/θroʊn/",
+              "graphemes": [
+                "th",
+                "r",
+                "ow",
+                "n"
+              ],
+              "phonemes": [
+                "/θ",
+                "r",
+                "oʊ",
+                "n/"
+              ],
+              "phonics": [
+                "/th",
+                "r",
+                "ō",
+                "n/"
+              ],
+              "tags": [
+                "cluster",
+                "digraph",
+                "vowel_team"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "丟(過去分詞)",
+              "img": "",
+              "audio": "audio/ABC-ew/thrown.mp3"
             },
             {
               "word": "traditional",
@@ -24576,48 +25330,12 @@
         },
         {
           "id": 15,
-          "name": "尾子音群 + Silent",
-          "pattern": "Final clusters & silent letters",
-          "explain": "字尾連著兩個子音（-nt、-nd、-nk、-mp），兩個音都要發，像 went、hand、pink。字尾的 ng 是一個音 /ŋ/，像 sing、long。有些字母不發音，像 know 的 k、write 的 w、lamb 的 b。",
-          "keys": [{ "g": "nt", "ipa": ["n","t"] }, { "g": "nd", "ipa": ["n","d"] }, { "g": "nk", "ipa": ["ŋ","k"] }, { "g": "mp", "ipa": ["m","p"] }, { "g": "ng", "ipa": "ŋ" }, { "g": "kn", "ipa": "n" }, { "g": "wr", "ipa": "r" }, { "g": "mb", "ipa": "m" }],
-          "spellingSet": "silent",
+          "name": "尾子音群",
+          "pattern": "Final clusters: -nt -nd -mp -st -sk -nk -ng",
+          "explain": "字尾連著兩個子音（-nt、-nd、-mp、-st、-sk、-nk），兩個音都要發，像 went、hand、fast、desk、pink。字尾的 ng 是一個音 /ŋ/，像 bring、strong。",
+          "keys": [{ "g": "nt", "ipa": ["n","t"] }, { "g": "nd", "ipa": ["n","d"] }, { "g": "mp", "ipa": ["m","p"] }, { "g": "st", "ipa": ["s","t"] }, { "g": "sk", "ipa": ["s","k"] }, { "g": "nk", "ipa": ["ŋ","k"] }, { "g": "ng", "ipa": "ŋ" }],
           "contrastSet": "final-clusters",
           "words": [
-            {
-              "word": "a.m.",
-              "ipa": "/ˌeɪˈɛm/",
-              "graphemes": [
-                "a",
-                ".",
-                "m",
-                "."
-              ],
-              "phonemes": [
-                "/'eɪ",
-                "-",
-                "'ɛm",
-                "-/"
-              ],
-              "phonics": [
-                "/'ā",
-                "-",
-                "'ĕm",
-                "-/"
-              ],
-              "tags": [
-                "irregular",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                1,
-                0,
-                1
-              ],
-              "zh": "上午",
-              "img": "⏰",
-              "audio": "audio/time-1/a.m..mp3"
-            },
             {
               "word": "absent",
               "ipa": "/ˈæbsənt/",
@@ -24779,6 +25497,92 @@
               "audio": "audio/nouns-1/advertisement.mp3"
             },
             {
+              "word": "against",
+              "ipa": "/əˈɡɛnst/",
+              "graphemes": [
+                "a",
+                "g",
+                "ai",
+                "n",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/ə",
+                "'ɡ",
+                "ɛ",
+                "n",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/ə",
+                "'ɡ",
+                "ĕ",
+                "n",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "irregular",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "zh": "反對；靠著",
+              "img": "",
+              "audio": "audio/prep-1/against.mp3"
+            },
+            {
+              "word": "almost",
+              "ipa": "/ˈɔlmoʊst/",
+              "graphemes": [
+                "a",
+                "l",
+                "m",
+                "o",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/'ɔ",
+                "l",
+                "m",
+                "oʊ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/'aw",
+                "l",
+                "m",
+                "ō",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "open",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "幾乎",
+              "img": "🤏",
+              "audio": "audio/adv-1/almost.mp3"
+            },
+            {
               "word": "ancient",
               "ipa": "/ˈeɪnʃənt/",
               "graphemes": [
@@ -24851,45 +25655,6 @@
               "zh": "和；及",
               "img": "",
               "audio": "audio/conj/and.mp3"
-            },
-            {
-              "word": "answer",
-              "ipa": "/ˈænsɚ/",
-              "graphemes": [
-                "a",
-                "n",
-                "s",
-                "w",
-                "er"
-              ],
-              "phonemes": [
-                "/'æ",
-                "n",
-                "s",
-                "-",
-                "ɚ/"
-              ],
-              "phonics": [
-                "/'ă",
-                "n",
-                "s",
-                "-",
-                "er/"
-              ],
-              "tags": [
-                "closed",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "🙋 回答",
-              "img": "💡",
-              "audio": "audio/school-4/answer.mp3"
             },
             {
               "word": "ant",
@@ -25014,6 +25779,76 @@
               "audio": "audio/be/aren't.mp3"
             },
             {
+              "word": "artist",
+              "ipa": "/ˈɑrtɪst/",
+              "graphemes": [
+                "ar",
+                "t",
+                "i",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/'ɑr",
+                "t",
+                "ɪ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/'ɑr",
+                "t",
+                "ĭ",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "rcontrolled",
+                "suffix",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "藝術家",
+              "img": "🎨",
+              "audio": "audio/occupations-1/artist.mp3"
+            },
+            {
+              "word": "ask",
+              "ipa": "/æsk/",
+              "graphemes": [
+                "a",
+                "s",
+                "k"
+              ],
+              "phonemes": [
+                "/æ",
+                "s",
+                "k/"
+              ],
+              "phonics": [
+                "/ă",
+                "s",
+                "k/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0
+              ],
+              "zh": "問",
+              "img": "❓",
+              "audio": "audio/1B-1/ask.mp3"
+            },
+            {
               "word": "assistant",
               "ipa": "/əˈsɪstənt/",
               "graphemes": [
@@ -25066,6 +25901,45 @@
               "audio": "audio/occupations-2/assistant.mp3"
             },
             {
+              "word": "August",
+              "ipa": "/ˈɔɡəst/",
+              "graphemes": [
+                "Au",
+                "g",
+                "u",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/'ɔ",
+                "ɡ",
+                "ə",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/'aw",
+                "ɡ",
+                "ə",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "vowel_team",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "八月",
+              "img": "8️⃣",
+              "audio": "audio/time-4/august.mp3"
+            },
+            {
               "word": "aunt",
               "ipa": "/ænt/",
               "graphemes": [
@@ -25095,45 +25969,6 @@
               "zh": "🏻阿姨；姑姑",
               "img": "👩",
               "audio": "audio/family-friends-2/aunt.mp3"
-            },
-            {
-              "word": "autumn",
-              "ipa": "/ˈɔtəm/",
-              "graphemes": [
-                "au",
-                "t",
-                "u",
-                "m",
-                "n"
-              ],
-              "phonemes": [
-                "/'ɔ",
-                "t",
-                "ə",
-                "m",
-                "-/"
-              ],
-              "phonics": [
-                "/'aw",
-                "t",
-                "ə",
-                "m",
-                "-/"
-              ],
-              "tags": [
-                "vowel_team",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                1
-              ],
-              "zh": "秋天",
-              "img": "🍁",
-              "audio": "audio/time-5/autumn.mp3"
             },
             {
               "word": "band",
@@ -25421,39 +26256,55 @@
               "audio": "audio/body-and-face-2/blond.mp3"
             },
             {
-              "word": "bomb",
-              "ipa": "/bɑm/",
+              "word": "breakfast",
+              "ipa": "/ˈbrɛkfəst/",
               "graphemes": [
                 "b",
-                "o",
-                "m",
-                "b"
+                "r",
+                "ea",
+                "k",
+                "f",
+                "a",
+                "s",
+                "t"
               ],
               "phonemes": [
-                "/b",
-                "ɑ",
-                "m",
-                "-/"
+                "/'b",
+                "r",
+                "ɛ",
+                "k",
+                "f",
+                "ə",
+                "s",
+                "t/"
               ],
               "phonics": [
-                "/b",
-                "ŏ",
-                "m",
-                "-/"
+                "/'b",
+                "r",
+                "ĕ",
+                "k",
+                "f",
+                "ə",
+                "s",
+                "t/"
               ],
               "tags": [
-                "cvc",
-                "silent_consonant"
+                "cluster",
+                "irregular"
               ],
               "hearts": [
                 0,
                 0,
+                1,
                 0,
-                1
+                0,
+                0,
+                0,
+                0
               ],
-              "zh": "炸彈",
-              "img": "💣",
-              "audio": "audio/nouns-5/bomb.mp3"
+              "zh": "早餐",
+              "img": "🍳",
+              "audio": "audio/food-4/breakfast.mp3"
             },
             {
               "word": "bring",
@@ -25492,6 +26343,56 @@
               "audio": "audio/ABB-1/bring.mp3"
             },
             {
+              "word": "broadcast",
+              "ipa": "/ˈbrɔdkæst/",
+              "graphemes": [
+                "b",
+                "r",
+                "oa",
+                "d",
+                "c",
+                "a",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/'b",
+                "r",
+                "ɔ",
+                "d",
+                "k",
+                "æ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/'b",
+                "r",
+                "aw",
+                "d",
+                "k",
+                "ă",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "cluster",
+                "irregular"
+              ],
+              "hearts": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "廣播",
+              "img": "📢",
+              "audio": "audio/1A-1/broadcast.mp3"
+            },
+            {
               "word": "burnt",
               "ipa": "/bɝnt/",
               "graphemes": [
@@ -25527,39 +26428,39 @@
               "audio": "audio/ABB-1/burnt.mp3"
             },
             {
-              "word": "calm",
-              "ipa": "/kɑm/",
+              "word": "burst",
+              "ipa": "/bɝst/",
               "graphemes": [
-                "c",
-                "a",
-                "l",
-                "m"
+                "b",
+                "ur",
+                "s",
+                "t"
               ],
               "phonemes": [
-                "/k",
-                "ɑ",
-                "-",
-                "m/"
+                "/b",
+                "ɝ",
+                "s",
+                "t/"
               ],
               "phonics": [
-                "/k",
-                "ŏ",
-                "-",
-                "m/"
+                "/b",
+                "er",
+                "s",
+                "t/"
               ],
               "tags": [
-                "silent_consonant",
+                "rcontrolled",
                 "cluster"
               ],
               "hearts": [
                 0,
                 0,
-                1,
+                0,
                 0
               ],
-              "zh": "使平靜",
-              "img": "😌",
-              "audio": "audio/1C-1/calm.mp3"
+              "zh": "爆裂(三態相同)",
+              "img": "",
+              "audio": "audio/AAA/burst.mp3"
             },
             {
               "word": "camp",
@@ -25669,164 +26570,6 @@
               "zh": "分(錢)",
               "img": "🪙",
               "audio": "audio/money/cent.mp3"
-            },
-            {
-              "word": "chalk",
-              "ipa": "/tʃɔk/",
-              "graphemes": [
-                "ch",
-                "a",
-                "l",
-                "k"
-              ],
-              "phonemes": [
-                "/tʃ",
-                "ɔ",
-                "-",
-                "k/"
-              ],
-              "phonics": [
-                "/ch",
-                "aw",
-                "-",
-                "k/"
-              ],
-              "tags": [
-                "digraph",
-                "silent_consonant",
-                "cluster"
-              ],
-              "hearts": [
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "粉筆",
-              "img": "🖍",
-              "audio": "audio/school-2/chalk.mp3"
-            },
-            {
-              "word": "Christmas",
-              "ipa": "/ˈkrɪsməs/",
-              "graphemes": [
-                "Ch",
-                "r",
-                "i",
-                "s",
-                "t",
-                "m",
-                "a",
-                "s"
-              ],
-              "phonemes": [
-                "/'k",
-                "r",
-                "ɪ",
-                "s",
-                "-",
-                "m",
-                "ə",
-                "s/"
-              ],
-              "phonics": [
-                "/'k",
-                "r",
-                "ĭ",
-                "s",
-                "-",
-                "m",
-                "ə",
-                "s/"
-              ],
-              "tags": [
-                "irregular",
-                "silent_consonant",
-                "digraph"
-              ],
-              "hearts": [
-                1,
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0
-              ],
-              "zh": "聖誕節",
-              "img": "🎄",
-              "audio": "audio/holidays/christmas.mp3"
-            },
-            {
-              "word": "climb",
-              "ipa": "/klaɪm/",
-              "graphemes": [
-                "c",
-                "l",
-                "i",
-                "m",
-                "b"
-              ],
-              "phonemes": [
-                "/k",
-                "l",
-                "aɪ",
-                "m",
-                "-/"
-              ],
-              "phonics": [
-                "/k",
-                "l",
-                "ī",
-                "m",
-                "-/"
-              ],
-              "tags": [
-                "cluster",
-                "open",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                1
-              ],
-              "zh": "爬",
-              "img": "🧗",
-              "audio": "audio/1C-1/climb.mp3"
-            },
-            {
-              "word": "comb",
-              "ipa": "/koʊm/",
-              "graphemes": [
-                "c",
-                "o",
-                "mb"
-              ],
-              "phonemes": [
-                "/k",
-                "oʊ",
-                "m/"
-              ],
-              "phonics": [
-                "/k",
-                "ō",
-                "m/"
-              ],
-              "tags": [
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                1
-              ],
-              "zh": "‍♂️ 梳子",
-              "img": "💇",
-              "audio": "audio/clothes-3/comb.mp3"
             },
             {
               "word": "command",
@@ -26085,40 +26828,39 @@
               "audio": "audio/adjs-6/convenient.mp3"
             },
             {
-              "word": "could",
-              "ipa": "/kʊd/",
+              "word": "cost",
+              "ipa": "/kɔst/",
               "graphemes": [
                 "c",
-                "ou",
-                "l",
-                "d"
+                "o",
+                "s",
+                "t"
               ],
               "phonemes": [
                 "/k",
-                "ʊ",
-                "-",
-                "d/"
+                "ɔ",
+                "s",
+                "t/"
               ],
               "phonics": [
                 "/k",
-                "oo",
-                "-",
-                "d/"
+                "aw",
+                "s",
+                "t/"
               ],
               "tags": [
-                "irregular",
-                "cluster",
-                "silent_consonant"
+                "cvc",
+                "cluster"
               ],
               "hearts": [
                 0,
                 1,
-                1,
+                0,
                 0
               ],
-              "zh": "可以；能（過去式）",
+              "zh": "花費(三態相同)",
               "img": "",
-              "audio": "audio/auxi/could.mp3"
+              "audio": "audio/AAA/cost.mp3"
             },
             {
               "word": "couldn't",
@@ -26208,6 +26950,53 @@
               "audio": "audio/time-5/current.mp3"
             },
             {
+              "word": "dentist",
+              "ipa": "/ˈdɛntɪst/",
+              "graphemes": [
+                "d",
+                "e",
+                "n",
+                "t",
+                "i",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/'d",
+                "ɛ",
+                "n",
+                "t",
+                "ɪ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/'d",
+                "ĕ",
+                "n",
+                "t",
+                "ĭ",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "closed",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "牙醫",
+              "img": "🦷",
+              "audio": "audio/health-1/dentist.mp3"
+            },
+            {
               "word": "depend",
               "ipa": "/dɪˈpɛnd/",
               "graphemes": [
@@ -26251,93 +27040,39 @@
               "audio": "audio/1C-2/depend.mp3"
             },
             {
-              "word": "design",
-              "ipa": "/dɪˈzaɪn/",
+              "word": "desk",
+              "ipa": "/dɛsk/",
               "graphemes": [
                 "d",
                 "e",
                 "s",
-                "i",
-                "g",
-                "n"
+                "k"
               ],
               "phonemes": [
                 "/d",
-                "ɪ",
-                "'z",
-                "aɪ",
-                "-",
-                "n/"
-              ],
-              "phonics": [
-                "/d",
-                "ĭ",
-                "'z",
-                "ī",
-                "-",
-                "n/"
-              ],
-              "tags": [
-                "irregular",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                1,
-                0,
-                1
-              ],
-              "zh": "設計",
-              "img": "📐",
-              "audio": "audio/house-3/design.mp3"
-            },
-            {
-              "word": "designer",
-              "ipa": "/dɪˈzaɪnɚ/",
-              "graphemes": [
-                "d",
-                "e",
+                "ɛ",
                 "s",
-                "i",
-                "g",
-                "n",
-                "er"
-              ],
-              "phonemes": [
-                "/d",
-                "ɪ",
-                "'z",
-                "aɪ",
-                "-",
-                "n",
-                "ɚ/"
+                "k/"
               ],
               "phonics": [
                 "/d",
-                "ĭ",
-                "'z",
-                "ī",
-                "-",
-                "n",
-                "er/"
+                "ĕ",
+                "s",
+                "k/"
               ],
               "tags": [
-                "silent_consonant",
-                "open"
+                "cvc",
+                "cluster"
               ],
               "hearts": [
                 0,
                 0,
-                0,
-                0,
-                1,
                 0,
                 0
               ],
-              "zh": "設計師",
-              "img": "🧵",
-              "audio": "audio/occupations-1/designer.mp3"
+              "zh": "書桌",
+              "img": "✍",
+              "audio": "audio/house-2/desk.mp3"
             },
             {
               "word": "diamond",
@@ -26836,41 +27571,6 @@
               "audio": "audio/ABC-iau/drunk.mp3"
             },
             {
-              "word": "dumb",
-              "ipa": "/dʌm/",
-              "graphemes": [
-                "d",
-                "u",
-                "m",
-                "b"
-              ],
-              "phonemes": [
-                "/d",
-                "ʌ",
-                "m",
-                "-/"
-              ],
-              "phonics": [
-                "/d",
-                "ŭ",
-                "m",
-                "-/"
-              ],
-              "tags": [
-                "cvc",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1
-              ],
-              "zh": "啞的/笨的",
-              "img": "😶",
-              "audio": "audio/people-5/dumb.mp3"
-            },
-            {
               "word": "elephant",
               "ipa": "/ˈɛləfənt/",
               "graphemes": [
@@ -27040,6 +27740,80 @@
               "audio": "audio/adjs-3/excellent.mp3"
             },
             {
+              "word": "exist",
+              "ipa": "/ɪɡˈzɪst/",
+              "graphemes": [
+                "e",
+                "x",
+                "i",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "ɪ",
+                "ɡ'z",
+                "ɪ",
+                "s",
+                "t"
+              ],
+              "phonics": [
+                "ĭ",
+                "ɡ'z",
+                "ĭ",
+                "s",
+                "t"
+              ],
+              "tags": [
+                "closed",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "zh": "存在",
+              "img": "🌍",
+              "audio": "audio/1A-1/exist.mp3"
+            },
+            {
+              "word": "fast",
+              "ipa": "/fæst/",
+              "graphemes": [
+                "f",
+                "a",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/f",
+                "æ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/f",
+                "ă",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "快速的",
+              "img": "⚡",
+              "audio": "audio/transportation-1/fast.mp3"
+            },
+            {
               "word": "fast food restaurant",
               "ipa": "/fæst fud ˈrɛstərənt/",
               "graphemes": [
@@ -27165,43 +27939,39 @@
               "audio": "audio/ABB-1/find.mp3"
             },
             {
-              "word": "foreign",
-              "ipa": "/ˈfɔrən/",
+              "word": "first",
+              "ipa": "/fɝst/",
               "graphemes": [
                 "f",
-                "or",
-                "ei",
-                "g",
-                "n"
+                "ir",
+                "s",
+                "t"
               ],
               "phonemes": [
-                "/'f",
-                "ɔr",
-                "ə",
-                "-",
-                "n/"
+                "/f",
+                "ɝ",
+                "s",
+                "t/"
               ],
               "phonics": [
-                "/'f",
-                "or",
-                "ə",
-                "-",
-                "n/"
+                "/f",
+                "er",
+                "s",
+                "t/"
               ],
               "tags": [
-                "irregular",
-                "silent_consonant"
+                "rcontrolled",
+                "cluster"
               ],
               "hearts": [
                 0,
                 0,
-                1,
-                1,
+                0,
                 0
               ],
-              "zh": "外國的",
-              "img": "🌐",
-              "audio": "audio/adjs-6/foreign.mp3"
+              "zh": "st 第一",
+              "img": "1",
+              "audio": "audio/numbers-5/first.mp3"
             },
             {
               "word": "frank",
@@ -27360,53 +28130,6 @@
               "audio": "audio/people-1/giant.mp3"
             },
             {
-              "word": "good-bye",
-              "ipa": "/ɡʊdˈbaɪ/",
-              "graphemes": [
-                "g",
-                "oo",
-                "d",
-                "-",
-                "b",
-                "y",
-                "e"
-              ],
-              "phonemes": [
-                "/ɡ",
-                "ʊ",
-                "d",
-                "-",
-                "'b",
-                "aɪ",
-                "-/"
-              ],
-              "phonics": [
-                "/ɡ",
-                "oo",
-                "d",
-                "-",
-                "'b",
-                "ī",
-                "-/"
-              ],
-              "tags": [
-                "irregular",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                1
-              ],
-              "zh": "再見",
-              "img": "",
-              "audio": "audio/interj/good-bye.mp3"
-            },
-            {
               "word": "government",
               "ipa": "/ˈgʌvɚnmənt/",
               "graphemes": [
@@ -27460,272 +28183,6 @@
               "zh": "政府",
               "img": "🏛️",
               "audio": "audio/nouns-4/government.mp3"
-            },
-            {
-              "word": "granddaughter",
-              "ipa": "/ˈɡrændɔtər/",
-              "graphemes": [
-                "g",
-                "r",
-                "a",
-                "n",
-                "d",
-                "d",
-                "augh",
-                "t",
-                "er"
-              ],
-              "phonemes": [
-                "/'ɡ",
-                "r",
-                "æ",
-                "n",
-                "-",
-                "d",
-                "ɔ",
-                "t",
-                "ɚ/"
-              ],
-              "phonics": [
-                "/'ɡ",
-                "r",
-                "ă",
-                "n",
-                "-",
-                "d",
-                "aw",
-                "t",
-                "er/"
-              ],
-              "tags": [
-                "cluster",
-                "closed",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                1,
-                0,
-                1,
-                0,
-                0
-              ],
-              "zh": "🏻孫女",
-              "img": "👧",
-              "audio": "audio/family-friends-2/granddaughter.mp3"
-            },
-            {
-              "word": "grandfather",
-              "ipa": "/ˈɡrændˌfɑ.ðər/",
-              "graphemes": [
-                "g",
-                "r",
-                "a",
-                "n",
-                "d",
-                "f",
-                "a",
-                "th",
-                "er"
-              ],
-              "phonemes": [
-                "/'ɡ",
-                "r",
-                "æ",
-                "n",
-                "-",
-                "f",
-                "ɑ",
-                "ð",
-                "ɚ/"
-              ],
-              "phonics": [
-                "/'ɡ",
-                "r",
-                "ă",
-                "n",
-                "-",
-                "f",
-                "ŏ",
-                "<u>th</u>",
-                "er/"
-              ],
-              "tags": [
-                "cluster",
-                "closed",
-                "digraph",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                1,
-                0,
-                1,
-                0,
-                0
-              ],
-              "zh": "🏻祖父",
-              "img": "👴",
-              "audio": "audio/family-friends-1/grandfather.mp3"
-            },
-            {
-              "word": "grandma",
-              "ipa": "/ˈɡræn.mɑ/",
-              "graphemes": [
-                "g",
-                "r",
-                "a",
-                "n",
-                "d",
-                "m",
-                "a"
-              ],
-              "phonemes": [
-                "/'ɡ",
-                "r",
-                "æ",
-                "n",
-                "-",
-                "m",
-                "ɑ/"
-              ],
-              "phonics": [
-                "/'ɡ",
-                "r",
-                "ă",
-                "n",
-                "-",
-                "m",
-                "ŏ/"
-              ],
-              "tags": [
-                "closed",
-                "cluster",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "zh": "🏻祖母",
-              "img": "👵",
-              "audio": "audio/family-friends-1/grandma.mp3"
-            },
-            {
-              "word": "grandmother",
-              "ipa": "/ˈɡrændˌmʌð.ər/",
-              "graphemes": [
-                "g",
-                "r",
-                "a",
-                "n",
-                "d",
-                "m",
-                "o",
-                "th",
-                "er"
-              ],
-              "phonemes": [
-                "/'ɡ",
-                "r",
-                "æ",
-                "n",
-                "-",
-                "m",
-                "ʌ",
-                "ð",
-                "ɚ/"
-              ],
-              "phonics": [
-                "/'ɡ",
-                "r",
-                "ă",
-                "n",
-                "-",
-                "m",
-                "ŭ",
-                "<u>th</u>",
-                "er/"
-              ],
-              "tags": [
-                "cluster",
-                "closed",
-                "digraph",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                1,
-                0,
-                1,
-                0,
-                0
-              ],
-              "zh": "🏻祖母",
-              "img": "👵",
-              "audio": "audio/family-friends-1/grandmother.mp3"
-            },
-            {
-              "word": "grandpa",
-              "ipa": "/ˈɡræn.pɑ/",
-              "graphemes": [
-                "g",
-                "r",
-                "a",
-                "n",
-                "d",
-                "p",
-                "a"
-              ],
-              "phonemes": [
-                "/'ɡ",
-                "r",
-                "æ",
-                "n",
-                "-",
-                "p",
-                "ɑ/"
-              ],
-              "phonics": [
-                "/'ɡ",
-                "r",
-                "ă",
-                "n",
-                "-",
-                "p",
-                "ŏ/"
-              ],
-              "tags": [
-                "closed",
-                "cluster",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                1,
-                0,
-                0
-              ],
-              "zh": "🏻祖父",
-              "img": "👴",
-              "audio": "audio/family-friends-1/grandpa.mp3"
             },
             {
               "word": "grandparent",
@@ -27792,56 +28249,39 @@
               "audio": "audio/family-friends-2/grandparent.mp3"
             },
             {
-              "word": "grandson",
-              "ipa": "/ˈɡrændsʌn/",
+              "word": "guest",
+              "ipa": "/ɡɛst/",
               "graphemes": [
-                "g",
-                "r",
-                "a",
-                "n",
-                "d",
+                "gu",
+                "e",
                 "s",
-                "o",
-                "n"
+                "t"
               ],
               "phonemes": [
-                "/'ɡ",
-                "r",
-                "æ",
-                "n",
-                "-",
+                "/ɡ",
+                "ɛ",
                 "s",
-                "ʌ",
-                "n/"
+                "t/"
               ],
               "phonics": [
-                "/'ɡ",
-                "r",
-                "ă",
-                "n",
-                "-",
+                "/ɡ",
+                "ĕ",
                 "s",
-                "ŭ",
-                "n/"
+                "t/"
               ],
               "tags": [
-                "cluster",
-                "closed",
-                "silent_consonant"
+                "irregular",
+                "cluster"
               ],
               "hearts": [
-                0,
-                0,
-                0,
-                0,
                 1,
                 0,
-                1,
+                0,
                 0
               ],
-              "zh": "🏻孫子",
-              "img": "👦",
-              "audio": "audio/family-friends-2/grandson.mp3"
+              "zh": "客人",
+              "img": "🏠",
+              "audio": "audio/people-1/guest.mp3"
             },
             {
               "word": "hadn't",
@@ -27888,42 +28328,6 @@
               "audio": "audio/auxi/hadn't.mp3"
             },
             {
-              "word": "half",
-              "ipa": "/hæf/",
-              "graphemes": [
-                "h",
-                "a",
-                "l",
-                "f"
-              ],
-              "phonemes": [
-                "/h",
-                "æ",
-                "-",
-                "f/"
-              ],
-              "phonics": [
-                "/h",
-                "ă",
-                "-",
-                "f/"
-              ],
-              "tags": [
-                "cvc",
-                "silent_consonant",
-                "cluster"
-              ],
-              "hearts": [
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "一半",
-              "img": "🌗",
-              "audio": "audio/time-1/half.mp3"
-            },
-            {
               "word": "hand",
               "ipa": "/hænd/",
               "graphemes": [
@@ -27957,114 +28361,6 @@
               "zh": "遞交",
               "img": "🤝",
               "audio": "audio/1A-1/hand.mp3"
-            },
-            {
-              "word": "handkerchief",
-              "ipa": "/ˈhæŋkɚtʃɪf/",
-              "graphemes": [
-                "h",
-                "a",
-                "n",
-                "d",
-                "k",
-                "er",
-                "ch",
-                "ie",
-                "f"
-              ],
-              "phonemes": [
-                "/'h",
-                "æ",
-                "ŋ",
-                "-",
-                "k",
-                "ɚ",
-                "tʃ",
-                "ɪ",
-                "f/"
-              ],
-              "phonics": [
-                "/'h",
-                "ă",
-                "ŋ",
-                "-",
-                "k",
-                "er",
-                "ch",
-                "ĭ",
-                "f/"
-              ],
-              "tags": [
-                "closed",
-                "digraph",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "手帕",
-              "img": "",
-              "audio": "audio/clothes-3/handkerchief.mp3"
-            },
-            {
-              "word": "handsome",
-              "ipa": "/ˈhænsəm/",
-              "graphemes": [
-                "h",
-                "a",
-                "n",
-                "d",
-                "s",
-                "o",
-                "m",
-                "e"
-              ],
-              "phonemes": [
-                "/'h",
-                "æ",
-                "n",
-                "-",
-                "s",
-                "ə",
-                "m",
-                "-/"
-              ],
-              "phonics": [
-                "/'h",
-                "ă",
-                "n",
-                "-",
-                "s",
-                "ə",
-                "m",
-                "-/"
-              ],
-              "tags": [
-                "closed",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                1,
-                0,
-                0
-              ],
-              "zh": "英俊的",
-              "img": "🤵",
-              "audio": "audio/people-2/handsome.mp3"
             },
             {
               "word": "hasn't",
@@ -28201,6 +28497,41 @@
               "zh": "誠實的",
               "img": "",
               "audio": "audio/people-4/honest.mp3"
+            },
+            {
+              "word": "host",
+              "ipa": "/hoʊst/",
+              "graphemes": [
+                "h",
+                "o",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/h",
+                "oʊ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/h",
+                "ō",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "irregular",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "zh": "主持人",
+              "img": "🎤",
+              "audio": "audio/people-1/host.mp3"
             },
             {
               "word": "hunt",
@@ -28428,6 +28759,49 @@
               "zh": "墨水",
               "img": "✒️",
               "audio": "audio/school-2/ink.mp3"
+            },
+            {
+              "word": "insist",
+              "ipa": "/ɪnˈsɪst/",
+              "graphemes": [
+                "i",
+                "n",
+                "s",
+                "i",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/ɪ",
+                "n",
+                "'s",
+                "ɪ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/ĭ",
+                "n",
+                "'s",
+                "ĭ",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "closed",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "堅持",
+              "img": "💪",
+              "audio": "audio/1A-1/insist.mp3"
             },
             {
               "word": "instant",
@@ -28679,6 +29053,57 @@
               "audio": "audio/be/isn't.mp3"
             },
             {
+              "word": "journalist",
+              "ipa": "/ˈdʒɝnəlɪst/",
+              "graphemes": [
+                "j",
+                "our",
+                "n",
+                "a",
+                "l",
+                "i",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/'dʒ",
+                "ɝ",
+                "n",
+                "ə",
+                "l",
+                "ɪ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/'-j",
+                "er",
+                "n",
+                "ə",
+                "l",
+                "ĭ",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "irregular",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "記者",
+              "img": "📰",
+              "audio": "audio/occupations-1/journalist.mp3"
+            },
+            {
               "word": "jump",
               "ipa": "/dʒʌmp/",
               "graphemes": [
@@ -28712,6 +29137,41 @@
               "zh": "跳",
               "img": "🤸",
               "audio": "audio/1B-1/jump.mp3"
+            },
+            {
+              "word": "just",
+              "ipa": "/dʒʌst/",
+              "graphemes": [
+                "j",
+                "u",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/dʒ",
+                "ʌ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/-j",
+                "ŭ",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "剛好",
+              "img": "👌",
+              "audio": "audio/adv-1/just.mp3"
             },
             {
               "word": "kind",
@@ -28749,152 +29209,6 @@
               "audio": "audio/nouns-3/kind.mp3"
             },
             {
-              "word": "knee",
-              "ipa": "/ni/",
-              "graphemes": [
-                "k",
-                "n",
-                "ee"
-              ],
-              "phonemes": [
-                "/-",
-                "n",
-                "i/"
-              ],
-              "phonics": [
-                "/-",
-                "n",
-                "ē/"
-              ],
-              "tags": [
-                "silent_consonant",
-                "open"
-              ],
-              "hearts": [
-                1,
-                0,
-                0
-              ],
-              "zh": "膝蓋",
-              "img": "🦵",
-              "audio": "audio/body-and-face-2/knee.mp3"
-            },
-            {
-              "word": "knock",
-              "ipa": "/nɑk/",
-              "graphemes": [
-                "k",
-                "n",
-                "o",
-                "ck"
-              ],
-              "phonemes": [
-                "-",
-                "n",
-                "ɑ",
-                "k/"
-              ],
-              "phonics": [
-                "-",
-                "n",
-                "ŏ",
-                "k/"
-              ],
-              "tags": [
-                "silent_consonant",
-                "cvc",
-                "digraph"
-              ],
-              "hearts": [
-                1,
-                0,
-                0,
-                0
-              ],
-              "zh": "敲",
-              "img": "🚪",
-              "audio": "audio/1B-1/knock.mp3"
-            },
-            {
-              "word": "knowledge",
-              "ipa": "/ˈnɑlɪdʒ/",
-              "graphemes": [
-                "k",
-                "n",
-                "ow",
-                "l",
-                "e",
-                "dge"
-              ],
-              "phonemes": [
-                "/-",
-                "'n",
-                "ɑ",
-                "l",
-                "ɪ",
-                "dʒ/"
-              ],
-              "phonics": [
-                "/-",
-                "'n",
-                "ŏ",
-                "l",
-                "ĭ",
-                "-j/"
-              ],
-              "tags": [
-                "silent_consonant",
-                "closed",
-                "digraph"
-              ],
-              "hearts": [
-                1,
-                0,
-                1,
-                0,
-                0,
-                0
-              ],
-              "zh": "知識",
-              "img": "🧠",
-              "audio": "audio/school-4/knowledge.mp3"
-            },
-            {
-              "word": "lamb",
-              "ipa": "/læm/",
-              "graphemes": [
-                "l",
-                "a",
-                "m",
-                "b"
-              ],
-              "phonemes": [
-                "/l",
-                "æ",
-                "m",
-                "-/"
-              ],
-              "phonics": [
-                "/l",
-                "ă",
-                "m",
-                "-/"
-              ],
-              "tags": [
-                "cvc",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1
-              ],
-              "zh": "小綿羊",
-              "img": "🐑",
-              "audio": "audio/animals-3/lamb.mp3"
-            },
-            {
               "word": "lamp",
               "ipa": "/læmp/",
               "graphemes": [
@@ -28930,35 +29244,83 @@
               "audio": "audio/house-2/lamp.mp3"
             },
             {
-              "word": "laugh",
-              "ipa": "/læf/",
+              "word": "last",
+              "ipa": "/læst/",
               "graphemes": [
                 "l",
-                "au",
-                "gh"
+                "a",
+                "s",
+                "t"
               ],
               "phonemes": [
                 "/l",
                 "æ",
-                "-/"
+                "s",
+                "t/"
               ],
               "phonics": [
                 "/l",
                 "ă",
-                "-/"
+                "s",
+                "t/"
               ],
               "tags": [
-                "irregular",
-                "silent_consonant"
+                "cvc",
+                "cluster"
               ],
               "hearts": [
                 0,
-                1,
-                1
+                0,
+                0,
+                0
               ],
-              "zh": "笑",
-              "img": "😂",
-              "audio": "audio/1B-1/laugh.mp3"
+              "zh": "最後",
+              "img": "",
+              "audio": "audio/numbers-4/last.mp3"
+            },
+            {
+              "word": "latest",
+              "ipa": "/ˈleɪtəst/",
+              "graphemes": [
+                "l",
+                "a",
+                "t",
+                "e",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/'l",
+                "eɪ",
+                "t",
+                "ə",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/'l",
+                "ā",
+                "t",
+                "ə",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "open",
+                "suffix",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "最新的",
+              "img": "🆕",
+              "audio": "audio/adjs-5/latest.mp3"
             },
             {
               "word": "lend",
@@ -29031,47 +29393,109 @@
               "audio": "audio/ABB-2/lent.mp3"
             },
             {
-              "word": "listen",
-              "ipa": "/ˈlɪsən/",
+              "word": "list",
+              "ipa": "/lɪst/",
               "graphemes": [
                 "l",
                 "i",
                 "s",
-                "t",
-                "e",
-                "n"
+                "t"
               ],
               "phonemes": [
-                "/'l",
+                "/l",
                 "ɪ",
                 "s",
-                "-",
-                "ə",
-                "n/"
+                "t/"
               ],
               "phonics": [
-                "/'l",
+                "/l",
                 "ĭ",
                 "s",
-                "-",
-                "ə",
-                "n/"
+                "t/"
               ],
               "tags": [
-                "closed",
-                "silent_consonant"
+                "cvc",
+                "cluster"
               ],
               "hearts": [
                 0,
                 0,
                 0,
-                1,
+                0
+              ],
+              "zh": "列出",
+              "img": "📋",
+              "audio": "audio/1A-2/list.mp3"
+            },
+            {
+              "word": "lost",
+              "ipa": "/lɔst/",
+              "graphemes": [
+                "l",
+                "o",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/l",
+                "ɔ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/l",
+                "aw",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
                 0,
                 0
               ],
-              "zh": "聽",
-              "img": "👂",
-              "audio": "audio/1C-3/listen.mp3"
+              "zh": "失去（過去式/過去分詞）",
+              "img": "",
+              "audio": "audio/ABB-2/lost.mp3"
+            },
+            {
+              "word": "mask",
+              "ipa": "/mæsk/",
+              "graphemes": [
+                "m",
+                "a",
+                "s",
+                "k"
+              ],
+              "phonemes": [
+                "/m",
+                "æ",
+                "s",
+                "k/"
+              ],
+              "phonics": [
+                "/m",
+                "ă",
+                "s",
+                "k/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "口罩；面罩",
+              "img": "😷",
+              "audio": "audio/clothes-3/mask.mp3"
             },
             {
               "word": "meant",
@@ -29187,6 +29611,76 @@
               "audio": "audio/time-1/moment.mp3"
             },
             {
+              "word": "most",
+              "ipa": "/moʊst/",
+              "graphemes": [
+                "m",
+                "o",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/m",
+                "oʊ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/m",
+                "ō",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "irregular",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "zh": "大多數；多半",
+              "img": "",
+              "audio": "audio/indef-pron/most.mp3"
+            },
+            {
+              "word": "must",
+              "ipa": "/mʌst/",
+              "graphemes": [
+                "m",
+                "u",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/m",
+                "ʌ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/m",
+                "ŭ",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "必須；一定",
+              "img": "",
+              "audio": "audio/auxi/must.mp3"
+            },
+            {
               "word": "mustn't",
               "ipa": "/mʌsənt/",
               "graphemes": [
@@ -29235,148 +29729,74 @@
               "audio": "audio/auxi/mustn't.mp3"
             },
             {
-              "word": "o'clock",
-              "ipa": "/əˈklɑk/",
+              "word": "nest",
+              "ipa": "/nɛst/",
               "graphemes": [
-                "o",
-                "'",
-                "c",
-                "l",
-                "o",
-                "ck"
-              ],
-              "phonemes": [
-                "/ə",
-                "-",
-                "k",
-                "l",
-                "ɑ",
-                "k/"
-              ],
-              "phonics": [
-                "/ə",
-                "-",
-                "k",
-                "l",
-                "ŏ",
-                "k/"
-              ],
-              "tags": [
-                "closed",
-                "digraph",
-                "silent_consonant"
-              ],
-              "hearts": [
-                1,
-                1,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "點鐘",
-              "img": "🕛",
-              "audio": "audio/time-1/o'clock.mp3"
-            },
-            {
-              "word": "often",
-              "ipa": "/ˈɔfən/",
-              "graphemes": [
-                "o",
-                "f",
-                "t",
+                "n",
                 "e",
-                "n"
+                "s",
+                "t"
               ],
               "phonemes": [
-                "/'ɔ",
-                "f",
-                "-",
-                "ə",
-                "n/"
+                "/n",
+                "ɛ",
+                "s",
+                "t/"
               ],
               "phonics": [
-                "/'aw",
-                "f",
-                "-",
-                "ə",
-                "n/"
+                "/n",
+                "ĕ",
+                "s",
+                "t/"
               ],
               "tags": [
-                "silent_consonant"
+                "cvc",
+                "cluster"
               ],
               "hearts": [
                 0,
                 0,
-                1,
                 0,
                 0
               ],
-              "zh": "經常",
-              "img": "",
-              "audio": "audio/adv-1/often.mp3"
+              "zh": "巢",
+              "img": "🪺",
+              "audio": "audio/animals-2/nest.mp3"
             },
             {
-              "word": "oh",
-              "ipa": "/oʊ/",
-              "graphemes": [
-                "o",
-                "h"
-              ],
-              "phonemes": [
-                "/oʊ",
-                "-/"
-              ],
-              "phonics": [
-                "/ō",
-                "-/"
-              ],
-              "tags": [
-                "irregular",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                1
-              ],
-              "zh": "噢；哦（表示驚訝／理解）",
-              "img": "",
-              "audio": "audio/interj/oh.mp3"
-            },
-            {
-              "word": "p.m.",
-              "ipa": "/ˌpiˈɛm/",
+              "word": "past",
+              "ipa": "/pæst/",
               "graphemes": [
                 "p",
-                ".",
-                "m",
-                "."
+                "a",
+                "s",
+                "t"
               ],
               "phonemes": [
-                "/'pi",
-                "-",
-                "'ɛm",
-                "-/"
+                "/p",
+                "æ",
+                "s",
+                "t/"
               ],
               "phonics": [
-                "/'pē",
-                "-",
-                "'ĕm",
-                "-/"
+                "/p",
+                "ă",
+                "s",
+                "t/"
               ],
               "tags": [
-                "irregular",
-                "silent_consonant"
+                "cvc",
+                "cluster"
               ],
               "hearts": [
                 0,
-                1,
                 0,
-                1
+                0,
+                0
               ],
-              "zh": "下午",
-              "img": "⏰",
-              "audio": "audio/time-1/p.m..mp3"
+              "zh": "經過/過去",
+              "img": "⏮",
+              "audio": "audio/time-1/past.mp3"
             },
             {
               "word": "patient",
@@ -29796,6 +30216,41 @@
               "audio": "audio/1A-2/rent.mp3"
             },
             {
+              "word": "rest",
+              "ipa": "/rɛst/",
+              "graphemes": [
+                "r",
+                "e",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/r",
+                "ɛ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/r",
+                "ĕ",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "休息",
+              "img": "😴",
+              "audio": "audio/1A-2/rest.mp3"
+            },
+            {
               "word": "restaurant",
               "ipa": "/ˈrɛstərənt/",
               "graphemes": [
@@ -29851,54 +30306,6 @@
               "audio": "audio/places-3/restaurant.mp3"
             },
             {
-              "word": "sandwich",
-              "ipa": "/ˈsænwɪtʃ/",
-              "graphemes": [
-                "s",
-                "a",
-                "n",
-                "d",
-                "w",
-                "i",
-                "ch"
-              ],
-              "phonemes": [
-                "/'s",
-                "æ",
-                "n",
-                "-",
-                "w",
-                "ɪ",
-                "tʃ/"
-              ],
-              "phonics": [
-                "/'s",
-                "ă",
-                "n",
-                "-",
-                "w",
-                "ĭ",
-                "ch/"
-              ],
-              "tags": [
-                "closed",
-                "silent_consonant",
-                "digraph"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
-                0
-              ],
-              "zh": "三明治",
-              "img": "🥪",
-              "audio": "audio/food-2/sandwich.mp3"
-            },
-            {
               "word": "sank",
               "ipa": "/sæŋk/",
               "graphemes": [
@@ -29932,6 +30339,59 @@
               "zh": "下沉(過去式)",
               "img": "",
               "audio": "audio/ABC-iau/sank.mp3"
+            },
+            {
+              "word": "scientist",
+              "ipa": "/ˈsaɪəntɪst/",
+              "graphemes": [
+                "sc",
+                "i",
+                "e",
+                "n",
+                "t",
+                "i",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/'s",
+                "aɪ",
+                "ə",
+                "n",
+                "t",
+                "ɪ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/'s",
+                "ī",
+                "ə",
+                "n",
+                "t",
+                "ĭ",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "irregular",
+                "suffix",
+                "cluster"
+              ],
+              "hearts": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "科學家",
+              "img": "🔬",
+              "audio": "audio/occupations-4/scientist.mp3"
             },
             {
               "word": "second",
@@ -30132,43 +30592,6 @@
               "audio": "audio/auxi/shan't.mp3"
             },
             {
-              "word": "should",
-              "ipa": "/ʃʊd/",
-              "graphemes": [
-                "sh",
-                "ou",
-                "l",
-                "d"
-              ],
-              "phonemes": [
-                "/ʃ",
-                "ʊ",
-                "-",
-                "d/"
-              ],
-              "phonics": [
-                "/sh",
-                "oo",
-                "-",
-                "d/"
-              ],
-              "tags": [
-                "digraph",
-                "irregular",
-                "cluster",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                1,
-                1,
-                0
-              ],
-              "zh": "應該",
-              "img": "",
-              "audio": "audio/auxi/should.mp3"
-            },
-            {
               "word": "shouldn't",
               "ipa": "/ʃʊdnt/",
               "graphemes": [
@@ -30256,93 +30679,6 @@
               "zh": "蝦",
               "img": "🦐",
               "audio": "audio/animals-3/shrimp.mp3"
-            },
-            {
-              "word": "sidewalk",
-              "ipa": "/ˈsaɪdˌwɔk/",
-              "graphemes": [
-                "s",
-                "i",
-                "d",
-                "e",
-                "w",
-                "a",
-                "l",
-                "k"
-              ],
-              "phonemes": [
-                "/'s",
-                "aɪ",
-                "d",
-                "-",
-                "w",
-                "ɔ",
-                "-",
-                "k/"
-              ],
-              "phonics": [
-                "/'s",
-                "ī",
-                "d",
-                "-",
-                "w",
-                "aw",
-                "-",
-                "k/"
-              ],
-              "tags": [
-                "magic_e",
-                "cluster",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                1,
-                1,
-                0
-              ],
-              "zh": "人行道",
-              "img": "🚶",
-              "audio": "audio/transportation-1/sidewalk.mp3"
-            },
-            {
-              "word": "sign",
-              "ipa": "/saɪn/",
-              "graphemes": [
-                "s",
-                "i",
-                "g",
-                "n"
-              ],
-              "phonemes": [
-                "/s",
-                "aɪ",
-                "-",
-                "n/"
-              ],
-              "phonics": [
-                "/s",
-                "ī",
-                "-",
-                "n/"
-              ],
-              "tags": [
-                "open",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "簽名",
-              "img": "✍️",
-              "audio": "audio/1C-5/sign.mp3"
             },
             {
               "word": "silent",
@@ -30920,6 +31256,53 @@
               "audio": "audio/ABC-iau/stunk.mp3"
             },
             {
+              "word": "suggest",
+              "ipa": "/səɡˈdʒɛst/",
+              "graphemes": [
+                "s",
+                "u",
+                "g",
+                "g",
+                "e",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/s",
+                "ə",
+                "'ɡ",
+                "dʒ",
+                "ɛ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/s",
+                "ə",
+                "'ɡ",
+                "j",
+                "ĕ",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "closed",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "建議",
+              "img": "💡",
+              "audio": "audio/1A-2/suggest.mp3"
+            },
+            {
               "word": "sunk",
               "ipa": "/sʌŋk/",
               "graphemes": [
@@ -30996,61 +31379,6 @@
               "zh": "才能",
               "img": "🌟",
               "audio": "audio/nouns-2/talent.mp3"
-            },
-            {
-              "word": "talkative",
-              "ipa": "/ˈtɔkətɪv/",
-              "graphemes": [
-                "t",
-                "a",
-                "l",
-                "k",
-                "a",
-                "t",
-                "i",
-                "v",
-                "e"
-              ],
-              "phonemes": [
-                "/'t",
-                "ɔ",
-                "-",
-                "k",
-                "ə",
-                "t",
-                "ɪ",
-                "v",
-                "-/"
-              ],
-              "phonics": [
-                "/'t",
-                "aw",
-                "-",
-                "k",
-                "ə",
-                "t",
-                "ĭ",
-                "v",
-                "-/"
-              ],
-              "tags": [
-                "irregular",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                1,
-                0,
-                1,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "多話的",
-              "img": "🗣",
-              "audio": "audio/people-4/talkative.mp3"
             },
             {
               "word": "tank",
@@ -31195,40 +31523,43 @@
               "audio": "audio/ABB-3/think.mp3"
             },
             {
-              "word": "thumb",
-              "ipa": "/θʌm/",
+              "word": "trust",
+              "ipa": "/trʌst/",
               "graphemes": [
-                "th",
+                "t",
+                "r",
                 "u",
-                "m",
-                "b"
+                "s",
+                "t"
               ],
               "phonemes": [
-                "/θ",
+                "/t",
+                "r",
                 "ʌ",
-                "m",
-                "-/"
+                "s",
+                "t/"
               ],
               "phonics": [
-                "/th",
+                "/t",
+                "r",
                 "ŭ",
-                "m",
-                "-/"
+                "s",
+                "t/"
               ],
               "tags": [
-                "digraph",
-                "cvc",
-                "silent_consonant"
+                "cluster",
+                "cvc"
               ],
               "hearts": [
                 0,
                 0,
                 0,
+                0,
                 0
               ],
-              "zh": "拇指",
-              "img": "👍",
-              "audio": "audio/body-and-face-3/thumb.mp3"
+              "zh": "信任",
+              "img": "🤝",
+              "audio": "audio/1A-2/trust.mp3"
             },
             {
               "word": "twenty-first",
@@ -31295,38 +31626,6 @@
               "audio": "audio/numbers-5/twenty-first.mp3"
             },
             {
-              "word": "two",
-              "ipa": "/tu/",
-              "graphemes": [
-                "t",
-                "w",
-                "o"
-              ],
-              "phonemes": [
-                "/t",
-                "-",
-                "u/"
-              ],
-              "phonics": [
-                "/t",
-                "-",
-                "ū/"
-              ],
-              "tags": [
-                "irregular",
-                "cluster",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                1,
-                1
-              ],
-              "zh": "",
-              "img": "",
-              "audio": "audio/numbers-1/two.mp3"
-            },
-            {
               "word": "understand",
               "ipa": "/ʌndərstænd/",
               "graphemes": [
@@ -31381,39 +31680,39 @@
               "audio": "audio/ABB-3/understand.mp3"
             },
             {
-              "word": "walk",
-              "ipa": "/wɔk/",
+              "word": "vest",
+              "ipa": "/vɛst/",
               "graphemes": [
-                "w",
-                "a",
-                "l",
-                "k"
+                "v",
+                "e",
+                "s",
+                "t"
               ],
               "phonemes": [
-                "/w",
-                "ɔ",
-                "-",
-                "k/"
+                "/v",
+                "ɛ",
+                "s",
+                "t/"
               ],
               "phonics": [
-                "/w",
-                "aw",
-                "-",
-                "k/"
+                "/v",
+                "ĕ",
+                "s",
+                "t/"
               ],
               "tags": [
-                "irregular",
-                "silent_consonant",
+                "cvc",
                 "cluster"
               ],
               "hearts": [
                 0,
-                1,
-                1
+                0,
+                0,
+                0
               ],
-              "zh": "走路",
-              "img": "🚶",
-              "audio": "audio/1B-2/walk.mp3"
+              "zh": "背心",
+              "img": "🦺",
+              "audio": "audio/clothes-3/vest.mp3"
             },
             {
               "word": "want",
@@ -31493,57 +31792,6 @@
               "audio": "audio/be/wasn't.mp3"
             },
             {
-              "word": "Wednesday",
-              "ipa": "/ˈwɛnzdeɪ/",
-              "graphemes": [
-                "W",
-                "e",
-                "d",
-                "n",
-                "e",
-                "s",
-                "d",
-                "ay"
-              ],
-              "phonemes": [
-                "/'w",
-                "ɛ",
-                "-",
-                "n",
-                "-",
-                "z",
-                "d",
-                "eɪ/"
-              ],
-              "phonics": [
-                "/'w",
-                "ĕ",
-                "-",
-                "n",
-                "-",
-                "z",
-                "d",
-                "ā/"
-              ],
-              "tags": [
-                "silent_consonant",
-                "irregular"
-              ],
-              "hearts": [
-                0,
-                0,
-                1,
-                0,
-                1,
-                1,
-                0,
-                0
-              ],
-              "zh": "星期三",
-              "img": "🟡",
-              "audio": "audio/time-3/wednesday.mp3"
-            },
-            {
               "word": "went",
               "ipa": "/wɛnt/",
               "graphemes": [
@@ -31619,6 +31867,41 @@
               "audio": "audio/be/weren't.mp3"
             },
             {
+              "word": "west",
+              "ipa": "/wɛst/",
+              "graphemes": [
+                "w",
+                "e",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/w",
+                "ɛ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/w",
+                "ĕ",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "西方",
+              "img": "",
+              "audio": "audio/places-1/west.mp3"
+            },
+            {
               "word": "wind",
               "ipa": "/wɪnd/",
               "graphemes": [
@@ -31692,42 +31975,6 @@
               "zh": "不會；不願意（will not）",
               "img": "",
               "audio": "audio/auxi/won't.mp3"
-            },
-            {
-              "word": "would",
-              "ipa": "/wʊd/",
-              "graphemes": [
-                "w",
-                "ou",
-                "l",
-                "d"
-              ],
-              "phonemes": [
-                "/w",
-                "ʊ",
-                "-",
-                "d/"
-              ],
-              "phonics": [
-                "/w",
-                "oo",
-                "-",
-                "d/"
-              ],
-              "tags": [
-                "irregular",
-                "cluster",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                1,
-                1,
-                0
-              ],
-              "zh": "將；會（過去式）",
-              "img": "",
-              "audio": "audio/auxi/would.mp3"
             },
             {
               "word": "wouldn't",
@@ -31811,6 +32058,487 @@
               "zh": "傷口；受傷",
               "img": "🩸",
               "audio": "audio/health-2/wound.mp3"
+            },
+            {
+              "word": "wrist",
+              "ipa": "/rɪst/",
+              "graphemes": [
+                "w",
+                "r",
+                "i",
+                "s",
+                "t"
+              ],
+              "phonemes": [
+                "/-",
+                "r",
+                "ɪ",
+                "s",
+                "t/"
+              ],
+              "phonics": [
+                "/-",
+                "r",
+                "ĭ",
+                "s",
+                "t/"
+              ],
+              "tags": [
+                "silent_consonant",
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "手腕",
+              "img": "✊",
+              "audio": "audio/body-and-face-3/wrist.mp3"
+            },
+            {
+              "word": "wrong",
+              "ipa": "/rɔŋ/",
+              "graphemes": [
+                "w",
+                "r",
+                "o",
+                "ng"
+              ],
+              "phonemes": [
+                "/-",
+                "r",
+                "ɔ",
+                "ŋ/"
+              ],
+              "phonics": [
+                "/-",
+                "r",
+                "aw",
+                "ŋ/"
+              ],
+              "tags": [
+                "silent_consonant",
+                "digraph"
+              ],
+              "hearts": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "zh": "錯誤的",
+              "img": "❌",
+              "audio": "audio/adjs-1/wrong.mp3"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "不發音的字母",
+          "pattern": "Silent letters: kn, wr, mb",
+          "explain": "有些字母不發音：字首 kn 的 k（knee、knock）、字首 wr 的 w（wrong、wrist）、字尾 mb 的 b（lamb、climb）。",
+          "keys": [{ "g": "kn", "ipa": "n" }, { "g": "wr", "ipa": "r" }, { "g": "mb", "ipa": "m" }],
+          "spellingSet": "silent",
+          "words": [
+            {
+              "word": "bomb",
+              "ipa": "/bɑm/",
+              "graphemes": [
+                "b",
+                "o",
+                "m",
+                "b"
+              ],
+              "phonemes": [
+                "/b",
+                "ɑ",
+                "m",
+                "-/"
+              ],
+              "phonics": [
+                "/b",
+                "ŏ",
+                "m",
+                "-/"
+              ],
+              "tags": [
+                "cvc",
+                "silent_consonant"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "zh": "炸彈",
+              "img": "💣",
+              "audio": "audio/nouns-5/bomb.mp3"
+            },
+            {
+              "word": "climb",
+              "ipa": "/klaɪm/",
+              "graphemes": [
+                "c",
+                "l",
+                "i",
+                "m",
+                "b"
+              ],
+              "phonemes": [
+                "/k",
+                "l",
+                "aɪ",
+                "m",
+                "-/"
+              ],
+              "phonics": [
+                "/k",
+                "l",
+                "ī",
+                "m",
+                "-/"
+              ],
+              "tags": [
+                "cluster",
+                "open",
+                "silent_consonant"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "zh": "爬",
+              "img": "🧗",
+              "audio": "audio/1C-1/climb.mp3"
+            },
+            {
+              "word": "comb",
+              "ipa": "/koʊm/",
+              "graphemes": [
+                "c",
+                "o",
+                "mb"
+              ],
+              "phonemes": [
+                "/k",
+                "oʊ",
+                "m/"
+              ],
+              "phonics": [
+                "/k",
+                "ō",
+                "m/"
+              ],
+              "tags": [
+                "silent_consonant"
+              ],
+              "hearts": [
+                0,
+                0,
+                1
+              ],
+              "zh": "‍♂️ 梳子",
+              "img": "💇",
+              "audio": "audio/clothes-3/comb.mp3"
+            },
+            {
+              "word": "dumb",
+              "ipa": "/dʌm/",
+              "graphemes": [
+                "d",
+                "u",
+                "m",
+                "b"
+              ],
+              "phonemes": [
+                "/d",
+                "ʌ",
+                "m",
+                "-/"
+              ],
+              "phonics": [
+                "/d",
+                "ŭ",
+                "m",
+                "-/"
+              ],
+              "tags": [
+                "cvc",
+                "silent_consonant"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "zh": "啞的/笨的",
+              "img": "😶",
+              "audio": "audio/people-5/dumb.mp3"
+            },
+            {
+              "word": "knee",
+              "ipa": "/ni/",
+              "graphemes": [
+                "k",
+                "n",
+                "ee"
+              ],
+              "phonemes": [
+                "/-",
+                "n",
+                "i/"
+              ],
+              "phonics": [
+                "/-",
+                "n",
+                "ē/"
+              ],
+              "tags": [
+                "silent_consonant",
+                "open"
+              ],
+              "hearts": [
+                1,
+                0,
+                0
+              ],
+              "zh": "膝蓋",
+              "img": "🦵",
+              "audio": "audio/body-and-face-2/knee.mp3"
+            },
+            {
+              "word": "knife",
+              "ipa": "/naɪf/",
+              "graphemes": [
+                "k",
+                "n",
+                "i",
+                "f",
+                "e"
+              ],
+              "phonemes": [
+                "/-",
+                "n",
+                "aɪ",
+                "f",
+                "-/"
+              ],
+              "phonics": [
+                "/-",
+                "n",
+                "ī",
+                "f",
+                "-/"
+              ],
+              "tags": [
+                "magic_e",
+                "silent_consonant"
+              ],
+              "hearts": [
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "刀子",
+              "img": "🔪",
+              "audio": "audio/food-5/knife.mp3"
+            },
+            {
+              "word": "knock",
+              "ipa": "/nɑk/",
+              "graphemes": [
+                "k",
+                "n",
+                "o",
+                "ck"
+              ],
+              "phonemes": [
+                "-",
+                "n",
+                "ɑ",
+                "k/"
+              ],
+              "phonics": [
+                "-",
+                "n",
+                "ŏ",
+                "k/"
+              ],
+              "tags": [
+                "silent_consonant",
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "zh": "敲",
+              "img": "🚪",
+              "audio": "audio/1B-1/knock.mp3"
+            },
+            {
+              "word": "knowledge",
+              "ipa": "/ˈnɑlɪdʒ/",
+              "graphemes": [
+                "k",
+                "n",
+                "ow",
+                "l",
+                "e",
+                "dge"
+              ],
+              "phonemes": [
+                "/-",
+                "'n",
+                "ɑ",
+                "l",
+                "ɪ",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/-",
+                "'n",
+                "ŏ",
+                "l",
+                "ĭ",
+                "-j/"
+              ],
+              "tags": [
+                "silent_consonant",
+                "closed",
+                "digraph"
+              ],
+              "hearts": [
+                1,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "zh": "知識",
+              "img": "🧠",
+              "audio": "audio/school-4/knowledge.mp3"
+            },
+            {
+              "word": "known",
+              "ipa": "/noʊn/",
+              "graphemes": [
+                "k",
+                "n",
+                "ow",
+                "n"
+              ],
+              "phonemes": [
+                "/-",
+                "n",
+                "oʊ",
+                "n/"
+              ],
+              "phonics": [
+                "/-",
+                "n",
+                "ō",
+                "n/"
+              ],
+              "tags": [
+                "silent_consonant",
+                "vowel_team"
+              ],
+              "hearts": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "zh": "知道(過去分詞)",
+              "img": "",
+              "audio": "audio/ABC-ew/known.mp3"
+            },
+            {
+              "word": "lamb",
+              "ipa": "/læm/",
+              "graphemes": [
+                "l",
+                "a",
+                "m",
+                "b"
+              ],
+              "phonemes": [
+                "/l",
+                "æ",
+                "m",
+                "-/"
+              ],
+              "phonics": [
+                "/l",
+                "ă",
+                "m",
+                "-/"
+              ],
+              "tags": [
+                "cvc",
+                "silent_consonant"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "zh": "小綿羊",
+              "img": "🐑",
+              "audio": "audio/animals-3/lamb.mp3"
+            },
+            {
+              "word": "thumb",
+              "ipa": "/θʌm/",
+              "graphemes": [
+                "th",
+                "u",
+                "m",
+                "b"
+              ],
+              "phonemes": [
+                "/θ",
+                "ʌ",
+                "m",
+                "-/"
+              ],
+              "phonics": [
+                "/th",
+                "ŭ",
+                "m",
+                "-/"
+              ],
+              "tags": [
+                "digraph",
+                "cvc",
+                "silent_consonant"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "拇指",
+              "img": "👍",
+              "audio": "audio/body-and-face-3/thumb.mp3"
             },
             {
               "word": "wrist",
@@ -31967,45 +32695,6 @@
               "zh": "錯誤的",
               "img": "❌",
               "audio": "audio/adjs-1/wrong.mp3"
-            },
-            {
-              "word": "yo-yo",
-              "ipa": "/ˈjoʊˌjoʊ/",
-              "graphemes": [
-                "y",
-                "o",
-                "-",
-                "y",
-                "o"
-              ],
-              "phonemes": [
-                "/'j",
-                "oʊ",
-                "-",
-                "j",
-                "oʊ/"
-              ],
-              "phonics": [
-                "/'y",
-                "ō",
-                "-",
-                "y",
-                "ō/"
-              ],
-              "tags": [
-                "open",
-                "silent_consonant"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                0,
-                0
-              ],
-              "zh": "溜溜球",
-              "img": "🪀",
-              "audio": "audio/sports-3/yo-yo.mp3"
             }
           ]
         }
