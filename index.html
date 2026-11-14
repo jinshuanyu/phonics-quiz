@@ -6,14 +6,14 @@
 <title>Phonics Quiz 英文拼讀測驗</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 /* ── Reset & Base ─────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; -webkit-tap-highlight-color: transparent; }
 body {
-  font-family: 'Nunito', 'Noto Sans TC', sans-serif;
+  font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
   background: #FFF8F0;
   color: #333;
   min-height: 100vh;
@@ -111,7 +111,7 @@ body {
 .card:active { transform: scale(0.97); }
 
 .card-emoji { font-size: 2rem; margin-bottom: 8px; }
-.card-title { font-size: 1.1rem; font-weight: 700; color: #333; }
+.card-title { font-size: 1.25rem; font-weight: 700; color: #333; }
 .card-desc { font-size: 0.85rem; color: #888; margin-top: 4px; }
 .card-badge {
   display: inline-block;
@@ -220,7 +220,7 @@ body {
   padding: 16px 12px;
   font-size: clamp(1rem, 4vw, 1.25rem);
   font-weight: 700;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   cursor: pointer;
   transition: all 0.15s;
   min-height: 56px;
@@ -271,7 +271,7 @@ body {
   justify-content: center;
   font-size: clamp(1rem, 4vw, 1.4rem);
   font-weight: 700;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   background: #fff;
   transition: all 0.2s;
   position: relative;
@@ -329,7 +329,7 @@ body {
   justify-content: center;
   font-size: clamp(1rem, 4vw, 1.4rem);
   font-weight: 700;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   cursor: grab;
   transition: all 0.15s;
   user-select: none;
@@ -415,7 +415,7 @@ body {
   padding: 6px 12px;
   font-size: clamp(1rem, 4vw, 1.3rem);
   font-weight: 700;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   position: relative;
   min-width: 36px;
   text-align: center;
@@ -490,7 +490,7 @@ body {
   background: var(--vowel-bg, #fef3c7);
   border: 2px solid var(--vowel-border, #fbbf24);
   border-radius: 12px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   cursor: pointer;
   transition: transform 0.1s;
 }
@@ -542,7 +542,7 @@ body {
   padding: 4px 10px;
   font-size: 1.15rem;
   font-weight: 700;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   color: #0f172a;
   cursor: pointer;
   transition: all 0.15s;
@@ -944,7 +944,7 @@ body {
   <!-- Navigation -->
   <nav class="nav-bar hidden" id="nav">
     <button class="btn-back" id="btnBack" aria-label="返回上一頁">← 返回</button>
-    <span id="navTitle" style="font-weight:600;color:#888;font-size:0.9rem;"></span>
+    <span id="navTitle" style="font-weight:700;color:#666;font-size:1.2rem;"></span>
   </nav>
 
   <!-- Main content area -->
@@ -1290,13 +1290,12 @@ function renderUnits(levelIdx) {
     const isSpecial = unit.isSpecial;
     const isMixed = unit.isMixed;
     const isEmpty = unit.words.length === 0 && !isSpecial && !isMixed;
-    const badge = isSpecial ? '🔤' : (isMixed ? '🎯 Mix' : `${unit.words.length} 字`);
+    const badge = isSpecial ? '🔤' : (isMixed ? '🎯 Mix' : '');
     return `
       <div class="card ${isEmpty ? 'disabled-mode' : ''}" onclick="${isEmpty ? '' : `selectUnit(${levelIdx}, ${i})`}"
            role="button" tabindex="0" style="${isEmpty ? 'opacity:0.5;cursor:default;' : ''}">
         <div class="card-title">${unit.name}</div>
-        <div class="card-desc">${unit.pattern}</div>
-        <div class="card-badge">${badge}</div>
+        ${badge ? `<div class="card-badge" style="font-size:1.05rem;padding:5px 14px;">${badge}</div>` : ''}
       </div>`;
   };
 
@@ -1433,43 +1432,34 @@ function renderModes(levelIdx, unitIdx) {
 }
 
 // ── Learn Mode (no scoring, exploration only) ──────────
-// Learn page: at most 30 example words per unit. Units carry a hand-picked "examples" list in units.json
-// (most typical words, grouped by spelling); a unit without one falls back to an automatic pick.
-// "顯示全部" shows the whole list. Letter units are never cut.
-const LEARN_MAX = 30;
+// Learn page: 15 example words per unit. Units carry a hand-picked "examples" list in units.json
+// (most typical words, grouped by spelling); a unit without one gets an automatic pick.
+// "顯示更多" adds more words of the unit, up to 50 in all. Letter units are never cut.
+const LEARN_MAX = 15;
+const LEARN_MORE_MAX = 50;
 let learnWords = [];      // the words shown on the Learn page (the click handlers index into this)
 let learnShowAll = false;
+let learnHasMore = false; // the unit has more words than the ones shown first
 
 function pickLearnWords(unit) {
   const all = unit.words.filter(w => w.word);
-  if (learnShowAll || all.some(w => w.isLetter)) return all; // letters are never cut
-  if (Array.isArray(unit.examples) && unit.examples.length) { // hand-picked examples, grouped by spelling
-    const byWord = new Map(all.map(w => [w.word, w]));
-    return [...all.filter(w => !w.ipa), ...unit.examples.map(x => byWord.get(x)).filter(Boolean)];
-  }
-  if (all.length <= LEARN_MAX) return all;
-  const cards = all.filter(w => !w.ipa);  // pattern cards always stay
+  learnHasMore = false;
+  if (all.some(w => w.isLetter)) return all; // letters are never cut
+  const cards = all.filter(w => !w.ipa);    // pattern cards always stay
+  const pool = all.filter(w => w.ipa);
   const rank = w => (w.img && w.zh ? 0 : 20) + (/[\s-]/.test(w.word) ? 20 : 0) + (/^[A-Z]/.test(w.word) ? 10 : 0) + w.word.length;
-  const sorted = all.filter(w => w.ipa).sort((a, b) => rank(a) - rank(b) || a.word.localeCompare(b.word));
-  const keys = [...new Set((unit.keys || []).map(k => String(k.g).toLowerCase()))];
-  const hasKey = (w, k) => (k.includes('_')
-    ? new RegExp(k.replace('_', '[a-z]+?')).test(w.word.toLowerCase())
-    : (w.graphemes || []).some(g => String(g).toLowerCase() === k) || w.word.toLowerCase().includes(k));
-  const picked = [];
-  for (let round = 0; keys.length && picked.length < LEARN_MAX && round < LEARN_MAX; round++) {
-    const before = picked.length;
-    for (const k of keys) {
-      if (picked.length >= LEARN_MAX) break;
-      const w = sorted.find(x => !picked.includes(x) && hasKey(x, k));
-      if (w) picked.push(w);
-    }
-    if (picked.length === before) break;
+  const sorted = pool.slice().sort((x, y) => rank(x) - rank(y) || x.word.localeCompare(y.word));
+  let base;
+  if (Array.isArray(unit.examples) && unit.examples.length) {
+    const byWord = new Map(pool.map(w => [w.word, w]));
+    base = unit.examples.map(x => byWord.get(x)).filter(Boolean);
+  } else {
+    base = sorted.slice(0, LEARN_MAX);
   }
-  for (const w of sorted) {
-    if (picked.length >= LEARN_MAX) break;
-    if (!picked.includes(w)) picked.push(w);
-  }
-  return [...cards, ...picked].sort((a, b) => a.word.toLowerCase().localeCompare(b.word.toLowerCase()));
+  learnHasMore = pool.length > base.length;
+  if (!learnShowAll) return [...cards, ...base];
+  const rest = sorted.filter(w => !base.includes(w)).slice(0, Math.max(0, LEARN_MORE_MAX - base.length));
+  return [...cards, ...base, ...rest];
 }
 
 function toggleLearnAll() {
@@ -1489,10 +1479,8 @@ function renderLearn() {
 
   learnWords = pickLearnWords(currentUnit);
   const words = learnWords;
-  const totalWords = currentUnit.words.filter(w => w.word && w.ipa).length;
-  const shownWords = words.filter(w => w.ipa).length;
   const introText = currentUnit.learnIntro
-    || '👆 點任一個字母方塊聽單音，按 🔊 聽完整的發音。';
+    || '👆 點字母方塊聽單音，按 🔊 聽整個字。';
 
   // 🔑 Key sounds first, then the short explanation, then the words
   const keys = currentUnit.keys || [];
@@ -1526,9 +1514,9 @@ function renderLearn() {
 
     const letterIpa = w.isSound ? w.letterSound : w.ipa;
     const letterDisplay = w.isLetter
-      ? `<div class="learn-emoji" style="font-family:'Nunito',sans-serif;font-weight:800;font-size:1.6rem;line-height:1.2;color:#333;">
+      ? `<div class="learn-emoji" style="font-family:'Noto Sans',sans-serif;font-weight:800;font-size:1.6rem;line-height:1.2;color:#333;width:auto;min-width:48px;">
            ${escHtml(w.word)}
-           <div style="font-size:0.75rem;font-weight:600;color:#888;">${escHtml(letterIpa || '')}</div>
+           <div style="font-size:0.75rem;font-weight:600;color:#888;white-space:nowrap;">${escHtml(letterIpa || '')}</div>
          </div>`
       : (w.img ? `<div class="learn-emoji">${w.img}</div>` : '<div class="learn-emoji"></div>');
     html += `
@@ -1546,12 +1534,9 @@ function renderLearn() {
   const learnFooter = isFirstContrastUnit(currentUnit)
     ? `<div style="font-size:0.95rem;color:#888;line-height:1.6;">👍 這個母音先聽熟，學完下一個母音之後就可以測驗囉！</div>`
     : `<button class="btn-action btn-primary" onclick="goToQuizFromLearn()" style="font-size:1rem;padding:10px 28px;">💪 我準備好了，去測驗！</button>`;
-  const capNote = shownWords < totalWords
-    ? `<div style="text-align:center;margin:14px 0 0;font-size:0.9rem;color:#888;">這裡先列 ${shownWords} 個例字，這一關一共 ${totalWords} 個。
-        <button onclick="toggleLearnAll()" style="margin-left:6px;padding:6px 14px;border:2px solid #e8e4f0;border-radius:20px;background:var(--card);color:#555;font-weight:700;font-size:0.9rem;cursor:pointer;">顯示全部</button></div>`
-    : (learnShowAll && totalWords > LEARN_MAX
-      ? `<div style="text-align:center;margin:14px 0 0;"><button onclick="toggleLearnAll()" style="padding:6px 14px;border:2px solid #e8e4f0;border-radius:20px;background:var(--card);color:#555;font-weight:700;font-size:0.9rem;cursor:pointer;">只看 ${LEARN_MAX} 個例字</button></div>`
-      : '');
+  const capNote = learnHasMore
+    ? `<div style="text-align:center;margin:14px 0 0;"><button onclick="toggleLearnAll()" style="padding:8px 20px;border:2px solid #e8e4f0;border-radius:20px;background:var(--card);color:#555;font-family:inherit;font-weight:700;font-size:0.95rem;cursor:pointer;">${learnShowAll ? '收起' : '顯示更多'}</button></div>`
+    : '';
   html += `</div>
     ${capNote}
     <div style="text-align:center;margin:18px 0 24px;">
@@ -1698,6 +1683,10 @@ function startQuiz(mode) {
   let pool = currentUnit.words;
   if (mode === 'picture') {
     pool = pool.filter(w => w.zh && w.img);
+  }
+  if (mode === 'spell') { // at most 6 tiles, one word
+    const easy = pool.filter(w => Array.isArray(w.graphemes) && w.graphemes.length <= 6 && !/[\s-]/.test(w.word));
+    if (easy.length >= QUESTIONS_PER_ROUND) pool = easy;
   }
   pool = shuffle([...pool]);
   quizWords = pool.slice(0, QUESTIONS_PER_ROUND);
