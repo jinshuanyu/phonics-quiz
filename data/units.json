@@ -6380,6 +6380,36 @@
               "audio": "audio/occupations-2/barber.mp3"
             },
             {
+              "word": "barge",
+              "ipa": "/bɑrdʒ/",
+              "graphemes": [
+                "b",
+                "ar",
+                "ge"
+              ],
+              "phonemes": [
+                "/b",
+                "ɑr",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/b",
+                "ɑr",
+                "-j/"
+              ],
+              "tags": [
+                "rcontrolled"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "駁船",
+              "img": "🚢",
+              "audio": "audio/transportation-1/barge.mp3"
+            },
+            {
               "word": "bark",
               "ipa": "/bɑrk/",
               "graphemes": [
@@ -8000,6 +8030,36 @@
               "zh": "森林",
               "img": "🌲",
               "audio": "audio/weather-4/forest.mp3"
+            },
+            {
+              "word": "forge",
+              "ipa": "/fɔrdʒ/",
+              "graphemes": [
+                "f",
+                "or",
+                "ge"
+              ],
+              "phonemes": [
+                "/f",
+                "ɔr",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/f",
+                "or",
+                "-j/"
+              ],
+              "tags": [
+                "rcontrolled"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "鍛造；打造",
+              "img": "🔨",
+              "audio": "audio/nouns-1/forge.mp3"
             },
             {
               "word": "fork",
@@ -10074,6 +10134,36 @@
               "audio": "audio/AAA/hurt.mp3"
             },
             {
+              "word": "merge",
+              "ipa": "/mɝdʒ/",
+              "graphemes": [
+                "m",
+                "er",
+                "ge"
+              ],
+              "phonemes": [
+                "/m",
+                "ɝ",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/m",
+                "er",
+                "-j/"
+              ],
+              "tags": [
+                "rcontrolled"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "併入；合併",
+              "img": "🔀",
+              "audio": "audio/transportation-2/merge.mp3"
+            },
+            {
               "word": "nervous",
               "ipa": "/ˈnɝvəs/",
               "graphemes": [
@@ -11168,6 +11258,32 @@
               "zh": "大學",
               "img": "🎓",
               "audio": "audio/school-1/university.mp3"
+            },
+            {
+              "word": "urge",
+              "ipa": "/ɝdʒ/",
+              "graphemes": [
+                "ur",
+                "ge"
+              ],
+              "phonemes": [
+                "/ɝ",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/er",
+                "-j/"
+              ],
+              "tags": [
+                "rcontrolled"
+              ],
+              "hearts": [
+                0,
+                0
+              ],
+              "zh": "衝動；催促",
+              "img": "💪",
+              "audio": "audio/nouns-1/urge.mp3"
             }
           ]
         }
@@ -21601,7 +21717,7 @@
           "explain": "・短母音後面直接接 /k/、/tʃ/、/dʒ/，寫 ck、tch、dge（back、catch、bridge）\n・中間隔著別的子音，寫 k、ch、ge（milk、lunch、large）",
           "keys": [{ "g": "ck", "ipa": "k" }, { "g": "tch", "ipa": "tʃ" }, { "g": "dge", "ipa": "dʒ" }],
           "spellingSet": "ck-tch-dge",
-          "examples": ["back","duck","neck","sock","milk","bank","catch","match","fetch","pitch","lunch","bench","bridge","fridge","large"],
+          "examples": ["back","duck","neck","milk","bank","catch","match","fetch","lunch","bench","bridge","fridge","badge","large","hinge"],
           "words": [
             {
               "word": "back",
@@ -21633,6 +21749,37 @@
               "zh": "背部",
               "img": "",
               "audio": "audio/body-and-face-2/back.mp3"
+            },
+            {
+              "word": "badge",
+              "ipa": "/bædʒ/",
+              "graphemes": [
+                "b",
+                "a",
+                "dge"
+              ],
+              "phonemes": [
+                "/b",
+                "æ",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/b",
+                "ă",
+                "-j/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "徽章；名牌",
+              "img": "🪪",
+              "audio": "audio/nouns-5/badge.mp3"
             },
             {
               "word": "bank",
@@ -21668,6 +21815,36 @@
               "zh": "銀行",
               "img": "🏦",
               "audio": "audio/places-2/bank.mp3"
+            },
+            {
+              "word": "barge",
+              "ipa": "/bɑrdʒ/",
+              "graphemes": [
+                "b",
+                "ar",
+                "ge"
+              ],
+              "phonemes": [
+                "/b",
+                "ɑr",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/b",
+                "ɑr",
+                "-j/"
+              ],
+              "tags": [
+                "rcontrolled"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "駁船",
+              "img": "🚢",
+              "audio": "audio/transportation-1/barge.mp3"
             },
             {
               "word": "bench",
@@ -22141,6 +22318,36 @@
               "audio": "audio/animals-3/fetch.mp3"
             },
             {
+              "word": "forge",
+              "ipa": "/fɔrdʒ/",
+              "graphemes": [
+                "f",
+                "or",
+                "ge"
+              ],
+              "phonemes": [
+                "/f",
+                "ɔr",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/f",
+                "or",
+                "-j/"
+              ],
+              "tags": [
+                "rcontrolled"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "鍛造；打造",
+              "img": "🔨",
+              "audio": "audio/nouns-1/forge.mp3"
+            },
+            {
               "word": "fork",
               "ipa": "/fɔrk/",
               "graphemes": [
@@ -22207,6 +22414,76 @@
               "audio": "audio/house-2/fridge.mp3"
             },
             {
+              "word": "fringe",
+              "ipa": "/frɪndʒ/",
+              "graphemes": [
+                "f",
+                "r",
+                "i",
+                "n",
+                "ge"
+              ],
+              "phonemes": [
+                "/f",
+                "r",
+                "ɪ",
+                "n",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/f",
+                "r",
+                "ĭ",
+                "n",
+                "-j/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "瀏海",
+              "img": "💇",
+              "audio": "audio/people-2/fringe.mp3"
+            },
+            {
+              "word": "fudge",
+              "ipa": "/fʌdʒ/",
+              "graphemes": [
+                "f",
+                "u",
+                "dge"
+              ],
+              "phonemes": [
+                "/f",
+                "ʌ",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/f",
+                "ŭ",
+                "-j/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "牛奶軟糖",
+              "img": "🍫",
+              "audio": "audio/food-3/fudge.mp3"
+            },
+            {
               "word": "hatch",
               "ipa": "/hætʃ/",
               "graphemes": [
@@ -22236,6 +22513,72 @@
               "zh": "孵化",
               "img": "🐣",
               "audio": "audio/animals-3/hatch.mp3"
+            },
+            {
+              "word": "hedge",
+              "ipa": "/hɛdʒ/",
+              "graphemes": [
+                "h",
+                "e",
+                "dge"
+              ],
+              "phonemes": [
+                "/h",
+                "ɛ",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/h",
+                "ĕ",
+                "-j/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "樹籬",
+              "img": "🌳",
+              "audio": "audio/weather-3/hedge.mp3"
+            },
+            {
+              "word": "hinge",
+              "ipa": "/hɪndʒ/",
+              "graphemes": [
+                "h",
+                "i",
+                "n",
+                "ge"
+              ],
+              "phonemes": [
+                "/h",
+                "ɪ",
+                "n",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/h",
+                "ĭ",
+                "n",
+                "-j/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "鉸鏈",
+              "img": "🚪",
+              "audio": "audio/house-2/hinge.mp3"
             },
             {
               "word": "inch",
@@ -22357,6 +22700,37 @@
               "zh": "巨大的",
               "img": "🐋",
               "audio": "audio/size-3/large.mp3"
+            },
+            {
+              "word": "lodge",
+              "ipa": "/lɑdʒ/",
+              "graphemes": [
+                "l",
+                "o",
+                "dge"
+              ],
+              "phonemes": [
+                "/l",
+                "ɑ",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/l",
+                "ŏ",
+                "-j/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "小屋；山莊",
+              "img": "🏡",
+              "audio": "audio/house-1/lodge.mp3"
             },
             {
               "word": "lunch",
@@ -22490,6 +22864,36 @@
               "zh": "匹配",
               "img": "🔥",
               "audio": "audio/1B-2/match.mp3"
+            },
+            {
+              "word": "merge",
+              "ipa": "/mɝdʒ/",
+              "graphemes": [
+                "m",
+                "er",
+                "ge"
+              ],
+              "phonemes": [
+                "/m",
+                "ɝ",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/m",
+                "er",
+                "-j/"
+              ],
+              "tags": [
+                "rcontrolled"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "併入；合併",
+              "img": "🔀",
+              "audio": "audio/transportation-2/merge.mp3"
             },
             {
               "word": "milk",
@@ -22714,6 +23118,37 @@
               "zh": "投球",
               "img": "⚾",
               "audio": "audio/sports-1/pitch.mp3"
+            },
+            {
+              "word": "ridge",
+              "ipa": "/rɪdʒ/",
+              "graphemes": [
+                "r",
+                "i",
+                "dge"
+              ],
+              "phonemes": [
+                "/r",
+                "ɪ",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/r",
+                "ĭ",
+                "-j/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "山脊",
+              "img": "⛰️",
+              "audio": "audio/weather-4/ridge.mp3"
             },
             {
               "word": "rock",
@@ -22964,6 +23399,63 @@
               "zh": "開關",
               "img": "🔘",
               "audio": "audio/house-2/switch.mp3"
+            },
+            {
+              "word": "urge",
+              "ipa": "/ɝdʒ/",
+              "graphemes": [
+                "ur",
+                "ge"
+              ],
+              "phonemes": [
+                "/ɝ",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/er",
+                "-j/"
+              ],
+              "tags": [
+                "rcontrolled"
+              ],
+              "hearts": [
+                0,
+                0
+              ],
+              "zh": "衝動；催促",
+              "img": "💪",
+              "audio": "audio/nouns-1/urge.mp3"
+            },
+            {
+              "word": "wedge",
+              "ipa": "/wɛdʒ/",
+              "graphemes": [
+                "w",
+                "e",
+                "dge"
+              ],
+              "phonemes": [
+                "/w",
+                "ɛ",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/w",
+                "ĕ",
+                "-j/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "楔形塊",
+              "img": "🧀",
+              "audio": "audio/nouns-5/wedge.mp3"
             },
             {
               "word": "witch",
@@ -28624,6 +29116,45 @@
               "zh": "薯條",
               "img": "🍟",
               "audio": "audio/food-2/fries.mp3"
+            },
+            {
+              "word": "fringe",
+              "ipa": "/frɪndʒ/",
+              "graphemes": [
+                "f",
+                "r",
+                "i",
+                "n",
+                "ge"
+              ],
+              "phonemes": [
+                "/f",
+                "r",
+                "ɪ",
+                "n",
+                "dʒ/"
+              ],
+              "phonics": [
+                "/f",
+                "r",
+                "ĭ",
+                "n",
+                "-j/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "瀏海",
+              "img": "💇",
+              "audio": "audio/people-2/fringe.mp3"
             },
             {
               "word": "frisbee",
