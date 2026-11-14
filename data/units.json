@@ -50124,6 +50124,42 @@
               "audio": "audio/weather-3/root.mp3"
             },
             {
+              "word": "school",
+              "ipa": "/skul/",
+              "graphemes": [
+                "s",
+                "ch",
+                "oo",
+                "l"
+              ],
+              "phonemes": [
+                "/s",
+                "k",
+                "u",
+                "l/"
+              ],
+              "phonics": [
+                "/s",
+                "k",
+                "ū",
+                "l/"
+              ],
+              "tags": [
+                "digraph",
+                "vowel_team",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                1,
+                0,
+                0
+              ],
+              "zh": "學校",
+              "img": "🏫",
+              "audio": "audio/school-1/school.mp3"
+            },
+            {
               "word": "scooter",
               "ipa": "/ˈskutɚ/",
               "graphemes": [
@@ -60737,6 +60773,41 @@
               "zh": "白色；白色的",
               "img": "⚪",
               "audio": "audio/colors/white.mp3"
+            },
+            {
+              "word": "whole",
+              "ipa": "/hoʊl/",
+              "graphemes": [
+                "wh",
+                "o",
+                "l",
+                "e"
+              ],
+              "phonemes": [
+                "/h",
+                "oʊ",
+                "l",
+                "-/"
+              ],
+              "phonics": [
+                "/h",
+                "ō",
+                "l",
+                "-/"
+              ],
+              "tags": [
+                "digraph",
+                "magic_e"
+              ],
+              "hearts": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "zh": "完整的",
+              "img": "🔵",
+              "audio": "audio/adjs-1/whole.mp3"
             },
             {
               "word": "wide",
@@ -78549,6 +78620,41 @@
               "zh": "投票",
               "img": "🗳",
               "audio": "audio/1A-2/vote.mp3"
+            },
+            {
+              "word": "whole",
+              "ipa": "/hoʊl/",
+              "graphemes": [
+                "wh",
+                "o",
+                "l",
+                "e"
+              ],
+              "phonemes": [
+                "/h",
+                "oʊ",
+                "l",
+                "-/"
+              ],
+              "phonics": [
+                "/h",
+                "ō",
+                "l",
+                "-/"
+              ],
+              "tags": [
+                "digraph",
+                "magic_e"
+              ],
+              "hearts": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "zh": "完整的",
+              "img": "🔵",
+              "audio": "audio/adjs-1/whole.mp3"
             },
             {
               "word": "woke",
