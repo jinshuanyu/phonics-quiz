@@ -21601,7 +21601,7 @@
           "explain": "・/k/、/tʃ/、/dʒ/ 緊接在短母音後面，寫 ck、tch、dge（back、catch、bridge）\n・前面隔著別的子音或 r 母音，寫 k、ch、ge（milk、lunch、large）\n・兩個音節以上的字，字尾 /ɪdʒ/ 寫 age（village、cabbage）",
           "keys": [{ "g": "ck", "ipa": "k" }, { "g": "tch", "ipa": "tʃ" }, { "g": "dge", "ipa": "dʒ" }],
           "spellingSet": "ck-tch-dge",
-          "examples": ["back","duck","neck","sock","milk","bank","pink","catch","match","witch","lunch","bench","bridge","fridge","large"],
+          "examples": ["back","duck","neck","sock","milk","bank","catch","match","fetch","pitch","lunch","bench","bridge","fridge","large"],
           "words": [
             {
               "word": "back",
@@ -22192,6 +22192,37 @@
               "audio": "audio/nouns-5/edge.mp3"
             },
             {
+              "word": "fetch",
+              "ipa": "/fɛtʃ/",
+              "graphemes": [
+                "f",
+                "e",
+                "tch"
+              ],
+              "phonemes": [
+                "/f",
+                "ɛ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/f",
+                "ĕ",
+                "ch/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "去撿回來",
+              "img": "🐕",
+              "audio": "audio/animals-3/fetch.mp3"
+            },
+            {
               "word": "fork",
               "ipa": "/fɔrk/",
               "graphemes": [
@@ -22296,6 +22327,37 @@
               "audio": "audio/house-4/garbage.mp3"
             },
             {
+              "word": "hatch",
+              "ipa": "/hætʃ/",
+              "graphemes": [
+                "h",
+                "a",
+                "tch"
+              ],
+              "phonemes": [
+                "/h",
+                "æ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/h",
+                "ă",
+                "ch/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "孵化",
+              "img": "🐣",
+              "audio": "audio/animals-3/hatch.mp3"
+            },
+            {
               "word": "inch",
               "ipa": "/ɪntʃ/",
               "graphemes": [
@@ -22326,6 +22388,33 @@
               "zh": "英吋",
               "img": "📏",
               "audio": "audio/size-1/inch.mp3"
+            },
+            {
+              "word": "itch",
+              "ipa": "/ɪtʃ/",
+              "graphemes": [
+                "i",
+                "tch"
+              ],
+              "phonemes": [
+                "/ɪ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/ĭ",
+                "ch/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0
+              ],
+              "zh": "癢",
+              "img": "🦟",
+              "audio": "audio/health-2/itch.mp3"
             },
             {
               "word": "judge",
@@ -22809,6 +22898,37 @@
               "audio": "audio/1B-2/park.mp3"
             },
             {
+              "word": "patch",
+              "ipa": "/pætʃ/",
+              "graphemes": [
+                "p",
+                "a",
+                "tch"
+              ],
+              "phonemes": [
+                "/p",
+                "æ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/p",
+                "ă",
+                "ch/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "補丁；貼布",
+              "img": "🩹",
+              "audio": "audio/clothes-3/patch.mp3"
+            },
+            {
               "word": "pick",
               "ipa": "/pɪk/",
               "graphemes": [
@@ -22875,6 +22995,37 @@
               "audio": "audio/colors/pink.mp3"
             },
             {
+              "word": "pitch",
+              "ipa": "/pɪtʃ/",
+              "graphemes": [
+                "p",
+                "i",
+                "tch"
+              ],
+              "phonemes": [
+                "/p",
+                "ɪ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/p",
+                "ĭ",
+                "ch/"
+              ],
+              "tags": [
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "投球",
+              "img": "⚾",
+              "audio": "audio/sports-1/pitch.mp3"
+            },
+            {
               "word": "rock",
               "ipa": "/rɑk/",
               "graphemes": [
@@ -22906,6 +23057,82 @@
               "audio": "audio/weather-4/rock.mp3"
             },
             {
+              "word": "scratch",
+              "ipa": "/skrætʃ/",
+              "graphemes": [
+                "s",
+                "c",
+                "r",
+                "a",
+                "tch"
+              ],
+              "phonemes": [
+                "/s",
+                "k",
+                "r",
+                "æ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/s",
+                "k",
+                "r",
+                "ă",
+                "ch/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "抓；搔",
+              "img": "🤚",
+              "audio": "audio/health-2/scratch.mp3"
+            },
+            {
+              "word": "sketch",
+              "ipa": "/skɛtʃ/",
+              "graphemes": [
+                "s",
+                "k",
+                "e",
+                "tch"
+              ],
+              "phonemes": [
+                "/s",
+                "k",
+                "ɛ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/s",
+                "k",
+                "ĕ",
+                "ch/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "素描",
+              "img": "✏️",
+              "audio": "audio/sports-3/sketch.mp3"
+            },
+            {
               "word": "sock",
               "ipa": "/sɑk/",
               "graphemes": [
@@ -22935,6 +23162,118 @@
               "zh": "襪子（單數）",
               "img": "🧦",
               "audio": "audio/clothes-1/sock.mp3"
+            },
+            {
+              "word": "stitch",
+              "ipa": "/stɪtʃ/",
+              "graphemes": [
+                "s",
+                "t",
+                "i",
+                "tch"
+              ],
+              "phonemes": [
+                "/s",
+                "t",
+                "ɪ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/s",
+                "t",
+                "ĭ",
+                "ch/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "縫一針",
+              "img": "🪡",
+              "audio": "audio/house-3/stitch.mp3"
+            },
+            {
+              "word": "stretch",
+              "ipa": "/strɛtʃ/",
+              "graphemes": [
+                "s",
+                "t",
+                "r",
+                "e",
+                "tch"
+              ],
+              "phonemes": [
+                "/s",
+                "t",
+                "r",
+                "ɛ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/s",
+                "t",
+                "r",
+                "ĕ",
+                "ch/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "伸展",
+              "img": "🙆",
+              "audio": "audio/sports-2/stretch.mp3"
+            },
+            {
+              "word": "switch",
+              "ipa": "/swɪtʃ/",
+              "graphemes": [
+                "s",
+                "w",
+                "i",
+                "tch"
+              ],
+              "phonemes": [
+                "/s",
+                "w",
+                "ɪ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/s",
+                "w",
+                "ĭ",
+                "ch/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "開關",
+              "img": "🔘",
+              "audio": "audio/house-2/switch.mp3"
             },
             {
               "word": "village",
@@ -32876,6 +33215,42 @@
               "audio": "audio/sports-2/swing.mp3"
             },
             {
+              "word": "switch",
+              "ipa": "/swɪtʃ/",
+              "graphemes": [
+                "s",
+                "w",
+                "i",
+                "tch"
+              ],
+              "phonemes": [
+                "/s",
+                "w",
+                "ɪ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/s",
+                "w",
+                "ĭ",
+                "ch/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "開關",
+              "img": "🔘",
+              "audio": "audio/house-2/switch.mp3"
+            },
+            {
               "word": "swore",
               "ipa": "/swɔr/",
               "graphemes": [
@@ -33546,6 +33921,46 @@
               "audio": "audio/school-4/score.mp3"
             },
             {
+              "word": "scratch",
+              "ipa": "/skrætʃ/",
+              "graphemes": [
+                "s",
+                "c",
+                "r",
+                "a",
+                "tch"
+              ],
+              "phonemes": [
+                "/s",
+                "k",
+                "r",
+                "æ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/s",
+                "k",
+                "r",
+                "ă",
+                "ch/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "抓；搔",
+              "img": "🤚",
+              "audio": "audio/health-2/scratch.mp3"
+            },
+            {
               "word": "screen",
               "ipa": "/skrin/",
               "graphemes": [
@@ -33622,6 +34037,42 @@
               "zh": "滑冰",
               "img": "⛸",
               "audio": "audio/sports-2/skate.mp3"
+            },
+            {
+              "word": "sketch",
+              "ipa": "/skɛtʃ/",
+              "graphemes": [
+                "s",
+                "k",
+                "e",
+                "tch"
+              ],
+              "phonemes": [
+                "/s",
+                "k",
+                "ɛ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/s",
+                "k",
+                "ĕ",
+                "ch/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "素描",
+              "img": "✏️",
+              "audio": "audio/sports-3/sketch.mp3"
             },
             {
               "word": "skill",
@@ -35610,6 +36061,42 @@
               "audio": "audio/food-6/stir.mp3"
             },
             {
+              "word": "stitch",
+              "ipa": "/stɪtʃ/",
+              "graphemes": [
+                "s",
+                "t",
+                "i",
+                "tch"
+              ],
+              "phonemes": [
+                "/s",
+                "t",
+                "ɪ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/s",
+                "t",
+                "ĭ",
+                "ch/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "縫一針",
+              "img": "🪡",
+              "audio": "audio/house-3/stitch.mp3"
+            },
+            {
               "word": "stocking",
               "ipa": "/ˈstɑkɪŋ/",
               "graphemes": [
@@ -36337,6 +36824,46 @@
               "zh": "街道",
               "img": "🛣",
               "audio": "audio/house-1/street.mp3"
+            },
+            {
+              "word": "stretch",
+              "ipa": "/strɛtʃ/",
+              "graphemes": [
+                "s",
+                "t",
+                "r",
+                "e",
+                "tch"
+              ],
+              "phonemes": [
+                "/s",
+                "t",
+                "r",
+                "ɛ",
+                "tʃ/"
+              ],
+              "phonics": [
+                "/s",
+                "t",
+                "r",
+                "ĕ",
+                "ch/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "伸展",
+              "img": "🙆",
+              "audio": "audio/sports-2/stretch.mp3"
             },
             {
               "word": "strict",
