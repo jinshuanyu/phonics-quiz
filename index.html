@@ -2962,7 +2962,7 @@ function getDistractorGraphemes(word, count) {
   const unitGraphemes = currentUnit.words
     .filter(w => w.word !== word.word)
     .flatMap(w => w.graphemes)
-    .filter(g => !correctSet.has(g));
+    .filter(g => !correctSet.has(g) && /^[A-Za-z]+$/.test(g)); // letters only: phrases carry a space or hyphen as a unit
 
   const unique = [...new Set(unitGraphemes)];
   return shuffle(unique).slice(0, count);
