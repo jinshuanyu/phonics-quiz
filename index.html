@@ -2207,13 +2207,16 @@ function pictureSameSound(word) {
   }
   // a generated spelling that is a real word with another sound is not a same-sound option (ship → sip is not)
   const madeOk = [...new Set(made)].filter(x => x && x.toLowerCase() !== lw && !real.includes(x.toLowerCase()) && !unitWrong.includes(x) && (!map.has(x.toLowerCase()) || map.get(x.toLowerCase()) === me) && !/^(ass|sex|fuk|kok|kum|gay|dik|tit)/i.test(x));
-  return [...shuffle(real), ...shuffle(unitWrong), ...shuffle(madeOk)];
+  // real = real words that sound the same; fake = same-sound spellings that are not words
+  return { real: shuffle(real), fake: [...shuffle(unitWrong), ...shuffle(madeOk)] };
 }
 
-// Up to 3 wrong options for picture mode: two same-sound spellings first, then contrast words of the unit.
+// Up to 3 wrong options for picture mode: real homophones, at most ONE made-up spelling (Christina: not too many
+// fake words), then contrast words of the unit.
 function pictureRuleDistractors(word) {
   const w = String(word.word);
-  const same = pictureSameSound(word);
+  const ss = pictureSameSound(word);
+  const same = [...ss.real.slice(0, 2), ...ss.fake.slice(0, 1)];
   const groups = [[], []];
   const add = (k, x) => { x = String(x); if (x.toLowerCase() !== w.toLowerCase() && !same.includes(x) && !groups.some(g => g.includes(x))) groups[k].push(x); };
   // short vowels: the same word frame with the other vowels learned so far
@@ -2225,17 +2228,15 @@ function pictureRuleDistractors(word) {
   const cg = consonantGroup(currentUnit);
   if (cg) cg.sets.filter(set => set.some(m => m.word === w)).forEach(set => set.forEach(m => add(1, m.word)));
   const contrast = [...shuffle(groups[0]), ...shuffle(groups[1])];
-  const pick = [...same.slice(0, 2), ...contrast].slice(0, 3);
-  if (pick.length < 3) pick.push(...same.slice(2, 2 + 3 - pick.length));
-  return pick;
+  return [...same, ...contrast].slice(0, 3);
 }
 
 function renderPictureQuestion(word) {
   const rule = pictureRuleDistractors(word);
   let options;
   if (rule.length) {
-    // one rule option only: add two ordinary ones so there are still four choices
-    const pad = rule.length < 2 ? getOptions(word, 4, true).filter(o => o.word !== word.word && !rule.includes(o.word)).slice(0, 2) : [];
+    // fewer than three rule options: ordinary words of the unit fill up to four choices
+    const pad = rule.length < 3 ? getOptions(word, 4, true).filter(o => o.word !== word.word && !rule.includes(o.word)).slice(0, 3 - rule.length) : [];
     options = shuffle([{ word: word.word }, ...rule.map(x => ({ word: x })), ...pad.map(o => ({ word: o.word }))]);
   } else {
     options = getOptions(word, 4, true);
