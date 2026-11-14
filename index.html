@@ -2141,27 +2141,93 @@ function getLetterOptions(wordObj, count) {
 }
 
 // ── Picture Mode ───────────────────────────────────────
-// Picture mode: the wrong options must differ from the answer in what the unit teaches
-// (cat / cut / cot, ship / chip / sip, bell / bel). Random words of the unit would only test the first letter.
-// Returns up to 3 wrong options; empty when the unit's data has nothing for this word.
+// Picture mode. The word is played, so options that only sound different (cat / cut) can be ruled out by ear.
+// To make the student know how THIS word is spelled, up to two options sound the same but are spelled differently:
+//   1. real homophones from the word lists (sea / see) – only the picture and the meaning tell them apart
+//   2. the unit's own misspellings (rain / rane / rayn)
+//   3. generated respellings: one letter group swapped for another spelling of the same sound (cat / kat)
+// The remaining options are contrast words of the unit (cat / cut / cot, ship / chip / sip).
+const SAME_SOUND = {
+  'c|k': ['k'], 'k|k': ['c'], 'ck|k': ['k'], 'ff|f': ['f'], 'ph|f': ['f'], 'll|l': ['l'], 'ss|s': ['s'], 'zz|z': ['z'],
+  's|z': ['z'], 'c|s': ['s'], 'qu|kw': ['kw'], 'x|ks': ['ks'], 'wh|w': ['w'], 'tch|tʃ': ['ch'],
+  'ee|i': ['ea'], 'ea|i': ['ee'], 'ai|eɪ': ['ay'], 'ay|eɪ': ['ai'], 'ou|aʊ': ['ow'], 'ow|aʊ': ['ou'], 'oi|ɔɪ': ['oy'], 'oy|ɔɪ': ['oi'],
+  'au|ɔ': ['aw'], 'aw|ɔ': ['au'], 'er|ɝ': ['ir', 'ur'], 'ir|ɝ': ['er', 'ur'], 'ur|ɝ': ['er', 'ir'], 'ui|u': ['oo'],
+};
+// only at the end of a word (snow → snoe, blue → bloo, my → mie, baby → babie, more → mor)
+const SAME_SOUND_FINAL = { 'ow|oʊ': ['oe'], 'oe|oʊ': ['ow'], 'oo|u': ['ew', 'ue'], 'ue|u': ['oo', 'ew'], 'ew|u': ['oo', 'ue'], 'ue|ju': ['ew'], 'ew|ju': ['ue'],
+  'igh|aɪ': ['ie', 'y'], 'ie|aɪ': ['y', 'igh'], 'y|aɪ': ['ie', 'igh'], 'y|i': ['ie', 'ee'], 'ore|ɔr': ['or'] };
+const MAGIC_E_TEAM = { a: 'ai', o: 'oa', e: 'ee' }; // cake → caik, home → hoam, these → thees
+let WORD_IPA = null; // every word of the quiz → its sound, to keep real homophones and drop real words that sound different
+
+function soundKey(ipa) { return String(ipa || '').replace(/[\/ˈˌ.'\s]/g, ''); }
+function wordIpaMap() {
+  if (WORD_IPA) return WORD_IPA;
+  WORD_IPA = new Map();
+  const put = w => { if (w && w.word && w.ipa && !w.isLetter) WORD_IPA.set(String(w.word).toLowerCase(), soundKey(w.ipa)); };
+  DATA.levels.forEach(l => l.units.forEach(u => (u.words || []).forEach(put)));
+  if (CONS_CONTRASTS && CONS_CONTRASTS.groups) Object.values(CONS_CONTRASTS.groups).forEach(g => (g.sets || []).forEach(set => set.forEach(put)));
+  if (CONTRASTS && Array.isArray(CONTRASTS.sets)) CONTRASTS.sets.forEach(set => Object.values(set).forEach(put));
+  return WORD_IPA;
+}
+
+function pictureSameSound(word) {
+  const w = String(word.word), lw = w.toLowerCase(), map = wordIpaMap(), me = soundKey(word.ipa);
+  const real = [], unitWrong = [], made = [];
+  const ok = x => x && x.toLowerCase() !== lw && ![...real, ...unitWrong, ...made].includes(x);
+  // 1. real homophones
+  const lettersOnly = x => x.replace(/[^a-z]/g, '');
+  map.forEach((ipa, other) => { if (ipa === me && other !== lw && /^[a-z]+$/.test(other) && lettersOnly(other) !== lettersOnly(lw)) real.push(other); }); // not 'mooncake' for 'moon cake'
+  // 2. the unit's misspellings
+  [spellingGroup(currentUnit), spellingGroupByName(currentUnit.extraSpellingSet)].forEach(g => {
+    if (!g || g.choices) return;
+    g.items.filter(m => m.word === w && Array.isArray(m.wrong)).forEach(m => m.wrong.forEach(x => { if (ok(x)) unitWrong.push(x); }));
+  });
+  // 3. generated respellings (one swap each)
+  const gs = Array.isArray(word.graphemes) ? word.graphemes : [];
+  const ph = (word.phonemes || []).map(p => String(p).replace(/[\/'ˈˌ]/g, ''));
+  if (gs.length && gs.length === ph.length && gs.join('') === w) {
+    const build = (i, repl, dropE) => {
+      const parts = gs.slice();
+      parts[i] = /^[A-Z]/.test(parts[i]) ? repl.charAt(0).toUpperCase() + repl.slice(1) : repl;
+      if (dropE != null) parts.splice(dropE, 1);
+      return parts.join('');
+    };
+    gs.forEach((g, i) => {
+      const G = String(g).toLowerCase(), next = String(gs[i + 1] || '').toLowerCase(), last = i === gs.length - 1;
+      let alts = [...(SAME_SOUND[G + '|' + ph[i]] || []), ...(last ? SAME_SOUND_FINAL[G + '|' + ph[i]] || [] : [])];
+      if (G === 'k' && /^[eiy]/.test(next)) alts = alts.filter(x => x !== 'c');          // c before e, i, y would say /s/
+      if (G === 'ck' && !last) alts = [];                                                 // chicken → chiken would change the vowel
+      if (G === 'ch' && last && ph[i] === 'tʃ') alts.push('tch');
+      if (G === 'k' && last && i > 0) alts.push('ck');
+      if ((ph[i] === '-' || ph[i] === '') && G !== 'e' && ((G === 'k' && next === 'n') || (G === 'w' && next === 'r') || (G === 'b' && last))) alts.push(''); // knee → nee
+      alts.forEach(x => made.push(build(i, x)));
+      // magic e: cake → caik
+      if (MAGIC_E_TEAM[G] && ['eɪ', 'oʊ', 'i'].includes(ph[i]) && String(gs[i + 2] || '').toLowerCase() === 'e' && (ph[i + 2] === '-' || ph[i + 2] === '') && i + 2 === gs.length - 1) made.push(build(i, MAGIC_E_TEAM[G], i + 2));
+    });
+  }
+  // a generated spelling that is a real word with another sound is not a same-sound option (ship → sip is not)
+  const madeOk = [...new Set(made)].filter(x => x && x.toLowerCase() !== lw && !real.includes(x.toLowerCase()) && !unitWrong.includes(x) && (!map.has(x.toLowerCase()) || map.get(x.toLowerCase()) === me) && !/^(ass|sex|fuk|kok|kum|gay|dik|tit)/i.test(x));
+  return [...shuffle(real), ...shuffle(unitWrong), ...shuffle(madeOk)];
+}
+
+// Up to 3 wrong options for picture mode: two same-sound spellings first, then contrast words of the unit.
 function pictureRuleDistractors(word) {
   const w = String(word.word);
-  const groups = [[], [], []];
-  const add = (k, x) => { x = String(x); if (x.toLowerCase() !== w.toLowerCase() && !groups.some(g => g.includes(x))) groups[k].push(x); };
-  // 1. short vowels: the same word frame with the other vowels learned so far
+  const same = pictureSameSound(word);
+  const groups = [[], []];
+  const add = (k, x) => { x = String(x); if (x.toLowerCase() !== w.toLowerCase() && !same.includes(x) && !groups.some(g => g.includes(x))) groups[k].push(x); };
+  // short vowels: the same word frame with the other vowels learned so far
   if (CONTRASTS && Array.isArray(CONTRASTS.sets) && currentStage && currentStage.units.some(u => u.contrastVowels)) {
     const vs = (currentUnit.contrastVowels || 'aeiou').split('');
     CONTRASTS.sets.forEach(set => { if (vs.some(v => set[v] && set[v].word === w.toLowerCase())) vs.forEach(v => { if (set[v]) add(0, set[v].word); }); });
   }
-  // 2. the unit's own contrast sets
+  // the unit's own contrast sets
   const cg = consonantGroup(currentUnit);
   if (cg) cg.sets.filter(set => set.some(m => m.word === w)).forEach(set => set.forEach(m => add(1, m.word)));
-  // 3. the unit's spelling items: misspellings that sound the same
-  [spellingGroup(currentUnit), spellingGroupByName(currentUnit.extraSpellingSet)].forEach(g => {
-    if (!g || g.choices) return;
-    g.items.filter(m => m.word === w && Array.isArray(m.wrong)).forEach(m => m.wrong.forEach(x => add(2, x)));
-  });
-  return [...shuffle(groups[0]), ...shuffle(groups[1]), ...shuffle(groups[2])].slice(0, 3);
+  const contrast = [...shuffle(groups[0]), ...shuffle(groups[1])];
+  const pick = [...same.slice(0, 2), ...contrast].slice(0, 3);
+  if (pick.length < 3) pick.push(...same.slice(2, 2 + 3 - pick.length));
+  return pick;
 }
 
 function renderPictureQuestion(word) {
