@@ -1689,7 +1689,11 @@ function startQuiz(mode) {
     if (easy.length >= QUESTIONS_PER_ROUND) pool = easy;
   }
   pool = shuffle([...pool]);
-  quizWords = pool.slice(0, QUESTIONS_PER_ROUND);
+  if (mode === 'picture') { // words whose options can follow the unit's rule come first
+    const ruled = pool.filter(w => pictureRuleDistractors(w).length > 0);
+    pool = [...ruled, ...pool.filter(w => !ruled.includes(w))];
+  }
+  quizWords = shuffle(pool.slice(0, QUESTIONS_PER_ROUND));
 
   pushView('quiz', () => renderQuestion());
 }
@@ -2137,8 +2141,39 @@ function getLetterOptions(wordObj, count) {
 }
 
 // ── Picture Mode ───────────────────────────────────────
+// Picture mode: the wrong options must differ from the answer in what the unit teaches
+// (cat / cut / cot, ship / chip / sip, bell / bel). Random words of the unit would only test the first letter.
+// Returns up to 3 wrong options; empty when the unit's data has nothing for this word.
+function pictureRuleDistractors(word) {
+  const w = String(word.word);
+  const groups = [[], [], []];
+  const add = (k, x) => { x = String(x); if (x.toLowerCase() !== w.toLowerCase() && !groups.some(g => g.includes(x))) groups[k].push(x); };
+  // 1. short vowels: the same word frame with the other vowels learned so far
+  if (CONTRASTS && Array.isArray(CONTRASTS.sets) && currentStage && currentStage.units.some(u => u.contrastVowels)) {
+    const vs = (currentUnit.contrastVowels || 'aeiou').split('');
+    CONTRASTS.sets.forEach(set => { if (vs.some(v => set[v] && set[v].word === w.toLowerCase())) vs.forEach(v => { if (set[v]) add(0, set[v].word); }); });
+  }
+  // 2. the unit's own contrast sets
+  const cg = consonantGroup(currentUnit);
+  if (cg) cg.sets.filter(set => set.some(m => m.word === w)).forEach(set => set.forEach(m => add(1, m.word)));
+  // 3. the unit's spelling items: misspellings that sound the same
+  [spellingGroup(currentUnit), spellingGroupByName(currentUnit.extraSpellingSet)].forEach(g => {
+    if (!g || g.choices) return;
+    g.items.filter(m => m.word === w && Array.isArray(m.wrong)).forEach(m => m.wrong.forEach(x => add(2, x)));
+  });
+  return [...shuffle(groups[0]), ...shuffle(groups[1]), ...shuffle(groups[2])].slice(0, 3);
+}
+
 function renderPictureQuestion(word) {
-  const options = getOptions(word, 4, true);
+  const rule = pictureRuleDistractors(word);
+  let options;
+  if (rule.length) {
+    // one rule option only: add two ordinary ones so there are still four choices
+    const pad = rule.length < 2 ? getOptions(word, 4, true).filter(o => o.word !== word.word && !rule.includes(o.word)).slice(0, 2) : [];
+    options = shuffle([{ word: word.word }, ...rule.map(x => ({ word: x })), ...pad.map(o => ({ word: o.word }))]);
+  } else {
+    options = getOptions(word, 4, true);
+  }
   let html = `
     <div class="question-area">
       <div class="question-prompt">看圖片和提示，選出正確的單字</div>
