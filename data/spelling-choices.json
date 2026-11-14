@@ -909,8 +909,6 @@
       "items": [
         {"word":"catch","ipa":"/kætʃ/","graphemes":["c","a","tch"],"phonemes":["/k","æ","tʃ/"],"phonics":["/k","ă","ch/"],"hearts":[0,0,1],"zh":"抓住(原形)","img":"🤲","audio":"audio/ABB-1/catch.mp3","cat":"tch","wrong":["cach"]},
         {"word":"match","ipa":"/mætʃ/","graphemes":["m","a","tch"],"phonemes":["/m","æ","tʃ/"],"phonics":["/m","ă","ch/"],"hearts":[0,0,0],"zh":"匹配","img":"🔥","audio":"audio/1B-2/match.mp3","cat":"tch","wrong":["mach"]},
-        {"word":"kitchen","ipa":"/ˈkɪtʃən/","graphemes":["k","i","tch","e","n"],"phonemes":["/'k","ɪ","tʃ","ə","n/"],"phonics":["/'k","ĭ","ch","ə","n/"],"hearts":[0,0,1,0,0],"zh":"廚房","img":"🍳","audio":"audio/house-1/kitchen.mp3","cat":"tch","wrong":["kichen"]},
-        {"word":"ketchup","ipa":"/ˈkɛtʃəp/","graphemes":["k","e","tch","u","p"],"phonemes":["/'k","ɛ","tʃ","ə","p/"],"phonics":["/'k","ĕ","ch","ə","p/"],"hearts":[0,0,1,0,0],"zh":"番茄醬","img":"🍅","audio":"audio/food-4/ketchup.mp3","cat":"tch","wrong":["kechup"]},
         {"word":"witch","ipa":"/wɪtʃ/","graphemes":["w","i","tch"],"phonemes":["/w","ɪ","tʃ/"],"phonics":["/w","ĭ","ch/"],"hearts":[0,0,0],"zh":"女巫","img":"🧙","audio":"audio/holidays-2/witch.mp3","cat":"tch","wrong":["wich"]},
         {"word":"fetch","ipa":"/fɛtʃ/","graphemes":["f","e","tch"],"phonemes":["/f","ɛ","tʃ/"],"phonics":["/f","ĕ","ch/"],"hearts":[0,0,0],"zh":"去撿回來","img":"🐕","audio":"audio/animals-3/fetch.mp3","cat":"tch","wrong":["fech"]},
         {"word":"itch","ipa":"/ɪtʃ/","graphemes":["i","tch"],"phonemes":["/ɪ","tʃ/"],"phonics":["/ĭ","ch/"],"hearts":[0,0],"zh":"癢","img":"🦟","audio":"audio/health-2/itch.mp3","cat":"tch","wrong":["ich"]},
@@ -933,7 +931,6 @@
         {"word":"fridge","ipa":"/frɪdʒ/","graphemes":["f","r","i","dge"],"phonemes":["/f","r","ɪ","dʒ/"],"phonics":["/f","r","ĭ","-j/"],"hearts":[0,0,0,1],"zh":"冰箱","img":"🚪","audio":"audio/house-2/fridge.mp3","cat":"dge","wrong":["frige"]},
         {"word":"edge","ipa":"/ɛdʒ/","graphemes":["e","dge"],"phonemes":["/ɛ","dʒ/"],"phonics":["/ĕ","-j/"],"hearts":[0,0],"zh":"邊緣","img":"🔪","audio":"audio/nouns-5/edge.mp3","cat":"dge","wrong":["ege"]},
         {"word":"judge","ipa":"/dʒʌdʒ/","graphemes":["j","u","dge"],"phonemes":["/dʒ","ʌ","dʒ/"],"phonics":["/j","ŭ","j/"],"hearts":[0,0,0],"zh":"判斷","img":"⚖️","audio":"audio/1C-3/judge.mp3","cat":"dge","wrong":["juge"]},
-        {"word":"dodgeball","ipa":"/ˈdɑdʒbɔl/","graphemes":["d","o","dge","b","a","ll"],"phonemes":["/'d","ɑ","dʒ","b","ɔ","l/"],"phonics":["/'d","ŏ","-j","b","aw","l/"],"hearts":[0,0,0,0,1,0],"zh":"躲避球","img":"🤾","audio":"audio/sports-1/dodgeball.mp3","cat":"dge","wrong":["dogeball"]},
         {"word":"large","ipa":"/lɑrdʒ/","graphemes":["l","ar","ge"],"phonemes":["/l","ɑr","dʒ/"],"phonics":["/l","ɑr","-j/"],"hearts":[0,0,0,0],"zh":"巨大的","img":"🐋","audio":"audio/size-3/large.mp3","cat":"ge","wrong":["lardge"]},
         {"word":"charge","ipa":"/tʃɑrdʒ/","graphemes":["ch","ar","ge"],"phonemes":["/tʃ","ɑr","dʒ/"],"phonics":["/ch","ɑr","j/"],"hearts":[0,0,0],"zh":"收費/記帳","img":"💳","audio":"audio/money/charge.mp3","cat":"ge","wrong":["chardge"]},
         {"word":"village","ipa":"/ˈvɪlɪdʒ/","graphemes":["v","i","ll","a","ge"],"phonemes":["/'v","ɪ","l","ɪ","dʒ/"],"phonics":["/'v","ĭ","l","ĭ","-j/"],"hearts":[0,0,0,1,0],"zh":"村莊","img":"🏡","audio":"audio/places-3/village.mp3","cat":"ge","wrong":["villadge"]},
