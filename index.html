@@ -2957,15 +2957,25 @@ function getOptions(correctWord, count, pictureMode) {
   return shuffle([correctWord, ...candidates]);
 }
 
+// Extra tiles of the spelling challenge. Each unit lists the spellings it asks the student to tell apart
+// ("spellTiles" in units.json: ai / ay / a, ll / l, sp → b …). Tiles that share a letter with the word come
+// first (bell → l, rain → ay), then the unit's most important one, then the rest; random tiles of the unit
+// only fill what is left.
 function getDistractorGraphemes(word, count) {
-  const correctSet = new Set(word.graphemes);
-  const unitGraphemes = currentUnit.words
-    .filter(w => w.word !== word.word)
-    .flatMap(w => w.graphemes)
-    .filter(g => !correctSet.has(g) && /^[A-Za-z]+$/.test(g)); // letters only: phrases carry a space or hyphen as a unit
-
-  const unique = [...new Set(unitGraphemes)];
-  return shuffle(unique).slice(0, count);
+  const correctSet = new Set(word.graphemes.map(g => String(g).toLowerCase()));
+  const rule = (currentUnit.spellTiles || []).filter(g => !correctSet.has(g));
+  const letters = new Set([...correctSet].join(""));
+  const near = shuffle(rule.filter(g => [...g].some(ch => letters.has(ch))));
+  const far = rule.filter(g => !near.includes(g));
+  const picked = [...near.slice(0, 2), ...far.slice(0, 1), ...shuffle(far.slice(1)), ...near.slice(2)].slice(0, count);
+  if (picked.length < count) {
+    const unitGraphemes = currentUnit.words
+      .filter(w => w.word !== word.word)
+      .flatMap(w => w.graphemes)
+      .filter(g => !correctSet.has(String(g).toLowerCase()) && !picked.includes(g) && /^[A-Za-z]+$/.test(g)); // letters only: phrases carry a space or hyphen as a unit
+    picked.push(...shuffle([...new Set(unitGraphemes)]).slice(0, count - picked.length));
+  }
+  return picked;
 }
 
 function shuffle(arr) {

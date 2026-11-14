@@ -439,6 +439,7 @@
           "explain": "・CVC（子音＋母音＋子音）中間的母音發短音\n・a 的短音是 /æ/（cat、hat）",
           "keys": [{ "g": "a", "ipa": "æ" }],
           "examples": ["cat","hat","bat","map","bag","fan","dad","sad","jam","cap","van","man","pan","rat","mat"],
+          "spellTiles": ["a", "e", "i", "o", "u"],
           "words": [
             {
               "word": "act",
@@ -1769,6 +1770,7 @@
           "explain": "・CVC（子音＋母音＋子音）中間的母音發短音\n・e 的短音是 /ɛ/（bed、pen）",
           "keys": [{ "g": "e", "ipa": "ɛ" }],
           "examples": ["bed","pen","red","leg","pet","ten","hen","net","jet","web","wet","yes","men","get","let"],
+          "spellTiles": ["a", "e", "i", "o", "u"],
           "words": [
             {
               "word": "bed",
@@ -2908,6 +2910,7 @@
           "explain": "・CVC（子音＋母音＋子音）中間的母音發短音\n・i 的短音是 /ɪ/（sit、pig）",
           "keys": [{ "g": "i", "ipa": "ɪ" }],
           "examples": ["pig","six","big","lip","zip","sit","kid","pin","hit","dig","win","wig","tip","lid","him"],
+          "spellTiles": ["a", "e", "i", "o", "u"],
           "words": [
             {
               "word": "big",
@@ -4252,6 +4255,7 @@
           "explain": "・CVC（子音＋母音＋子音）中間的母音發短音\n・o 的短音是 /ɑ/（hot、dog）",
           "keys": [{ "g": "o", "ipa": "ɑ" }],
           "examples": ["box","fox","hot","dog","pot","mop","top","hop","not","jog","fog","mom","pop","cop","lot"],
+          "spellTiles": ["a", "e", "i", "o", "u"],
           "words": [
             {
               "word": "box",
@@ -5100,6 +5104,7 @@
           "explain": "・CVC（子音＋母音＋子音）中間的母音發短音\n・u 的短音是 /ʌ/（cup、sun）",
           "keys": [{ "g": "u", "ipa": "ʌ" }],
           "examples": ["bus","sun","cup","run","bug","mud","nut","hug","cut","fun","gum","bun","but","up","tub"],
+          "spellTiles": ["a", "e", "i", "o", "u"],
           "words": [
             {
               "word": "bug",
@@ -5705,6 +5710,66 @@
               "audio": "audio/1C-4/rub.mp3"
             },
             {
+              "word": "rug",
+              "ipa": "/rʌɡ/",
+              "graphemes": [
+                "r",
+                "u",
+                "g"
+              ],
+              "phonemes": [
+                "/r",
+                "ʌ",
+                "ɡ/"
+              ],
+              "phonics": [
+                "/r",
+                "ŭ",
+                "ɡ/"
+              ],
+              "tags": [
+                "cvc"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "小地毯",
+              "img": "🧶",
+              "audio": "audio/house-3/rug.mp3"
+            },
+            {
+              "word": "rum",
+              "ipa": "/rʌm/",
+              "graphemes": [
+                "r",
+                "u",
+                "m"
+              ],
+              "phonemes": [
+                "/r",
+                "ʌ",
+                "m/"
+              ],
+              "phonics": [
+                "/r",
+                "ŭ",
+                "m/"
+              ],
+              "tags": [
+                "cvc"
+              ],
+              "hearts": [
+                0,
+                0,
+                0
+              ],
+              "zh": "蘭姆酒",
+              "img": "🥃",
+              "audio": "audio/food-4/rum.mp3"
+            },
+            {
               "word": "run",
               "ipa": "/rʌn/",
               "graphemes": [
@@ -5914,6 +5979,7 @@
           "id": 91,
           "name": "🎯 a / e 聽辨",
           "pattern": "學完 Short e 之後測：分辨短母音 a 和 e",
+          "spellTiles": ["a", "e", "i", "o", "u"],
           "words": [],
           "isMixed": true,
           "mixSourceUnitIds": [2, 3],
@@ -5923,6 +5989,7 @@
           "id": 92,
           "name": "🎯 a / e / i 聽辨",
           "pattern": "學完 Short i 之後測：分辨 a、e、i",
+          "spellTiles": ["a", "e", "i", "o", "u"],
           "words": [],
           "isMixed": true,
           "mixSourceUnitIds": [2, 3, 4],
@@ -5932,6 +5999,7 @@
           "id": 93,
           "name": "🎯 a / o / u 聽辨",
           "pattern": "學完 Short u 之後測：分辨 a、o、u",
+          "spellTiles": ["a", "e", "i", "o", "u"],
           "words": [],
           "isMixed": true,
           "mixSourceUnitIds": [2, 5, 6],
@@ -5952,6 +6020,7 @@
           "keys": [{ "g": "ar", "ipa": "ɑr" }],
           "contrastSet": "r-ar",
           "examples": ["car","star","farm","park","arm","art","card","dark","far","hard","jar","yard","shark","smart","start"],
+          "spellTiles": ["or", "er", "a", "ar"],
           "words": [
             {
               "word": "alarm",
@@ -7801,6 +7870,7 @@
           "keys": [{ "g": "or", "ipa": "ɔr" }],
           "contrastSet": "r-or",
           "examples": ["fork","horse","corn","north","short","storm","sport","pork","for","born","morning","forty","corner","story","order"],
+          "spellTiles": ["ar", "er", "o", "or"],
           "words": [
             {
               "word": "boring",
@@ -9266,6 +9336,7 @@
           "contrastSet": "r-er",
           "spellingSet": "er-ir-ur",
           "examples": ["her","term","clerk","perm","bird","girl","shirt","skirt","first","third","nurse","purse","turn","burn","hurt"],
+          "spellTiles": ["er", "ir", "ur", "ar", "or"],
           "words": [
             {
               "word": "advertisement",
@@ -11302,6 +11373,7 @@
           "keys": [{ "g": "ff", "ipa": "f" }, { "g": "ll", "ipa": "l" }, { "g": "ss", "ipa": "s" }, { "g": "zz", "ipa": "z" }],
           "spellingSet": "floss",
           "examples": ["off","stuff","cliff","puff","tell","sell","well","hill","will","doll","kiss","miss","boss","buzz","jazz"],
+          "spellTiles": ["l", "ll", "s", "ss", "f", "ff", "z", "zz"],
           "words": [
             {
               "word": "all",
@@ -13123,6 +13195,7 @@
           "keys": [{ "g": "sh", "ipa": "ʃ" }, { "g": "ch", "ipa": "tʃ" }, { "g": "th", "ipa": "θ" }, { "g": "th", "ipa": "ð" }],
           "contrastSet": "digraphs",
           "examples": ["ship","shop","shut","fish","dish","brush","chin","chop","check","chicken","thin","thick","bath","math","this"],
+          "spellTiles": ["sh", "ch", "th", "s", "t", "c"],
           "words": [
             {
               "word": "bath",
@@ -18370,6 +18443,7 @@
           "keys": [{ "g": "wh", "ipa": "w" }, { "g": "ph", "ipa": "f" }, { "g": "ck", "ipa": "k" }, { "g": "qu", "ipa": "kw" }],
           "spellingSet": "digraph-spelling",
           "examples": ["when","which","dolphin","elephant","alphabet","back","duck","neck","sock","clock","black","pick","quiz","quick","quit"],
+          "spellTiles": ["w", "wh", "f", "ph", "k", "ck", "c", "qu"],
           "words": [
             {
               "word": "alarm clock",
@@ -21718,6 +21792,7 @@
           "keys": [{ "g": "ck", "ipa": "k" }, { "g": "tch", "ipa": "tʃ" }, { "g": "dge", "ipa": "dʒ" }],
           "spellingSet": "ck-tch-dge",
           "examples": ["back","duck","neck","milk","bank","catch","match","fetch","lunch","bench","bridge","fridge","badge","large","hinge"],
+          "spellTiles": ["k", "ck", "ch", "tch", "ge", "dge", "j"],
           "words": [
             {
               "word": "back",
@@ -23497,6 +23572,7 @@
           "explain": "・字首的子音後面接 l，兩個音連著唸，都要發出來\n・bl（black）、cl（clock）、fl（flag）、gl（glass）、pl（plan）、sl（slim）",
           "contrastSet": "l-blends",
           "examples": ["black","block","clock","class","flag","fluff","glass","glad","plan","plant","slim","slept"],
+          "spellTiles": ["r", "l", "b", "c", "f", "g", "p", "s"],
           "words": [
             {
               "word": "black",
@@ -26375,6 +26451,7 @@
           "explain": "・字首的子音後面接 r，兩個音連著唸，都要發出來\n・br（brush）、cr（crab）、fr（frog）、gr（grass）、pr（print）\n・tr 唸起來像 ㄔㄨ（truck）\n・dr 唸起來像 ㄓㄨ（dress）\n・thr、shr 是 th、sh 後面接 r（three、shrimp）",
           "contrastSet": "r-blends",
           "examples": ["brush","brick","crab","cross","frog","fresh","grass","gram","print","prince","truck","trip","dress","drum","three","shrimp"],
+          "spellTiles": ["l", "ch", "j", "r", "b", "c", "d", "f", "g", "p", "t"],
           "words": [
             {
               "word": "bracelet",
@@ -28258,6 +28335,41 @@
               "audio": "audio/ABC-iau/drink.mp3"
             },
             {
+              "word": "drip",
+              "ipa": "/drɪp/",
+              "graphemes": [
+                "d",
+                "r",
+                "i",
+                "p"
+              ],
+              "phonemes": [
+                "/d",
+                "r",
+                "ɪ",
+                "p/"
+              ],
+              "phonics": [
+                "/d",
+                "r",
+                "ĭ",
+                "p/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "滴；滴水",
+              "img": "💧",
+              "audio": "audio/house-3/drip.mp3"
+            },
+            {
               "word": "drive",
               "ipa": "/draɪv/",
               "graphemes": [
@@ -28452,6 +28564,41 @@
               "zh": "開車(過去式)",
               "img": "",
               "audio": "audio/ABC-ioi/drove.mp3"
+            },
+            {
+              "word": "drug",
+              "ipa": "/drʌɡ/",
+              "graphemes": [
+                "d",
+                "r",
+                "u",
+                "g"
+              ],
+              "phonemes": [
+                "/d",
+                "r",
+                "ʌ",
+                "ɡ/"
+              ],
+              "phonics": [
+                "/d",
+                "r",
+                "ŭ",
+                "ɡ/"
+              ],
+              "tags": [
+                "cluster",
+                "cvc"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "藥物；毒品",
+              "img": "💊",
+              "audio": "audio/health-2/drug.mp3"
             },
             {
               "word": "drugstore",
@@ -32295,6 +32442,7 @@
           "explain": "・字首的 s 後面接 m、n、w，兩個音連著唸，都要發出來\n・sm（smell）、sn（snack）、sw（swim）",
           "contrastSet": "s-plain",
           "examples": ["smell","smart","snack","sniff","swim","swing","swam","swum"],
+          "spellTiles": ["l", "m", "n", "w", "s"],
           "words": [
             {
               "word": "small",
@@ -33547,6 +33695,7 @@
           "explain": "・sp、spl、spr、sk、sc、scr、st、str：s 後面的 p、k（c）、t 不送氣\n・p 唸起來像 ㄅ（spot、spell）\n・k 和 c 像 ㄍ（skin、scarf）\n・t 像 ㄉ（stop、stick）",
           "contrastSet": "s-blends",
           "examples": ["spot","spell","spend","stop","step","stick","still","stamp","skin","skip","skill","scarf","string","strong","spring"],
+          "spellTiles": ["b", "d", "g", "p", "t", "k", "c"],
           "words": [
             {
               "word": "astronaut",
@@ -37549,6 +37698,7 @@
           "explain": "・字尾連著兩個子音，兩個音都要發\n・-nt（went）、-nd（hand）、-mp（jump）、-st（fast）、-sk（desk）、-nk（pink）\n・字尾的 ng 是一個音 /ŋ/（sing、long）",
           "contrastSet": "final-clusters",
           "examples": ["ant","tent","hand","sand","lamp","jump","fast","nest","desk","mask","bank","pink","ring","sing","long"],
+          "spellTiles": ["m", "n", "ng", "nk", "t", "d", "k", "p", "s"],
           "words": [
             {
               "word": "absent",
@@ -42250,6 +42400,41 @@
               "audio": "audio/ABC-iau/rang.mp3"
             },
             {
+              "word": "rank",
+              "ipa": "/ræŋk/",
+              "graphemes": [
+                "r",
+                "a",
+                "n",
+                "k"
+              ],
+              "phonemes": [
+                "/r",
+                "æ",
+                "ŋ",
+                "k/"
+              ],
+              "phonics": [
+                "/r",
+                "ă",
+                "ŋ",
+                "k/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "名次；等級",
+              "img": "🏅",
+              "audio": "audio/nouns-4/rank.mp3"
+            },
+            {
               "word": "rent",
               "ipa": "/rɛnt/",
               "graphemes": [
@@ -42404,6 +42589,41 @@
               "zh": "響鈴(原形)",
               "img": "💍",
               "audio": "audio/ABC-iau/ring.mp3"
+            },
+            {
+              "word": "rink",
+              "ipa": "/rɪŋk/",
+              "graphemes": [
+                "r",
+                "i",
+                "n",
+                "k"
+              ],
+              "phonemes": [
+                "/r",
+                "ɪ",
+                "ŋ",
+                "k/"
+              ],
+              "phonics": [
+                "/r",
+                "ĭ",
+                "ŋ",
+                "k/"
+              ],
+              "tags": [
+                "cvc",
+                "cluster"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "溜冰場",
+              "img": "⛸️",
+              "audio": "audio/places-2/rink.mp3"
             },
             {
               "word": "round",
@@ -44613,6 +44833,7 @@
           "keys": [{ "g": "kn", "ipa": "n" }, { "g": "wr", "ipa": "r" }, { "g": "mb", "ipa": "m" }],
           "spellingSet": "silent",
           "examples": ["knock","knit","wrong","wrist","wrap","lamb","thumb","bomb","dumb"],
+          "spellTiles": ["n", "kn", "r", "wr", "m", "mb", "k", "w", "b"],
           "words": [
             {
               "word": "bomb",
@@ -45385,6 +45606,7 @@
           "contrastSet": "d-oi",
           "spellingSet": "oi-oy",
           "examples": ["coin","oil","boil","soil","point","join","noise","voice","boy","toy","joy","soy","enjoy"],
+          "spellTiles": ["oi", "oy", "o"],
           "words": [
             {
               "word": "avoid",
@@ -46262,6 +46484,7 @@
           "contrastSet": "d-ou",
           "spellingSet": "ou-ow",
           "examples": ["out","house","mouse","cloud","mouth","loud","round","sound","cow","now","how","down","town","brown","owl"],
+          "spellTiles": ["ou", "ow", "o"],
           "words": [
             {
               "word": "about",
@@ -48589,6 +48812,7 @@
           "keys": [{ "g": "oo", "ipa": "u" }, { "g": "oo", "ipa": "ʊ" }],
           "contrastSet": "d-oo",
           "examples": ["moon","food","zoo","spoon","cool","pool","room","tooth","book","look","cook","good","foot","wood"],
+          "spellTiles": ["u", "oo", "o", "ou"],
           "words": [
             {
               "word": "afternoon",
@@ -50456,6 +50680,7 @@
           "contrastSet": "d-aw",
           "spellingSet": "au-aw-al",
           "examples": ["August","sauce","pause","cause","launch","saw","draw","law","lawn","straw","ball","tall","wall","talk","walk"],
+          "spellTiles": ["au", "aw", "o", "a", "l", "ll"],
           "words": [
             {
               "word": "all",
@@ -52038,6 +52263,7 @@
           "keys": [{ "g": "a_e", "ipa": "eɪ" }, { "g": "e_e", "ipa": "i" }, { "g": "i_e", "ipa": "aɪ" }, { "g": "o_e", "ipa": "oʊ" }, { "g": "u_e", "ipa": "ju" }],
           "contrastSet": "magic-e",
           "examples": ["cake","name","game","make","these","Pete","bike","kite","five","home","nose","rope","cute","cube","June"],
+          "spellTiles": ["a", "e", "i", "o", "u"],
           "words": [
             {
               "word": "a_e, ai, ay",
@@ -60840,6 +61066,7 @@
           "contrastSet": "l-a",
           "spellingSet": "long-a",
           "examples": ["cake","name","game","make","gate","rain","train","tail","wait","day","play","say","way","stay","May"],
+          "spellTiles": ["ai", "ay", "a", "e"],
           "words": [
             {
               "word": "a_e, ai, ay",
@@ -66095,6 +66322,7 @@
           "contrastSet": "l-e",
           "spellingSet": "long-e",
           "examples": ["tree","green","see","bee","feet","sleep","eat","tea","sea","read","meat","beach","these","Pete","three"],
+          "spellTiles": ["ee", "ea", "e", "i"],
           "words": [
             {
               "word": "agree",
@@ -71284,6 +71512,7 @@
           "contrastSet": "l-i",
           "spellingSet": "long-i",
           "examples": ["bike","kite","five","time","nine","pie","tie","my","fly","sky","cry","night","light","right","high"],
+          "spellTiles": ["i", "igh", "ie", "y", "e"],
           "words": [
             {
               "word": "admire",
@@ -75731,6 +75960,7 @@
           "contrastSet": "l-o",
           "spellingSet": "long-o",
           "examples": ["home","nose","rope","bone","hope","boat","coat","goat","road","soap","snow","slow","grow","show","toe"],
+          "spellTiles": ["o", "oa", "ow", "oe", "e"],
           "words": [
             {
               "word": "alone",
@@ -78438,6 +78668,7 @@
           "contrastSet": "l-u",
           "spellingSet": "long-u",
           "examples": ["cute","cube","tube","use","June","rule","blue","glue","true","fruit","juice","suit","new","few","grew"],
+          "spellTiles": ["u", "ue", "ui", "ew", "oo", "e"],
           "words": [
             {
               "word": "amusement",
@@ -79849,7 +80080,8 @@
           "explain": "・原本拼成長母音的字，後面的子音如果是 r，母音會變音\n・a：cake → care，/eɪ/ 變 /ɛr/（air、are）\n・e：eat → ear，/i/ 變 /ɪr/（ear、eer、ere）\n・o：home → more，/oʊ/ 變 /ɔr/（ore）\n・u：cute → cure，/ju/ 變 /jʊr/（ure）\n・i 不變：bike → fire，還是 /aɪ/（ire）",
           "contrastSet": "l-r",
           "spellingSet": "air-are-ore",
-          "examples": ["chair","hair","air","care","share","square","hear","near","year","deer","here","more","store","cure","fire"],
+          "examples": ["chair","hair","air","care","share","square","hear","near","year","deer","here","more","cure","pure","fire"],
+          "spellTiles": ["ai", "a", "ea", "ee", "e", "o", "i", "u"],
           "words": [
             {
               "word": "admire",
@@ -81853,6 +82085,40 @@
               "audio": "audio/1C-4/prepare.mp3"
             },
             {
+              "word": "pure",
+              "ipa": "/pjʊr/",
+              "graphemes": [
+                "p",
+                "u",
+                "r",
+                "e"
+              ],
+              "phonemes": [
+                "/p",
+                "jʊ",
+                "r",
+                "-/"
+              ],
+              "phonics": [
+                "/p",
+                "yoo",
+                "r",
+                "-/"
+              ],
+              "tags": [
+                "magic_e"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "純的；純粹的",
+              "img": "💧",
+              "audio": "audio/adjs-3/pure.mp3"
+            },
+            {
               "word": "rare",
               "ipa": "/rɛr/",
               "graphemes": [
@@ -82282,6 +82548,41 @@
               "audio": "audio/places-3/store.mp3"
             },
             {
+              "word": "sure",
+              "ipa": "/ʃʊr/",
+              "graphemes": [
+                "s",
+                "u",
+                "r",
+                "e"
+              ],
+              "phonemes": [
+                "/ʃ",
+                "ʊ",
+                "r",
+                "-/"
+              ],
+              "phonics": [
+                "/sh",
+                "oo",
+                "r",
+                "-/"
+              ],
+              "tags": [
+                "magic_e",
+                "digraph"
+              ],
+              "hearts": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "zh": "確定的",
+              "img": "✔️",
+              "audio": "audio/adjs-3/sure.mp3"
+            },
+            {
               "word": "swore",
               "ipa": "/swɔr/",
               "graphemes": [
@@ -82556,6 +82857,7 @@
           "explain": "・兩個音節的字，短母音後面的子音要寫兩個（rabbit、summer、happy）\n・長母音後面只寫一個（tiger、paper、robot）\n・rr 也一樣：carry、mirror 的母音是短音，不會變成 ar、ir 的音",
           "spellingSet": "rabbit",
           "examples": ["rabbit","kitten","summer","happy","letter","butter","hammer","yellow","dinner","carry","carrot","mirror","tiger","paper","robot"],
+          "spellTiles": ["b", "bb", "d", "dd", "m", "mm", "n", "nn", "p", "pp", "t", "tt", "r", "rr", "l", "ll"],
           "words": [
             {
               "word": "apples",
@@ -88500,6 +88802,7 @@
           "keys": [{ "g": "le", "ipa": "əl" }],
           "spellingSet": "le",
           "examples": ["apple","little","bottle","middle","puzzle","candle","simple","uncle","table","cable","title","needle","eagle","purple","turtle"],
+          "spellTiles": ["el", "al", "l", "le", "p", "pp", "t", "tt", "d", "dd", "b", "bb", "z", "zz"],
           "words": [
             {
               "word": "able",
@@ -89592,6 +89895,7 @@
           "keys": [{ "g": "s", "ipa": "s" }, { "g": "s", "ipa": "z" }, { "g": "es", "ipa": "ɪz" }],
           "spellingSet": "s-es",
           "examples": ["dogs","hands","eggs","boots","socks","songs","boxes","foxes","buses","classes","glasses","watches","peaches","dishes","quizzes"],
+          "spellTiles": ["s", "es", "z"],
           "words": [
             {
               "word": "benches",
@@ -91053,6 +91357,7 @@
           "keys": [{ "g": "ed", "ipa": "t" }, { "g": "ed", "ipa": "d" }, { "g": "ed", "ipa": "ɪd" }],
           "spellingSet": "ed-sounds",
           "examples": ["helped","cooked","walked","watched","played","cleaned","rained","showed","filled","visited","landed","shouted","spotted","crowded","excited"],
+          "spellTiles": ["t", "d", "ed", "id"],
           "words": [
             {
               "word": "balanced",
@@ -92138,6 +92443,7 @@
           "keys": [{ "g": "y", "ipa": "j" }, { "g": "y", "ipa": "aɪ" }, { "g": "y", "ipa": "i" }],
           "spellingSet": "y-sounds",
           "examples": ["yes","yet","yell","yellow","yard","my","cry","fly","try","sky","baby","puppy","happy","sunny","candy"],
+          "spellTiles": ["i", "ie", "ee", "e", "y"],
           "words": [
             {
               "word": "ability",
@@ -97692,6 +97998,7 @@
           "spellingSet": "c-sounds",
           "extraSpellingSet": "c-or-k",
           "examples": ["cent","city","circle","ice","rice","face","race","dance","cat","cup","car","cake","king","kid","kiss"],
+          "spellTiles": ["s", "c", "k", "ck"],
           "words": [
             {
               "word": "accept",
@@ -102523,6 +102830,7 @@
           "contrastSet": "w-rule",
           "spellingSet": "w-rule",
           "examples": ["want","wash","watch","swan","wallet","what","war","warm","warn","award","work","word","world","worm","worker"],
+          "spellTiles": ["o", "a", "or", "ar", "er", "ur"],
           "words": [
             {
               "word": "award",

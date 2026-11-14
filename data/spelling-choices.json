@@ -316,6 +316,7 @@
         {"word":"run","ipa":"/rʌn/","graphemes":["r","u","n"],"phonemes":["/r","ʌ","n/"],"phonics":["/r","ŭ","n/"],"hearts":[0,0,0],"zh":"跑(原形/過去分詞)","img":"🏃","audio":"audio/ABA/run.mp3","cat":"plain","wrong":["wrun"]},
         {"word":"rock","ipa":"/rɑk/","graphemes":["r","o","ck"],"phonemes":["/r","ɑ","k/"],"phonics":["/r","ŏ","k/"],"hearts":[0,0,0],"zh":"岩石","img":"🪨","audio":"audio/weather-4/rock.mp3","cat":"plain","wrong":["wrock"]},
         {"word":"rat","ipa":"/ræt/","graphemes":["r","a","t"],"phonemes":["/r","æ","t/"],"phonics":["/r","ă","t/"],"hearts":[0,0,0],"zh":"老鼠","img":"🐀","audio":"audio/animals-3/rat.mp3","cat":"plain","wrong":["wrat"]},
+        {"word":"rug","ipa":"/rʌɡ/","graphemes":["r","u","g"],"phonemes":["/r","ʌ","ɡ/"],"phonics":["/r","ŭ","ɡ/"],"hearts":[0,0,0],"zh":"小地毯","img":"🧶","audio":"audio/house-3/rug.mp3","cat":"plain","wrong":["wrug"]},
         {"word":"drum","ipa":"/drʌm/","graphemes":["d","r","u","m"],"phonemes":["/d","r","ʌ","m/"],"phonics":["/d","r","ŭ","m/"],"hearts":[0,0,0,0],"zh":"鼓","img":"🥁","audio":"audio/sports-3/drum.mp3","cat":"plain","wrong":["drumb"]},
         {"word":"swim","ipa":"/swɪm/","graphemes":["s","w","i","m"],"phonemes":["/s","w","ɪ","m/"],"phonics":["/s","w","ĭ","m/"],"hearts":[0,0,0,0],"zh":"游泳(原形)","img":"","audio":"audio/ABC-iau/swim.mp3","cat":"plain","wrong":["swimb"]},
         {"word":"ham","ipa":"/hæm/","graphemes":["h","a","m"],"phonemes":["/h","æ","m/"],"phonics":["/h","ă","m/"],"hearts":[0,0,0],"zh":"火腿","img":"🍖","audio":"audio/food-2/ham.mp3","cat":"plain","wrong":["hamb"]},
@@ -642,7 +643,9 @@
         {"word":"admire","ipa":"/ədˈmaɪr/","graphemes":["a","d","m","i","r","e"],"phonemes":["/ə","d","'m","aɪ","r","-/"],"phonics":["/ə","d","'m","ī","r","-/"],"hearts":[0,0,0,0,0,0],"zh":"欽佩","img":"🌟","audio":"audio/1C-1/admire.mp3","cat":"ire","wrong":["admier","admyre"]},
         {"word":"desire","ipa":"/dɪˈzaɪr/","graphemes":["d","e","s","i","r","e"],"phonemes":["/d","ɪ","'z","aɪ","r","-/"],"phonics":["/d","ĭ","'z","ī","r","-/"],"hearts":[0,0,0,0,0,0],"zh":"渴望","img":"💭","audio":"audio/nouns-1/desire.mp3","cat":"ire","wrong":["desier","desyre"]},
         {"word":"inspire","ipa":"/ɪnˈspaɪr/","graphemes":["i","n","s","p","i","r","e"],"phonemes":["/ɪ","n","'s","p","aɪ","r","-/"],"phonics":["/ĭ","n","'s","p","ī","r","-/"],"hearts":[0,0,0,0,0,0,0],"zh":"啟發","img":"💡","audio":"audio/1C-3/inspire.mp3","cat":"ire","wrong":["inspier","inspyre"]},
-        {"word":"cure","ipa":"/kjʊr/","graphemes":["c","u","r","e"],"phonemes":["/k","jʊ","r","-/"],"phonics":["/k","yoo","r","-/"],"hearts":[0,0,0,0],"zh":"治癒；治好","img":"💊","audio":"audio/health-2/cure.mp3","cat":"ure","wrong":["cuer","cyoor"]}
+        {"word":"cure","ipa":"/kjʊr/","graphemes":["c","u","r","e"],"phonemes":["/k","jʊ","r","-/"],"phonics":["/k","yoo","r","-/"],"hearts":[0,0,0,0],"zh":"治癒；治好","img":"💊","audio":"audio/health-2/cure.mp3","cat":"ure","wrong":["cuer","cyoor"]},
+        {"word":"sure","ipa":"/ʃʊr/","graphemes":["s","u","r","e"],"phonemes":["/ʃ","ʊ","r","-/"],"phonics":["/sh","oo","r","-/"],"hearts":[1,0,0,0],"zh":"確定的","img":"✔️","audio":"audio/adjs-3/sure.mp3","cat":"ure","wrong":["shure","shoor"]},
+        {"word":"pure","ipa":"/pjʊr/","graphemes":["p","u","r","e"],"phonemes":["/p","jʊ","r","-/"],"phonics":["/p","yoo","r","-/"],"hearts":[0,0,0,0],"zh":"純的；純粹的","img":"💧","audio":"audio/adjs-3/pure.mp3","cat":"ure","wrong":["puer","pyoor"]}
       ]
     },
     "le": {
