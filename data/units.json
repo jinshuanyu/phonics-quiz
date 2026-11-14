@@ -21598,7 +21598,7 @@
           "id": 32,
           "name": "字尾：ck, tch, dge",
           "pattern": "短母音後面：ck、tch、dge",
-          "explain": "・/k/、/tʃ/、/dʒ/ 緊接在短母音後面，寫 ck、tch、dge（back、catch、bridge）\n・前面隔著別的子音或 r 母音，寫 k、ch、ge（milk、lunch、large）\n・兩個音節以上的字，字尾 /ɪdʒ/ 寫 age（village、cabbage）",
+          "explain": "・短母音後面直接接 /k/、/tʃ/、/dʒ/，寫 ck、tch、dge（back、catch、bridge）\n・中間隔著別的子音，寫 k、ch、ge（milk、lunch、large）",
           "keys": [{ "g": "ck", "ipa": "k" }, { "g": "tch", "ipa": "tʃ" }, { "g": "dge", "ipa": "dʒ" }],
           "spellingSet": "ck-tch-dge",
           "examples": ["back","duck","neck","sock","milk","bank","catch","match","fetch","pitch","lunch","bench","bridge","fridge","large"],
@@ -21856,44 +21856,6 @@
               "zh": "早午餐",
               "img": "🥞",
               "audio": "audio/food-4/brunch.mp3"
-            },
-            {
-              "word": "cabbage",
-              "ipa": "/ˈkæbɪdʒ/",
-              "graphemes": [
-                "c",
-                "a",
-                "bb",
-                "a",
-                "ge"
-              ],
-              "phonemes": [
-                "/'k",
-                "æ",
-                "b",
-                "ɪ",
-                "dʒ/"
-              ],
-              "phonics": [
-                "/'k",
-                "ă",
-                "b",
-                "ĭ",
-                "-j/"
-              ],
-              "tags": [
-                "closed"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "高麗菜",
-              "img": "🥬",
-              "audio": "audio/food-1/cabbage.mp3"
             },
             {
               "word": "catch",
@@ -22245,44 +22207,6 @@
               "audio": "audio/house-2/fridge.mp3"
             },
             {
-              "word": "garbage",
-              "ipa": "/ˈɡɑrbɪdʒ/",
-              "graphemes": [
-                "g",
-                "ar",
-                "b",
-                "a",
-                "ge"
-              ],
-              "phonemes": [
-                "/'ɡ",
-                "ɑr",
-                "b",
-                "ɪ",
-                "dʒ/"
-              ],
-              "phonics": [
-                "/'ɡ",
-                "ɑr",
-                "b",
-                "ĭ",
-                "-j/"
-              ],
-              "tags": [
-                "rcontrolled"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "垃圾",
-              "img": "🗑️",
-              "audio": "audio/house-4/garbage.mp3"
-            },
-            {
               "word": "hatch",
               "ipa": "/hætʃ/",
               "graphemes": [
@@ -22568,44 +22492,6 @@
               "audio": "audio/1B-2/match.mp3"
             },
             {
-              "word": "message",
-              "ipa": "/ˈmɛsɪdʒ/",
-              "graphemes": [
-                "m",
-                "e",
-                "ss",
-                "a",
-                "ge"
-              ],
-              "phonemes": [
-                "/'m",
-                "ɛ",
-                "s",
-                "ɪ",
-                "dʒ/"
-              ],
-              "phonics": [
-                "/'m",
-                "ĕ",
-                "s",
-                "ĭ",
-                "-j/"
-              ],
-              "tags": [
-                "closed"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "訊息",
-              "img": "💬",
-              "audio": "audio/house-4/message.mp3"
-            },
-            {
               "word": "milk",
               "ipa": "/mɪlk/",
               "graphemes": [
@@ -22670,80 +22556,6 @@
               "zh": "頸部",
               "img": "",
               "audio": "audio/body-and-face-2/neck.mp3"
-            },
-            {
-              "word": "orange",
-              "ipa": "/ˈɔrɪndʒ/",
-              "graphemes": [
-                "or",
-                "a",
-                "n",
-                "ge"
-              ],
-              "phonemes": [
-                "/'ɔr",
-                "ɪ",
-                "n",
-                "dʒ/"
-              ],
-              "phonics": [
-                "/'or",
-                "ĭ",
-                "n",
-                "-j/"
-              ],
-              "tags": [
-                "irregular",
-                "digraph"
-              ],
-              "hearts": [
-                0,
-                true,
-                false,
-                false
-              ],
-              "zh": "橘子；橘色；橘色的",
-              "img": "🍊",
-              "audio": "audio/colors/orange.mp3"
-            },
-            {
-              "word": "package",
-              "ipa": "/ˈpækɪdʒ/",
-              "graphemes": [
-                "p",
-                "a",
-                "ck",
-                "a",
-                "ge"
-              ],
-              "phonemes": [
-                "/'p",
-                "æ",
-                "k",
-                "ɪ",
-                "dʒ/"
-              ],
-              "phonics": [
-                "/'p",
-                "ă",
-                "k",
-                "ĭ",
-                "j/"
-              ],
-              "tags": [
-                "digraph",
-                "closed"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "包裹",
-              "img": "📦",
-              "audio": "audio/size-3/package.mp3"
             },
             {
               "word": "park",
@@ -23152,44 +22964,6 @@
               "zh": "開關",
               "img": "🔘",
               "audio": "audio/house-2/switch.mp3"
-            },
-            {
-              "word": "village",
-              "ipa": "/ˈvɪlɪdʒ/",
-              "graphemes": [
-                "v",
-                "i",
-                "ll",
-                "a",
-                "ge"
-              ],
-              "phonemes": [
-                "/'v",
-                "ɪ",
-                "l",
-                "ɪ",
-                "dʒ/"
-              ],
-              "phonics": [
-                "/'v",
-                "ĭ",
-                "l",
-                "ĭ",
-                "-j/"
-              ],
-              "tags": [
-                "closed"
-              ],
-              "hearts": [
-                0,
-                0,
-                0,
-                1,
-                0
-              ],
-              "zh": "村莊",
-              "img": "🏡",
-              "audio": "audio/places-3/village.mp3"
             },
             {
               "word": "witch",
