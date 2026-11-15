@@ -676,6 +676,74 @@ body {
   min-height: 36px;
 }
 
+/* 作答對照 table (every question of the round) */
+.btn-redo { background: var(--correct); color: #fff; }
+.answer-review {
+  margin-top: 8px;
+}
+.answer-review h3 {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+.answer-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 6px;
+  font-size: 0.95rem;
+  table-layout: fixed;
+}
+.answer-table th {
+  font-size: 0.8rem;
+  color: #999;
+  font-weight: 700;
+  padding: 0 4px;
+}
+.answer-table th:first-child { width: 2.2em; }
+.answer-table td {
+  padding: 8px 4px;
+  vertical-align: middle;
+  word-break: break-word;
+}
+.answer-table td:first-child { border-radius: 12px 0 0 12px; }
+.answer-table td:last-child { border-radius: 0 12px 12px 0; }
+.answer-table tr.ok td { background: #e6f8f3; }
+.answer-table tr.bad td { background: #ffeceb; }
+.answer-table tr.hint td { background: #fff6dc; }
+.answer-no {
+  font-size: 0.8rem;
+  color: #999;
+  line-height: 1.5;
+}
+.answer-mine, .answer-right { font-weight: 800; font-size: 1.05rem; }
+.answer-table tr.ok .answer-mine, .answer-table tr.hint .answer-mine { color: var(--correct); }
+.answer-table tr.bad .answer-mine { color: var(--wrong); }
+.answer-right { color: #444; }
+.answer-speak {
+  border: none;
+  background: #fff;
+  border-radius: 50px;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 2px;
+  box-shadow: var(--shadow);
+}
+.answer-word { font-weight: 800; font-size: 1.05rem; margin-right: 2px; }
+.answer-pic { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; margin-right: 2px; }
+.answer-emoji { font-size: 1.5rem; line-height: 1.2; }
+.answer-zh { font-size: 0.75rem; color: #888; }
+.answer-tiles { display: inline-flex; flex-wrap: wrap; gap: 2px; justify-content: center; }
+.answer-tile {
+  border: 1.5px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  padding: 0 4px;
+}
+.answer-table tr.bad .answer-mine .answer-tile:not(.bad) { color: #444; } /* in a wrong spelling only the wrong tile is red */
+.answer-table .answer-tile.bad { border-color: var(--wrong); color: var(--wrong); background: #fff; }
+.answer-note { font-size: 0.8rem; color: #999; margin-top: 4px; }
+
 /* ── Footer ───────────────────────────────────────────── */
 .app-footer {
   margin-top: auto;
@@ -1066,6 +1134,8 @@ let quizWords = [];
 let currentQ = 0;
 let score = 0;
 let wrongItems = [];
+let answerLog = [];        // per answered question: { q, word, picked, correct, ok, hint, mode, sound, spellChoice } — for the 作答對照 table
+let isRedoRound = false;   // true while redoing the wrong questions of the last round
 let usedHint = false;
 let spellingState = null;
 let currentLevelIdx = null;
@@ -1627,6 +1697,8 @@ function startQuiz(mode) {
   score = 0;
   currentQ = 0;
   wrongItems = [];
+  answerLog = [];
+  isRedoRound = false;
   quizOptions = [];
   quizSpellChoice = [];
   quizSound = [];
@@ -1866,7 +1938,7 @@ function renderQuestion() {
       <div class="progress-bar-fill" style="width:${(currentQ / quizWords.length) * 100}%"></div>
     </div>
     <div class="quiz-status">
-      <span>第 ${currentQ + 1} / ${quizWords.length} 題</span>
+      <span>第 ${currentQ + 1} / ${quizWords.length} 題${isRedoRound ? '（重做錯題）' : ''}</span>
       <span class="quiz-stars">${'⭐'.repeat(score)}</span>
     </div>`;
 
@@ -2626,6 +2698,7 @@ function checkSpelling() {
   if (!correct) {
     wrongItems.push(word);
   }
+  logAnswer(userAnswer, word.graphemes, correct, correct && usedHint);
 
   setTimeout(() => speakWord(word), 350);
 
@@ -2662,6 +2735,7 @@ function checkAnswer(btn, selected, correct) {
     });
     wrongItems.push(quizWords[currentQ]);
   }
+  logAnswer(selected, correct, isCorrect, false);
 
   const word = quizWords[currentQ];
   setTimeout(() => speakWord(word), 350);
@@ -2796,9 +2870,12 @@ function renderResult() {
       ${contrastPassHtml(score, total)}
       <div class="result-stars">${starsHtml}</div>
       <div class="result-actions">
+        ${redoCount() > 0 ? `<button class="btn-action btn-redo" onclick="startRedoWrong()">🔁 重做錯題（${redoCount()} 題）</button>` : ''}
         <button class="btn-action btn-primary" onclick="startQuiz('${currentMode}')">🔄 再玩一次</button>
         <button class="btn-action btn-secondary" onclick="showHome()">🏠 回首頁</button>
       </div>`;
+
+  html += answerTableHtml();
 
   if (wrongItems.length > 0) {
     html += `
@@ -2818,6 +2895,92 @@ function renderResult() {
   }
   html += '</div>';
   $content.innerHTML = html;
+}
+
+// ── 作答對照 (every question: your answer vs. the correct answer) ──
+function logAnswer(picked, correct, ok, hint) {
+  answerLog.push({
+    q: currentQ,
+    word: quizWords[currentQ],
+    picked, correct, ok, hint,
+    mode: currentMode,
+    sound: quizSound[currentQ] || null,
+    spellChoice: !!quizSpellChoice[currentQ],
+  });
+}
+
+// Questions to redo: answered wrong (a word spelled right with a hint is not wrong)
+function redoIndexes() {
+  return answerLog.filter(a => !a.ok).map(a => a.q);
+}
+function redoCount() { return redoIndexes().length; }
+
+function startRedoWrong() {
+  const idx = redoIndexes();
+  if (!idx.length) return;
+  const oldWords = quizWords, oldOptions = quizOptions, oldSpell = quizSpellChoice, oldSound = quizSound;
+  quizWords = idx.map(i => oldWords[i]);
+  // the same choices as the first time (in a new order); quizzes that build choices on the fly build them again
+  quizOptions = oldOptions.length ? idx.map(i => oldOptions[i] ? shuffle([...oldOptions[i]]) : oldOptions[i]) : [];
+  quizSpellChoice = oldSpell.length ? idx.map(i => oldSpell[i]) : [];
+  quizSound = oldSound.length ? idx.map(i => oldSound[i]) : [];
+  score = 0;
+  currentQ = 0;
+  wrongItems = [];
+  answerLog = [];
+  isRedoRound = true;
+  pushView('quiz', () => renderQuestion());
+}
+
+// What the question showed: the picture and meaning, the word with its marked letters, or just the sound
+function answerPromptHtml(a, i) {
+  const w = a.word;
+  const speak = `<button class="answer-speak" onclick="speakWord(answerLog[${i}].word)" aria-label="再聽一次">🔊</button>`;
+  if (a.sound) {
+    const s = a.sound, t = w.word, mk = s.mark || '';
+    const from = s.hi ? s.hi[0] : (mk && t.endsWith(mk) ? t.length - mk.length : t.length);
+    const to = s.hi ? s.hi[0] + s.hi[1] : t.length;
+    return `<span class="answer-word">${escHtml(t.slice(0, from))}<span style="color:var(--primary);">${escHtml(t.slice(from, to))}</span>${escHtml(t.slice(to))}</span>${speak}`;
+  }
+  if ((a.mode === 'picture' || a.mode === 'spell' || a.spellChoice) && (w.img || w.zh)) {
+    return `<span class="answer-pic">${w.img ? `<span class="answer-emoji">${w.img}</span>` : ''}${w.zh ? `<span class="answer-zh">${escHtml(w.zh)}</span>` : ''}</span>${speak}`;
+  }
+  return speak;
+}
+
+// A spelling answer is shown tile by tile, so the wrong tile stands out
+function answerTilesHtml(tiles, ref) {
+  return '<span class="answer-tiles">' + tiles.map((g, k) =>
+    `<span class="answer-tile${ref && g !== ref[k] ? ' bad' : ''}">${escHtml(g)}</span>`).join('') + '</span>';
+}
+
+function answerTableHtml() {
+  if (!answerLog.length) return '';
+  let rows = '';
+  answerLog.forEach((a, i) => {
+    const cls = a.hint ? 'hint' : a.ok ? 'ok' : 'bad';
+    const mark = a.hint ? '💡' : a.ok ? '✅' : '❌';
+    const spell = Array.isArray(a.picked);
+    const mine = spell ? answerTilesHtml(a.picked, a.correct) : escHtml(a.picked);
+    const right = spell ? answerTilesHtml(a.correct, null) : escHtml(a.correct);
+    rows += `
+      <tr class="${cls}">
+        <td class="answer-no">${i + 1}<br>${mark}</td>
+        <td>${answerPromptHtml(a, i)}</td>
+        <td class="answer-mine">${mine}</td>
+        <td class="answer-right">${right}</td>
+      </tr>`;
+  });
+  const hintNote = answerLog.some(a => a.hint) ? '<div class="answer-note">💡 用了提示才拼對，不計分</div>' : '';
+  return `
+    <div class="answer-review">
+      <h3>📋 作答對照</h3>
+      <table class="answer-table">
+        <thead><tr><th></th><th>題目</th><th>你的答案</th><th>正確答案</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+      ${hintNote}
+    </div>`;
 }
 
 // ── Answer Sound Effects ────────────────────────────────
