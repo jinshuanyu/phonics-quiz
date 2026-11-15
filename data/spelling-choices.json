@@ -1081,7 +1081,11 @@
         {"word":"word","ipa":"/wɝd/","graphemes":["w","or","d"],"phonemes":["/w","ɝ","d/"],"phonics":["/w","er","d/"],"hearts":[0,1,0],"zh":"單字","img":"🔤","audio":"audio/school-5/word.mp3","cat":"wor","wrong":["werd","wurd"]},
         {"word":"world","ipa":"/wɝld/","graphemes":["w","or","l","d"],"phonemes":["/w","ɝ","l","d/"],"phonics":["/w","er","l","d/"],"hearts":[0,1,0,0],"zh":"世界","img":"","audio":"audio/world-1/world.mp3","cat":"wor","wrong":["werld","wurld"]},
         {"word":"worm","ipa":"/wɝm/","graphemes":["w","or","m"],"phonemes":["/w","ɝ","m/"],"phonics":["/w","er","m/"],"hearts":[false,true,false],"zh":"蠕蟲","img":"🪱","audio":"audio/animals-3/worm.mp3","cat":"wor","wrong":["werm","wurm"]},
-        {"word":"worker","ipa":"/ˈwɝkɚ/","graphemes":["w","or","k","er"],"phonemes":["/'w","ɝ","k","ɚ/"],"phonics":["/'w","er","k","er/"],"hearts":[0,1,0,0],"zh":"工人","img":"🧑‍🏭","audio":"audio/occupations-3/worker.mp3","cat":"wor","wrong":["werker","wurker"]}
+        {"word":"worker","ipa":"/ˈwɝkɚ/","graphemes":["w","or","k","er"],"phonemes":["/'w","ɝ","k","ɚ/"],"phonics":["/'w","er","k","er/"],"hearts":[0,1,0,0],"zh":"工人","img":"🧑‍🏭","audio":"audio/occupations-3/worker.mp3","cat":"wor","wrong":["werker","wurker"]},
+        {"word":"squash","ipa":"/skwɑʃ/","graphemes":["s","qu","a","sh"],"phonemes":["/s","kw","ɑ","ʃ/"],"phonics":["/s","kw","ŏ","sh/"],"hearts":[0,0,1,0],"zh":"南瓜類蔬菜；壓扁","img":"🎃","audio":"audio/food-1/squash.mp3","cat":"wa","wrong":["squosh"]},
+        {"word":"squad","ipa":"/skwɑd/","graphemes":["s","qu","a","d"],"phonemes":["/s","kw","ɑ","d/"],"phonics":["/s","kw","ŏ","d/"],"hearts":[0,0,1,0],"zh":"小隊；小組","img":"👥","audio":"audio/nouns-4/squad.mp3","cat":"wa","wrong":["squod"]},
+        {"word":"squat","ipa":"/skwɑt/","graphemes":["s","qu","a","t"],"phonemes":["/s","kw","ɑ","t/"],"phonics":["/s","kw","ŏ","t/"],"hearts":[0,0,1,0],"zh":"蹲；蹲下","img":"🏋️","audio":"audio/sports-2/squat.mp3","cat":"wa","wrong":["squot"]},
+        {"word":"quart","ipa":"/kwɔrt/","graphemes":["qu","ar","t"],"phonemes":["/kw","ɔr","t/"],"phonics":["/kw","or","t/"],"hearts":[0,1,0],"zh":"夸脫（容量單位）","img":"🥛","audio":"audio/size-1/quart.mp3","cat":"war","wrong":["quort"]}
       ]
     },
     "c-or-k": {

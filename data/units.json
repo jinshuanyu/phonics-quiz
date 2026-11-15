@@ -33691,10 +33691,10 @@
         {
           "id": 14,
           "name": "sp, st, sk 不送氣",
-          "pattern": "sp, spl, spr, sk, sc, scr, st, str",
-          "explain": "・sp、spl、spr、sk、sc、scr、st、str：s 後面的 p、k（c）、t 不送氣\n・p 唸起來像 ㄅ（spot、spell）\n・k 和 c 像 ㄍ（skin、scarf）\n・t 像 ㄉ（stop、stick）",
+          "pattern": "sp, spl, spr, sk, sc, scr, squ, st, str",
+          "explain": "・sp、spl、spr、sk、sc、scr、squ、st、str：s 後面的 p、k（c）、t 不送氣\n・p 唸起來像 ㄅ（spot、spell）\n・k 和 c 像 ㄍ（skin、scarf）\n・squ 唸 /skw/：qu 的 k 音在 s 後面也不送氣，像 ㄍ（squid、squish、squint）\n・t 像 ㄉ（stop、stick）",
           "contrastSet": "s-blends",
-          "examples": ["spot","spell","spend","stop","step","stick","still","stamp","skin","skip","skill","scarf","string","strong","spring"],
+          "examples": ["spot","spell","spend","stop","step","stick","still","stamp","skin","skip","skill","scarf","string","strong","spring","squid","squish","squint"],
           "spellTiles": ["b", "d", "g", "p", "t", "k", "c"],
           "words": [
             {
@@ -35701,6 +35701,115 @@
               "zh": "跳起(過去分詞)",
               "img": "",
               "audio": "audio/ABC-iau/sprung.mp3"
+            },
+            {
+              "word": "squid",
+              "ipa": "/skwɪd/",
+              "graphemes": [
+                "s",
+                "qu",
+                "i",
+                "d"
+              ],
+              "phonemes": [
+                "/s",
+                "kw",
+                "ɪ",
+                "d/"
+              ],
+              "phonics": [
+                "/s",
+                "kw",
+                "ĭ",
+                "d/"
+              ],
+              "tags": [
+                "cluster",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "魷魚",
+              "img": "🦑",
+              "audio": "audio/animals-3/squid.mp3"
+            },
+            {
+              "word": "squint",
+              "ipa": "/skwɪnt/",
+              "graphemes": [
+                "s",
+                "qu",
+                "i",
+                "n",
+                "t"
+              ],
+              "phonemes": [
+                "/s",
+                "kw",
+                "ɪ",
+                "n",
+                "t/"
+              ],
+              "phonics": [
+                "/s",
+                "kw",
+                "ĭ",
+                "n",
+                "t/"
+              ],
+              "tags": [
+                "cluster",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "瞇眼看",
+              "img": "😑",
+              "audio": "audio/body-and-face-3/squint.mp3"
+            },
+            {
+              "word": "squish",
+              "ipa": "/skwɪʃ/",
+              "graphemes": [
+                "s",
+                "qu",
+                "i",
+                "sh"
+              ],
+              "phonemes": [
+                "/s",
+                "kw",
+                "ɪ",
+                "ʃ/"
+              ],
+              "phonics": [
+                "/s",
+                "kw",
+                "ĭ",
+                "sh/"
+              ],
+              "tags": [
+                "cluster",
+                "digraph"
+              ],
+              "hearts": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "zh": "擠壓；壓扁",
+              "img": "🫧",
+              "audio": "audio/house-3/squish.mp3"
             },
             {
               "word": "staff",
@@ -78769,7 +78878,7 @@
           "id": 24,
           "name": "長母音 u /ju/",
           "pattern": "u-e, ui, ue, ew",
-          "explain": "長母音 u 發 /ju/（cute）或 /u/（glue）。\n口訣（XX＝後面沒有字母，用在字尾）：\n・u 子音 e（cute）\n・ui 子音（fruit）\n・ue XX（glue）\n・ew XX（few）",
+          "explain": "長母音 u 發 /ju/（cute）或 /u/（glue）。\ns、l、r 後面的長母音 u 唸 /u/，不唸 /ju/（suit、blue、rule）。\n口訣（XX＝後面沒有字母，用在字尾）：\n・u 子音 e（cute）\n・ui 子音（fruit）\n・ue XX（glue）\n・ew XX（few）",
           "keys": [{ "g": "u_e", "ipa": "ju" }, { "g": "ue", "ipa": "u" }, { "g": "ui", "ipa": "u" }, { "g": "ew", "ipa": "ju" }],
           "contrastSet": "l-u",
           "spellingSet": "long-u",
@@ -102930,12 +103039,12 @@
         {
           "id": 35,
           "name": "W 規則",
-          "pattern": "wa, war, wor",
-          "explain": "・w 會改變後面母音的音\n・wa 的 a 發 /ɑ/（want、wash、watch）\n・war 發 /ɔr/（warm、war）\n・wor 發 /ɝ/（work、word、world）",
-          "keys": [{ "g": "wa", "ipa": ["w","ɑ"] }, { "g": "war", "ipa": ["w","ɔr"] }, { "g": "wor", "ipa": ["w","ɝ"] }],
+          "pattern": "wa, war, wor, qua, quar",
+          "explain": "・w 會改變後面母音的音\n・wa 的 a 發 /ɑ/（want、wash、watch）\n・war 發 /ɔr/（warm、war）\n・wor 發 /ɝ/（work、word、world）\n・qu 唸 /kw/，裡面也有 w 的音，所以一樣會變：squash、squad、squat 的 a 發 /ɑ/，quart 的 ar 發 /ɔr/",
+          "keys": [{ "g": "wa", "ipa": ["w","ɑ"] }, { "g": "war", "ipa": ["w","ɔr"] }, { "g": "wor", "ipa": ["w","ɝ"] }, { "g": "qua", "ipa": ["k","w","ɑ"] }, { "g": "quar", "ipa": ["k","w","ɔr"] }],
           "contrastSet": "w-rule",
           "spellingSet": "w-rule",
-          "examples": ["want","wash","watch","swan","wallet","what","war","warm","warn","award","work","word","world","worm","worker"],
+          "examples": ["want","wash","watch","swan","wallet","what","war","warm","warn","award","work","word","world","worm","worker","squash","squad","squat","quart"],
           "spellTiles": ["o", "a", "or", "ar", "er", "ur"],
           "words": [
             {
@@ -102971,6 +103080,146 @@
               "zh": "獎項",
               "img": "🏆",
               "audio": "audio/nouns-4/award.mp3"
+            },
+            {
+              "word": "quart",
+              "ipa": "/kwɔrt/",
+              "graphemes": [
+                "qu",
+                "ar",
+                "t"
+              ],
+              "phonemes": [
+                "/kw",
+                "ɔr",
+                "t/"
+              ],
+              "phonics": [
+                "/kw",
+                "or",
+                "t/"
+              ],
+              "tags": [
+                "digraph",
+                "rcontrolled",
+                "irregular"
+              ],
+              "hearts": [
+                0,
+                1,
+                0
+              ],
+              "zh": "夸脫（容量單位）",
+              "img": "🥛",
+              "audio": "audio/size-1/quart.mp3"
+            },
+            {
+              "word": "squad",
+              "ipa": "/skwɑd/",
+              "graphemes": [
+                "s",
+                "qu",
+                "a",
+                "d"
+              ],
+              "phonemes": [
+                "/s",
+                "kw",
+                "ɑ",
+                "d/"
+              ],
+              "phonics": [
+                "/s",
+                "kw",
+                "ŏ",
+                "d/"
+              ],
+              "tags": [
+                "cluster",
+                "digraph",
+                "irregular"
+              ],
+              "hearts": [
+                0,
+                0,
+                1,
+                0
+              ],
+              "zh": "小隊；小組",
+              "img": "👥",
+              "audio": "audio/nouns-4/squad.mp3"
+            },
+            {
+              "word": "squash",
+              "ipa": "/skwɑʃ/",
+              "graphemes": [
+                "s",
+                "qu",
+                "a",
+                "sh"
+              ],
+              "phonemes": [
+                "/s",
+                "kw",
+                "ɑ",
+                "ʃ/"
+              ],
+              "phonics": [
+                "/s",
+                "kw",
+                "ŏ",
+                "sh/"
+              ],
+              "tags": [
+                "cluster",
+                "digraph",
+                "irregular"
+              ],
+              "hearts": [
+                0,
+                0,
+                1,
+                0
+              ],
+              "zh": "南瓜類蔬菜；壓扁",
+              "img": "🎃",
+              "audio": "audio/food-1/squash.mp3"
+            },
+            {
+              "word": "squat",
+              "ipa": "/skwɑt/",
+              "graphemes": [
+                "s",
+                "qu",
+                "a",
+                "t"
+              ],
+              "phonemes": [
+                "/s",
+                "kw",
+                "ɑ",
+                "t/"
+              ],
+              "phonics": [
+                "/s",
+                "kw",
+                "ŏ",
+                "t/"
+              ],
+              "tags": [
+                "cluster",
+                "digraph",
+                "irregular"
+              ],
+              "hearts": [
+                0,
+                0,
+                1,
+                0
+              ],
+              "zh": "蹲；蹲下",
+              "img": "🏋️",
+              "audio": "audio/sports-2/squat.mp3"
             },
             {
               "word": "swallow",
