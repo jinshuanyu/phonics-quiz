@@ -103041,7 +103041,7 @@
           "name": "W 規則",
           "pattern": "wa, war, wor, qua, quar",
           "explain": "・w 會改變後面母音的音\n・wa 的 a 發 /ɑ/（want、wash、watch）\n・war 發 /ɔr/（warm、war）\n・wor 發 /ɝ/（work、word、world）\n・qu 唸 /kw/，裡面也有 w 的音，所以一樣會變：squash、squad、squat 的 a 發 /ɑ/，quart 的 ar 發 /ɔr/",
-          "keys": [{ "g": "wa", "ipa": ["w","ɑ"] }, { "g": "war", "ipa": ["w","ɔr"] }, { "g": "wor", "ipa": ["w","ɝ"] }, { "g": "qua", "ipa": ["k","w","ɑ"] }, { "g": "quar", "ipa": ["k","w","ɔr"] }],
+          "keys": [{ "g": "wa", "ipa": ["w","ɑ"] }, { "g": "war", "ipa": ["w","ɔr"] }, { "g": "wor", "ipa": ["w","ɝ"] }],
           "contrastSet": "w-rule",
           "spellingSet": "w-rule",
           "examples": ["want","wash","watch","swan","wallet","what","war","warm","warn","award","work","word","world","worm","worker","squash","squad","squat","quart"],
